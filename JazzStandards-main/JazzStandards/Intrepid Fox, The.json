@@ -1,0 +1,28 @@
+{
+  "Title": "Intrepid Fox, The",
+  "Composer": "Freddie Hubbard",
+  "Key": "Cmin",
+  "Rhythm": "Medium Up Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Cm7,||Cm7|Cm7|Cm7|Cm7|Bmaj7#11|Bmaj7#11|Bmaj7#11|Bmaj7#11|Bmaj7#11|Bmaj7#11|Bb7sus|Bb7sus|Bb7sus|Bb7sus|A7sus,,F#7sus,Eb7sus|C7sus,,A7sus,F#7sus|F7sus|F7sus|F7sus|F7sus"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Bb7sus|Db7sus,Eb7sus|Bb7sus,Db7sus|Eb7sus,F7sus|Bb7sus|Db7sus,Eb7sus|F7sus,G7sus|A7sus"
+      }
+    },
+    {
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Cm7|Cm7|Cm7|Cm7|Cm7|Cm7|Bmaj7#11|Bmaj7#11|Bmaj7#11|Bmaj7#11|Bmaj7#11|Bmaj7#11|Bb7sus|Bb7sus|Bb7sus|Bb7sus|Bb7sus|Bb7sus|F7sus|F7sus|F7sus|F7sus|F7sus|F7sus"
+      }
+    }
+  ]
+}

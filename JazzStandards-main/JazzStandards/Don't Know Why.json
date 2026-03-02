@@ -1,0 +1,52 @@
+{
+  "Title": "Don't Know Why",
+  "Composer": "Jesse Harris",
+  "Key": "Bb",
+  "Rhythm": "Ballad",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "i",
+      "MainSegment": {
+        "Chords": "Bbmaj7,Bb7|Ebmaj9,D9|Gm7,C7|F7sus,Bb"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bbmaj7,Bb7|Ebmaj9,D9|Gm7,C7|F7sus,Bb|Bbmaj7,Bb7|Ebmaj9,D9"
+      }
+    },
+    {
+      "Label": "A",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Gm7,C7|F7sus,Bb"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Bbmaj7,Bb7|Ebmaj9,D9|Gm7,C7|F7sus,Bb|Bbmaj7,Bb7|Ebmaj9,D9|Gm7,C7|F7sus,Bb"
+      }
+    },
+    {
+      "Label": "A",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Gm7|C7|F7|F7|Gm7|C7|F7,F7/Eb|Bb/D,F7/C"
+      }
+    },
+    {
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Bbmaj7,Bb7|Ebmaj9,D9|Gm7,C7|F7sus,Bb|Bbmaj7,Bb7|Ebmaj9,D9|Gm7,C7|F7sus,Bb"
+      }
+    },
+    {
+      "MainSegment": {
+        "Chords": "Gm7,C7|F7sus,,Bb,Bb7/F|Gm7,C7|F7sus,Bb"
+      }
+    }
+  ]
+}

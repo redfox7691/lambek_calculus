@@ -1,0 +1,35 @@
+{
+  "Title": "Love Is Just Around The Corner",
+  "Composer": "Lewis Gensler",
+  "Key": "F",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "G7,C7|Fmaj7,D7|G7,C7|Fmaj7,D7|G7,C7|Am7,D7|G7,C7"
+      },
+      "Endings": [
+        {
+          "Chords": "F6,D7"
+        },
+        {
+          "Chords": "F6"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Em7,A7|Dm7|Em7,A7|Dm7|G7,G07|G7,G07|G7|C7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "G7,C7|Fmaj7,D7|G7,C7|Fmaj7,D7|G7,C7|Am7,D7|G7,C7|F6,D7"
+      }
+    }
+  ]
+}

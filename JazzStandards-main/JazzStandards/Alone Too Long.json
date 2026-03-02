@@ -1,0 +1,35 @@
+{
+  "Title": "Alone Too Long",
+  "Composer": "Arthur Schwartz",
+  "Key": "G",
+  "Rhythm": "Ballad",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "G6|G6,G#07|Am7,D7|Am7,D7|Am7|D7"
+      },
+      "Endings": [
+        {
+          "Chords": "G6,Em7|Am7,D7"
+        },
+        {
+          "Chords": "G6|F#m7b5,B7b9"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Em,Em/D|Em/C#,Em/C#,C7,B7|Em6|Em6|Em,Em/D|A7|Am7|D7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "G6|G6,G#07|Am7,D7|Am7,D7|Am7|D7|G6,Em7|Am7,D7"
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "Title": "Be Careful It's My Heart",
+  "Composer": "Irving Berlin",
+  "Key": "F",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Gm7/C,C7|Gm7/C,C7|F6,Gm7|G#07,F/A|Gm7/C,C7|Gm7/C,C7|F6,Gm7|G#07,F/A"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Fmaj7,E7#5|Eb7,D7|Gm7b5/Db,C7|Fmaj7|Ebm7|Ab7|G7|Gm7,C7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Gm7/C,C7|Gm7/C,C7|F6,Gm7|G#07,F/A|Gm7/C,C7|Gm7/C,C7|Am7|D7"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "Gm7|Eb9#11|Fmaj7,Dm7|G7|Gm7|C7sus,C7|F6|Gm7,C7"
+      }
+    }
+  ]
+}

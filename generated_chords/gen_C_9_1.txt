@@ -1,0 +1,60 @@
+Chord Generation Report
+=======================
+Tonality: C
+Target chords: 9
+Generated chords: 9
+Max depth: 64
+Branching mode: mixed
+Style strength: 0.450
+Temperature: 1.400
+Modulation strength: 0.900
+Modulation complexity: 0.800
+Tonal drift: 0.600
+Initial cadence bias: 0.900
+Basic cadence strength: 0.000
+Stats CSV: /Users/Mat/ownCloud/Python/Lambek Calculus/last_line_analysis/JazzStandards_all_cadence.csv
+
+Generated Chord List (in generation order)
+------------------------------------------
+Cmaj7 | G7 | Dm7 | Dm7 | Dbm7 | Emaj7 | Amaj7 | Bm7 | E7
+
+Rule Trace
+----------
+ 1. P.C.: V -> I  (G7 -> Cmaj7)
+ 2. ii-V: ii -> V  (Dm7 -> G7)
+ 3. R_S: C -> F ; Data(vi->ii): vi -> ii  (Dm7 -> Gm7)
+ 4. Data(bVI->vi): bVI -> vi  (Dbm7 -> Dm7)
+ 5. Data(VII->bVI): VII -> bVI  (Emaj7 -> Dbm7)
+ 6. Data(III->VII): III -> VII  (Amaj7 -> Emaj7)
+ 7. R_R: F -> d ; Data(vi->III): vi -> III  (Bm7 -> Gbmaj7)
+ 8. R_D: d -> a ; Data(V->vi): V -> vi  (E7 -> Gbm7)
+
+ASCII Tree
+----------
+└─ I [Cmaj7] @C
+   ├─ V [G7] @C  [P.C.]
+   │  ├─ ii [Dm7] @C  [ii-V]
+   │  │  ├─ vi [Dm7] @F  [R_S + Data(vi->ii)]
+   │  │  │  ├─ bVI [Dbm7] @F  [Data(bVI->vi)]
+   │  │  │  │  ├─ VII [Emaj7] @F  [Data(VII->bVI)]
+   │  │  │  │  │  ├─ III [Amaj7] @F  [Data(III->VII)]
+   │  │  │  │  │  │  ├─ vi [Bm7] @d  [R_R + Data(vi->III)]
+   │  │  │  │  │  │  │  ├─ V [E7] @a  [R_D + Data(V->vi)]
+   │  │  │  │  │  │  │  └─ vi [Gbm7] @a
+   │  │  │  │  │  │  └─ III [Gbmaj7] @d
+   │  │  │  │  │  └─ VII [Emaj7] @F
+   │  │  │  │  └─ bVI [Dbm7] @F
+   │  │  │  └─ vi [Dm7] @F
+   │  │  └─ ii [Gm7] @F
+   │  └─ V [G7] @C
+   └─ I [Cmaj7] @C
+
+Forest Snippet
+--------------
+\begin{forest}
+[I [Cmaj7] @C [V [G7] @C [ii [Dm7] @C [vi [Dm7] @F [bVI [Dbm7] @F [VII [Emaj7] @F [III [Amaj7] @F [vi [Bm7] @d [V [E7] @a], edge label={node[midway, left,font=\tiny]{\textit{R_D + Data(V->vi)}}} [vi [Gbm7] @a]], edge label={node[midway, left,font=\tiny]{\textit{R_R + Data(vi->III)}}} [III [Gbmaj7] @d]], edge label={node[midway, left,font=\tiny]{\textit{Data(III->VII)}}} [VII [Emaj7] @F]], edge label={node[midway, left,font=\tiny]{\textit{Data(VII->bVI)}}} [bVI [Dbm7] @F]], edge label={node[midway, left,font=\tiny]{\textit{Data(bVI->vi)}}} [vi [Dm7] @F]], edge label={node[midway, left,font=\tiny]{\textit{R_S + Data(vi->ii)}}} [ii [Gm7] @F]], edge label={node[midway, left,font=\tiny]{\textit{ii-V}}} [V [G7] @C]], edge label={node[midway, left,font=\tiny]{\textit{P.C.}}} [I [Cmaj7] @C]]
+\end{forest}
+
+Final Chord Progression (Readable)
+----------------------------------
+E7 -> Gbm7 -> Gbmaj7 -> Emaj7 -> Dbm7 -> Dm7 -> Gm7 -> G7 -> Cmaj7

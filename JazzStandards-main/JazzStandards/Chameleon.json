@@ -1,0 +1,29 @@
+{
+  "Title": "Chameleon",
+  "Composer": "Herbie Hancock",
+  "Key": "Bbmin",
+  "Rhythm": "Funk",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "i",
+      "MainSegment": {
+        "Chords": "Bbm7|Eb7|Bbm7|Eb7"
+      }
+    },
+    {
+      "Label": "A",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Bbm7|Eb7|Bbm7|Eb7"
+      }
+    },
+    {
+      "Label": "B",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Bbm7|Eb7|Bbm7|Eb7"
+      }
+    }
+  ]
+}

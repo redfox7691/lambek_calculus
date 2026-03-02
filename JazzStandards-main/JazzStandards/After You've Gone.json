@@ -1,0 +1,33 @@
+{
+  "Title": "After You've Gone",
+  "Composer": "Henry Creamer",
+  "Key": "Bb",
+  "Rhythm": "Up Tempo Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Ebmaj7|Ebmaj7|Ebm6|Ab7|Bbmaj7|Bbmaj7|Dm7|G7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "C7|C7|F7|F7|Bb6|Bb6|Fm7|Bb7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Ebmaj7|Ebmaj7|Ebm6|Ab7|Bbmaj7|Bbmaj7|Dm7|G7"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "Cm7|G7|Cm7|Ebm/maj7,Ab7|Bbmaj7|Am7,D7|Gm7,Gm7/F|E07|Bb6/F|G7|Cm7|F7|Bb6|Bb6|Fm7|Bb7"
+      }
+    }
+  ]
+}

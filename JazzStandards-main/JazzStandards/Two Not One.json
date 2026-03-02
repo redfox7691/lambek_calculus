@@ -1,0 +1,28 @@
+{
+  "Title": "Two Not One",
+  "Composer": "Lennie Tristano",
+  "Key": "Ab",
+  "Rhythm": "Up Tempo Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Dbmaj7|Dbm/maj7|Abmaj7|F7#11|Bbm7|Eb7|Abmaj7|Ab7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "C7|C7|F7|F7|Bb7|Bb7|Eb7|Eb7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Dbmaj7|Dbm/maj7|Abmaj7|F7#11|Bbm7|Eb7|Abmaj7|Ab7"
+      }
+    }
+  ]
+}

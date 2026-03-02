@@ -1,0 +1,39 @@
+{
+  "Title": "New Picture",
+  "Composer": "Jimmy Heath",
+  "Key": "Bb",
+  "Rhythm": "Waltz",
+  "TimeSignature": "3/4",
+  "Sections": [
+    {
+      "Label": "i",
+      "MainSegment": {
+        "Chords": "Bbmaj7|Bbmaj7|Ebm/maj7|Ebm/maj7|Bbmaj7|Bbmaj7|Ebm/maj7|Ebm/maj7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bbmaj7|G7#9|Gb7|F7,Eb07|Dm7|G7|Cm7|F7|Dm7b5|G7#9|Cm7|F7|Em7b5|Em7b5|A7#9|A7#9"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Dmaj7|B7#9|Em7|Fm7|Ebmaj7#11|Ebmaj7#11|D7#9|D7#9"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "Gmaj7|Abmaj7,Dbmaj7|Fmaj7|Gbmaj7,Bmaj7|Ebmaj7|Emaj7,Amaj7|Dbmaj7|Cm7b5,F7"
+      }
+    },
+    {
+      "Label": "D",
+      "MainSegment": {
+        "Chords": "Bbmaj7|Bbmaj7|Ebm/maj7|Ebm/maj7|Bbmaj7|Bbmaj7|Ebm/maj7|Ebm/maj7"
+      }
+    }
+  ]
+}

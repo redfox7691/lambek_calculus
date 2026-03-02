@@ -1,0 +1,22 @@
+{
+  "Title": "Love For Sale",
+  "Composer": "Cole Porter",
+  "Key": "Bbmin",
+  "Rhythm": "Medium Up Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Ebmaj7|Ebmaj7|Bbm7|Bbm7|Ebmaj7|Ebmaj7|Bbm7|Bbm7|Ebm7|Ab7|Dbmaj7|Gb7|Cm7b5|F7b13|Bbm6|Bbm6"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Ebm7|Ab7|Dbmaj7|Bb7|Ebm7|Ab7|Dbmaj7|Dbmaj7|Bb7|B7,Bb7|Ebm6|Ebm6|Gm7b5,C7b9|Gm7b5,C7b9|F#m7,B7|Fm7b5,Bb7"
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "Title": "Fine And Mellow",
+  "Composer": "Billie Holiday",
+  "Key": "F",
+  "Rhythm": "Slow Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "MainSegment": {
+        "Chords": "F7|Bb7|F7|F7|Bb7|Bb7|F7|F7|C7|Db7,C7|F7|C7"
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "Title": "Sweeping Up",
+  "Composer": "Steve Swallow",
+  "Key": "G",
+  "Rhythm": "Ballad",
+  "TimeSignature": "3/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "D7|Gmaj7|F#m7|Bm|Em7|Bm|Am7"
+      }
+    }
+  ]
+}

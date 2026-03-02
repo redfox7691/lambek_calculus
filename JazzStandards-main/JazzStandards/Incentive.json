@@ -1,0 +1,22 @@
+{
+  "Title": "Incentive",
+  "Composer": "Horace Silver",
+  "Key": "Ab",
+  "Rhythm": "Up Tempo Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "MainSegment": {
+        "Chords": "Dm7b5|G13b9|Cm7b5|F13b9|Bbm7b5|Eb13b9|Am7|D9|Dbmaj7|C13b9|Fm7,Fm7/Eb"
+      },
+      "Endings": [
+        {
+          "Chords": "Dm11,G7|Cmaj7,Am7|Dm7,G13|C69|Bbm7,Eb9"
+        },
+        {
+          "Chords": "Bb13,B07|Cm7,F7b9|Bbm7,Eb9sus|G13b9|Abmaj9"
+        }
+      ]
+    }
+  ]
+}

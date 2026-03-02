@@ -1,0 +1,33 @@
+{
+  "Title": "Very Thought Of You, The",
+  "Composer": "Ray Noble",
+  "Key": "Ab",
+  "Rhythm": "Ballad",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Abmaj7,Dbmaj7|Cm7,Eb7sus|Ab6,Dbmaj7|Cm7,Eb7sus|Ab6,Bbm7|B07,Ab6/C|Bb7|Bb7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Bbm7,Eb7|Gm7b5,C7b9|Fm7,Fm7/Eb|Dm7b5,G7b9|Cm7,Fm7b5|Bb7sus,Bb7|Bbm7|Eb7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Abmaj7,Dbmaj7|Cm7,Eb7sus|Ab6,Dbmaj7|Cm7,Eb7sus|Ab6,Bbm7|B07,Ab6/C|Bb7|Bb7"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "Bbm7,Eb7|Gm7b5,C7b9|Fm7,Fm7/Eb|Dm7b5,A07|Bbm7,A07|Bbm7,Eb7|Ab6|Bbm7,Eb7"
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "Title": "Unit Seven",
+  "Composer": "Sam Jones",
+  "Rhythm": "Medium Up Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "C7|C7|C7|C7|F7|F7|C7|A7#9|Abmaj7|G7#9"
+      },
+      "Endings": [
+        {
+          "Chords": "C7,A7|D7,G7#9"
+        },
+        {
+          "Chords": "C7|A7b13"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Dm7|G7|Em7|A7b9|Dm7|G7b9|E7,A7|Dm7,G7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "C7|C7|C7|C7|F7|F7|C7|A7#9|Abmaj7|G7#9|C7,A7|D7,G7#9"
+      }
+    }
+  ]
+}

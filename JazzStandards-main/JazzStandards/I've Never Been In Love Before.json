@@ -1,0 +1,35 @@
+{
+  "Title": "I've Never Been In Love Before",
+  "Composer": "Frank Loesser",
+  "Key": "Bb",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bb6,Gm7|Cm7,F7|Bbmaj7,Eb7|Dm7,G7|Cm7|F7"
+      },
+      "Endings": [
+        {
+          "Chords": "Dm7,G7|Cm7,F7"
+        },
+        {
+          "Chords": "Bbmaj7|Fm7,Bb7"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Ebmaj7|Cm7,F7|Bbmaj7|Am7b5,D7b9|Gm7,Gm7/F|Em7b5,A7|Dmaj7|Cm7,F7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bb6,Gm7|Cm7,F7|Bbmaj7,Eb7|Dm7,G7|Cm7|F7|Bb6|Cm7,F7"
+      }
+    }
+  ]
+}

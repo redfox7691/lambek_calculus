@@ -1,0 +1,34 @@
+{
+  "Title": "A Kiss To Build A Dream On",
+  "Composer": "Kalmar-Ruby-Hammerstein",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Cmaj7,Dm7|Em7,Eb07|Dm7,A7b9|Dm7,G7|Dm7,A7b9|Dm7,G7"
+      },
+      "Endings": [
+        {
+          "Chords": "C6|D7,G7"
+        },
+        {
+          "Chords": "C6|C6"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Fm7,Bb7|Gm7,C7|Fm7,Bb7|Ebmaj7|Dm7b5,G7|Cm7,Cm7/Bb|Am7,D7|Dm7,G7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Cmaj7,Dm7|Em7,Eb07|Dm7,A7b9|Dm7,G7|Dm7,A7b9|Dm7,G7|C6,Am7|Dm7,G7"
+      }
+    }
+  ]
+}

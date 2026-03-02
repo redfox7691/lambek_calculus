@@ -1,0 +1,33 @@
+{
+  "Title": "In A Mellow Tone (In A Mellotone)",
+  "Composer": "Duke Ellington",
+  "Key": "Ab",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bb7|Eb7|Ab6|Ab6|Ebm7|Ab7|Dbmaj7|Dbmaj7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Db6|Gb7|Ab6|F7|Bb7|Bb7|Eb7|F7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bb7|Eb7|Ab6|Ab6|Ebm7|Ab7|Dbmaj7|Dbmaj7"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "Db7|D07|Ab6/Eb|F7|Bb7|Eb7|Ab6|F7"
+      }
+    }
+  ]
+}

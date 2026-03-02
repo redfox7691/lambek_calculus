@@ -1,0 +1,14 @@
+{
+  "Title": "Work Song",
+  "Composer": "Nat Adderley",
+  "Key": "Fmin",
+  "Rhythm": "Medium Up Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "MainSegment": {
+        "Chords": "Fm|Fm|Fm|Fm|Fm|Fm|C7|C7|Fm|Fm|Fm|Fm|F7|Bb7|G7,C7|Fm"
+      }
+    }
+  ]
+}

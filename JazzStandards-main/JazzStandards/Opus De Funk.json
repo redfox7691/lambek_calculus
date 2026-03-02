@@ -1,0 +1,14 @@
+{
+  "Title": "Opus De Funk",
+  "Composer": "Horace Silver",
+  "Key": "Bb",
+  "Rhythm": "Up Tempo Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "MainSegment": {
+        "Chords": "Bb|Bb|Bb|Bb7|Eb7|E07|Bb/F|Dm7,G7|Cm7|C7,F7|Bb7|Bb7"
+      }
+    }
+  ]
+}

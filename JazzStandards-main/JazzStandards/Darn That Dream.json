@@ -1,0 +1,35 @@
+{
+  "Title": "Darn That Dream",
+  "Composer": "Jimmy Van-Heusen",
+  "Key": "G",
+  "Rhythm": "Ballad",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "G6,,Bbm7,Eb7|Am7,B7#11|Em,Em/D,A7/C#,Cm7|Bm7b5,E7|Am7,F7|Bm7,Bbm7|Am7,D7"
+      },
+      "Endings": [
+        {
+          "Chords": "Bm7,Bb7,Am7,D7"
+        },
+        {
+          "Chords": "G6,,Fm7,Bb7"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Ebmaj7,Cm7|Fm7,Bb7|Gm7,,F#m7,B7|Fm7,Bb7|Ebmaj7,Cm7|Gm(Am7b5),,(D7),(Gm)|Am7,D7|Bbm7,Eb7,Am7,D7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "G6,,Bbm7,Eb7|Am7,B7#11|Em,Em/D,A7/C#,Cm7|Bm7b5,E7|Am7,F7|Bm7,Bbm7|Am7,D7|G6,,Am7,D7"
+      }
+    }
+  ]
+}

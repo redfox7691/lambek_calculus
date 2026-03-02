@@ -1,0 +1,35 @@
+{
+  "Title": "Toy Tune",
+  "Composer": "Wayne Shorter",
+  "Key": "F",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bbm9,Am9,Cm7,Bm7|Bm7|Db/A|Bbm7,Bmaj7|Gbmaj9,Em69|Dmaj9,Gm9|Fmaj9"
+      },
+      "Endings": [
+        {
+          "Chords": "E7alt"
+        },
+        {
+          "Chords": "Gb13"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Fm9,Ebm9|Dm7b9,G7#5#9|C0|B7alt"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bbm9,Am9,Cm7,Bm7|Bm7|Db/A|Bbm7,Bmaj7|Gbmaj9,Em69|Dmaj9,Gm9|Fmaj9|E7alt"
+      }
+    }
+  ]
+}

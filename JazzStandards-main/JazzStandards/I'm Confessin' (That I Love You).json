@@ -1,0 +1,35 @@
+{
+  "Title": "I'm Confessin' (That I Love You)",
+  "Composer": "Daugherty-Neiberg-Reynolds",
+  "Key": "G",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Gmaj7,D7#5|Gmaj7,D7#5|Gmaj7|Bm7,E7|Em7,A7|Am7,D7"
+      },
+      "Endings": [
+        {
+          "Chords": "G6|Am7,D7"
+        },
+        {
+          "Chords": "G6,Cm6|G6"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Dm7|G7|Cmaj7,G7#5|C6,B7|Em7|A7|Am7,D7|Am7,D7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Gmaj7,D7#5|Gmaj7,D7#5|Gmaj7|Bm7,E7|Em7,A7|Am7,D7|G6|Am7,D7"
+      }
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+Chord Generation Report
+=======================
+Tonality: C
+Target chords: 8
+Generated chords: 7
+Max depth: 6
+Branching mode: left
+Style strength: 0.750
+Temperature: 0.900
+Modulation strength: 0.900
+Modulation complexity: 0.500
+Tonal drift: 1.000
+Stats CSV: /Users/Mat/ownCloud/Python/Lambek Calculus/last_line_analysis/JazzStandards_all_cadence.csv
+
+Generated Chord List (in generation order)
+------------------------------------------
+Cmaj7 | Amaj7 | Cm7 | Fmaj7 | Cmaj7 | Gm7 | C7
+
+Rule Trace
+----------
+ 1. R_P: C -> c ; Data(VI->i): VI -> i  (Amaj7 -> Cm7)
+ 2. R_R: c -> Eb ; Data(vi->VI): vi -> VI  (Cm7 -> Cmaj7)
+ 3. R_S: Eb -> Ab ; Data(VI->vi): VI -> vi  (Fmaj7 -> Fm7)
+ 4. Data(III->VI): III -> VI  (Cmaj7 -> Fmaj7)
+ 5. R_R: Ab -> f ; Data(ii->III): ii -> III  (Gm7 -> Amaj7)
+ 6. R_P: f -> F ; Data(V->ii): V -> ii  (C7 -> Gm7)
+
+ASCII Tree
+----------
+└─ I [Cmaj7] @C
+   ├─ VI [Amaj7] @c  [R_P + Data(VI->i)]
+   │  ├─ vi [Cm7] @Eb  [R_R + Data(vi->VI)]
+   │  │  ├─ VI [Fmaj7] @Ab  [R_S + Data(VI->vi)]
+   │  │  │  ├─ III [Cmaj7] @Ab  [Data(III->VI)]
+   │  │  │  │  ├─ ii [Gm7] @f  [R_R + Data(ii->III)]
+   │  │  │  │  │  ├─ V [C7] @F  [R_P + Data(V->ii)]
+   │  │  │  │  │  └─ ii [Gm7] @F
+   │  │  │  │  └─ III [Amaj7] @f
+   │  │  │  └─ VI [Fmaj7] @Ab
+   │  │  └─ vi [Fm7] @Ab
+   │  └─ VI [Cmaj7] @Eb
+   └─ i [Cm7] @c
+
+Forest Snippet
+--------------
+\begin{forest}
+[I [Cmaj7] @C [VI [Amaj7] @c [vi [Cm7] @Eb [VI [Fmaj7] @Ab [III [Cmaj7] @Ab [ii [Gm7] @f [V [C7] @F], edge label={node[midway, left,font=\tiny]{\textit{R_P + Data(V->ii)}}} [ii [Gm7] @F]], edge label={node[midway, left,font=\tiny]{\textit{R_R + Data(ii->III)}}} [III [Amaj7] @f]], edge label={node[midway, left,font=\tiny]{\textit{Data(III->VI)}}} [VI [Fmaj7] @Ab]], edge label={node[midway, left,font=\tiny]{\textit{R_S + Data(VI->vi)}}} [vi [Fm7] @Ab]], edge label={node[midway, left,font=\tiny]{\textit{R_R + Data(vi->VI)}}} [VI [Cmaj7] @Eb]], edge label={node[midway, left,font=\tiny]{\textit{R_P + Data(VI->i)}}} [i [Cm7] @c]]
+\end{forest}

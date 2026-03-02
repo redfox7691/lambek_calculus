@@ -1,0 +1,35 @@
+{
+  "Title": "Grand Central",
+  "Composer": "John Coltrane",
+  "Key": "Bbmin",
+  "Rhythm": "Up Tempo Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Fm7|Bbm7,Eb7|Abm7,Db7|F#m7,B7|Bbm7|B7#11"
+      },
+      "Endings": [
+        {
+          "Chords": "Bbm7|B7#11"
+        },
+        {
+          "Chords": "Bbm7|Bbm7"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "F#m7,B7|F#m7,B7|F#m7,B7|F#m7,B7|F#m7,B7|F#m7,B7|Bbm7,E7|Amaj7,C7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Fm7|Bbm7,Eb7|Abm7,Db7|F#m7,B7|Bbm7|B7#11|Bbm7|B7#11|Bbm7|B7#11|Bbm7|Bbm7"
+      }
+    }
+  ]
+}

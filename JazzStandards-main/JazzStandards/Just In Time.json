@@ -1,0 +1,21 @@
+{
+  "Title": "Just In Time",
+  "Composer": "Jule Styne",
+  "Key": "Bb",
+  "Rhythm": "Up Tempo Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bbmaj7|Bbmaj7|Am7b5|D7b9|G7|G7|C7|C7|F7|F7|Bb7|Bb7|Ebmaj7|Ebmaj7|Abmaj7|Am7b5,D7b9"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Gm7|Gm/F#|Gm/F|C7,C#07|Bb6|Bb6|Ab7|G7|C7|F7|Dm7|Gm7|C7|Cm7,F7|Bb6|Cm7,F7"
+      }
+    }
+  ]
+}

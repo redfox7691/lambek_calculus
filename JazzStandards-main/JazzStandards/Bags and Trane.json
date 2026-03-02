@@ -1,0 +1,14 @@
+{
+  "Title": "Bags and Trane",
+  "Composer": "Milt Jackson",
+  "Key": "Cmin",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "MainSegment": {
+        "Chords": "Cm7|Fm7|Cm7|Cm7|Fm7|Fm7|Cm7|Cm7|Ab7|G7|Cm7|Cm7"
+      }
+    }
+  ]
+}

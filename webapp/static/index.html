@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lambek Calculus Web App</title>
+  <style>
+    :root {
+      --bg: #f6f2e9;
+      --panel: #fffdf8;
+      --text: #1f1b14;
+      --muted: #6b6155;
+      --accent: #0f6a4b;
+      --border: #d8cfbf;
+    }
+    body {
+      margin: 0;
+      color: var(--text);
+      background: radial-gradient(900px 600px at 90% 0%, #ecf5ee 0%, var(--bg) 70%);
+      font-family: Georgia, "Times New Roman", serif;
+    }
+    .wrap { max-width: 1200px; margin: 24px auto; padding: 0 16px 32px; }
+    h1 { margin: 0 0 12px; }
+    .layout { display: grid; grid-template-columns: 1.1fr 1fr; gap: 16px; }
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+    }
+    .title-row { display: flex; justify-content: space-between; align-items: center; }
+    h2 { margin: 0 0 8px; font-size: 1.2rem; }
+    h3 { margin: 14px 0 8px; font-size: 1rem; }
+    .muted { color: var(--muted); font-size: 0.92rem; }
+    .hint { color: var(--muted); font-size: 0.84rem; margin-top: 2px; }
+    label { display: block; margin: 8px 0 3px; color: var(--muted); font-size: 0.92rem; }
+    input, select {
+      width: 100%; box-sizing: border-box; padding: 8px 10px;
+      border: 1px solid var(--border); border-radius: 8px; background: white;
+    }
+    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .btns { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+    button {
+      border: 0; border-radius: 8px; padding: 10px 12px;
+      background: var(--accent); color: #fff; cursor: pointer;
+    }
+    button.secondary { background: #5f6b77; }
+    pre {
+      background: #fbfaf7; border: 1px solid var(--border); border-radius: 8px;
+      padding: 10px; overflow: auto; max-height: 220px; font-size: 0.84rem;
+    }
+    .preview {
+      min-height: 120px; border: 1px dashed var(--border); border-radius: 10px;
+      background: #fff; display: flex; align-items: center; justify-content: center;
+      overflow: auto; padding: 8px;
+    }
+    .preview img { max-width: 100%; height: auto; border-radius: 6px; }
+    .loading {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    .spinner {
+      width: 18px;
+      height: 18px;
+      border: 2px solid #cfd8d2;
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    .chords-box {
+      border: 1px solid var(--border); border-radius: 8px; background: #fff;
+      padding: 8px; min-height: 44px; font-size: 0.93rem; line-height: 1.35;
+    }
+    .jobs { margin-top: 16px; }
+    .job { border-top: 1px solid var(--border); margin-top: 10px; padding-top: 10px; }
+    .job small { color: var(--muted); }
+    a { color: #0f4ea8; text-decoration: none; }
+    @media (max-width: 920px) { .layout { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Lambek Calculus Web App</h1>
+    <div class="muted">Two main areas: <b>Analysis</b> and <b>Generation</b>.</div>
+
+    <div class="layout">
+      <section class="panel">
+        <div class="title-row"><h2>Analysis</h2></div>
+        <div class="muted">Select a standard and section menu, then run readable analysis (PNG included).</div>
+
+        <label>Standards Folder</label>
+        <input id="a_folder" value="JazzStandards-main/JazzStandards" />
+        <label><input id="a_custom_toggle" type="checkbox" onchange="toggleCustomSequenceMode()" /> Personalized chord sequence</label>
+        <label id="a_custom_label" style="display:none;">Write your sequence (example: Dm7 G7 Cmaj7 Am7)</label>
+        <input id="a_custom_sequence" style="display:none;" placeholder="Dm7 G7 Cmaj7 Am7" />
+        <div id="a_custom_hint" class="hint" style="display:none;">When enabled, standards and parts are disabled.</div>
+        <div id="a_custom_examples" class="btns" style="display:none;">
+          <button type="button" class="secondary" onclick="setCustomSequence('Cmaj7 Am7 Dm7 G7')">Example: Basic</button>
+          <button type="button" class="secondary" onclick="setCustomSequence('Dm7 G7 Cmaj7')">Example: ii-V-I</button>
+          <button type="button" class="secondary" onclick="setCustomSequence('Bbmaj7 G7 Cm7 F7 Dm7 G7 Cmaj7')">Example: Turnaround</button>
+          <button type="button" class="secondary" onclick="setCustomSequence('Cm7 F7 Bbmaj7 Ebmaj7 Am7b5 D7 Gm7')">Example: Minor route</button>
+        </div>
+        <div class="btns">
+          <button id="a_load_btn" type="button" class="secondary" onclick="loadStandards()">Load Standards</button>
+        </div>
+
+        <label>Available Standards</label>
+        <select id="a_standard" onchange="loadSections()"></select>
+
+        <label>Available Parts (A_1, B_2, ...)</label>
+        <select id="a_section" onchange="refreshJobs()"></select>
+        <div class="hint">Section selector is used for preview focus after analysis output is generated.</div>
+
+        <div class="row">
+          <div>
+            <label>DPI (formal)</label>
+            <input id="a_dpi" type="number" min="72" value="600" />
+          </div>
+          <div>
+            <label>DPI (readable PNG)</label>
+            <input id="a_readable_dpi" type="number" min="72" value="600" />
+          </div>
+        </div>
+
+        <div class="btns">
+          <button type="button" onclick="submitAnalysisStandard()">Run Selected Analysis</button>
+        </div>
+
+        <h3>Analysis PNG Preview</h3>
+        <div class="preview" id="analysis_preview"><span class="muted">No analysis PNG yet</span></div>
+      </section>
+
+      <section class="panel">
+        <h2>Generation</h2>
+        <div class="row">
+          <div><label>Tonality</label><input id="g_tonality" value="C" /></div>
+          <div><label>Target Chords</label><input id="g_target" type="number" value="16" min="1" /></div>
+        </div>
+
+        <div class="row">
+          <div>
+            <label>Tonal Drift</label>
+            <input id="g_drift" type="number" step="0.1" min="0" max="1" value="0.6" />
+            <div class="hint">Allowed range: 0 to 1. 0 = stay near original key, 1 = maximum drift.</div>
+          </div>
+          <div>
+            <label>Creative Variation</label>
+            <input id="g_temp" type="number" step="0.1" min="0.1" value="1.1" />
+            <div class="hint">Positive value only (> 0). Typical range: 0.5 to 2.0.</div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div>
+            <label>Style Strength</label>
+            <input id="g_style" type="number" step="0.05" min="0" max="1" value="0.45" />
+            <div class="hint">Allowed range: 0 to 1. Higher = closer to dataset cadences.</div>
+          </div>
+          <div>
+            <label>PNG DPI</label>
+            <input id="g_dpi" type="number" min="72" value="600" />
+          </div>
+        </div>
+
+        <label><input id="g_basic_mode" type="checkbox" checked /> Basic Cadence Mode</label>
+        <label><input id="g_enable_png" type="checkbox" checked onchange="refreshJobs()" /> Enable Generation PNG Preview</label>
+
+        <div class="btns">
+          <button type="button" onclick="submitGenerate()">Run Generation</button>
+        </div>
+
+        <h3>Generated Chord List</h3>
+        <div id="generation_chords" class="chords-box"><span class="muted">No generated progression yet</span></div>
+
+        <h3>Generation PNG Preview</h3>
+        <div class="preview" id="generation_preview"><span class="muted">No generation PNG yet</span></div>
+      </section>
+    </div>
+
+    <section class="panel jobs">
+      <div class="title-row">
+        <h2>History</h2>
+        <button type="button" class="secondary" onclick="refreshJobs()">Refresh History</button>
+      </div>
+      <div class="row">
+        <div>
+          <label>Analysis History (PNG)</label>
+          <select id="h_analysis_select" onchange="loadAnalysisHistorySelection()"></select>
+          <div class="preview" id="h_analysis_preview"><span class="muted">No analysis history selected</span></div>
+        </div>
+        <div>
+          <label>Generation History (Chord List)</label>
+          <select id="h_generation_select" onchange="loadGenerationHistorySelection()"></select>
+          <div id="h_generation_chords" class="chords-box"><span class="muted">No generation history selected</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel jobs">
+      <div class="title-row">
+        <h2>Jobs</h2>
+        <button type="button" class="secondary" onclick="refreshJobs()">Refresh</button>
+      </div>
+      <div id="jobs"></div>
+    </section>
+  </div>
+
+  <script>
+    let cachedJobs = [];
+
+    async function post(url, payload) {
+      const res = await fetch(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      if (!res.ok) throw new Error(await res.text());
+      return res.json();
+    }
+
+    async function loadStandards() {
+      const folder = document.getElementById('a_folder').value;
+      const res = await fetch('/api/standards?standards_folder=' + encodeURIComponent(folder));
+      if (!res.ok) throw new Error(await res.text());
+      const data = await res.json();
+      const select = document.getElementById('a_standard');
+      select.innerHTML = '';
+      for (const name of data.standards) {
+        const opt = document.createElement('option');
+        opt.value = name;
+        opt.textContent = name;
+        select.appendChild(opt);
+      }
+      if (!data.standards.length) {
+        const opt = document.createElement('option');
+        opt.value = '';
+        opt.textContent = '(No standards found)';
+        select.appendChild(opt);
+      }
+      await loadSections();
+    }
+
+    async function loadSections() {
+      const folder = document.getElementById('a_folder').value;
+      const standard = document.getElementById('a_standard').value;
+      const select = document.getElementById('a_section');
+      select.innerHTML = '';
+      if (!standard) {
+        const opt = document.createElement('option');
+        opt.value = '';
+        opt.textContent = '(No section)';
+        select.appendChild(opt);
+        return;
+      }
+      const res = await fetch('/api/standards/sections?standards_folder=' + encodeURIComponent(folder) + '&standard_name=' + encodeURIComponent(standard));
+      if (!res.ok) throw new Error(await res.text());
+      const data = await res.json();
+      for (const name of data.sections) {
+        const opt = document.createElement('option');
+        opt.value = name;
+        opt.textContent = name;
+        select.appendChild(opt);
+      }
+      if (!data.sections.length) {
+        const opt = document.createElement('option');
+        opt.value = '';
+        opt.textContent = '(No section labels found)';
+        select.appendChild(opt);
+      }
+    }
+
+    async function submitAnalysisStandard() {
+      const customEnabled = document.getElementById('a_custom_toggle').checked;
+      const payload = {
+        standards_folder: document.getElementById('a_folder').value,
+        standard_name: document.getElementById('a_standard').value,
+        dpi: parseInt(document.getElementById('a_dpi').value, 10),
+        readable_dpi: parseInt(document.getElementById('a_readable_dpi').value, 10),
+        custom_sequence: customEnabled ? document.getElementById('a_custom_sequence').value : ''
+      };
+      await post('/api/jobs/analyse-standards', payload);
+      await refreshJobs();
+    }
+
+    function toggleCustomSequenceMode() {
+      const enabled = document.getElementById('a_custom_toggle').checked;
+      const folder = document.getElementById('a_folder');
+      const std = document.getElementById('a_standard');
+      const sec = document.getElementById('a_section');
+      const loadBtn = document.getElementById('a_load_btn');
+      const customLabel = document.getElementById('a_custom_label');
+      const customInput = document.getElementById('a_custom_sequence');
+      const customHint = document.getElementById('a_custom_hint');
+      const customExamples = document.getElementById('a_custom_examples');
+
+      folder.disabled = enabled;
+      std.disabled = enabled;
+      sec.disabled = enabled;
+      loadBtn.disabled = enabled;
+      customLabel.style.display = enabled ? '' : 'none';
+      customInput.style.display = enabled ? '' : 'none';
+      customHint.style.display = enabled ? '' : 'none';
+      customExamples.style.display = enabled ? 'flex' : 'none';
+    }
+
+    function setCustomSequence(value) {
+      const input = document.getElementById('a_custom_sequence');
+      input.value = value;
+      input.focus();
+    }
+
+    async function submitGenerate() {
+      const enablePng = document.getElementById('g_enable_png').checked;
+      const payload = {
+        tonality: document.getElementById('g_tonality').value,
+        target_chords: parseInt(document.getElementById('g_target').value, 10),
+        tonal_drift: parseFloat(document.getElementById('g_drift').value),
+        temperature: parseFloat(document.getElementById('g_temp').value),
+        style_strength: parseFloat(document.getElementById('g_style').value),
+        png: enablePng,
+        png_dpi: parseInt(document.getElementById('g_dpi').value, 10),
+        basic_cadence_mode: document.getElementById('g_basic_mode').checked
+      };
+      await post('/api/jobs/generate-chords', payload);
+      await refreshJobs();
+    }
+
+    function buildPreview(containerId, pngPath, jobId) {
+      const root = document.getElementById(containerId);
+      if (!pngPath || !jobId) {
+        root.innerHTML = '<span class="muted">No PNG available yet</span>';
+        return;
+      }
+      const src = `/api/jobs/${jobId}/download?path=${encodeURIComponent(pngPath)}`;
+      root.innerHTML = `<a href="${src}" target="_blank"><img src="${src}" alt="preview" /></a>`;
+    }
+
+    async function extractGenerationChordList(job) {
+      const txt = (job.artifacts || []).find(a => a.toLowerCase().endsWith('.txt'));
+      if (!txt) return '';
+      const url = `/api/jobs/${job.id}/download?path=${encodeURIComponent(txt)}`;
+      const res = await fetch(url);
+      if (!res.ok) return '';
+      const body = await res.text();
+      const lines = body.split(/\r?\n/);
+
+      const idx = lines.findIndex(l => l.trim() === 'Final Chord Progression (Readable)');
+      if (idx >= 0 && lines[idx + 2]) return lines[idx + 2].trim();
+
+      const jdx = lines.findIndex(l => l.trim() === 'Generated Chord List (in generation order)');
+      if (jdx >= 0 && lines[jdx + 2]) return lines[jdx + 2].trim();
+      return '';
+    }
+
+    async function refreshJobs() {
+      const res = await fetch('/api/jobs');
+      const jobs = await res.json();
+      cachedJobs = jobs;
+
+      let latestGen = null;
+      let latestAna = null;
+      for (const j of jobs) {
+        const pngs = (j.artifacts || []).filter(a => a.toLowerCase().endsWith('.png'));
+        if (j.kind === 'generate-chords' && !latestGen) {
+          latestGen = { job: j, png: pngs[pngs.length - 1] || null };
+        }
+        if ((j.kind === 'analyse-standard-readable' || j.kind === 'analyse-standards' || j.kind === 'analyse-sequence') && !latestAna) {
+          let chosen = pngs[pngs.length - 1] || null;
+          const sec = document.getElementById('a_section').value;
+          if (sec) {
+            const secHit = pngs.find(p => p.includes('_' + sec + '.png') || p.includes(sec + '.png'));
+            if (secHit) chosen = secHit;
+          }
+          latestAna = { job: j, png: chosen };
+        }
+      }
+
+      const genPreview = document.getElementById('generation_preview');
+      const pngEnabled = document.getElementById('g_enable_png').checked;
+      if (!pngEnabled) {
+        genPreview.innerHTML = '<span class="muted">Generation PNG preview disabled.</span>';
+      } else if (latestGen?.job && (latestGen.job.status === 'queued' || latestGen.job.status === 'running')) {
+        genPreview.innerHTML = '<div class="loading"><span class="spinner"></span><span>Generating PNG preview...</span></div>';
+      } else if (latestGen?.job && latestGen.job.status === 'error') {
+        genPreview.innerHTML = '<span class="muted">Generation failed. Check job logs below.</span>';
+      } else {
+        buildPreview('generation_preview', latestGen?.png, latestGen?.job?.id);
+      }
+      const anaPreview = document.getElementById('analysis_preview');
+      if (latestAna?.job && (latestAna.job.status === 'queued' || latestAna.job.status === 'running')) {
+        anaPreview.innerHTML = '<div class="loading"><span class="spinner"></span><span>Generating analysis preview...</span></div>';
+      } else if (latestAna?.job && latestAna.job.status === 'error') {
+        anaPreview.innerHTML = '<span class="muted">Analysis failed. Check job logs below.</span>';
+      } else {
+        buildPreview('analysis_preview', latestAna?.png, latestAna?.job?.id);
+      }
+
+      const chordsBox = document.getElementById('generation_chords');
+      if (latestGen?.job) {
+        const progression = await extractGenerationChordList(latestGen.job);
+        if (progression) {
+          chordsBox.textContent = progression;
+        } else {
+          chordsBox.innerHTML = '<span class="muted">Chord list not available yet</span>';
+        }
+      } else {
+        chordsBox.innerHTML = '<span class="muted">No generated progression yet</span>';
+      }
+
+      const jobsRoot = document.getElementById('jobs');
+      jobsRoot.innerHTML = jobs.map(j => {
+        const links = (j.artifacts || []).map(a =>
+          `<li><a href="/api/jobs/${j.id}/download?path=${encodeURIComponent(a)}" target="_blank">${a.split('/').pop()}</a></li>`
+        ).join('');
+        return `
+          <div class="job">
+            <div><b>${j.kind}</b> | ${j.status} | ${j.id}</div>
+            <small>${(j.command || []).join(' ')}</small>
+            <details><summary>stdout/stderr</summary><pre>${escapeHtml((j.stdout || '') + '\n' + (j.stderr || ''))}</pre></details>
+            <ul>${links}</ul>
+          </div>
+        `;
+      }).join('');
+
+      renderHistoryMenus(jobs);
+    }
+
+    function _jobLabel(j) {
+      const ts = (j.created_at || '').replace('T', ' ').slice(0, 19);
+      return `${ts} | ${j.kind} | ${j.status} | ${j.id.slice(0, 8)}`;
+    }
+
+    function renderHistoryMenus(jobs) {
+      const genSel = document.getElementById('h_generation_select');
+      const anaSel = document.getElementById('h_analysis_select');
+      const prevGen = genSel.value;
+      const prevAna = anaSel.value;
+
+      const genJobs = jobs.filter(j => j.kind === 'generate-chords');
+      const anaJobs = jobs.filter(j =>
+        j.kind === 'analyse-standard-readable' || j.kind === 'analyse-standards' || j.kind === 'analyse-sequence'
+      );
+
+      genSel.innerHTML = '';
+      for (const j of genJobs) {
+        const opt = document.createElement('option');
+        opt.value = j.id;
+        opt.textContent = _jobLabel(j);
+        genSel.appendChild(opt);
+      }
+      if (!genJobs.length) {
+        const opt = document.createElement('option');
+        opt.value = '';
+        opt.textContent = '(No generation jobs)';
+        genSel.appendChild(opt);
+      }
+
+      anaSel.innerHTML = '';
+      for (const j of anaJobs) {
+        const pngCount = (j.artifacts || []).filter(a => a.toLowerCase().endsWith('.png')).length;
+        const opt = document.createElement('option');
+        opt.value = j.id;
+        opt.textContent = `${_jobLabel(j)} | png:${pngCount}`;
+        anaSel.appendChild(opt);
+      }
+      if (!anaJobs.length) {
+        const opt = document.createElement('option');
+        opt.value = '';
+        opt.textContent = '(No analysis jobs)';
+        anaSel.appendChild(opt);
+      }
+
+      if (prevGen && genJobs.some(j => j.id === prevGen)) genSel.value = prevGen;
+      if (prevAna && anaJobs.some(j => j.id === prevAna)) anaSel.value = prevAna;
+
+      loadGenerationHistorySelection();
+      loadAnalysisHistorySelection();
+    }
+
+    async function loadGenerationHistorySelection() {
+      const sel = document.getElementById('h_generation_select');
+      const box = document.getElementById('h_generation_chords');
+      const id = sel.value;
+      const job = cachedJobs.find(j => j.id === id);
+      if (!job) {
+        box.innerHTML = '<span class="muted">No generation history selected</span>';
+        return;
+      }
+      const progression = await extractGenerationChordList(job);
+      box.textContent = progression || '(No chord list found for this job)';
+    }
+
+    function loadAnalysisHistorySelection() {
+      const sel = document.getElementById('h_analysis_select');
+      const id = sel.value;
+      const job = cachedJobs.find(j => j.id === id);
+      if (!job) {
+        document.getElementById('h_analysis_preview').innerHTML = '<span class="muted">No analysis history selected</span>';
+        return;
+      }
+      const pngs = (job.artifacts || []).filter(a => a.toLowerCase().endsWith('.png'));
+      const chosen = pngs[pngs.length - 1] || null;
+      buildPreview('h_analysis_preview', chosen, job.id);
+    }
+
+    function escapeHtml(s) {
+      return s.replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
+    }
+
+    loadStandards().catch(console.error);
+    refreshJobs().catch(console.error);
+    setInterval(() => refreshJobs().catch(console.error), 6000);
+  </script>
+</body>
+</html>

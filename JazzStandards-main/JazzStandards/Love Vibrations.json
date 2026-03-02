@@ -1,0 +1,27 @@
+{
+  "Title": "Love Vibrations",
+  "Composer": "Horace Silver",
+  "Key": "Eb",
+  "Rhythm": "Bossa Nova",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Dm7b5|Db7b5|Cm7|F7|Fm7|Bb7|Ebmaj7,A7|Ab7,D7b9"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Gm|Gmaug|Gm6|Gm7,C7|Fm7|Gm7,C7|Fm7|Bb7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Dm7b5|Db7b5|Cm7|F7,F#07|Gm7,C7b9|Fm7,Bb7|Db6,D6|Eb6"
+      }
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+Chord Generation Report
+=======================
+Tonality: C
+Target chords: 8
+Generated chords: 7
+Max depth: 6
+Branching mode: left
+Style strength: 0.750
+Temperature: 0.900
+Modulation strength: 0.900
+Modulation complexity: 0.500
+Tonal drift: 1.000
+Stats CSV: /Users/Mat/ownCloud/Python/Lambek Calculus/last_line_analysis/JazzStandards_all_cadence.csv
+
+Generated Chord List (in generation order)
+------------------------------------------
+Cmaj7 | G7 | Fmaj7 | Emaj7 | Cmaj7 | Fm7 | Gmaj7
+
+Rule Trace
+----------
+ 1. R_P: C -> c ; Data(v->i): v -> i  (G7 -> Cm7)
+ 2. R_S: c -> f ; Data(I->v): I -> v  (Fmaj7 -> C7)
+ 3. R_P: f -> F ; Data(VII->I): VII -> I  (Emaj7 -> Fmaj7)
+ 4. R_D: F -> C ; Data(I->VII): I -> VII  (Cmaj7 -> Bmaj7)
+ 5. R_D: C -> G ; Data(bVII->I): bVII -> I  (Fm7 -> Gmaj7)
+ 6. R_D: G -> D ; Data(IV->bVII): IV -> bVII  (Gmaj7 -> Cm7)
+
+ASCII Tree
+----------
+└─ I [Cmaj7] @C
+   ├─ v [G7] @c  [R_P + Data(v->i)]
+   │  ├─ I [Fmaj7] @f  [R_S + Data(I->v)]
+   │  │  ├─ VII [Emaj7] @F  [R_P + Data(VII->I)]
+   │  │  │  ├─ I [Cmaj7] @C  [R_D + Data(I->VII)]
+   │  │  │  │  ├─ bVII [Fm7] @G  [R_D + Data(bVII->I)]
+   │  │  │  │  │  ├─ IV [Gmaj7] @D  [R_D + Data(IV->bVII)]
+   │  │  │  │  │  └─ bVII [Cm7] @D
+   │  │  │  │  └─ I [Gmaj7] @G
+   │  │  │  └─ VII [Bmaj7] @C
+   │  │  └─ I [Fmaj7] @F
+   │  └─ v [C7] @f
+   └─ i [Cm7] @c
+
+Forest Snippet
+--------------
+\begin{forest}
+[I [Cmaj7] @C [v [G7] @c [I [Fmaj7] @f [VII [Emaj7] @F [I [Cmaj7] @C [bVII [Fm7] @G [IV [Gmaj7] @D], edge label={node[midway, left,font=\tiny]{\textit{R_D + Data(IV->bVII)}}} [bVII [Cm7] @D]], edge label={node[midway, left,font=\tiny]{\textit{R_D + Data(bVII->I)}}} [I [Gmaj7] @G]], edge label={node[midway, left,font=\tiny]{\textit{R_D + Data(I->VII)}}} [VII [Bmaj7] @C]], edge label={node[midway, left,font=\tiny]{\textit{R_P + Data(VII->I)}}} [I [Fmaj7] @F]], edge label={node[midway, left,font=\tiny]{\textit{R_S + Data(I->v)}}} [v [C7] @f]], edge label={node[midway, left,font=\tiny]{\textit{R_P + Data(v->i)}}} [i [Cm7] @c]]
+\end{forest}

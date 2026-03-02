@@ -1,0 +1,22 @@
+{
+  "Title": "Sweet Georgia Brown",
+  "Composer": "Pinkard-Casey-Bernie",
+  "Key": "Ab",
+  "Rhythm": "Up Tempo Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "MainSegment": {
+        "Chords": "F7|F7|F7|F7|Bb7|Bb7|Bb7|Bb7"
+      },
+      "Endings": [
+        {
+          "Chords": "Eb7|Eb7|Eb7|Eb7|Abmaj7|Bbm7,Eb7|Abmaj7|Gm7b5,C7b9"
+        },
+        {
+          "Chords": "Fm|Gm7b5,C7b9|Fm|Bbm7,Eb7|Ab7,G7|Gb7,F7|Bb7,Eb7|Ab6"
+        }
+      ]
+    }
+  ]
+}

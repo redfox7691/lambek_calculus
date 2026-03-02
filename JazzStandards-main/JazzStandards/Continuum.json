@@ -1,0 +1,23 @@
+{
+  "Title": "Continuum",
+  "Composer": "Jaco Pastorius",
+  "Key": "E",
+  "Rhythm": "Funk",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Emaj7|Emaj7|Emaj7|Emaj7|Emaj7"
+      },
+      "Endings": [
+        {
+          "Chords": "Amaj7|Amaj7|Emaj7"
+        },
+        {
+          "Chords": "Bbm7|Am7|E07,Emaj7|Emaj7|Eb7sus|D7sus|Emaj7|Bm7/E,Am7/E|Emaj7"
+        }
+      ]
+    }
+  ]
+}

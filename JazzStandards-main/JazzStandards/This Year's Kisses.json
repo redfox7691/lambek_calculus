@@ -1,0 +1,35 @@
+{
+  "Title": "This Year's Kisses",
+  "Composer": "Irving Berlin",
+  "Key": "G",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Gmaj7|Gmaj7,G#07|Am7,D7|Am7,D7"
+      },
+      "Endings": [
+        {
+          "Chords": "Gmaj7,G#07|Am7,D7"
+        },
+        {
+          "Chords": "Gmaj7|Dm7,G7"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Cmaj7|Cmaj7|Cm7|Cm7|Gmaj7|A7|Am7|D7"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "Gmaj7|Gmaj7,G#07|Am7,D7|Am7,D7|Bm7,E7|Am7,D7|G6,Bb07|Am7,D7"
+      }
+    }
+  ]
+}

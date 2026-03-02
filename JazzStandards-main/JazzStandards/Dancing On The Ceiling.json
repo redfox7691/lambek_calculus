@@ -1,0 +1,35 @@
+{
+  "Title": "Dancing On The Ceiling",
+  "Composer": "Richard Rodgers",
+  "Key": "F",
+  "Rhythm": "Ballad",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Fmaj7|Cm7,F7|Bb6,B07|Fmaj7/C,D7|Gm7,C7|Am7,D7"
+      },
+      "Endings": [
+        {
+          "Chords": "Gm7,C7|F6,C7"
+        },
+        {
+          "Chords": "Gm7,C7|F6"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Bb6|Eb7|Fmaj7|Cm7,F7|Bb6|Eb7|Am7,D7|Gm7,F7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Fmaj7|Cm7,F7|Bb6,B07|Fmaj7/C,D7|Gm7|C7|F6|Gm7,C7"
+      }
+    }
+  ]
+}

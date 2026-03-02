@@ -1,0 +1,35 @@
+{
+  "Title": "Broadway",
+  "Composer": "William-Henri-Woode",
+  "Key": "Bb",
+  "Rhythm": "Medium Up Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bbmaj7|Bbmaj7|Eb7|Eb7|Cm7|F7"
+      },
+      "Endings": [
+        {
+          "Chords": "Bbmaj7,G7|Cm7,F7"
+        },
+        {
+          "Chords": "Bb6|Bb6"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Fm7|Bb7|Ebmaj7|Ebmaj7|Ebm7|Ab7|Dbmaj7|Cm7,F7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bbmaj7|Bbmaj7|Eb7|Eb7|Cm7|F7|Bb6|Bb6"
+      }
+    }
+  ]
+}

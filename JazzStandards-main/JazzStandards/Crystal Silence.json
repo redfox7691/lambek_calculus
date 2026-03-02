@@ -1,0 +1,35 @@
+{
+  "Title": "Crystal Silence",
+  "Composer": "Chick Corea",
+  "Key": "Amin",
+  "Rhythm": "Ballad",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Am7|Em7|Fmaj7#11|Bm7|Bbmaj7#11|Am9"
+      },
+      "Endings": [
+        {
+          "Chords": "Bm,C,D7,E7|Am7|Bbmaj7#11"
+        },
+        {
+          "Chords": "Dm9|E7#9|Dm9|E7#9|Fmaj7#11|G7sus|Am9|Am9"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Dmaj7|Am7|Bbmaj7|Fm7|Cmaj7|Gm7|B7b13|E7sus,E7#9"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Am7|Em7|Fmaj7#11|Bm7|Bbmaj7#11|Am9|Bm,C,D7,E7|Am7|Bbmaj7#11"
+      }
+    }
+  ]
+}

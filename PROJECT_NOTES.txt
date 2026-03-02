@@ -1,0 +1,220 @@
+Lambek Calculus Project Notes
+Path: /Users/Mat/ownCloud/Python/Lambek Calculus
+
+==================================================
+1) CURRENT STATUS
+==================================================
+
+Core scripts
+------------
+- chord_grade.py
+- lambek_tree.py
+- tonality_route.py
+- simplify_tree_notation.py
+- cadence_stats.py
+- generate_chords.py
+
+The project currently supports:
+- chord-to-grade conversion with major/minor maps and quality-aware case,
+- automatic Lambek tree generation with modal modulation steps,
+- direct-sequence analysis and standards-dataset analysis,
+- batch analysis over all standards in a folder,
+- TEX+PNG export pipeline,
+- readability conversion from formal TEX to simplified tagged-key TEX+PNG,
+- fast last-line analysis mode (`analyse`) with TEX/TXT output,
+- cadence frequency extraction with percentages and CSV export,
+- reverse chord-tree generation with weighted rules and controllable tonal drift.
+
+==================================================
+2) COMMAND REFERENCE
+==================================================
+
+Single progression
+------------------
+python3 lambek_tree.py --sequence <chords...>
+
+Example:
+python3 lambek_tree.py --sequence D7 G7 Cmaj7
+
+Single standard
+---------------
+python3 lambek_tree.py --standard "Alone Together"
+
+Single standard + readable conversion
+------------------------------------
+python3 lambek_tree.py --standard-readable "Alone Together"
+
+Custom standards folder
+-----------------------
+python3 lambek_tree.py --standard "Alone Together" --standards-dir "JazzStandards-main/JazzStandards"
+
+Batch standards (all JSON files in folder)
+------------------------------------------
+python3 lambek_tree.py --all-standards --standards-dir "JazzStandards-main/JazzStandards"
+
+Last-line analysis (single standard)
+------------------------------------
+python3 lambek_tree.py analyse "Alone Together"
+
+Last-line analysis (single standard, TXT)
+-----------------------------------------
+python3 lambek_tree.py analyse "Alone Together" --format txt
+
+Last-line analysis (all standards in folder)
+--------------------------------------------
+python3 lambek_tree.py analyse "JazzStandards-main/JazzStandards" --format txt
+
+Last-line analysis + cadence CSV (single command)
+-------------------------------------------------
+python3 lambek_tree.py analyse "JazzStandards-main/JazzStandards" --format txt --cadence-csv "last_line_analysis/JazzStandards_all_cadence.csv"
+
+Cadence statistics from TXT
+---------------------------
+python3 cadence_stats.py --input "last_line_analysis/JazzStandards_all.txt"
+python3 cadence_stats.py --input "last_line_analysis/JazzStandards_all.txt" --csv-out "last_line_analysis/cadence_stats.csv"
+
+Chord generation (reverse process)
+----------------------------------
+python3 generate_chords.py --tonality C --target-chords 8
+python3 generate_chords.py --tonality C --target-chords 8 --png --png-dpi 900
+
+Chord generation with local-key modulation controls
+---------------------------------------------------
+python3 generate_chords.py --tonality C --target-chords 8 --modulation-strength 0.9 --modulation-complexity 0.7 --tonal-drift 0.6
+
+Readable converter (formal TEX -> readable TEX + PNG)
+------------------------------------------------------
+Single file:
+python3 simplify_tree_notation.py --input <path_to_tex>
+
+Whole standard output folder (latest run by name):
+python3 simplify_tree_notation.py --standard "After You've Gone"
+
+Other useful options
+--------------------
+- --dpi <n>
+- --basename <name>
+- --out-dir <folder>   (sequence mode outputs)
+- analyse mode: --format tex|txt (default: tex)
+- analyse mode: --cadence-csv <path> (optional CSV in same run)
+- cadence_stats.py: --top <n>, --csv-out <path>, --include-self
+- generate_chords.py:
+  --max-depth <n>
+  --style-strength <0..1>
+  --temperature <value>
+  --modulation-strength <0..1>
+  --modulation-complexity <0..1>
+  --tonal-drift <0..1>   (0 = near original key, 1 = max drift)
+  --branching-mode left|mixed
+  --seed <int>
+  --png --png-dpi <n>
+
+Outputs
+-------
+- Sequence mode: tree_outputs (or --out-dir)
+- Standards mode: standard_outputs/<StandardName>[,_1,_2,...]
+- Standard-readable mode: standard_outputs_readable/<StandardName>[,_1,_2,...] (readable TEX + PNG)
+- Readable converter mode: readable_outputs/<source_or_standard>[,_1,_2,...] (TEX + PNG)
+- Last-line analysis mode: last_line_analysis/<name>[,_1,_2,...].tex or .txt
+- Cadence statistics CSV: last_line_analysis/*.csv
+- Reverse-generation outputs: generated_chords/*.txt and generated_chords/*.png
+
+==================================================
+3) IMPLEMENTED ANALYSIS RULES (SUMMARY)
+==================================================
+
+Tonality and hierarchy
+----------------------
+- Strong priority to opening ii-V-I / ii-V evidence.
+- If needed, early diatonic-coherence scoring selects clearer tonic context.
+- Unresolved final dominant can imply a missing tonic.
+- Altered dominants (b9/#9/b13/#13/alt) can bias minor resolution.
+- Preference rule: ii > #iv when both are possible.
+
+Modulation routing and simplicity
+---------------------------------
+- Uses D/S/R/P accessibility graph.
+- Path selection is simplicity-aware:
+  1) shortest number of steps,
+  2) among shortest, fewer R operations,
+  3) then fewer non-D/S operations,
+  4) preference D/S > P > R.
+- Left labels show relation chain + resolved key.
+
+Cadence and functional handling
+-------------------------------
+- Dominant-like function for 7/9/11/13 families (with explicit quality overrides).
+- Tritone-sub handling:
+  - bII7 -> I recognized as dominant-functional resolution,
+  - chord still graded literally in-key (e.g., Db7 in C = bII).
+
+Chord normalization and parsing
+-------------------------------
+- MA7 == maj7.
+- Slash bass ignored for function (CMA7/G treated as CMA7).
+- Parenthetical alternates expanded:
+  Em7b5(Gm7) -> Em7b5 + Gm7
+  Ebmaj7#11(Am7b5) -> Ebmaj7#11 + Am7b5
+- Robust cleanup for one-sided parenthesis artifacts from datasets.
+- Enharmonic normalization hardened (Bb/Eb/Gb etc.) to avoid crashes.
+
+Quality handling
+----------------
+- Minor and diminished are output in lowercase Roman numerals.
+- Diminished (dim/o/°) treated as dominant-like function.
+- Half-diminished recognized: m7b5, m7(b5), ø7, and 07 shorthand.
+
+Contraction
+-----------
+- Repeated single chords collapse.
+- Repeated adjacent blocks collapse.
+- Contraction actions are printed explicitly in output.
+
+Last-line analysis mode behavior
+--------------------------------
+- Extracts final sequents from the readable-converted analysis (not raw formal line).
+- TEX output is generated in landscape layout to improve long-line visibility.
+- TXT output is translated to plain readable notation:
+  - keyed tags as [Key]{...}
+  - explicit depth marker as |- (depth=n)
+- Internal conversion for analyse mode is optimized in-memory with caching.
+- Cadence CSV can be generated directly in analyse mode with --cadence-csv.
+- Self patterns can be excluded/included in cadence stats via --include-self.
+
+Readable PNG defaults
+---------------------
+- Readable conversion uses high-density PNG rendering by default (900 DPI baseline).
+
+Reverse-generation behavior
+---------------------------
+- Rules are sampled with a blend of symbolic defaults and dataset priors.
+- Cadence rules are applied in the current local key (not only initial key).
+- Optional modal moves (R_D/R_S/R_R/R_P) can shift key before rule application.
+- User controls how far generation drifts from the original tonality via --tonal-drift.
+- Without --seed, runs are random; with fixed --seed, runs are reproducible.
+
+==================================================
+4) DOCUMENTATION FILES
+==================================================
+
+- instructions.txt
+  End-user setup + command guide (includes converter usage).
+
+- program_paper/Lambek_Calculus_Program_Notes.tex
+  Paper-style technical write-up (includes readable-converter section).
+
+- program_paper/Lambek_Calculus_Program_Notes.pdf
+  Compiled version of the technical write-up.
+
+==================================================
+5) MAINTENANCE NOTES
+==================================================
+
+When adding new features:
+1) Update this file (PROJECT_NOTES.txt).
+2) Update instructions.txt command/rule sections.
+3) Update and recompile program_paper/Lambek_Calculus_Program_Notes.tex.
+4) Run basic validation:
+   - python3 -m py_compile chord_grade.py lambek_tree.py tonality_route.py simplify_tree_notation.py
+   - one --sequence test
+   - one --standard test

@@ -1,0 +1,15 @@
+{
+  "Title": "Tokyo Blues",
+  "Composer": "Horace Silver",
+  "Key": "Cmin",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Db7|Db7|Cm7|Cm7|Db7|Db7|Cm7|Cm7|Db7|Db7|Cm7|Cm7|Eb7|D7b13,G7b9|Cm7|Cm7"
+      }
+    }
+  ]
+}

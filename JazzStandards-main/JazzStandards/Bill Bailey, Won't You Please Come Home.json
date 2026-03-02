@@ -1,0 +1,33 @@
+{
+  "Title": "Bill Bailey, Won't You Please Come Home",
+  "Composer": "Hughie Cannon",
+  "Key": "G",
+  "Rhythm": "Medium Up Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "G|G|G|G|G|G,Ab07|Am7|D7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "D7|D7|D7|D7|D7|D7|G|Am7,D7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "G|G|G|G|Dm7|G7|C|C"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "C|C#07|G/D|E7|A7|D7|G|Am7,D7"
+      }
+    }
+  ]
+}

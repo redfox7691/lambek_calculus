@@ -1,0 +1,22 @@
+{
+  "Title": "Laurie",
+  "Composer": "Bill Evans",
+  "Key": "Bb",
+  "Rhythm": "Ballad",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "MainSegment": {
+        "Chords": "Bbmaj7|E7b9sus,E7#5#9|Am7|Am7,D7#5|Gm7b9|C7#5#9|Cm7|Cm7,F7#5|Fm9|Bb7#5#9|Ebm7|Ab7#9"
+      },
+      "Endings": [
+        {
+          "Chords": "Dm7b5|Db7sus,Db7|C7sus,C7|B7sus,B9#11"
+        },
+        {
+          "Chords": "Gm9|Am9|Bm9|C#m9|Cm7b5|F7#5#9|Bb13sus|Ab13sus|Gb13|F13sus,F7#9"
+        }
+      ]
+    }
+  ]
+}

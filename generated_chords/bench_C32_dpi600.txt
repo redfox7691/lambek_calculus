@@ -1,0 +1,130 @@
+Chord Generation Report
+=======================
+Tonality: C
+Target chords: 32
+Generated chords: 32
+Max depth: 64
+Branching mode: mixed
+Style strength: 0.450
+Temperature: 1.100
+Modulation strength: 0.900
+Modulation complexity: 0.800
+Tonal drift: 0.600
+Initial cadence bias: 0.900
+Basic cadence strength: 0.000
+Stats CSV: /Users/Mat/ownCloud/Python/Lambek Calculus/last_line_analysis/JazzStandards_all_cadence.csv
+Seed: 42
+
+Generated Chord List (in generation order)
+------------------------------------------
+Cmaj7 | G7 | Cmaj7 | Gmaj7 | G7 | Fmaj7 | Gbm7 | Amaj7 | A7 | Fmaj7 | Emaj7 | Dmaj7 | Emaj7 | Bbmaj7 | Emaj7 | Gb7 | C7 | Ebmaj7 | Bbmaj7 | Fm7 | F7 | Ebmaj7 | Dm7 | Gmaj7 | G7 | Abm7 | Gbmaj7 | Ab7 | Ebm7 | Em7 | Dm7 | Emaj7
+
+Rule Trace
+----------
+ 1. P.C.: V -> I  (G7 -> Cmaj7)
+ 2. R_D: C -> G ; Data(IV->V): IV -> V  (Cmaj7 -> D7)
+ 3. Data(I->IV): I -> IV  (Gmaj7 -> Cmaj7)
+ 4. R_S: G -> C ; P.C.: V -> I  (G7 -> Cmaj7)
+ 5. Data(IV->V): IV -> V  (Fmaj7 -> G7)
+ 6. R_R: C -> a ; Data(vi->IV): vi -> IV  (Gbm7 -> Dmaj7)
+ 7. Data(I->vi): I -> vi  (Amaj7 -> Gbm7)
+ 8. R_S: a -> d ; Data(v->i): v -> i  (A7 -> Dm7)
+ 9. R_R: d -> F ; Data(I->v): I -> v  (Fmaj7 -> C7)
+10. Data(VII->I): VII -> I  (Emaj7 -> Fmaj7)
+11. R_P: F -> f ; Data(VI->VII): VI -> VII  (Dmaj7 -> Emaj7)
+12. Data(VII->VI): VII -> VI  (Emaj7 -> Dmaj7)
+13. Data(IV->VII): IV -> VII  (Bbmaj7 -> Emaj7)
+14. Data(VII->IV): VII -> IV  (Emaj7 -> Bbmaj7)
+15. Data(bII->VII): bII -> VII  (Gb7 -> Emaj7)
+16. R_P: f -> F ; Data(V->bII): V -> bII  (C7 -> Gb7)
+17. R_S: F -> Bb ; Data(IV->V): IV -> V  (Ebmaj7 -> F7)
+18. Data(I->IV): I -> IV  (Bbmaj7 -> Ebmaj7)
+19. R_S: Bb -> Eb ; Data(ii->I): ii -> I  (Fm7 -> Ebmaj7)
+20. Data(II->ii): II -> ii  (F7 -> Fm7)
+21. R_D: Eb -> Bb ; Data(IV->II): IV -> II  (Ebmaj7 -> C7)
+22. R_P: Bb -> bb ; Data(iii->IV): iii -> IV  (Dm7 -> Ebmaj7)
+23. R_S: bb -> eb ; Data(III->iii): III -> iii  (Gmaj7 -> Gm7)
+24. R_R: eb -> Gb ; Data(bII->III): bII -> III  (G7 -> Bbmaj7)
+25. Data(ii->bII): ii -> bII  (Abm7 -> G7)
+26. R_P: Gb -> gb ; Data(I->ii): I -> ii  (Gbmaj7 -> Abm7)
+27. R_D: gb -> db ; P.C.m.: V -> i  (Ab7 -> Dbm7)
+28. ii-V: ii -> V  (Ebm7 -> Ab7)
+29. R_R: db -> E ; Data(i->ii): i -> ii  (Em7 -> Gbm7)
+30. Data(bVII->I): bVII -> I  (Dm7 -> Emaj7)
+31. Data(I->bVII): I -> bVII  (Emaj7 -> Dm7)
+
+ASCII Tree
+----------
+└─ I [Cmaj7] @C
+   ├─ V [G7] @C  [P.C.]
+   │  ├─ IV [Cmaj7] @G  [R_D + Data(IV->V)]
+   │  │  ├─ I [Gmaj7] @G  [Data(I->IV)]
+   │  │  │  ├─ V [G7] @C  [R_S + P.C.]
+   │  │  │  │  ├─ IV [Fmaj7] @C  [Data(IV->V)]
+   │  │  │  │  │  ├─ vi [Gbm7] @a  [R_R + Data(vi->IV)]
+   │  │  │  │  │  │  ├─ I [Amaj7] @a  [Data(I->vi)]
+   │  │  │  │  │  │  │  ├─ v [A7] @d  [R_S + Data(v->i)]
+   │  │  │  │  │  │  │  │  ├─ I [Fmaj7] @F  [R_R + Data(I->v)]
+   │  │  │  │  │  │  │  │  │  ├─ VII [Emaj7] @F  [Data(VII->I)]
+   │  │  │  │  │  │  │  │  │  │  ├─ VI [Dmaj7] @f  [R_P + Data(VI->VII)]
+   │  │  │  │  │  │  │  │  │  │  │  ├─ VII [Emaj7] @f  [Data(VII->VI)]
+   │  │  │  │  │  │  │  │  │  │  │  │  ├─ IV [Bbmaj7] @f  [Data(IV->VII)]
+   │  │  │  │  │  │  │  │  │  │  │  │  │  ├─ VII [Emaj7] @f  [Data(VII->IV)]
+   │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├─ bII [Gb7] @f  [Data(bII->VII)]
+   │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├─ V [C7] @F  [R_P + Data(V->bII)]
+   │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├─ IV [Ebmaj7] @Bb  [R_S + Data(IV->V)]
+   │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├─ I [Bbmaj7] @Bb  [Data(I->IV)]
+   │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├─ ii [Fm7] @Eb  [R_S + Data(ii->I)]
+   │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├─ II [F7] @Eb  [Data(II->ii)]
+   │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├─ IV [Ebmaj7] @Bb  [R_D + Data(IV->II)]
+   │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├─ iii [Dm7] @bb  [R_P + Data(iii->IV)]
+   │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├─ III [Gmaj7] @eb  [R_S + Data(III->iii)]
+   │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├─ bII [G7] @Gb  [R_R + Data(bII->III)]
+   │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├─ ii [Abm7] @Gb  [Data(ii->bII)]
+   │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├─ I [Gbmaj7] @gb  [R_P + Data(I->ii)]
+   │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├─ V [Ab7] @db  [R_D + P.C.m.]
+   │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├─ ii [Ebm7] @db  [ii-V]
+   │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├─ i [Em7] @E  [R_R + Data(i->ii)]
+   │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├─ bVII [Dm7] @E  [Data(bVII->I)]
+   │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  ├─ I [Emaj7] @E  [Data(I->bVII)]
+   │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  └─ bVII [Dm7] @E
+   │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  └─ I [Emaj7] @E
+   │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  └─ ii [Gbm7] @E
+   │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  └─ V [Ab7] @db
+   │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  └─ i [Dbm7] @db
+   │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  └─ ii [Abm7] @gb
+   │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  └─ bII [G7] @Gb
+   │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  └─ III [Bbmaj7] @Gb
+   │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  └─ iii [Gm7] @eb
+   │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  └─ IV [Ebmaj7] @bb
+   │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  └─ II [C7] @Bb
+   │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  └─ ii [Fm7] @Eb
+   │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  └─ I [Ebmaj7] @Eb
+   │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  └─ IV [Ebmaj7] @Bb
+   │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  └─ V [F7] @Bb
+   │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  └─ bII [Gb7] @F
+   │  │  │  │  │  │  │  │  │  │  │  │  │  │  └─ VII [Emaj7] @f
+   │  │  │  │  │  │  │  │  │  │  │  │  │  └─ IV [Bbmaj7] @f
+   │  │  │  │  │  │  │  │  │  │  │  │  └─ VII [Emaj7] @f
+   │  │  │  │  │  │  │  │  │  │  │  └─ VI [Dmaj7] @f
+   │  │  │  │  │  │  │  │  │  │  └─ VII [Emaj7] @f
+   │  │  │  │  │  │  │  │  │  └─ I [Fmaj7] @F
+   │  │  │  │  │  │  │  │  └─ v [C7] @F
+   │  │  │  │  │  │  │  └─ i [Dm7] @d
+   │  │  │  │  │  │  └─ vi [Gbm7] @a
+   │  │  │  │  │  └─ IV [Dmaj7] @a
+   │  │  │  │  └─ V [G7] @C
+   │  │  │  └─ I [Cmaj7] @C
+   │  │  └─ IV [Cmaj7] @G
+   │  └─ V [D7] @G
+   └─ I [Cmaj7] @C
+
+Forest Snippet
+--------------
+\begin{forest}
+[I [Cmaj7] @C [V [G7] @C [IV [Cmaj7] @G [I [Gmaj7] @G [V [G7] @C [IV [Fmaj7] @C [vi [Gbm7] @a [I [Amaj7] @a [v [A7] @d [I [Fmaj7] @F [VII [Emaj7] @F [VI [Dmaj7] @f [VII [Emaj7] @f [IV [Bbmaj7] @f [VII [Emaj7] @f [bII [Gb7] @f [V [C7] @F [IV [Ebmaj7] @Bb [I [Bbmaj7] @Bb [ii [Fm7] @Eb [II [F7] @Eb [IV [Ebmaj7] @Bb [iii [Dm7] @bb [III [Gmaj7] @eb [bII [G7] @Gb [ii [Abm7] @Gb [I [Gbmaj7] @gb [V [Ab7] @db [ii [Ebm7] @db [i [Em7] @E [bVII [Dm7] @E [I [Emaj7] @E], edge label={node[midway, left,font=\tiny]{\textit{Data(I->bVII)}}} [bVII [Dm7] @E]], edge label={node[midway, left,font=\tiny]{\textit{Data(bVII->I)}}} [I [Emaj7] @E]], edge label={node[midway, left,font=\tiny]{\textit{R_R + Data(i->ii)}}} [ii [Gbm7] @E]], edge label={node[midway, left,font=\tiny]{\textit{ii-V}}} [V [Ab7] @db]], edge label={node[midway, left,font=\tiny]{\textit{R_D + P.C.m.}}} [i [Dbm7] @db]], edge label={node[midway, left,font=\tiny]{\textit{R_P + Data(I->ii)}}} [ii [Abm7] @gb]], edge label={node[midway, left,font=\tiny]{\textit{Data(ii->bII)}}} [bII [G7] @Gb]], edge label={node[midway, left,font=\tiny]{\textit{R_R + Data(bII->III)}}} [III [Bbmaj7] @Gb]], edge label={node[midway, left,font=\tiny]{\textit{R_S + Data(III->iii)}}} [iii [Gm7] @eb]], edge label={node[midway, left,font=\tiny]{\textit{R_P + Data(iii->IV)}}} [IV [Ebmaj7] @bb]], edge label={node[midway, left,font=\tiny]{\textit{R_D + Data(IV->II)}}} [II [C7] @Bb]], edge label={node[midway, left,font=\tiny]{\textit{Data(II->ii)}}} [ii [Fm7] @Eb]], edge label={node[midway, left,font=\tiny]{\textit{R_S + Data(ii->I)}}} [I [Ebmaj7] @Eb]], edge label={node[midway, left,font=\tiny]{\textit{Data(I->IV)}}} [IV [Ebmaj7] @Bb]], edge label={node[midway, left,font=\tiny]{\textit{R_S + Data(IV->V)}}} [V [F7] @Bb]], edge label={node[midway, left,font=\tiny]{\textit{R_P + Data(V->bII)}}} [bII [Gb7] @F]], edge label={node[midway, left,font=\tiny]{\textit{Data(bII->VII)}}} [VII [Emaj7] @f]], edge label={node[midway, left,font=\tiny]{\textit{Data(VII->IV)}}} [IV [Bbmaj7] @f]], edge label={node[midway, left,font=\tiny]{\textit{Data(IV->VII)}}} [VII [Emaj7] @f]], edge label={node[midway, left,font=\tiny]{\textit{Data(VII->VI)}}} [VI [Dmaj7] @f]], edge label={node[midway, left,font=\tiny]{\textit{R_P + Data(VI->VII)}}} [VII [Emaj7] @f]], edge label={node[midway, left,font=\tiny]{\textit{Data(VII->I)}}} [I [Fmaj7] @F]], edge label={node[midway, left,font=\tiny]{\textit{R_R + Data(I->v)}}} [v [C7] @F]], edge label={node[midway, left,font=\tiny]{\textit{R_S + Data(v->i)}}} [i [Dm7] @d]], edge label={node[midway, left,font=\tiny]{\textit{Data(I->vi)}}} [vi [Gbm7] @a]], edge label={node[midway, left,font=\tiny]{\textit{R_R + Data(vi->IV)}}} [IV [Dmaj7] @a]], edge label={node[midway, left,font=\tiny]{\textit{Data(IV->V)}}} [V [G7] @C]], edge label={node[midway, left,font=\tiny]{\textit{R_S + P.C.}}} [I [Cmaj7] @C]], edge label={node[midway, left,font=\tiny]{\textit{Data(I->IV)}}} [IV [Cmaj7] @G]], edge label={node[midway, left,font=\tiny]{\textit{R_D + Data(IV->V)}}} [V [D7] @G]], edge label={node[midway, left,font=\tiny]{\textit{P.C.}}} [I [Cmaj7] @C]]
+\end{forest}
+
+Final Chord Progression (Readable)
+----------------------------------
+Emaj7 -> Dm7 -> Emaj7 -> Gbm7 -> Ab7 -> Dbm7 -> Abm7 -> G7 -> Bbmaj7 -> Gm7 -> Ebmaj7 -> C7 -> Fm7 -> Ebmaj7 -> Ebmaj7 -> F7 -> Gb7 -> Emaj7 -> Bbmaj7 -> Emaj7 -> Dmaj7 -> Emaj7 -> Fmaj7 -> C7 -> Dm7 -> Gbm7 -> Dmaj7 -> G7 -> Cmaj7 -> Cmaj7 -> G7 -> Cmaj7

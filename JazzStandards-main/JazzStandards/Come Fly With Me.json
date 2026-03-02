@@ -1,0 +1,33 @@
+{
+  "Title": "Come Fly With Me",
+  "Composer": "Jimmy Van-Heusen",
+  "Rhythm": "Medium Up Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Cmaj7,C6|Em7,Eb07|Dm7|G7|Cmaj7,C6|Gm7,C7|Fmaj7|Bb7|Cmaj7,C6"
+      },
+      "Endings": [
+        {
+          "Chords": "F7|E7,A7b9|D7,G7"
+        },
+        {
+          "Chords": "F7,G7sus|C6,G7sus|C6"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Ab|Abaug|Dbmaj7|Db6|Bbm7|Eb7|Ab6|Bbm7,Eb7sus|Ab,Abaug|Ab6|Gmaj7|Gmaj7,Em7|Am7|D7|G7,G7sus|G7,G7b9"
+      },
+      "Endings": [
+        {
+          "Chords": "F7|Em7b5,Bb7|A7b9|D7|Dm7,G7|C6|Dm7,G7"
+        }
+      ]
+    }
+  ]
+}

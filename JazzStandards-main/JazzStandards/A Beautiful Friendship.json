@@ -1,0 +1,27 @@
+{
+  "Title": "A Beautiful Friendship",
+  "Composer": "Donald Kahn",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Cmaj7|Gb7#11|Fmaj7|Em7b5,A7b9|Am7|D7|Dm7|G7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Gm7|C7|Fmaj7|Bb7|Em7|A7|D7|G7#5"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Cmaj7|Gb7#11|Fmaj7|Em7b5,A7b9|Dm7|G7|C6,A7|D7,G7"
+      }
+    }
+  ]
+}

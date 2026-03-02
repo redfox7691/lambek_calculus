@@ -1,0 +1,35 @@
+{
+  "Title": "Hocus-Pocus",
+  "Composer": "Lee Morgan",
+  "Key": "F",
+  "Rhythm": "Medium Up Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Fmaj7|Gm7,C7|Fmaj7|Bm7b5,E7b9|Am7,Ab7|Gm7,Gb7"
+      },
+      "Endings": [
+        {
+          "Chords": "Fmaj7,Ab7|Dbmaj7,Gb7"
+        },
+        {
+          "Chords": "Fmaj7|B7#11"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Bbmaj7,Gm7|Cm7,F7|Bbmaj7|Am7b5,D7b9|Gm7|Am7b5,D7b9|G7|C7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Fmaj7|Gm7,C7|Fmaj7|Bm7b5,E7b9|Am7,Ab7|Gm7,Gb7|Fmaj7,Ab7|Dbmaj7,Gb7"
+      }
+    }
+  ]
+}

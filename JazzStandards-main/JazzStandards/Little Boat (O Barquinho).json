@@ -1,0 +1,14 @@
+{
+  "Title": "Little Boat (O Barquinho)",
+  "Composer": "Roberto Menescal",
+  "Key": "Bb",
+  "Rhythm": "Bossa Nova",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "MainSegment": {
+        "Chords": "Bbmaj7|Bbmaj7|Em7,A7|Em7,A7|Abmaj7|Abmaj7|Dm7,G7|Dm7,G7|Gbmaj7|Gbmaj7|Cm7,F7|Cm7,F7|Dm7|G7b9|Cm7|F7b9"
+      }
+    }
+  ]
+}

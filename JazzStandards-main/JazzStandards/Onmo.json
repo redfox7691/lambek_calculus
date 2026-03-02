@@ -1,0 +1,15 @@
+{
+  "Title": "Onmo",
+  "Composer": "Kenny Wheeler",
+  "Key": "Db",
+  "Rhythm": "Medium Up Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Dbmaj7|Dbmaj7|Abmaj7#11/G|Abmaj7#11/G|Cm|Cm|A7alt|Abmaj7#11|F/G|F#7alt|Bm|D/A|Gmaj7#11|Em|Cmaj7#11|Ab7alt"
+      }
+    }
+  ]
+}

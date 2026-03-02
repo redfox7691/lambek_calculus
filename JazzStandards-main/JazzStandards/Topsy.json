@@ -1,0 +1,26 @@
+{
+  "Title": "Topsy",
+  "Composer": "Battle-Durham",
+  "Key": "Dmin",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Dm|Bb7,A7|Dm|Bb7,A7|Dm|Bb7,A7|Dm|Bb7,A7|Gm|Eb7,D7|Gm|Gm|Dm|Bb7,A7|Dm|Dm"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "D7|D7|G7|G7|C7|C7|F7|Bb7,A7"
+      }
+    },
+    {
+      "MainSegment": {
+        "Chords": "Dm|Bb7,A7|Dm|Bb7,A7|Dm|Bb7,A7|Dm|Dm"
+      }
+    }
+  ]
+}

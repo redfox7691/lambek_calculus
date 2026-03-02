@@ -1,0 +1,22 @@
+{
+  "Title": "Make Someone Happy",
+  "Composer": "Jule Styne",
+  "Key": "Eb",
+  "Rhythm": "Slow Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "MainSegment": {
+        "Chords": "Eb,Ebaug|Eb6|Eb,Ebaug|Eb6|Bbm7|Eb7|Bbm7|Eb7|Ab,Abaug|Ab6|Abm7(Fm7b5)|Db7(Bb7)"
+      },
+      "Endings": [
+        {
+          "Chords": "Ebmaj7|Gm7,C7|Fm7|Bb7"
+        },
+        {
+          "Chords": "Ebmaj7|Am7b5,D7b13|Gm,Gm/maj7|Gm7,C7|Fm7|Bb7|Gm7|C7|Fm7|Bb7|Eb6|Fm7,Bb7"
+        }
+      ]
+    }
+  ]
+}

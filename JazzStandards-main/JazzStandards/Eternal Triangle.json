@@ -1,0 +1,35 @@
+{
+  "Title": "Eternal Triangle",
+  "Composer": "Sonny Stitt",
+  "Key": "Bb",
+  "Rhythm": "Up Tempo Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bbmaj7,Gm7|Cm7,F7|Dm7,G7|Cm7,F7|Fm7,Bb7|Eb7,Ab7"
+      },
+      "Endings": [
+        {
+          "Chords": "Dm7,G7|Cm7,F7"
+        },
+        {
+          "Chords": "Dm7,G7|Cm7,F7,Bbmaj7,"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Bm7|E7|Bbm7|Eb7|Am7,D7|Abm7,Db7|Gm7,C7|F#m7,B7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bbmaj7,Gm7|Cm7,F7|Dm7,G7|Cm7,F7|Fm7,Bbm7|Eb7,Ab7|Dm7,G7|Cm7,F7,Bbmaj7,"
+      }
+    }
+  ]
+}

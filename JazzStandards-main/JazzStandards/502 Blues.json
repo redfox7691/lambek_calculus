@@ -1,0 +1,22 @@
+{
+  "Title": "502 Blues",
+  "Composer": "Jimmy Rowles",
+  "Key": "Amin",
+  "Rhythm": "Waltz",
+  "TimeSignature": "3/4",
+  "Sections": [
+    {
+      "MainSegment": {
+        "Chords": "Am7|Dbmaj7|Bm7b5|E7#9|Am7|Dbmaj7|Bm7b5|E7#9|Cm7|F7b9|Bbmaj7|Abm7,Db7"
+      },
+      "Endings": [
+        {
+          "Chords": "F#m7b5|B7b9|Emaj7#5|Emaj7#5,E7"
+        },
+        {
+          "Chords": "F#m7b5|B7b9|Em7|Em7"
+        }
+      ]
+    }
+  ]
+}

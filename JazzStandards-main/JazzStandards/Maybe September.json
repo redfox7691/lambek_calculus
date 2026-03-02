@@ -1,0 +1,31 @@
+{
+  "Title": "Maybe September",
+  "Composer": "Percy Faith",
+  "Key": "Amin",
+  "Rhythm": "Bossa Nova",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Am|Am/maj7|Bm7b5|E7b9|Am7|Am7|G7sus|G7"
+      },
+      "Endings": [
+        {
+          "Chords": "Cmaj7,,Bm7b5,E7|Am7|Bm7b5|Bm7b5|E7b9|E7b9|E7b9|E7b9"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": ""
+      },
+      "Endings": [
+        {
+          "Chords": "Cmaj7,,Bm7b5,E7|Am7,D7|F7#11|F7#11|E7b9|Bm7b5,E7b9|Am|Bm7b5,E7b9"
+        }
+      ]
+    }
+  ]
+}

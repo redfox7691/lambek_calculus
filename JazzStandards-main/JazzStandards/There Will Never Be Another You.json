@@ -1,0 +1,33 @@
+{
+  "Title": "There Will Never Be Another You",
+  "Composer": "Harry Warren",
+  "Key": "Eb",
+  "Rhythm": "Medium Up Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Ebmaj7|Ebmaj7|Dm7b5|G7b9|Cm7|Cm7|Bbm7|Eb7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Abmaj7|Db7#11|Ebmaj7|Cm7|F7|F7|Fm7|Bb7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Ebmaj7|Ebmaj7|Dm7b5|G7b9|Cm7|Cm7|Bbm7|Eb7"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "Abmaj7|Db7#11|Ebmaj7|Am7b5,D7|Ebmaj7,Ab7|Gm7,C7|Fm7,Bb7|Eb6,Bb7"
+      }
+    }
+  ]
+}

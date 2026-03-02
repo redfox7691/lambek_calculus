@@ -1,0 +1,35 @@
+{
+  "Title": "It's Easy To Remember",
+  "Composer": "Richard Rodgers",
+  "Key": "Eb",
+  "Rhythm": "Ballad",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Fm7,Bb7|Ebmaj7,C7|Fm7,Bb7|Bbm7,Eb7|Abmaj7|Db7|Cm7,F7,Fm7,Bb7"
+      },
+      "Endings": [
+        {
+          "Chords": "Gm7,C7"
+        },
+        {
+          "Chords": "Eb6"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Bbm7,Eb7|Abmaj7,Fm7|Bbm7,Eb7|Abmaj7|Abm7,Db7|Gbmaj7|Cm7,F7|Bb7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Fm7,Bb7|Ebmaj7,C7|Fm7,Bb7|Bbm7,Eb7|Abmaj7|Db7|Cm7,F7,Fm7,Bb7|Eb6"
+      }
+    }
+  ]
+}

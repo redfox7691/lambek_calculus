@@ -1,0 +1,34 @@
+{
+  "Title": "Naima",
+  "Composer": "John Coltrane",
+  "Key": "Ab",
+  "Rhythm": "Ballad",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Bbm7/Eb|Ebm9|Amaj7/Eb,Gmaj7/Eb|Abmaj7/Eb"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Bmaj7/Bb|Bb13b9|Bmaj7/Bb|Bb13b9|E7#11/Bb|Bmaj7/Bb|Abmaj7/Bb|Gb13/Bb"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bbm7/Eb|Ebm9|Amaj7/Eb,Gmaj7/Eb|Abmaj7/Eb"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Amaj7/Eb,Gmaj7/Eb|Abmaj7/Eb|Amaj7/Eb,Gmaj7/Eb|Abmaj7/Eb|Amaj7/Eb,Gmaj7/Eb|Abmaj7,Dbmaj7|Abmaj7,Dbmaj7|Abmaj7,Dbmaj7|Abmaj7"
+      }
+    }
+  ]
+}

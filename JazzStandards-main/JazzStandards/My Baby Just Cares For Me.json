@@ -1,0 +1,33 @@
+{
+  "Title": "My Baby Just Cares For Me",
+  "Composer": "Walter Donaldson",
+  "Key": "A",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Amaj7|Bm7,E7|Amaj7|Bm7,E7|Amaj7|Bm7,E7|Bm7|E7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "G#m7b5|C#7b9|F#m7|F#m7|B7|B7|Bm7|E7"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "Amaj7|Bm7,E7|Amaj7|Bm7,E7|Amaj7|Bm7,E7|Dmaj7|Dmaj7"
+      }
+    },
+    {
+      "Label": "D",
+      "MainSegment": {
+        "Chords": "Dmaj7|E7/G#|Amaj7,G7|F#7|Bm7|E7|A6|A6"
+      }
+    }
+  ]
+}

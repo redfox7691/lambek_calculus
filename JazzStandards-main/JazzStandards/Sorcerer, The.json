@@ -1,0 +1,15 @@
+{
+  "Title": "Sorcerer, The",
+  "Composer": "Herbie Hancock",
+  "Key": "Db",
+  "Rhythm": "Up Tempo Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Dbmaj7|Dmaj7/Db|Em9|Fmaj7#11/E|Dbmaj7|Dmaj7|A13#11|D7b9|Abm7|Gm7|D/Eb(Ebm7)|Am7/D(Am7)|Cm7|Gm/maj7/A(Cm7)|A7sus(Em9)|G/Ab"
+      }
+    }
+  ]
+}

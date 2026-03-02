@@ -1,0 +1,34 @@
+{
+  "Title": "I'll Be Around",
+  "Composer": "Alec Wilder",
+  "Rhythm": "Ballad",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Cmaj7,Dm7|Em7,Fmaj7|G7,G#07|F/A,G7/B|Cmaj7,Am7|Dm7,G7"
+      },
+      "Endings": [
+        {
+          "Chords": "C6,Eb7|Abmaj7,,Dm7,G7"
+        },
+        {
+          "Chords": "C6,Dm7|Eb07,C/E"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Db7/Ab,Gm7|C7|Db7/Ab,Gm7,C7,|Fmaj7|Ab7/Eb,Dm7|Dm7,G7|Cmaj7,Am7|Dm7,G7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Cmaj7,Dm7|Em7,Fmaj7|G7,G#07|Dm7/A,G7/B|Cmaj7,Am7|Dm7,G7|C6,Eb7|Abmaj7,,Dm7,G7"
+      }
+    }
+  ]
+}

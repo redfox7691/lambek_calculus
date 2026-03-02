@@ -1,0 +1,29 @@
+{
+  "Title": "Barbara",
+  "Composer": "Horace Silver",
+  "Key": "Eb",
+  "Rhythm": "Waltz",
+  "TimeSignature": "6/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bb7b5b9|Bb7b5b9|Ab7b5b9|Ab7b5b9|Bb7b5b9|Bb7b5b9|Eb7sus|Eb7sus"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Abm7|Db7b5b9|Gbmaj7|Gbmaj7"
+      },
+      "Endings": [
+        {
+          "Chords": "Fm7|Bb7|Gm7,C7b9|Fm7,Bb7b9"
+        },
+        {
+          "Chords": "Fm7|Bb7|Gm7|C7b9|F#m7,B7|Fm7,Bb7|Ebmaj7,Dbmaj7|Bmaj7,Dbmaj7|Ebmaj7,Dbmaj7|Bmaj7,Dbmaj7"
+        }
+      ]
+    }
+  ]
+}

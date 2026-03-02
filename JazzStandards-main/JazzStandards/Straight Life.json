@@ -1,0 +1,27 @@
+{
+  "Title": "Straight Life",
+  "Composer": "Freddie Hubbard",
+  "Key": "F",
+  "Rhythm": "Latin",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "F7|Eb7|F7|Eb7|F7|Eb7|F7|Eb7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "F7|Eb7|F7|Eb7|F7|Eb7|F7|Eb7"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "F7|Eb7|F7|Eb7|F7|Eb7|F7|Eb7"
+      }
+    }
+  ]
+}

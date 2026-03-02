@@ -1,0 +1,35 @@
+{
+  "Title": "Blues In The Night",
+  "Composer": "Harold Arlen",
+  "Key": "G",
+  "Rhythm": "Slow Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "G7|C7|G7|G7|C7|C7|G7|G7|D7|Eb7,D7|G7,C7|G7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "C7|F7|Bb7|Eb7|Bb7|A7"
+      },
+      "Endings": [
+        {
+          "Chords": "D7|Db7,D7"
+        },
+        {
+          "Chords": "Bm7,E7|Am7,D7"
+        }
+      ]
+    },
+    {
+      "MainSegment": {
+        "Chords": "A7,Db7|C7|Eb7,D7|G6"
+      }
+    }
+  ]
+}

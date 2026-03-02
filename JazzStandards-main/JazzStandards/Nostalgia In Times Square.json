@@ -1,0 +1,14 @@
+{
+  "Title": "Nostalgia In Times Square",
+  "Composer": "Charles Mingus",
+  "Key": "F",
+  "Rhythm": "Medium Up Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "MainSegment": {
+        "Chords": "F7,Eb7|F7,Eb7|F7,Eb7|F7,Eb7|Abm7,Db7|Abm7,Db7|F7,Eb7|F7,Eb7|Dm7,G7|Cm7,F7|Bbm7,Eb7|F7"
+      }
+    }
+  ]
+}

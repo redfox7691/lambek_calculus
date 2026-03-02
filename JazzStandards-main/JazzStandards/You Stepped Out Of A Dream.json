@@ -1,0 +1,32 @@
+{
+  "Title": "You Stepped Out Of A Dream",
+  "Composer": "Nacio-Herb-Brown",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Cmaj7|Cmaj7|Dbmaj7|Dbmaj7|Bbm7|Eb7|Abmaj7|Abmaj7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Gm7|C7|Fmaj7|Fmaj7|Am7|D7|Ebm7,Ab7|Dm7,G7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Cmaj7|Cmaj7|Dbmaj7|Dbmaj7|Bbm7|Eb7|Gb7#11|F7"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "Dm7b5|G7|Em7|A7|Dm7|G7|Cmaj7,A7|Dm7,G7"
+      }
+    }
+  ]
+}

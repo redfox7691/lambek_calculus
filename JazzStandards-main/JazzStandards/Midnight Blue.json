@@ -1,0 +1,48 @@
+{
+  "Title": "Midnight Blue",
+  "Composer": "Kenny Burrell",
+  "Key": "Ab",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "i",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Fm7,Gm7|Abmaj7,Gm7|Fm7,Gm7|Abmaj7,Gm7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Fm7,Gm7|Abmaj7,Gm7|Fm7,Gm7|Abmaj7,Gm7|Fm7,Gm7|Abmaj7,Gm7|Gm7b5,C7#9|Fm7"
+      }
+    },
+    {
+      "Label": "B",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Gm7b5|C7b9|Fm7|Bb7|Bbm7|Abm7|C7#9,Fm|Fm,C7#9"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "Fm7,Gm7|Abmaj7,Gm7|Fm7,Gm7|Abmaj7,Gm7|Fm7,Gm7|Abmaj7,Gm7|Fm7,Gm7|Abmaj7"
+      }
+    },
+    {
+      "Label": "D",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Gm7b5|C7b9|Fm7|Fm7|Bbm7|Bbm7|Db7|C7#9"
+      }
+    },
+    {
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Fm7,Gm7|Abmaj7,Gm7|Fm7,Gm7|Abmaj7,Gm7"
+      }
+    }
+  ]
+}

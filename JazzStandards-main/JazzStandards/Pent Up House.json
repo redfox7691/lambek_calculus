@@ -1,0 +1,14 @@
+{
+  "Title": "Pent Up House",
+  "Composer": "Sonny Rollins",
+  "Key": "G",
+  "Rhythm": "Up Tempo Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "MainSegment": {
+        "Chords": "Am7|D7|Gmaj7|Gmaj7|Am7|D7|Gmaj7|Gmaj7|Dm7|G7|Cm7|F7|Am7|D7|Gmaj7|Gmaj7"
+      }
+    }
+  ]
+}

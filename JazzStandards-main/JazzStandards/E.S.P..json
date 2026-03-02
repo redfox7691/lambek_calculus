@@ -1,0 +1,23 @@
+{
+  "Title": "E.S.P.",
+  "Composer": "Wayne Shorter",
+  "Key": "F",
+  "Rhythm": "Up Tempo Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "E7alt|E7alt|Fmaj7|Fmaj7|E7alt|E7alt|Ebmaj7#11|Ebmaj7#11|D7alt|Eb7#11|E7alt|Fmaj7,Ebmaj7"
+      },
+      "Endings": [
+        {
+          "Chords": "Dm7|G7|Gm7|Gb7"
+        },
+        {
+          "Chords": "Db7#11|Gm7|Dbm7,Gb7|Fmaj7"
+        }
+      ]
+    }
+  ]
+}

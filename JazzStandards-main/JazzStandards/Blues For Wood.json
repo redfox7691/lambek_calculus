@@ -1,0 +1,14 @@
+{
+  "Title": "Blues For Wood",
+  "Composer": "Woody Shaw",
+  "Key": "Fmin",
+  "Rhythm": "Up Tempo Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "MainSegment": {
+        "Chords": "Fm7|Fm7|Fm7|Fm7|Db7|Db7|Fm7|Fm7|Db7|Bbmaj7|Gm7b5,C7#9|Fm7"
+      }
+    }
+  ]
+}

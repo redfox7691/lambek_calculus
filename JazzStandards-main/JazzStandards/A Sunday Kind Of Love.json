@@ -1,0 +1,35 @@
+{
+  "Title": "A Sunday Kind Of Love",
+  "Composer": "Belle-Prima-Leonard-Rhodes",
+  "Key": "F",
+  "Rhythm": "Ballad",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Fmaj7,F#07|Gm7,C7|Fmaj7,Cm7,F7,|Bbmaj7,Bbm7|Fmaj7,D7|Gm7,C7"
+      },
+      "Endings": [
+        {
+          "Chords": "F6,Dm7|Gm7,Db7,C7,"
+        },
+        {
+          "Chords": "F6,Eb7|F6"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Cm7,F7|Cm7,F7|Bbmaj7,F7|Bbmaj7|G7|G7|Gm7|C7,,Db7,C7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Fmaj7,F#07|Gm7,C7|Fmaj7,Cm7,F7,|Bbmaj7,Bbm7|Fmaj7,D7|Gm7,C7|F6,Eb7|F6"
+      }
+    }
+  ]
+}

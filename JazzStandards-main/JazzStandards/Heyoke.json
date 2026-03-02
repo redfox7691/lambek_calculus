@@ -1,0 +1,22 @@
+{
+  "Title": "Heyoke",
+  "Composer": "Kenny Wheeler",
+  "Key": "F",
+  "Rhythm": "Waltz",
+  "TimeSignature": "3/4",
+  "Sections": [
+    {
+      "MainSegment": {
+        "Chords": "Fmaj7|Fmaj7|Bm7|C#7|F#m7|F#m7|Bbm7|Amaj7|Abmaj7|Abmaj7|Bmaj7|Bmaj7|Dmaj7|Gmaj7"
+      },
+      "Endings": [
+        {
+          "Chords": "Fmaj7,Amaj7|Dbmaj7,Gbmaj7"
+        },
+        {
+          "Chords": "F#m7|Ebm11|Amaj7#11/Ab|Amaj7#11/Ab|Ab7sus|Ab7sus"
+        }
+      ]
+    }
+  ]
+}

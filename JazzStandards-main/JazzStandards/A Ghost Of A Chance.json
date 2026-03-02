@@ -1,0 +1,33 @@
+{
+  "Title": "A Ghost Of A Chance",
+  "Composer": "Victor Young",
+  "Rhythm": "Ballad",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "MainSegment": {
+        "Chords": "Cmaj7|Db7#11|Gm7,C7|Fm7,Bb7|Em7,Eb07|Dm7,G7"
+      },
+      "Endings": [
+        {
+          "Chords": "E7,A7|Dm7,G7"
+        },
+        {
+          "Chords": "Cmaj7|Em7b5,A7b9"
+        }
+      ]
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Dm7|G7#5|Cmaj7,G7|Cmaj7,Am7|F#m7b5|B7b9|Em7,A7|Dm7,G7#5"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Cmaj7|Db7#11|Gm7,C7|Fm7,Bb7|Em7,Eb07|Dm7,G7|Cmaj7,Am7|Dm7,G7"
+      }
+    }
+  ]
+}

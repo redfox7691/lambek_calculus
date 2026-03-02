@@ -1,0 +1,22 @@
+{
+  "Title": "Groovin' High",
+  "Composer": "Dizzy Gillespie",
+  "Key": "Eb",
+  "Rhythm": "Up Tempo Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "MainSegment": {
+        "Chords": "Ebmaj7|Ebmaj7|Am7|D7|Ebmaj7|Ebmaj7|Gm7|C7|F7|F7|Fm7|Bb7"
+      },
+      "Endings": [
+        {
+          "Chords": "Gm7|F#m7|Fm7|Bb7"
+        },
+        {
+          "Chords": "Fm7|Abm7,Db7|Eb6|Fm7,Bb7"
+        }
+      ]
+    }
+  ]
+}

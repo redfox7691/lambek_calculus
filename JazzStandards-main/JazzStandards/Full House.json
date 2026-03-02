@@ -1,0 +1,28 @@
+{
+  "Title": "Full House",
+  "Composer": "Wes Montgomery",
+  "Key": "Fmin",
+  "Rhythm": "Waltz",
+  "TimeSignature": "3/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Fm9|Bb13|Fm9|Bb13|Fm9|Bb13|Fm9(Db9)|C7#9|Fm9|Bb13|Fm9|Bb13|Fm9|Bb13|Fm9(Db9)|Fm9(C7#9)"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Bbm7|Eb7|Abmaj7|Db7|Gbmaj7|Bmaj7|Gm7b5|C7b5b9"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Fm9|Bb13|Fm9|Bb13|Fm9|Bb13|Fm9(Db9)|C7#9|Fm9|Bb13|Fm9|Bb13|Fm9|Bb13|Fm9(Db9)|Fm9(C7#9)"
+      }
+    }
+  ]
+}

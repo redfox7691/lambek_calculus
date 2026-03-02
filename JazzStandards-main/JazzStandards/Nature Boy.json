@@ -1,0 +1,33 @@
+{
+  "Title": "Nature Boy",
+  "Composer": "Eden Ahbez",
+  "Key": "Dmin",
+  "Rhythm": "Ballad",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Dm|Em7b5,A7b9|Dm|Em7b5,A7b9|Dm,Dm/maj7|Dm7,Dm6|Gm6,Dm|Em7b5"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "A7b9|A7b9|Dm|Dm|E7b9|E7b9|A7b9|A7b9"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Dm|Em7b5,A7b9|Dm|Em7b5,A7b9|Dm,Dm/maj7|Dm7,Dm6|Gm6,Dm|Em7b5"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "A7b9|A7b9|Dm|Bm7b5|E7b9|A7b9|Dm|Em7b5,A7b9"
+      }
+    }
+  ]
+}

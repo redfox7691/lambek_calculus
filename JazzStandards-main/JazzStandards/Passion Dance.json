@@ -1,0 +1,22 @@
+{
+  "Title": "Passion Dance",
+  "Composer": "McCoy Tyner",
+  "Key": "F",
+  "Rhythm": "Up Tempo Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "F7sus|F7sus|F7sus|F7sus|F7sus|F7sus|F7sus|F7sus"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Bb7b13sus|Bb7b13sus|Bb7b13sus|Bb7b13sus|Bb7b13sus|Bb7b13sus|Bb7b13sus|Bb7b13sus|Ebm11/Bb|Ebm11/Bb|Ebm11/Bb|Ebm11/Bb|Ebm11/Bb|Ebm11/Bb|Db/B,C7#9|C7#9"
+      }
+    }
+  ]
+}

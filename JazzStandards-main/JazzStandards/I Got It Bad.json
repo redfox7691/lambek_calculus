@@ -1,0 +1,35 @@
+{
+  "Title": "I Got It Bad",
+  "Composer": "Duke Ellington",
+  "Key": "G",
+  "Rhythm": "Ballad",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "G0,Gmaj7|B7b13,Em7|A7,Em7|A7|Am7|B7,E7,A7,D7"
+      },
+      "Endings": [
+        {
+          "Chords": "G6,Em7|Am7,D7"
+        },
+        {
+          "Chords": "G6,C#07|Dm7,G7"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Cmaj7|Cmaj7|F7|F7|Gmaj7|Bm7,E7|Am7|D7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "G0,Gmaj7|B7b13,Em7|A7,Em7|A7|Am7|B7,E7,A7,D7|G6,Em7|Am7,D7"
+      }
+    }
+  ]
+}

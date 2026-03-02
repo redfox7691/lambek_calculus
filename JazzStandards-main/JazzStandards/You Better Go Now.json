@@ -1,0 +1,27 @@
+{
+  "Title": "You Better Go Now",
+  "Composer": "Reichner-Graham",
+  "Key": "Eb",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Ebmaj7,Bb7#5|Ebmaj7,E07|Fm7,Bb7|Fm7,Bb7|Ebmaj7,Bb7#5|Ebmaj7,E07|Fm7,Bb7|Fm7,Bb7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Ebmaj7,E07|Fm7,Bb7|Eb,Fm7,Gm7,Ab|Fm7,Bb7|Ebmaj7,E07|Fm7,Bb7|Ebmaj7,F7|Fm7,Bb7"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "Ebmaj7,Bb7#5|Ebmaj7,E07|Fm7,Bb7|Fm7,Bb7|Ebmaj7,C7|Fm7,Bb7|Eb6|Fm7,Bb7"
+      }
+    }
+  ]
+}

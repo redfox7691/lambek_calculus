@@ -1,0 +1,33 @@
+{
+  "Title": "I Wish I Knew",
+  "Composer": "Harry Warren",
+  "Key": "G",
+  "Rhythm": "Ballad",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Am7|D7|Am7|D7|Gmaj7|C7|Gmaj7|Bm7,E7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Am7|D7|Gmaj7|Gmaj7,B7b13|Em7|A7|D7,Am7/C|Bm7,E7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Am7|D7|Am7|D7|Gmaj7|C7|Gmaj7|Bm7,E7"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "Am7|D7|Bm7b5|E7b13|Am7|D7|G6|Bm7,E7b9"
+      }
+    }
+  ]
+}

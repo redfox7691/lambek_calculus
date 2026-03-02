@@ -1,0 +1,40 @@
+{
+  "Title": "Lush Life",
+  "Composer": "Billy Strayhorn",
+  "Key": "Db",
+  "Rhythm": "Ballad",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "v",
+      "MainSegment": {
+        "Chords": "Db6,B9|Dbmaj7,B9|Dbmaj7,B9|Db,Ebm7,Fm7,Gbm7|Abm7,D13#11|Fm7,D9#11"
+      },
+      "Endings": [
+        {
+          "Chords": "Dbm6,D13#11"
+        },
+        {
+          "Chords": "Dbm6,,Gm7b5,C7"
+        }
+      ]
+    },
+    {
+      "MainSegment": {
+        "Chords": "Fm6|Fm6|Fm6|Gm7b5,C7|Fm6|Fm6|Fm6|Ab13|B9#11|Bb9|Ebm7|A7#11|Ebm7|D7#11"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Dbmaj7,D7#11|Dbmaj7,D7#11|Db6,,F#m7,B7|Emaj7,D7#11|Dbmaj7,D7#11|Dbmaj7,D7#11|Db6,,Db7,C7|Fmaj7,A7|Abmaj7,Eb7b9|Abmaj7,,Em7,A7|Dmaj7,,Dm7,G7|Cmaj7,Ab7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Dbmaj7,D7#11|Dbmaj7,D7#11|Db6,,C7,B7|Fm7,Bb7|F#m7,B7|A7#5,Ab7|Dbmaj7,Gb7|Fm7,Bb7|F#m7,B7|A7#5,Ab7|Ab7,A7,Bb7,B7|C7,D7,Db,Ab7|Dbmaj7,D7#11|Dbmaj7,D7#11"
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "Title": "On The Trail",
+  "Composer": "Ferde Grofe",
+  "Key": "F",
+  "Rhythm": "Medium Up Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "MainSegment": {
+        "Chords": "Fmaj7|Fmaj7|Fmaj7|Fmaj7|Fmaj7|Am7,D7|Gm7|C7"
+      }
+    },
+    {
+      "MainSegment": {
+        "Chords": "Abm7|Db7|Abm7|Db7|Gm7|C7|F6|Gm7,C7"
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "Title": "Rainbow Connection, The",
+  "Composer": "Williams-Ascher",
+  "Key": "G",
+  "Rhythm": "Waltz",
+  "TimeSignature": "3/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Gmaj7|Em7|Am7|D7sus|Gmaj7|Em7|Cmaj7"
+      },
+      "Endings": [
+        {
+          "Chords": "D7sus"
+        },
+        {
+          "Chords": "Cmaj7"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Cmaj7|Cmaj7|Cmaj7|Cmaj7|Bm7|Bm7|E7sus|E7|Am7|D7|Bm7|E7|Am7|D7|G6|Em7|Am7|D7"
+      }
+    }
+  ]
+}

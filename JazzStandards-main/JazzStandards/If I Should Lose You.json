@@ -1,0 +1,33 @@
+{
+  "Title": "If I Should Lose You",
+  "Composer": "Ralph Rainger",
+  "Key": "Bb",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Gm7|Am7b5,D7b9|Gm7,(Gb7)|Fm7,Bb7|Ebmaj7|Fm7,Bb7|Ebmaj7|Ebmaj7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Cm7|F7|Bbmaj7|Am7b5,D7b9|Gm7|C7|Cm7|Am7b5,D7b9"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "Gm7|Am7b5,D7b9|Gm7,(Gb7)|Fm7,Bb7|Ebmaj7|Fm7,Bb7|Ebmaj7|Ebmaj7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Cm7|F7|Dm7|G7|Cm7|F7|Bb6|Am7b5,D7b9"
+      }
+    }
+  ]
+}

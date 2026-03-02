@@ -1,0 +1,15 @@
+{
+  "Title": "Big Nick",
+  "Composer": "John Coltrane",
+  "Key": "G",
+  "Rhythm": "Medium Slow",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Gmaj7,Em7|Am7,D7|Gmaj7,Em7|Am7,D7|G,G7/B|C,C#07|G/D,E7|Am7,D7"
+      }
+    }
+  ]
+}

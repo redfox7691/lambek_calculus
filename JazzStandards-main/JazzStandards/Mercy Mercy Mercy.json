@@ -1,0 +1,21 @@
+{
+  "Title": "Mercy Mercy Mercy",
+  "Composer": "Joe Zawinul",
+  "Key": "Bb",
+  "Rhythm": "Funk",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bb7|Eb7|Bb7|Eb7|Bb7|Eb7|Bb7|Eb7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Bb,Eb/Bb|Bb7,Eb/Bb|Bb,Eb/Bb|Bb7,Eb/Bb|Bb,,Bb/D,Eb|F7sus|Bb,,Bb/D,Eb|F7sus|Cm7|Dm7|Gm,F,Gm,F|Gm"
+      }
+    }
+  ]
+}

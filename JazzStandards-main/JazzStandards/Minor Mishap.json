@@ -1,0 +1,33 @@
+{
+  "Title": "Minor Mishap",
+  "Composer": "Tommy Flanagan",
+  "Key": "Bbmin",
+  "Rhythm": "Medium Up Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bbm7|C7#9,F7b9|Bbm7|C7b9b13,F7b9|Bbm7|Ebm7,Bbm7|Gm7b5|C7b9"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Fm7|G7#9,C7b9|Fm7|G7b9b13,C7b9|Fm7|Bbm7,Fm7|G7b9,C7#9|Fm7"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "Fm7|Bb7|Ebmaj7|Ebmaj7|Ebm7|Ab7|Dbmaj7|C7alt,F7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bbm7|C7#9,F7b9|Bbm7|C7b9b13,F7b9|Bbm7|Ebm7,Bbm7|C7b13,F7#9|Bbm7,F7"
+      }
+    }
+  ]
+}

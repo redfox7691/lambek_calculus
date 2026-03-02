@@ -1,0 +1,28 @@
+{
+  "Title": "Think Of One",
+  "Composer": "Thelonious Monk",
+  "Key": "F",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "F,B9b5|Dm7,Eb9|Ab13,Db7|Gb13|F,B9b5|Dm7,Eb9|Ab7,Db7|Gb7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Cm7/F|F7b9|Bbmaj7|G7b9|G7b9|G7b5|Gm7|C7b9#11"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "F,B9b5|Dm7,Eb9|Ab13,Db7|Gb13|F,B9b5|Dm7,Eb9|Ab7,Db7|Gb7"
+      }
+    }
+  ]
+}

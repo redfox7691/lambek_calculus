@@ -1,0 +1,34 @@
+{
+  "Title": "Just You, Just Me",
+  "Composer": "Jesse Greer",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "C6|A7|Dm7|G7|C6,C7|Fmaj7,Bb7|C6/G,G7"
+      },
+      "Endings": [
+        {
+          "Chords": "C6,G7"
+        },
+        {
+          "Chords": "C6"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Gm7|C7|F6|Bb7|C6|E7,Am7|D7|G7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "C6|A7|Dm7|G7|C6,C7|Fmaj7,Bb7|C6/G,G7|C,G7"
+      }
+    }
+  ]
+}

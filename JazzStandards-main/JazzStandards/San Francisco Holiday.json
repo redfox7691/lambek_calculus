@@ -1,0 +1,35 @@
+{
+  "Title": "San Francisco Holiday",
+  "Composer": "Thelonious Monk",
+  "Key": "Eb",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Am7b5,D7b9|Gm7b5,C7b9|Bb7#5#9|Fm9,Bb13b9|Am7b5,D7b9|Gm7b5,C7b9|Bb7#5#9"
+      },
+      "Endings": [
+        {
+          "Chords": "Bb7b9#11"
+        },
+        {
+          "Chords": "Bb7b9#11,Bb9"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Cm7b5|Cm7b5,F7b9|Cm7b5,F7b9|Cm7b5,F7b9|Cm7b5|Cm7b5,F7b9|Cm7b5,F7b9|Cm7b5,F7b9"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Am7b5,D7b9|Gm7b5,C7b9|Bb7#5#9|Fm9,Bb13b9|Am7b5,D7b9|Gm7b5,C7b9|Bb7#5#9,(Db69)|B7/D#"
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "Title": "Charleston",
+  "Composer": "James Johnson",
+  "Key": "Bb",
+  "Rhythm": "Medium Up Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bb|D7|G7|G7|C7|F7|Bb,Db07|Cm7,F7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Bb|D7|G7|E07|Dm7|A7|D|F7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bb|D7|G7|G7|C7|F7|Bb,Db07|Cm7,F7"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "Bb7|Bb7|Eb7|Ebm7|Bb,Gm7|Cm7,F7|Bb|Cm7,F7"
+      }
+    }
+  ]
+}

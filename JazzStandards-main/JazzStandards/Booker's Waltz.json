@@ -1,0 +1,14 @@
+{
+  "Title": "Booker's Waltz",
+  "Composer": "Booker Little",
+  "Key": "Ab",
+  "Rhythm": "Waltz",
+  "TimeSignature": "3/4",
+  "Sections": [
+    {
+      "MainSegment": {
+        "Chords": "Abmaj7|Eb7|Gm7b5|C7b9|Fm7|Db7|Bb7|Db7#11|Abmaj7|B7|Bbm7|Eb7|Abmaj7|Abmaj7|A7#11|A7#11"
+      }
+    }
+  ]
+}

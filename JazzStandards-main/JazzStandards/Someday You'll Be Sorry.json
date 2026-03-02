@@ -1,0 +1,29 @@
+{
+  "Title": "Someday You'll Be Sorry",
+  "Composer": "Louis Armstrong",
+  "Key": "Eb",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Eb|Eb|D7|D7|Eb|Eb|C7|C7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": ""
+      },
+      "Endings": [
+        {
+          "Chords": "Fm|Bb7|Eb|Cm|F7|F7|Bb7|Bb7,Bb7#5"
+        },
+        {
+          "Chords": "Ab|Abm|Eb|C7|Fm|Bb7|Eb|Eb"
+        }
+      ]
+    }
+  ]
+}

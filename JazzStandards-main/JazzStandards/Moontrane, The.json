@@ -1,0 +1,41 @@
+{
+  "Title": "Moontrane, The",
+  "Composer": "Woody Shaw",
+  "Key": "D",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "i",
+      "MainSegment": {
+        "Chords": "Dmaj7|Dmaj7|Dmaj7|Dmaj7|Gmaj7#11|Fmaj7#11|Ebmaj7#11|Db7#5#9|Bbmaj7#11|Bbmaj7#11|Bbmaj7#11|Bbmaj7#11"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bbmaj7|Bbmaj7|Am7|Am7|Cm7,Dm7|Eb7#9,Fm7|Dmaj7#11"
+      },
+      "Endings": [
+        {
+          "Chords": "Cm7,F7"
+        },
+        {
+          "Chords": "Fm7,Bb7"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Ebmaj7|Ebmaj7|Ebmaj7|Am7b5,D7b9|Gm7,Fm7|Bbm7,Abm7|C#m7,Bm7|Bm7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bbmaj7|Bbmaj7|Am7|Am7|Cm7,Dm7|Eb7#9,Fm7|Dmaj7#11|Dmaj7#11"
+      }
+    }
+  ]
+}

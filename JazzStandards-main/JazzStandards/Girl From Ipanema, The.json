@@ -1,0 +1,34 @@
+{
+  "Title": "Girl From Ipanema, The",
+  "Composer": "Antonio-Carlos Jobim",
+  "Key": "F",
+  "Rhythm": "Bossa Nova",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Fmaj7|Fmaj7|G7#11|G7#11|Gm7|Gb7#11"
+      },
+      "Endings": [
+        {
+          "Chords": "Fmaj7|Gb7"
+        },
+        {
+          "Chords": "Fmaj7|Fmaj7"
+        }
+      ]
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "F#maj7|F#maj7|B7|B7|F#m7|F#m7|D7|D7|Gm7|Gm7|Eb7|Eb7|Am7|D7b5b9|Gm7|C7b5b9"
+      }
+    },
+    {
+      "MainSegment": {
+        "Chords": "Fmaj7|Fmaj7|G7#11|G7#11|Gm7|Gb7#11|Fmaj7|Gb7"
+      }
+    }
+  ]
+}

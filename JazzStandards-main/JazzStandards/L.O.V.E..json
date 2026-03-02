@@ -1,0 +1,33 @@
+{
+  "Title": "L.O.V.E.",
+  "Composer": "Gabler-Kaempfert",
+  "Key": "G",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "G6|Gmaj7|Am7|D7|D7|D7|Gmaj7|G6"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "G7|G7|Cmaj7|Cmaj7|A7|A7|D7sus|D7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "G6|Gmaj7|Am7|D7|D7|D7|Gmaj7|G6"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "G7|G7|Cmaj7|C#07|G6|D7|G6|Am7,D7"
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "Title": "Wayne's Thang",
+  "Composer": "Kenny Garrett",
+  "Key": "Emin",
+  "Rhythm": "Medium Up Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Em7|Em7|C6|C6|B7b9b13|B7b9b13|Em7|Em7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Em7|Em7|C6|C6|B7b9b13|B7b9b13|Em7|Em7"
+      }
+    }
+  ]
+}

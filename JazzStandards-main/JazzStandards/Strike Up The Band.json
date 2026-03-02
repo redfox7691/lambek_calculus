@@ -1,0 +1,33 @@
+{
+  "Title": "Strike Up The Band",
+  "Composer": "George Gershwin",
+  "Key": "Eb",
+  "Rhythm": "Up Tempo Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Ebmaj7|Ebmaj7|E07|E07|Fm7|Bb7|Ebmaj7(Bbm7)|Bbm7(Eb7),Eb7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Abmaj7|Abmaj7|A07|A07|Bbm7|Eb7|Abmaj7,Abmaj7/G|Fm7,Bb7"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "Ebmaj7|Ebmaj7|Dm7b5|G7b9|Cm7|F7|Fm7|Bb7"
+      }
+    },
+    {
+      "Label": "D",
+      "MainSegment": {
+        "Chords": "Ebmaj7|Ebmaj7|Gm7b5|C7b9|Fm7|Bb7|Ebmaj7|Fm7,Bb7"
+      }
+    }
+  ]
+}

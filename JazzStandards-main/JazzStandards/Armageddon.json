@@ -1,0 +1,33 @@
+{
+  "Title": "Armageddon",
+  "Composer": "Wayne Shorter",
+  "Key": "Bbmin",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "i",
+      "MainSegment": {
+        "Chords": "|E7#11,Eb7|Db7#11|Gb/C,F7#5|Bbm7|E7#11,Eb7|Db7#11|Gb/C,F7#5|Bbm7|Gb13|Bbm7|Gb13"
+      }
+    },
+    {
+      "Label": "A",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Bbm7|Gb13|Bbm7|Gb13|Eb7|E7#11|Eb7|Gb13|Bbm7|Abm7,Db7|Eb7|Gb13|Bbm7|Gb13|Bbm7|B7#11"
+      }
+    },
+    {
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Bbm7|Gb13"
+      }
+    },
+    {
+      "MainSegment": {
+        "Chords": "Bbm7|B7"
+      }
+    }
+  ]
+}

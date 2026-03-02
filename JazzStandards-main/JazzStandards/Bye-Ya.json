@@ -1,0 +1,28 @@
+{
+  "Title": "Bye-Ya",
+  "Composer": "Thelonious Monk",
+  "Key": "Ab",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Db7|Ab6|Db7|Ab6|Gb7#11|Ab6|E7,B7#11|Db6,D6,Eb6,"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "A6|A6|Ab6|Ab6|Bm7|E7|Bbm7,Eb7|Am7,D7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Db7|Ab6|Db7|Ab6|Gb7#11|Ab6|E7,B7#11|Db6,D6,Eb6,"
+      }
+    }
+  ]
+}

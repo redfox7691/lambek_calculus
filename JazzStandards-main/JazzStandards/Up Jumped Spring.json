@@ -1,0 +1,33 @@
+{
+  "Title": "Up Jumped Spring",
+  "Composer": "Freddie Hubbard",
+  "Key": "Bb",
+  "Rhythm": "Waltz",
+  "TimeSignature": "3/4",
+  "Sections": [
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Bbmaj7|G7#5|Cm7|F7,F#07|Gm7|Fm7|Em7b5|A7b9|Dm7|Ebm7|Dm7|Ebm7"
+      },
+      "Endings": [
+        {
+          "Chords": "B7#11|E7|Cm7b5|F7"
+        },
+        {
+          "Chords": "Cm7|F7|Bb6|Am7b5,D7"
+        }
+      ]
+    },
+    {
+      "MainSegment": {
+        "Chords": "Gm7|C7|Fmaj7|Dm7|Abm7|Ebm7|Cm7|F7"
+      },
+      "Endings": [
+        {
+          "Chords": "Cm7|F7|Bmaj7|Bbmaj7"
+        }
+      ]
+    }
+  ]
+}

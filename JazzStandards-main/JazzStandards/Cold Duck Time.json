@@ -1,0 +1,15 @@
+{
+  "Title": "Cold Duck Time",
+  "Composer": "Eddie Harris",
+  "Key": "F",
+  "Rhythm": "Rock Pop",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "F7|Bb7|F7|Bb7|F7|Bb7|F7|Bb7|Dbmaj7|Ebadd9,F7||"
+      }
+    }
+  ]
+}

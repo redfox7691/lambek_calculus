@@ -1,0 +1,14 @@
+{
+  "Title": "Jody Grind, The",
+  "Composer": "Horace Silver",
+  "Key": "Bbmin",
+  "Rhythm": "Even 8ths",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "MainSegment": {
+        "Chords": "Bbm7|Bbm7|Bbm7|Bbm7|Eb7|Eb7|Bbm7|Bbm7|A13|B13|Bbm7|Bbm7"
+      }
+    }
+  ]
+}

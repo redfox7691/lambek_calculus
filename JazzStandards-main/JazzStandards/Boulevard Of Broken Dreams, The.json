@@ -1,0 +1,35 @@
+{
+  "Title": "Boulevard Of Broken Dreams, The",
+  "Composer": "Dubin-Warren",
+  "Key": "Dmin",
+  "Rhythm": "Ballad",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Dm,Em7b5|Dm/F,Dm|Em7b5|A7|Em7b5|A7"
+      },
+      "Endings": [
+        {
+          "Chords": "Dm,Gm|Dm,A7"
+        },
+        {
+          "Chords": "Dm,Gm|Dm,D7"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Am7b5|D7b9|Gm7|C7|Gm7|C7|Fmaj7|A7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Dm,Em7b5|Dm/F,Dm|Em7b5|A7|Em7b5|A7|Dm,Gm|Dm,A7"
+      }
+    }
+  ]
+}

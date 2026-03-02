@@ -1,0 +1,35 @@
+{
+  "Title": "That Ole Devil Called Love",
+  "Composer": "Doris Fisher",
+  "Key": "Ab",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bbm7,Eb7|Ab6|Cm7|F7|Bbm7|Bbm7b5,Eb7"
+      },
+      "Endings": [
+        {
+          "Chords": "Ab6,B07|Bbm7,Eb7"
+        },
+        {
+          "Chords": "Ab6,Dbm6|Ab6,A07"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Bbm7,Eb7|Ab6,B7|Bbm7,Eb7|Ab6,C7b9|Fm6,G07|Fm6/Ab,Fm6|Bb7|Bbm7,Eb7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bbm7,Eb7|Ab6|Cm7|F7|Bbm7|Bbm7b5,Eb7|Bbm7,,Bbm7/Eb,Eb7|Ab6"
+      }
+    }
+  ]
+}

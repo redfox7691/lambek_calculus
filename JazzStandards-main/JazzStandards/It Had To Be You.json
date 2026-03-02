@@ -1,0 +1,33 @@
+{
+  "Title": "It Had To Be You",
+  "Composer": "Isham Jones",
+  "Key": "G",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Gmaj7,D7#5|Gmaj7,F7|E7,Bm7|E7|A7,Em7|A7,Em7|A7,Em7|A7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "D7|F#m7b5,B7b9|Em7,B7b9|Em7,Bb7#11|A7,Em7|A7|Am7|D7,D7#5"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Gmaj7,D7#5|Gmaj7,F7|E7,Bm7|E7|A7,Em7|A7,Em7|A7,Em7|A7,,Dm7,G7"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "Cmaj7|F7|Gmaj7,B7b9|Em7,Bb07|D7/A,Ab07|D7/A,D7|G6,E7|Am7,D7"
+      }
+    }
+  ]
+}

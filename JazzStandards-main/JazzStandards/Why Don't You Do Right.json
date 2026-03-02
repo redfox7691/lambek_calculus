@@ -1,0 +1,15 @@
+{
+  "Title": "Why Don't You Do Right?",
+  "Composer": "Kansas-Joe McCoy",
+  "Key": "Dmin",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Dm6,Bm7b5|Bb7,A7|Dm6,Bm7b5|Bb7,A7|Gm7|Gm7,A7|Dm6,Bm7b5|Bb7,A7|Bb7,A7|Bb7,A7|Dm6,Bm7b5|Bb7,A7"
+      }
+    }
+  ]
+}

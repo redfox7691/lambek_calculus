@@ -1,0 +1,27 @@
+{
+  "Title": "Black Narcissus",
+  "Composer": "Joe Henderson",
+  "Key": "G#min",
+  "Rhythm": "Waltz",
+  "TimeSignature": "3/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Abm7|Bbm7/Ab|Abm7|Bbm7/Ab|Abm7|Bbm7/Ab|Abm7|Bmaj7#11"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "F#m7|G#m7/F#|F#m7|G#m7/F#|F#m7|G#m7/F#|F#m7|Amaj7#11"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "Ebmaj7#11|Fmaj7#11|Bbmaj7#11|Cmaj7#11|Ebmaj7#11|Fmaj7#11,Bbmaj7#11|Gmaj7#11,Abmaj7#11|Bb,Cmaj7#11"
+      }
+    }
+  ]
+}

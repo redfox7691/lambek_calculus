@@ -1,0 +1,22 @@
+{
+  "Title": "Song For My Father",
+  "Composer": "Horace Silver",
+  "Key": "Fmin",
+  "Rhythm": "Latin",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Fm7|Fm7|Eb7|Eb7|Db7|C7sus|Fm7|Fm7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Eb7|Eb7|Fm7|Fm7|Eb7,Db7|C7|Fm7|Fm7"
+      }
+    }
+  ]
+}

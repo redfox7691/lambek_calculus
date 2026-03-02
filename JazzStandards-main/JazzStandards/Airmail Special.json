@@ -1,0 +1,27 @@
+{
+  "Title": "Airmail Special",
+  "Composer": "Charlie Christian",
+  "Rhythm": "Medium Up Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "C6,Am7|Dm7,G7|Em7,A7|Dm7,G7|C,C7/E|F,F#07|C/G|C"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "C07|C07|C07|C07|C07,B07|Bb07|Ab7|G7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "C6,Am7|Dm7,G7|Em7,A7|Dm7,G7|C,C7|F,F#07|C/G|C"
+      }
+    }
+  ]
+}

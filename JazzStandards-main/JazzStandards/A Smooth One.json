@@ -1,0 +1,35 @@
+{
+  "Title": "A Smooth One",
+  "Composer": "Benny Goodman",
+  "Key": "F",
+  "Rhythm": "Medium Up Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "B07,Bb6|F6/A,F6|B07,Bb6|F6/A,F6|B07,Bb6|F6/A,F6|G7,C7"
+      },
+      "Endings": [
+        {
+          "Chords": "F6"
+        },
+        {
+          "Chords": "F6,F7"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Bb6|B07|F6|Cm7,F7|Bb6|B07|F6,D7b9|Gm7b5,C7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "B07,Bb6|F6/A,F6|B07,Bb6|F6/A,F6|B07,Bb6|F6/A,F6|G7,C7|F6"
+      }
+    }
+  ]
+}

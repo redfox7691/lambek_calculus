@@ -1,0 +1,29 @@
+{
+  "Title": "Day Dreaming",
+  "Composer": "Jerome Kern",
+  "Key": "Bb",
+  "Rhythm": "Ballad",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bbmaj7,Cm7|Dm7,C#07|Cm7,D07|Cm7,F7#9|Bbmaj7,Ebmaj7|D7#11,Ab9|G7b9|Cm7,F7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": ""
+      },
+      "Endings": [
+        {
+          "Chords": "Bbmaj7,Bb7/Ab|Gm7,Gm7/F|Em7b5|Eb7,D7#5|Gm7,Gm7/F|Em7b5,Eb9|Dm7,C#07|Cm7,F7sus"
+        },
+        {
+          "Chords": "Bbmaj7,Bb7/Ab|Gm7,Fm7|Em7b5|Ebm6,Ab9|Dm7,G7|E7/F,F13|Bb69|Cm7,F7sus"
+        }
+      ]
+    }
+  ]
+}

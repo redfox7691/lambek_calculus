@@ -1,0 +1,35 @@
+{
+  "Title": "Godchild",
+  "Composer": "George Wallington",
+  "Key": "Ab",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Abmaj7|Bbm7,B07|Ebm7,Ab7|Dbm7,Gb7|Cm7,Bm7|Bbm7,Eb7|Abmaj7"
+      },
+      "Endings": [
+        {
+          "Chords": "Bbm7,Eb7"
+        },
+        {
+          "Chords": "Abmaj7,G7#9"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Cmaj7|Dm7,G7|Cmaj7|Fm7,Bb7|Ebmaj7|Fm7,Bb7|Ebmaj7|Bbm7,Eb7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Abmaj7|Bbm7,B07|Ebm7,Ab7|Dbm7,Gb7|Cm7,Bm7|Bbm7,Eb7|Abmaj7|Bbm7,Eb7"
+      }
+    }
+  ]
+}

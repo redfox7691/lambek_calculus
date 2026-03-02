@@ -1,0 +1,29 @@
+{
+  "Title": "Moon Rays",
+  "Composer": "Horace Silver",
+  "Key": "Eb",
+  "Rhythm": "Latin",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Fm7/Bb|Bb7|Ebmaj7/Bb|Ebmaj7/Bb|F#m7|B7|Fm7|Bb7|Am7b5|Abm7|Gm7b5|C7b9|Fm7|Bb7|Ebmaj7"
+      },
+      "Endings": [
+        {
+          "Chords": "Ebmaj7"
+        },
+        {
+          "Chords": "Bm7b5,Bb7"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Am7|D7|Gmaj7|Gmaj7|Bbm7|Eb7|Am7|D7|C#m7b5|Cm7|Bm7b5|E7b9|Am7|D7b9|Gm7,C7|Fm7,Bb7"
+      }
+    }
+  ]
+}

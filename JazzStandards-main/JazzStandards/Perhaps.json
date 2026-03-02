@@ -1,0 +1,18 @@
+{
+  "Title": "Perhaps",
+  "Composer": "Charlie Parker",
+  "Rhythm": "Up Tempo Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "MainSegment": {
+        "Chords": "C7|C7|C7|C7|F7|F7|C7|Em7,Ab7b9|Dm7|G7|C7|Dm7,G7"
+      }
+    },
+    {
+      "MainSegment": {
+        "Chords": "Dm7,G7|C7"
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "Title": "Look For The Silver Lining",
+  "Composer": "Jerome Kern",
+  "Key": "Eb",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Ebmaj7|Fm7,Bb7|Ebmaj7|Fm7,Bb7|Gm7|Ab7|Gm7|Cm7"
+      }
+    },
+    {
+      "MainSegment": {
+        "Chords": "Fm7|Bb7|Ebmaj7|Ebmaj7|Cm7|F7|Fm7|Bb7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Ebmaj7|Fm7,Bb7|Ebmaj7|Fm7,Bb7|Bbm7|Eb7|Abmaj7|Abmaj7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Cm7|Am7b5,D7b9|Gm7|C7|Fm7|Bb7|Eb6|Fm7,Bb7"
+      }
+    }
+  ]
+}

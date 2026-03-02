@@ -1,0 +1,27 @@
+{
+  "Title": "Speak No Evil",
+  "Composer": "Wayne Shorter",
+  "Key": "Cmin",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Cm7|Dbmaj7|Cm7|Dbmaj7|Cm7|Dbmaj7|Cm7|Dbmaj7,Ebm7|Em7,Cm7|Dm7,Bbm7|A7alt|Bbm7|A7alt|Bbm7"
+      }
+    },
+    {
+      "MainSegment": {
+        "Chords": "Am7b5|Ab7|Gm7|Gb7#11|Fm7|Bb7#11|D/Eb|Dbmaj7#11"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Cm7|Dbmaj7|Cm7|Dbmaj7|Cm7|Dbmaj7|Cm7|Dbmaj7,Ebm7|Em7,Cm7|Dm7,Bbm7|A7alt|Bbm7|A7alt|Bbm7"
+      }
+    }
+  ]
+}

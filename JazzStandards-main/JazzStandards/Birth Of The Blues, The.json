@@ -1,0 +1,34 @@
+{
+  "Title": "Birth Of The Blues, The",
+  "Composer": "Ray Henderson",
+  "Rhythm": "Slow Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Cmaj7,C#07|Dm7,G7|Cmaj7,E7|Fmaj7,F#07|G7|Dm7,G7"
+      },
+      "Endings": [
+        {
+          "Chords": "C6,Eb07|Dm7,Db7"
+        },
+        {
+          "Chords": "C6,F7|C6"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "E7|E7|E7|E7|A7|A7|D7|Dm7,Db7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Cmaj7,C#07|Dm7,G7|Cmaj7,E7|Fmaj7,F#07|G7|Dm7,G7|C6,Eb07|Dm7,G7"
+      }
+    }
+  ]
+}

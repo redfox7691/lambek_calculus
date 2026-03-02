@@ -1,0 +1,34 @@
+{
+  "Title": "Cabaret",
+  "Composer": "Kander-Ebb",
+  "Key": "Eb",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Ebmaj7|Bb7|Ebmaj7|Bb7|Ebmaj7|Ebmaj7|Bbm7|Eb7|Abmaj7|A07|Gm7|C7"
+      },
+      "Endings": [
+        {
+          "Chords": "Fm7|Bb7|Gm7,C7|Fm7,Bb7"
+        },
+        {
+          "Chords": "Fm7|Bb7|Eb6|Eb6"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Abm6|Abm6|Ebmaj7|Ebmaj7|Cm,Cm/maj7|Cm7,F7|Bb7|Bb7"
+      },
+      "Endings": [
+        {
+          "Chords": "Fm7|Bb7sus|Eb6|Fm7,Bb7"
+        }
+      ]
+    }
+  ]
+}

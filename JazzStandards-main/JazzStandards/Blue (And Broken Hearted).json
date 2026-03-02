@@ -1,0 +1,23 @@
+{
+  "Title": "Blue (And Broken Hearted)",
+  "Composer": "Leslie-Handman-Clarke",
+  "Key": "Bb",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bbmaj7|Bbmaj7|Db07|Db07|D7#5|D7#5|G7#5|G7|Cm7"
+      },
+      "Endings": [
+        {
+          "Chords": "Cm7|Ebm7|F7|Bbmaj7/D|Db07|Cm7|F7"
+        },
+        {
+          "Chords": "Cm7,Ab7|Bbmaj7|G7#9|Cm7b5|F7|Bbmaj7|Bbmaj7"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "Title": "Straighten Up And Fly Right",
+  "Composer": "Cole-Mills",
+  "Key": "Ab",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Ab,Ab/Gb|Ab/F,Ab/Eb|Db,Ab/C|Bbm7,Eb7|Ab,Ab/Gb|Ab/F,Ab/Eb|Db,Ab/C"
+      },
+      "Endings": [
+        {
+          "Chords": "Bbm6,Eb7"
+        },
+        {
+          "Chords": "Bbm7,Eb7,Ab6,"
+        }
+      ]
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "C7|C7|F7|F7|Bb7|Bb7|Eb7|Eb7"
+      }
+    },
+    {
+      "Label": "D",
+      "MainSegment": {
+        "Chords": "Ab,Ab/Gb|Ab/F,Ab/Eb|Db,Ab/C|Bbm7,Eb7|Ab,Ab/Gb|Ab/F,Ab/Eb|Db,Ab/C|Bbm7,Eb7,Ab6,"
+      }
+    }
+  ]
+}

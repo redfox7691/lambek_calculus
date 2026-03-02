@@ -1,0 +1,29 @@
+{
+  "Title": "I'm Gonna Sit Right Down and Write Myself A Letter",
+  "Composer": "Fred Ahlert",
+  "Key": "G",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "i",
+      "MainSegment": {
+        "Chords": "Gmaj7|Ab07|Am7|D7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Gmaj7|Gmaj7,D7|Gmaj7|Gmaj7|Gmaj7|B7|C,E7|Am7"
+      },
+      "Endings": [
+        {
+          "Chords": "Am7|D7|Gmaj7|Dm7,E7|A7|A7|D7|D7"
+        },
+        {
+          "Chords": "Cmaj7|Cm7|Gmaj7,Dm7|E7|A7|D7|Gmaj7|Gmaj7"
+        }
+      ]
+    }
+  ]
+}

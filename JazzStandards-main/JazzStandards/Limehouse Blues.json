@@ -1,0 +1,20 @@
+{
+  "Title": "Limehouse Blues",
+  "Composer": "Braham-Furber",
+  "Key": "Ab",
+  "Rhythm": "Up Tempo Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Db7|Db7|Db7|Db7|Bb7|Bb7|Bb7|Bb7|Ab6|Ab6|C7|Fm7|Bb7|Bb7|Bbm7|Eb7,D7"
+      }
+    },
+    {
+      "MainSegment": {
+        "Chords": "Db7|Db7|Db7|Db7|Bb7|Bb7|Bb7|Bb7|Ab6|F7|Bbm7|Dbm6|Ab6/C,B07|Bbm7,Eb7|Ab6|Ab6"
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "Title": "Humpty Dumpty",
+  "Composer": "Chick Corea",
+  "Rhythm": "Up Tempo Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "MainSegment": {
+        "Chords": "Ebmaj7|Dmaj7|Gbmaj7|Fmaj7|A7alt|Bbmaj7|Bbm7|Bbm7|Bbm7|Bbm7"
+      }
+    },
+    {
+      "MainSegment": {
+        "Chords": "Dm7|Bm7|Abm7|Abm7|Fm7|Abm7|Gbmaj7|Bb7#5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "Title": "Night And Day",
+  "Composer": "Cole Porter",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Abmaj7(Dm7b5)|G7|Cmaj7|Cmaj7|Abmaj7(Dm7b5)|G7|Cmaj7|Cmaj7|F#m7b5|Fm7|Em7|Eb07|Dm7|G7"
+      },
+      "Endings": [
+        {
+          "Chords": "Cmaj7|Cmaj7"
+        },
+        {
+          "Chords": "Cmaj7|Bb7"
+        }
+      ]
+    },
+    {
+      "MainSegment": {
+        "Chords": "Ebmaj7|Ebmaj7|Cmaj7|Cmaj7|Ebmaj7|Ebmaj7|Cmaj7|Cmaj7|F#m7b5|Fm7|Em7|Eb07|Dm7|G7|C6|C6"
+      }
+    }
+  ]
+}

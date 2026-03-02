@@ -1,0 +1,32 @@
+{
+  "Title": "Bye Bye Blues",
+  "Composer": "Hamm-Bennett-Lown-Gray",
+  "Rhythm": "Up Tempo Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "C|C|Ab7|Ab7|C|C|A7|A7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "D7|D7|G7|G7|C|C07|Dm7|G7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "C|C|Ab7|Ab7|C|C|A7|A7"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "D7|D7|G7|G7|C|Ab7|C|C"
+      }
+    }
+  ]
+}

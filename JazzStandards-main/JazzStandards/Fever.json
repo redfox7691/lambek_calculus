@@ -1,0 +1,20 @@
+{
+  "Title": "Fever",
+  "Composer": "Davenport-Cooley",
+  "Key": "Amin",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Am|Am|Am|Am|Am|Am|E7|Am|Am|Am|Am|Am|Am|Am|E7|Am"
+      }
+    },
+    {
+      "MainSegment": {
+        "Chords": "E7|Am|E7|Am|E7|Am|E7|Am"
+      }
+    }
+  ]
+}

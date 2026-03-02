@@ -1,0 +1,27 @@
+{
+  "Title": "African Queen, The",
+  "Composer": "Horace Silver",
+  "Key": "Cmin",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Cm9,Db9|Cm9,Db9|Cm9,Db9|Cm9,Db9|Cm9,Db9|Cm9,Db9|Cm9,Db9|Cm9,Db9"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Cm9,Db9|Cm9,Db9|Cm9,Db9|Cm9,Db9|Cm9,Db9|Cm9,Db9|Cm9,Db9|Cm9,Db9"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Bb7,A7|Ab7,G7|Cm9,Db9|Cm9,Db9|Cm9,Db9|Cm9,Db9"
+      }
+    }
+  ]
+}

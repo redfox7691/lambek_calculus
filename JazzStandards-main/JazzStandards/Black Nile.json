@@ -1,0 +1,41 @@
+{
+  "Title": "Black Nile",
+  "Composer": "Wayne Shorter",
+  "Key": "Dmin",
+  "Rhythm": "Up Tempo Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "i",
+      "MainSegment": {
+        "Chords": "Fm7|Gbmaj7|Ebm7|Fm7,Dm7|Bb7|Ebmaj7|Em7b5,A7b9|A7b9"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Dm6|Eb7|Dm6|Cm7,F7#5|Bbmaj7"
+      },
+      "Endings": [
+        {
+          "Chords": "A7b13|Dm6|Eb7"
+        },
+        {
+          "Chords": "Gm7,C7|A7#9|Ab7"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Gm7|C7|Fm7,Bb7|Ebmaj7|Gm7|C7|Fm7,Bb7|Ebmaj7,A7b9"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Dm6|Eb7|Dm6|Cm7,F7|Bbmaj7|A7b13|Dm6|Eb7"
+      }
+    }
+  ]
+}

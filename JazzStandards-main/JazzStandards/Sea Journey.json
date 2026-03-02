@@ -1,0 +1,48 @@
+{
+  "Title": "Sea Journey",
+  "Composer": "Chick Corea",
+  "Key": "Amin",
+  "Rhythm": "Latin",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "i",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Amb6|Am|Amb6|Am"
+      }
+    },
+    {
+      "Label": "A",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Amb6|Am|Amb6|Am"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Dm11,Em11|Am11|Am11|G7sus|G7sus|F#m7b5|F#m7b5|Fmaj7|Fmaj7|E7sus|E7b9"
+      }
+    },
+    {
+      "Label": "A",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Amb6|Am|Amb6|Am"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "Dm7,Cmaj7#5|Fmaj7,E7#9|Fmaj7|Fmaj7|E7#9|E7#9|Fmaj7|Fmaj7|Em7|A7|Dmaj7,C#m7|Bm7b5,E7b9"
+      }
+    },
+    {
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Amb6|Am"
+      }
+    }
+  ]
+}

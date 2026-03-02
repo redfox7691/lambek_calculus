@@ -1,0 +1,28 @@
+{
+  "Title": "Chelsea Bridge",
+  "Composer": "Billy Strayhorn",
+  "Key": "Db",
+  "Rhythm": "Ballad",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Bbm/maj7|Abm/maj7|Bbm/maj7,Abm/maj7|Bb7|Ebm7|Ab7|Db6|Db6,C7,B7,"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "F#m7,B7|Emaj7,C#m7|F#m7,B7alt|Bm7,E7|Amaj7,,Am(C7/Bb),D7|Gmaj7(Gmaj7/B)|Gm7,C7|Db7,C7,B7,"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bbm/maj7|Abm/maj7|Bbm/maj7,Abm/maj7|Bb7|Ebm7|Ab7|Db6|Db6,C7,B7,"
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "Title": "Shutterbug",
+  "Composer": "J.J. Johnson",
+  "Key": "Gmin",
+  "Rhythm": "Up Tempo Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "MainSegment": {
+        "Chords": "Gm7|Gm7|Gm7|Gm7|Gm7|Gm7|Gm7|Gm7|Cm7|Cm7|Cm7|Cm7|Gm7|Gm7|Gm7|Gm7|Bbm7,Eb7|Am7b5,D7b9#5|Gm7|Gm7"
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "Title": "You're The Top",
+  "Composer": "Cole Porter",
+  "Key": "Eb",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "v",
+      "MainSegment": {
+        "Chords": "Ebmaj7,E07|Fm7,Bb7|Gm7,F#07|Gm7,C7|Fm7|Fm7,Bb7|Ebmaj7|Fm7,Bb7|Ebmaj7,E07|Fm7,Bb7|Ebmaj7|Am7,D7|Gm7,D7b9|Gm7,D7b9|Bb7|Bb7,Bb7#5"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Eb6|Eb6,E07|Fm7|Bb7|Cm,Cm/maj7|Cm7,Cm6"
+      },
+      "Endings": [
+        {
+          "Chords": "Dm7b5|G7b9"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Abmaj7,Gm7|Fm7,Bb7|Eb6|Am7b5|D7,G7|C7,F7|Fm7|Bb7"
+      },
+      "Endings": [
+        {
+          "Chords": "Bbm7|Eb7"
+        }
+      ]
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "Abmaj7,Gm7|Fm7,Gm7|Abmaj7,C7b9|F7|Fm7|Bb7sus|Eb6|Fm7,Bb7"
+      }
+    }
+  ]
+}

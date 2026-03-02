@@ -1,0 +1,15 @@
+{
+  "Title": "Sonnymoon For Two",
+  "Composer": "Sonny Rollins",
+  "Key": "Bb",
+  "Rhythm": "Medium Up Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bb7|Eb7|Bb7|Bb7|Eb7|Eb7|Bb7|Bb7|Cm7|F7|Bb7,G7|Cm7,F7"
+      }
+    }
+  ]
+}

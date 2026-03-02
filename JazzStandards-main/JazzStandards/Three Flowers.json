@@ -1,0 +1,33 @@
+{
+  "Title": "Three Flowers",
+  "Composer": "McCoy Tyner",
+  "Key": "Eb",
+  "Rhythm": "Waltz",
+  "TimeSignature": "3/4",
+  "Sections": [
+    {
+      "MainSegment": {
+        "Chords": "Ebmaj7|Db7|Ebmaj7|Db7|Ebmaj7|Db7|Am7|D7"
+      },
+      "Endings": [
+        {
+          "Chords": "G/D|Dm7/G|G/D|Dm7/G|Emaj7|D7|Emaj7|Fm7,Bb7"
+        },
+        {
+          "Chords": "G/D|Dm7/G|G/D|Dm7/G|Emaj7|D7|Emaj7|Fm7,Bb7"
+        }
+      ]
+    },
+    {
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Ebmaj7|Db7"
+      }
+    },
+    {
+      "MainSegment": {
+        "Chords": "Ebmaj7"
+      }
+    }
+  ]
+}

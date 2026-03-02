@@ -1,0 +1,14 @@
+{
+  "Title": "C-Jam Blues",
+  "Composer": "Duke Ellington",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "C7|C7|C7|C7|F7|F7|C7|C7|G7|G7|C7|C7"
+      }
+    }
+  ]
+}

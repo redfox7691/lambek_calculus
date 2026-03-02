@@ -1,0 +1,38 @@
+{
+  "Title": "Maze, The",
+  "Composer": "Herbie Hancock",
+  "Key": "Emin",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "MainSegment": {
+        "Chords": "Em7|A/E|Em7|A/E"
+      }
+    },
+    {
+      "Label": "i",
+      "MainSegment": {
+        "Chords": "Em7|A/E|Em7|A/E"
+      }
+    },
+    {
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Am7|Gm7|F#m7b5|F13"
+      }
+    },
+    {
+      "Label": "A",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Em7|A7|Em7|A7|Am7|Gm7|F#m7b5|B7b9"
+      }
+    },
+    {
+      "MainSegment": {
+        "Chords": "Fmaj7"
+      }
+    }
+  ]
+}

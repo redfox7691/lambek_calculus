@@ -1,0 +1,34 @@
+{
+  "Title": "Só Danço Samba",
+  "Composer": "Antonio-Carlos Jobim",
+  "Rhythm": "Bossa Nova",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "C6|F7|D7|D7|Dm7|G7"
+      },
+      "Endings": [
+        {
+          "Chords": "C6|F7"
+        },
+        {
+          "Chords": "C6|C6"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Gm7|C7|Fmaj7|Fmaj7|Am7|D7|G7|G7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "C6|F7|D7|D7|Dm7|G7|C6|F7"
+      }
+    }
+  ]
+}

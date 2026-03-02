@@ -1,0 +1,39 @@
+{
+  "Title": "Brazil (Aquarela Do Brasil)",
+  "Composer": "Ary Barroso",
+  "Key": "D",
+  "Rhythm": "Samba",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "v",
+      "MainSegment": {
+        "Chords": "D6|D6|D6|D6|Dm6|Dm6|Dm6|Dm6|D6|D6|D6|D6|B7b13|B7b13|Em7|A7|Em7|A7|Em7|A7|Em7|A7|Dmaj7|Dmaj7|Em7|A7|Dmaj7|Dmaj7|Em7|A7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Dmaj7|Dmaj7|Dmaj7|Dmaj7|Em7|Em7|Em7|Em7|Em7|Em7|A7|A7|Dmaj7|Dmaj7|Em7|A7|Dmaj7,D7|Db7,C7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "B7b9|B7b9|B7b9|B7b9|B7b9|B7b9|B7b9|B7b9|B7b9|B7b9|B7b9|B7b9|Em|Emb6|Em6|Emb6"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "Em7(Gm6)|Em7(Gm6)|C7|C7|F#m7|F#m7|Bm7|Bm7|E7|E7|Em7|A7"
+      }
+    },
+    {
+      "Label": "D",
+      "MainSegment": {
+        "Chords": "Dmaj7|Dmaj7|Em7|A7|Dmaj7|Dmaj7|Em7|A7|Dmaj7|Dmaj7|Em7|A7"
+      }
+    }
+  ]
+}

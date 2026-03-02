@@ -1,0 +1,35 @@
+{
+  "Title": "Best Is Yet To Come (Page 1), The",
+  "Composer": "Cy Coleman",
+  "Key": "Ab",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Abmaj7,Ab7|Ab6,,Abaug,Ab|Abmaj7,Ab7|Ab6,,Abaug,Ab|Abmaj7,Ab7|Ab6,,Abaug,Ab|F7|F7|Bbm7|Eb7|Ab6|Dm7b5,G7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Cmaj7,C7|C6,,Caug,C|Cmaj7,C7|C6,,Caug,C|Cmaj7,C7|C6,,Caug,C|A7|A7|Dm7,G7|Dm7,G7|C6,Dm7|D#07,C6/E|Dm7,G7|Dm7,G7|C6|Bbm7,Eb7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Abmaj7,Ab7|Ab6,,Abaug,Ab|F7|F7|Bb7|Eb7|Ab6"
+      },
+      "Endings": [
+        {
+          "Chords": "Ab6"
+        },
+        {
+          "Chords": "G7b9b13,C7b9"
+        }
+      ]
+    }
+  ]
+}

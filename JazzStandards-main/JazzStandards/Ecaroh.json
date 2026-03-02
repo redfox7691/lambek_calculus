@@ -1,0 +1,35 @@
+{
+  "Title": "Ecaroh",
+  "Composer": "Horace Silver",
+  "Key": "Db",
+  "Rhythm": "Medium Swing",
+  "Sections": [
+    {
+      "Label": "i",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Bb7#5#9,Eb7#9|Bb7#5#9,Eb7#9|Bb7#5#9,Eb7#9|Bb7#5#9,Eb7#9|B7#5#9,E7#9|B7#5#9,E7#9|B7#5#9,E7#9|B7#5#9,E7#9|Amaj7|Amaj7|D7#11|D7#11|Dbmaj7|Dm7,G7#5#9|Cmaj7|Cm7,F7#5#9|F#7#9,G7#9|E7#9,F7#9|D7,Eb7,C7,Db7|Bb7#9|Bb7#9,B7#9|Ab7#9,A7#9|F#7,G7,E7,F7|D7#9"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Dbmaj7|Gb7#11|Dbmaj7|G7#11"
+      },
+      "Endings": [
+        {
+          "Chords": "Gbmaj7|Gm7,C7|F#m7,B7|Emaj7,,Ebm7,Ab7"
+        },
+        {
+          "Chords": "Gbmaj7|Fm7b5,Bb7#5#9|Ebm7b5,Ab7#5#9|Dbmaj7"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Abm7|Db7#9|Gbmaj7,A7b5|Bb7b5,Ebm7|Bm7|E7b9|Amaj7|Ab7alt"
+      }
+    }
+  ]
+}

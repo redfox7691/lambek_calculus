@@ -1,0 +1,28 @@
+{
+  "Title": "Look To The Sky",
+  "Composer": "Antonio-Carlos Jobim",
+  "Key": "Eb",
+  "Rhythm": "Bossa Nova",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Ebmaj7|Ebmaj7|Ebm7|Ab7|Ebmaj7|Ebmaj7|Gm7|C7b9|Fm7|Fm7|Abm7|Db7"
+      },
+      "Endings": [
+        {
+          "Chords": "Gm7|Gb07|Fm7|Bb7#5"
+        },
+        {
+          "Chords": "Gbmaj7|Emaj7#11|Ebmaj7|Ebmaj7"
+        }
+      ]
+    },
+    {
+      "MainSegment": {
+        "Chords": "Ebmaj7|Gm7,C7b9|Fm7|Emaj7#11|Ebmaj7|Abm7,Db7b9|Gbmaj7|Emaj7#11|Ebmaj7|Ebmaj7"
+      }
+    }
+  ]
+}

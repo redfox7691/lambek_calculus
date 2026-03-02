@@ -1,0 +1,20 @@
+{
+  "Title": "Last Train Home",
+  "Composer": "Pat Metheny",
+  "Key": "Bb",
+  "Rhythm": "Even 8ths",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bb|C/Bb|Ab|Bb|Bb|Dm,Dm7|Gm|Eb|F7sus|F7sus|F7|Gm|D7/F#|Gm/F|Ebmaj7|Ebmaj7|Dm7|Gm7|Dm7|Gm7|Gm7|Eb6/Bb|Eb6/Bb|Eb6/Bb|F"
+      }
+    },
+    {
+      "MainSegment": {
+        "Chords": "Bb,F/Bb|F/Bb|Gm7,F/G|F/G|Bb,F/Bb|F/Bb|Gm7,F/G|F/G"
+      }
+    }
+  ]
+}

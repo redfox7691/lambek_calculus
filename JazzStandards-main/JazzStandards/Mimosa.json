@@ -1,0 +1,28 @@
+{
+  "Title": "Mimosa",
+  "Composer": "George Benson",
+  "Key": "F",
+  "Rhythm": "Bossa Nova",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "i",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Fm9|Fmaj9|Fm9|Fmaj9"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Fm9|Bb13/F|Db7#11|C7b9|Fm9|Bb13/F|Db7#11|C7b9"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Fmaj7|Dm7|Gm7|C7|A7|Dm7|Gm7|C7|Fm9|Fmaj9|Fm9|Fmaj9"
+      }
+    }
+  ]
+}

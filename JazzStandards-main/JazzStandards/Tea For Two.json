@@ -1,0 +1,33 @@
+{
+  "Title": "Tea For Two",
+  "Composer": "Vincent Youmans",
+  "Key": "Ab",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bbm7,Eb7|Bbm7,Eb7|Abmaj7,Db7|Cm7,F7|Bbm7,Eb7|Bbm7,Eb7|Abmaj7|Abmaj7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Dm7,G7|Dm7,G7|Cmaj7,F7|Em7,A7|Dm7,G7|Dm7,G7|Cmaj7|Eb7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bbm7,Eb7|Bbm7,Eb7|Abmaj7,Db7|Cm7,F7|Bbm7,Eb7|Bbm7,Eb7|Cm7b5|F7b9"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "Bbm7,C07|Dbmaj7,C07|Bbm7,Bbm7/Ab|Gb7|Cm7,B07|Bbm7,Eb7|Ab6|Cm7b5,F7b9"
+      }
+    }
+  ]
+}

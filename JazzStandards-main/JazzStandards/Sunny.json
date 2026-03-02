@@ -1,0 +1,14 @@
+{
+  "Title": "Sunny",
+  "Composer": "Bobby Hebb",
+  "Key": "Amin",
+  "Rhythm": "Rock Pop",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "MainSegment": {
+        "Chords": "Am7|C7|Fmaj7|Bm7b5,E7b9|Am7|C7|Fmaj7|Bm7b5,E7b9|Am7|C7|Fmaj7|Bb7|Bm7b5|E7b9|Am7|E7b9"
+      }
+    }
+  ]
+}

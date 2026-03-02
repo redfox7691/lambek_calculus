@@ -1,0 +1,35 @@
+{
+  "Title": "Serpent's Tooth",
+  "Composer": "Miles Davis",
+  "Key": "Bb",
+  "Rhythm": "Medium Up Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bbmaj7,B07|Cm7,C#07|Dm7,D7#5|Ebmaj7,Abmaj7#11|Bbmaj7,E9|Ebmaj7,Ab7"
+      },
+      "Endings": [
+        {
+          "Chords": "Dm7,G7|Cm7,F7"
+        },
+        {
+          "Chords": "Bbmaj7|Bb6"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Bb7|Bb7|Ebmaj7|Ebmaj7|C7|C7|F7|F7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bbmaj7,B07|Cm7,C#07|Dm7,D7#5|Ebmaj7,Ab7#11|Bbmaj7,E9|Ebmaj7,Ab7|Bbmaj7|Bb6"
+      }
+    }
+  ]
+}

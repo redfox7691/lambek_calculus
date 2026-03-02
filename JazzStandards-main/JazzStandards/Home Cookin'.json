@@ -1,0 +1,35 @@
+{
+  "Title": "Home Cookin'",
+  "Composer": "Horace Silver",
+  "Key": "F",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "F6,Gm7|Am7,Dm7|G7,Am7|Bbm7,Eb7|Am7,D7|Gm7,C7"
+      },
+      "Endings": [
+        {
+          "Chords": "Am7,D7|Gm7,C7"
+        },
+        {
+          "Chords": "Gm7,C7|F6"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Bbm7,Eb7|Ab6|Bbm7,Eb7|Ab6|Dm7,G7|C6|Dm7(D7),G7|C6(Gm7),(C7)"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "F6,Gm7|Am7,Dm7|Gm7,Am7|Bbm7,Eb7|Am7,D7|Gm7,C7|Gm7,C7|F6"
+      }
+    }
+  ]
+}

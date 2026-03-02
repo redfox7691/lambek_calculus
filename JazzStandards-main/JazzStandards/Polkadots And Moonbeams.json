@@ -1,0 +1,35 @@
+{
+  "Title": "Polkadots And Moonbeams",
+  "Composer": "Jimmy Van-Heusen",
+  "Key": "F",
+  "Rhythm": "Ballad",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Fmaj7,Dm7|Gm7,C7|Fmaj7,Dm7|Gm7,,Em7b5,A7|Dm7,Db7|F/C,,Am7,Abm7|Gm7,C7"
+      },
+      "Endings": [
+        {
+          "Chords": "Am7,Dm7,Gm7,C7"
+        },
+        {
+          "Chords": "F6,,Bm7b5,E7"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Amaj7,A#07|Bm7,E7|Amaj7,F#m7|Bm7,E7|Amaj7,A#07|Bm7,E7|A7,D7|Gm7,C7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Fmaj7,Dm7|Gm7,C7|Fmaj7,Dm7|Gm7,,Em7b5,A7|Dm7,Db7|F/C,,Am7,Abm7|Gm7,C7|F6,,Gm7,C7"
+      }
+    }
+  ]
+}

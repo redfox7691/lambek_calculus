@@ -1,0 +1,33 @@
+{
+  "Title": "El Cajon",
+  "Composer": "Johnny Mandel",
+  "Key": "Bb",
+  "Rhythm": "Bossa Nova",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "D7,(Ab7)|G7|C7|C7|Cm7,(Gb7)|F7|Bb7sus|Bb7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Ebmaj7|Am7b5,D7b9|Dm7b5|G7b9|C7|C7|Cm7|F7,Eb7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "D7,(Ab7)|G7|C7|C7|Cm7,(Gb7)|F7|Bb7sus|Bb7"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "Ebmaj7|Am7b5,D7b9|Dm7b5|G7b9|C7|F7|Bb6|F7,Eb7"
+      }
+    }
+  ]
+}

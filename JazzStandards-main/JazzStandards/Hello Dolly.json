@@ -1,0 +1,25 @@
+{
+  "Title": "Hello Dolly",
+  "Composer": "Jerry Herman",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "C|C|Am|Am|Cmaj7/G|Ab07|Dm7|G7|Dm|Dmaug|Dm6|Dmaug|Dm/G|G7|Em7,Eb07|Dm7,G7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "C|C|Am|Am|Gm7|C7|F|E7|Am|Em|Am|Em|D7|G7|C6,Eb07|Dm7,G7"
+      }
+    },
+    {
+      "MainSegment": {
+        "Chords": "D7|G7|D7|G7|C,C/E,F,F#0|C/G,G7,C6,"
+      }
+    }
+  ]
+}

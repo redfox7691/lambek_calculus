@@ -1,0 +1,35 @@
+{
+  "Title": "Upper Manhattan Medical Group",
+  "Composer": "Billy Strayhorn",
+  "Key": "Db",
+  "Rhythm": "Medium Up Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Fm7b5|Bb7b9|Ebm7|Ab7|Db07,Db6|Dbmaj7"
+      },
+      "Endings": [
+        {
+          "Chords": "Dbm7|Gb7"
+        },
+        {
+          "Chords": "Abm7|Db7"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Gm7b5|C7b13|Fmaj7|Fmaj7|Abm7b5|Db7b13|Gbm|Ab7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Fm7b5|Bb7b9|Ebm7|Ab7|Db07|Db6|Db07|Db6"
+      }
+    }
+  ]
+}

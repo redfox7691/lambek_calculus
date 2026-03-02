@@ -1,0 +1,20 @@
+{
+  "Title": "All Of A Sudden My Heart Sings",
+  "Composer": "Herpin-Jamblan-Rome",
+  "Rhythm": "Ballad",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "C|C|G7|G7|C|C7|F|Fm|C|F|F|G7|G7|C|C"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Am|Am|Em|Em|F|F|Em|Am|Dm|Fm|C/G|Am|D7|G7|C,Fm|C,G7"
+      }
+    }
+  ]
+}

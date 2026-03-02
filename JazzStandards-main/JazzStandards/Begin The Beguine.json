@@ -1,0 +1,40 @@
+{
+  "Title": "Begin The Beguine",
+  "Composer": "Cole Porter",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "B",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "C|C6|Cmaj7|C6|C|C6,C#0|Dm7|G7|Dm7|Dm7|Dm7|Dm7|Dm7|G7|Cmaj7|C6"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Cm7|F7|Bb6|Bb6|Bbm7|Eb7|Abmaj7|Ab6|A07|A07|G6|Ab7|G6|Ab7|Dm7|G7"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "C|C6|Cmaj7|C6|C|C7|Dm7|G7|Dm7b5|Dm7b5|Dm7b5|Dm7b5|Dm7|G7|Cmaj7|C6"
+      }
+    },
+    {
+      "MainSegment": {
+        "Chords": "C|C6|Cmaj7|C6|C|C6|G7|G7|Fmaj7|Fmaj7|Em7|A7"
+      },
+      "Endings": [
+        {
+          "Chords": "Dm7|G7|Cmaj7|C6"
+        },
+        {
+          "Chords": "Dm7|Dm7|Dm7b5|Dm7b5|Dm7|G7|C|C6"
+        }
+      ]
+    }
+  ]
+}

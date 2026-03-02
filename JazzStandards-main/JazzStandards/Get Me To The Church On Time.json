@@ -1,0 +1,27 @@
+{
+  "Title": "Get Me To The Church On Time",
+  "Composer": "Alan Lerner",
+  "Key": "G",
+  "Rhythm": "Up Tempo Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "G6|G6|G6|G6|G6|G6|G6|G6|Am7|D7|Am7|D7|Am7|D7|G6|G6"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Cmaj7|Cmaj7|Gmaj7|Gmaj7|A7|A7|Am7|D7"
+      }
+    },
+    {
+      "MainSegment": {
+        "Chords": "Am7|D7|Bm7|E7|Am7|Cm7,F7|Bm7|E7#9|Am7,D7|Bm7,E7#9|Am7|D7|G6|G6"
+      }
+    }
+  ]
+}

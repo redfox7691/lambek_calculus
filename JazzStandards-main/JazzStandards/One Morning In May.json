@@ -1,0 +1,29 @@
+{
+  "Title": "One Morning In May",
+  "Composer": "Hoagy Carmichael",
+  "Key": "G",
+  "Rhythm": "Up Tempo Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Gmaj7|Em7|Am7|D7|Bm7|E7b9|Am7|D7|Gmaj7|Dm7,G7|Cmaj7|Cm/maj7"
+      },
+      "Endings": [
+        {
+          "Chords": "Bm7|E7|Am7|D7"
+        },
+        {
+          "Chords": "Bm7,E7|Am7,D7|G6|G6"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Am7|D7|Gmaj7|Gmaj7|Am7|D7|Gmaj7|Gmaj7|Cm7|F7|Bbmaj7|Em7,A7|F#m7,B7|Em7,A7|Am7|D7"
+      }
+    }
+  ]
+}

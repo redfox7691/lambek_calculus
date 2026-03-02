@@ -1,0 +1,47 @@
+{
+  "Title": "Here's That Sunny Day",
+  "Composer": "Barney Kessel",
+  "Key": "A",
+  "Rhythm": "Bossa Nova",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "i",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "A/E|A/E|D/E|D/E"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Amaj7|Amaj7|Dmaj7|Dmaj7|Amaj7|Amaj7|Cmaj7|Cmaj7|Fmaj7|Fmaj7|Bbmaj7|Bbmaj7"
+      },
+      "Endings": [
+        {
+          "Chords": "Bm7|E7,Cm7,F7,|Bbmaj7|Bbmaj7,E7b9"
+        },
+        {
+          "Chords": "Bm7|E7|Em7|A7"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Dm7|G7|Cmaj7|Fmaj7|Bb7|Bb7|Bm7b5|E7#5"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Amaj7|Amaj7|Dmaj7|Dmaj7|Amaj7|Amaj7|Cmaj7|Cmaj7|Fmaj7|Fmaj7|Bbmaj7|Bbmaj7|Bm7|E7|C#m7,F#7|Bm7,E7"
+      }
+    },
+    {
+      "MainSegment": {
+        "Chords": "Bm7|E7|Cm7|F7|Bm7|E7|C#m7|C7|Bm7|E7|C#m|C7|Bm7|E7|Amaj7|Amaj7"
+      }
+    }
+  ]
+}

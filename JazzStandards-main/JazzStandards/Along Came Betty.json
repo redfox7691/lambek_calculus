@@ -1,0 +1,27 @@
+{
+  "Title": "Along Came Betty",
+  "Composer": "Benny Golson",
+  "Key": "Ab",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bbm7|Bm7,E7|Bbm7|Bm7,E7|Amaj7|Ab7|Gmaj7|Gb7|F#m7|Gm7,C7|F#m7|Gm7,C7|Fmaj7|A7b9|Dm7|G7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Cm7|F7|Am7b5,D7b9|Gm7,Gm7/F|Em7b5|A7b9|Fm7|Bb7"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "Bbm7|Bm7,E7|Bbm7|Bm7,E7|Cm7b5|F7b13|Bbm7b5|Eb7#9|Abmaj7|Bm7,E7"
+      }
+    }
+  ]
+}

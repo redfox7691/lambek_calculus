@@ -1,0 +1,33 @@
+{
+  "Title": "Ballade",
+  "Composer": "Charlie Parker",
+  "Key": "F",
+  "Rhythm": "Ballad",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Fmaj7|Em7b5,A7b9|D7|D7|G7|Gm7,C7|Fmaj7,Dm7|Gm7,C7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Fmaj7(Am7)|Em7b5,A7b9|D7|D7|G7|Gm7,C7|F6|F6"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Cm7,F7|Bbmaj7|Bbm7,Eb7|Fmaj7,,Em7b5,A7|Dm7|Dm7,G7|Gm7,D7#9|Gm7,C7#9"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Fmaj7|Em7b5,A7b9|D7|D7|G7|Gm7,C7|F6|F6"
+      }
+    }
+  ]
+}

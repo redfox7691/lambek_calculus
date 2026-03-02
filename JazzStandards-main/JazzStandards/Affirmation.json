@@ -1,0 +1,35 @@
+{
+  "Title": "Affirmation",
+  "Composer": "José Feliciano",
+  "Key": "Bmin",
+  "Rhythm": "Funk",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Em9|Em9|Bm9|Bm9|Em9|Em9|Bm9|Bm9|Bm9|Am7,D7"
+      },
+      "Endings": [
+        {
+          "Chords": "Gmaj9|Gmaj9|E9|E9|A9sus|A9sus"
+        },
+        {
+          "Chords": "Gmaj9|C9|F#m7,F9|Em7,Eb9|Dmaj9|Dmaj9"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Bbmaj9|Bbmaj9|Bbmaj9|Bbmaj9|Bbmaj9|Bbmaj9|A9sus|A9sus"
+      }
+    },
+    {
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Bm9|Bm9|Bm9|Bm9"
+      }
+    }
+  ]
+}

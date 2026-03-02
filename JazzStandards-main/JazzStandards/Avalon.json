@@ -1,0 +1,21 @@
+{
+  "Title": "Avalon",
+  "Composer": "Jolson-Sylva-Rose",
+  "Key": "Bb",
+  "Rhythm": "Up Tempo Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Cm7|Cm7|F7|F7|Bb6|Bb6|Bb6|G7|Cm7|Cm7|F7|F7|Bb6|Bb6|Bb6|Bb6"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Dm7|Dm7|G7|G7|Cm7|Cm7|Ebm7|Ab7|Bb6|Bb6|G7|G7|Cm7|F7|Bb6|Bb6"
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "Title": "Just In Tune",
+  "Composer": "John Abercrombie",
+  "Rhythm": "Medium Up Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "D7sus|D7sus|Dm7b5|G7b9|Cm7|Cm7/Bb|Am7|Am7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": ""
+      },
+      "Endings": [
+        {
+          "Chords": "Dm|Bb/D|Dm|Bb/D|Dm,Dm/C|Bbmaj7|Bm7b5|E7b9"
+        },
+        {
+          "Chords": "Fmaj7#11|Ebmaj7|Abmaj7#11|Gm7|C7sus|C7sus|C7sus|C7sus"
+        }
+      ]
+    }
+  ]
+}

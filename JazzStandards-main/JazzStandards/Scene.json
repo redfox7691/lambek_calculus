@@ -1,0 +1,33 @@
+{
+  "Title": "Scene",
+  "Composer": "Tom Harrell",
+  "Key": "G",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "3/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Cm7|Fm7|Bbm7|Ebm7|Abm7|Dbm7|F#m7|Bm7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Amaj7|Gmaj7#11|Dmaj7#11|Bm7|Abm7|Gmaj7|F#m7|Fmaj7|Cmaj7|Cmaj7|A/B|A/B"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Cm7|Fm7|Bbm7|Ebm7|Abm7|Dbm7|F#m7|Bm7"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "Amaj7|Dm7|Cmaj7|Bm7|Cm7|Bbmaj7|Am7/D|Am7/D|Gmaj7|Gmaj7"
+      }
+    }
+  ]
+}

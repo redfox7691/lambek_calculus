@@ -1,0 +1,28 @@
+{
+  "Title": "Jordu",
+  "Composer": "Duke Jordan",
+  "Key": "Cmin",
+  "Rhythm": "Up Tempo Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "D7,G7|Cm6|F7,Bb7|Ebmaj7|D7,G7|Cm6|Ab7|Ab7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "G7,C7|F7,Bb7|Eb7,Ab7|Dbmaj7|F7,Bb7|Eb7,Ab7|Db7,Gb7|Bmaj7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "D7,G7|Cm6|F7,Bb7|Ebmaj7|D7,G7|Cm6|Ab7|Ab7"
+      }
+    }
+  ]
+}

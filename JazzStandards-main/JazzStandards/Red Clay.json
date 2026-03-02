@@ -1,0 +1,21 @@
+{
+  "Title": "Red Clay",
+  "Composer": "Freddie Hubbard",
+  "Key": "C#min",
+  "Rhythm": "Funk",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "C#m11|Bm11|D7sus,E7sus|F#7sus,G#7sus"
+      }
+    },
+    {
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "C#m7|Bm7,E7|Amaj7|D#m7b5,G#7b9"
+      }
+    }
+  ]
+}

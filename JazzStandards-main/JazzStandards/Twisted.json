@@ -1,0 +1,22 @@
+{
+  "Title": "Twisted",
+  "Composer": "Wardell Gray",
+  "Key": "Bbmin",
+  "Rhythm": "Medium Up Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "i",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Bb7,Ab7|Ab7,Bb7|Bb7,Ab7|Ab7,Bb7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bb7|Eb7|Eb7|Fm7,Bb7|Eb7|Eb7|Bb7|Dm7,Gm7|Cm7|F7|Bb7,Gm7|Cm7,F7"
+      }
+    }
+  ]
+}

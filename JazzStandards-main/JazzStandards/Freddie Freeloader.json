@@ -1,0 +1,22 @@
+{
+  "Title": "Freddie Freeloader",
+  "Composer": "Miles Davis",
+  "Key": "Bb",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "MainSegment": {
+        "Chords": "Bb7|Bb7|Bb7|Bb7|Eb7|Eb7|Bb7|Bb7|F7|Eb7"
+      },
+      "Endings": [
+        {
+          "Chords": "Ab7|Ab7"
+        },
+        {
+          "Chords": "Bb7|Bb7"
+        }
+      ]
+    }
+  ]
+}

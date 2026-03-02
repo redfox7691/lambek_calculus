@@ -1,0 +1,37 @@
+{
+  "Title": "Segment",
+  "Composer": "Charlie Parker",
+  "Key": "Bbmin",
+  "Rhythm": "Up Tempo Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bbm6|Cm7b5,F7b9|Bbm6|Cm7b5,F7b9|Bbm6|Cm7b5,F7b9"
+      },
+      "Endings": [
+        {
+          "Chords": "Bbm6|Cm7b5,F7b9"
+        }
+      ]
+    },
+    {
+      "MainSegment": {
+        "Chords": "Bbm6|Bbm6"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Fm7b5|Bb7b9|Ebm7|Ebm7|Em7b5|Ab7b9|Dbmaj7|Cm7b5,F7b9"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bbm6|Cm7b5,F7b9|Bbm6|Cm7b5,F7b9|Bbm6|Cm7b5,F7b9|Bbm6|Cm7b5,F7b9"
+      }
+    }
+  ]
+}

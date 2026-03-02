@@ -1,0 +1,41 @@
+{
+  "Title": "My Song",
+  "Composer": "Keith Jarrett",
+  "Rhythm": "Even 8ths",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "i",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "C|C|Dbmaj7|Dm7,G7sus"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "C|C|Dm|Dm|G7sus|G7|F#m7b5|F#7b5|Fmaj7,F/E|Dm7,D#0|Em7|Am7|Dm7|C/E|Fm7"
+      },
+      "Endings": [
+        {
+          "Chords": "G7b9"
+        },
+        {
+          "Chords": "Bb7sus,Bb7"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Eb,Eb/D|Cm7|D7#9|G7b9|Abmaj7,Am|Am,D7b9|Gm7|C7b9#11|C/Db,Db/C|Bbm7,Bbm7/Ab|G7b9b13|Am7|Bb|F|G7sus|G7"
+      }
+    },
+    {
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "C|C|Dbmaj7|Dm7,G7sus"
+      }
+    }
+  ]
+}

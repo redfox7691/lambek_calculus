@@ -1,0 +1,29 @@
+{
+  "Title": "Conference Of The Birds",
+  "Composer": "Dave Holland",
+  "Key": "F",
+  "Rhythm": "Even 8ths",
+  "TimeSignature": "2/4",
+  "Sections": [
+    {
+      "Label": "i",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Dm,Dm,F,F|Bb,Bb,Eb,Eb"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Dm,Dm,F,F|Bb,Bb,Eb,Eb|Dm,Dm,F,F|Bb,Bb,Eb,Eb|Dm,Dm,F,F|Bb,Bb,Eb,Eb|Dm,Dm,Dm/C,G/B,G/B|G/B"
+      }
+    },
+    {
+      "Label": "A",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": ""
+      }
+    }
+  ]
+}

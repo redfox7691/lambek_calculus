@@ -1,0 +1,29 @@
+{
+  "Title": "Pensativa",
+  "Composer": "Clare Fischer",
+  "Key": "Gb",
+  "Rhythm": "Bossa Nova",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Gbmaj7|G7#11|Gbmaj7|G7#11|Gbmaj7|Eb7#9|Dmaj7|Ab7|Gmaj7#11|F#m7,B7|Em7,A7|Dmaj7|Abm7"
+      },
+      "Endings": [
+        {
+          "Chords": "G7|Gbmaj7|F7(Cm7),(F7)"
+        },
+        {
+          "Chords": "G7|Gbmaj7|Dbm7,Gb7"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Cmaj7|Am7|Fmaj7|E7#9|Dm7|G7|Cmaj7|Bm7,Bb7|Amaj7,Amaj7/G#|F#m7|Bm7|E7b9|Amaj7|Amaj7|Dm7|G7"
+      }
+    }
+  ]
+}

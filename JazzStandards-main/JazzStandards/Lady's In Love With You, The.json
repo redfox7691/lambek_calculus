@@ -1,0 +1,28 @@
+{
+  "Title": "Lady's In Love With You, The",
+  "Composer": "Burton Lane",
+  "Key": "G",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "A7|A7|Am7|D7|G6|G6,D7#5|G6|G6"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Dm7,G7|Dm7,G7|Dm7|G7|Cmaj7|Cmaj7|Cm6|D7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "A7|A7|Am7|D7|Am7|D7|G6|G6"
+      }
+    }
+  ]
+}

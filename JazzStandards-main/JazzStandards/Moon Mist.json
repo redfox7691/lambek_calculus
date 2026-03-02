@@ -1,0 +1,40 @@
+{
+  "Title": "Moon Mist",
+  "Composer": "Ellington-Mercer",
+  "Key": "F",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Dm7,Dm7/C|Bm7b5,Bb7|Am7,Eb7|D7|G7sus,G7|C7sus,C7|Am7,D7"
+      },
+      "Endings": [
+        {
+          "Chords": "Gm7,A7b9"
+        },
+        {
+          "Chords": "Gm7,Gb7"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Fmaj7,Bb/F|Fmaj7,Bb/F|Fmaj7,Gm7b5/F|Fmaj7,C7sus|Fmaj7,Bb/F|Fmaj7,Dm7|G7,G7/F|Em7b5,A7b9"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Dm7,Dm7/C|Bm7b5,Bb7|Am7,Eb7|D7|G7sus,G7|C7sus,C7|Fmaj7,Dm7|Em7b5,A7b9"
+      }
+    },
+    {
+      "MainSegment": {
+        "Chords": "Fmaj7,Bb7|Eb7,Ab7|Db7,Gb7|Fmaj7"
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "Title": "Why Do I Love You?",
+  "Composer": "Jerome Kern",
+  "Key": "Ab",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Abmaj7|Fm7|Bbm7|Eb7|Abmaj7|F7|Bbm7|Eb7"
+      },
+      "Endings": [
+        {
+          "Chords": "Cm7|Fm7|Bbm7|Gm7b5,C7b9|Fm7|Bb7|Bbm7|Eb7"
+        },
+        {
+          "Chords": "Ebm7|Ab7|Dbmaj7|Gb7|Abmaj7|Bbm7,Eb7|Ab6|Bbm7,Eb7"
+        }
+      ]
+    }
+  ]
+}

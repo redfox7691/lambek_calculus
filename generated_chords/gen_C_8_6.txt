@@ -1,0 +1,48 @@
+Chord Generation Report
+=======================
+Tonality: C
+Target chords: 8
+Generated chords: 7
+Max depth: 6
+Branching mode: left
+Style strength: 0.750
+Temperature: 0.900
+Modulation strength: 0.900
+Modulation complexity: 0.500
+Tonal drift: 1.000
+Stats CSV: /Users/Mat/ownCloud/Python/Lambek Calculus/last_line_analysis/JazzStandards_all_cadence.csv
+
+Generated Chord List (in generation order)
+------------------------------------------
+Cmaj7 | Ebm7 | Fmaj7 | Dm7 | E7 | Dbmaj7 | Ebmaj7
+
+Rule Trace
+----------
+ 1. R_S: C -> F ; Data(bVII->I): bVII -> I  (Ebm7 -> Fmaj7)
+ 2. Data(I->bVII): I -> bVII  (Fmaj7 -> Ebm7)
+ 3. R_D: F -> C ; Data(ii->I): ii -> I  (Dm7 -> Cmaj7)
+ 4. R_R: C -> a ; Data(V->ii): V -> ii  (E7 -> Bm7)
+ 5. R_P: a -> A ; Data(III->V): III -> V  (Dbmaj7 -> E7)
+ 6. R_D: A -> E ; Data(VII->III): VII -> III  (Ebmaj7 -> Abmaj7)
+
+ASCII Tree
+----------
+└─ I [Cmaj7] @C
+   ├─ bVII [Ebm7] @F  [R_S + Data(bVII->I)]
+   │  ├─ I [Fmaj7] @F  [Data(I->bVII)]
+   │  │  ├─ ii [Dm7] @C  [R_D + Data(ii->I)]
+   │  │  │  ├─ V [E7] @a  [R_R + Data(V->ii)]
+   │  │  │  │  ├─ III [Dbmaj7] @A  [R_P + Data(III->V)]
+   │  │  │  │  │  ├─ VII [Ebmaj7] @E  [R_D + Data(VII->III)]
+   │  │  │  │  │  └─ III [Abmaj7] @E
+   │  │  │  │  └─ V [E7] @A
+   │  │  │  └─ ii [Bm7] @a
+   │  │  └─ I [Cmaj7] @C
+   │  └─ bVII [Ebm7] @F
+   └─ I [Fmaj7] @F
+
+Forest Snippet
+--------------
+\begin{forest}
+[I [Cmaj7] @C [bVII [Ebm7] @F [I [Fmaj7] @F [ii [Dm7] @C [V [E7] @a [III [Dbmaj7] @A [VII [Ebmaj7] @E], edge label={node[midway, left,font=\tiny]{\textit{R_D + Data(VII->III)}}} [III [Abmaj7] @E]], edge label={node[midway, left,font=\tiny]{\textit{R_P + Data(III->V)}}} [V [E7] @A]], edge label={node[midway, left,font=\tiny]{\textit{R_R + Data(V->ii)}}} [ii [Bm7] @a]], edge label={node[midway, left,font=\tiny]{\textit{R_D + Data(ii->I)}}} [I [Cmaj7] @C]], edge label={node[midway, left,font=\tiny]{\textit{Data(I->bVII)}}} [bVII [Ebm7] @F]], edge label={node[midway, left,font=\tiny]{\textit{R_S + Data(bVII->I)}}} [I [Fmaj7] @F]]
+\end{forest}

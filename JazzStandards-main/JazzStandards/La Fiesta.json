@@ -1,0 +1,72 @@
+{
+  "Title": "La Fiesta",
+  "Composer": "Chick Corea",
+  "Key": "A",
+  "Rhythm": "Latin",
+  "TimeSignature": "6/4",
+  "Sections": [
+    {
+      "Label": "i",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "E|F|G,F|E"
+      }
+    },
+    {
+      "Label": "A",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "E|F|G,F|E"
+      }
+    },
+    {
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "E|F|G,F|E"
+      }
+    },
+    {
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "E|F|G,F|E"
+      }
+    },
+    {
+      "MainSegment": {
+        "Chords": "Amaj7,Dmaj7/A|Amaj7,Dmaj7/A|Amaj7,Dmaj7/A|Amaj7,Dmaj7/A"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Amaj7,C#7|Dmaj7,D#m7b5|Amaj7/E,F07|F#m7,B7|E7,Amaj7|Dmaj7|C#m7,F#7"
+      },
+      "Endings": [
+        {
+          "Chords": "B7|E7"
+        },
+        {
+          "Chords": "B7,E7"
+        }
+      ]
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "Amaj7,Bm/A|Amaj7,Dm/A|Em/A,F/A|G,F"
+      }
+    },
+    {
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "E|F|G,F"
+      }
+    },
+    {
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Amaj7,Dmaj7/A|Amaj7,Dmaj7/A|Amaj7,Dmaj7/A|Amaj7,Dmaj7/A"
+      }
+    }
+  ]
+}

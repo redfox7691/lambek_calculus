@@ -1,0 +1,48 @@
+Chord Generation Report
+=======================
+Tonality: C
+Target chords: 8
+Generated chords: 7
+Max depth: 6
+Branching mode: left
+Style strength: 0.750
+Temperature: 0.900
+Modulation strength: 0.900
+Modulation complexity: 0.500
+Tonal drift: 0.500
+Stats CSV: /Users/Mat/ownCloud/Python/Lambek Calculus/last_line_analysis/JazzStandards_all_cadence.csv
+
+Generated Chord List (in generation order)
+------------------------------------------
+Cmaj7 | G7 | Dm7 | Db7 | Cm7 | Cmaj7 | Emaj7
+
+Rule Trace
+----------
+ 1. P.C.: V -> I  (G7 -> Cmaj7)
+ 2. ii-V: ii -> V  (Dm7 -> G7)
+ 3. Data(bII->ii): bII -> ii  (Db7 -> Dm7)
+ 4. Data(i->bII): i -> bII  (Cm7 -> Db7)
+ 5. R_D: C -> G ; Pl.C.M.: IV -> I  (Cmaj7 -> Gmaj7)
+ 6. Data(VI->IV): VI -> IV  (Emaj7 -> Cmaj7)
+
+ASCII Tree
+----------
+└─ I [Cmaj7] @C
+   ├─ V [G7] @C  [P.C.]
+   │  ├─ ii [Dm7] @C  [ii-V]
+   │  │  ├─ bII [Db7] @C  [Data(bII->ii)]
+   │  │  │  ├─ i [Cm7] @C  [Data(i->bII)]
+   │  │  │  │  ├─ IV [Cmaj7] @G  [R_D + Pl.C.M.]
+   │  │  │  │  │  ├─ VI [Emaj7] @G  [Data(VI->IV)]
+   │  │  │  │  │  └─ IV [Cmaj7] @G
+   │  │  │  │  └─ I [Gmaj7] @G
+   │  │  │  └─ bII [Db7] @C
+   │  │  └─ ii [Dm7] @C
+   │  └─ V [G7] @C
+   └─ I [Cmaj7] @C
+
+Forest Snippet
+--------------
+\begin{forest}
+[I [Cmaj7] @C [V [G7] @C [ii [Dm7] @C [bII [Db7] @C [i [Cm7] @C [IV [Cmaj7] @G [VI [Emaj7] @G], edge label={node[midway, left,font=\tiny]{\textit{Data(VI->IV)}}} [IV [Cmaj7] @G]], edge label={node[midway, left,font=\tiny]{\textit{R_D + Pl.C.M.}}} [I [Gmaj7] @G]], edge label={node[midway, left,font=\tiny]{\textit{Data(i->bII)}}} [bII [Db7] @C]], edge label={node[midway, left,font=\tiny]{\textit{Data(bII->ii)}}} [ii [Dm7] @C]], edge label={node[midway, left,font=\tiny]{\textit{ii-V}}} [V [G7] @C]], edge label={node[midway, left,font=\tiny]{\textit{P.C.}}} [I [Cmaj7] @C]]
+\end{forest}

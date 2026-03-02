@@ -1,0 +1,35 @@
+{
+  "Title": "On The Street Where You Live",
+  "Composer": "Frederick Loewe",
+  "Key": "Bb",
+  "Rhythm": "Medium Up Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Bbmaj7|Cm7,F7|Bbmaj7|Cm7,F7|Bbmaj7|Db07|Cm7|F7|Cm7|Ab7#11|Bb6|Gm6|Cm7|F7"
+      },
+      "Endings": [
+        {
+          "Chords": "Dm7,G7|Cm7,F7"
+        },
+        {
+          "Chords": "Bb6|Bb6"
+        }
+      ]
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Am7|D7|Ebmaj7|Ebmaj7|Ebm6|Ab7|Bb6|Bb6|Gb7,Bb/F|Em7b5|A7sus|A7|D,A7/C#|C7|Cm7|F7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bbmaj7|Cm7,F7|Bbmaj7|Cm7,F7|Bbmaj7|Db07|Cm7|F7|Cm7|Ab7#11|Bb6|Gm6|Cm7|F7|Bb6|Bb6"
+      }
+    }
+  ]
+}

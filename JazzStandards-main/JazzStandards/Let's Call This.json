@@ -1,0 +1,28 @@
+{
+  "Title": "Let's Call This",
+  "Composer": "Thelonious Monk",
+  "Key": "G",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "D9sus|D9sus|D9sus|D9sus|D9sus|D9sus,F#7|F7,E7|Eb7,D7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "G7|G7|C7|C7|A7|A7|Bm7,Bb7|Am7,Ab7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "D9sus|D9sus|D9sus|D9sus|D9sus|D9sus,F#7|F7,E7|G6"
+      }
+    }
+  ]
+}

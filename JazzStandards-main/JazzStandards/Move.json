@@ -1,0 +1,28 @@
+{
+  "Title": "Move",
+  "Composer": "Denzil Best",
+  "Key": "Bb",
+  "Rhythm": "Up Tempo Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Bb6|Eb7|Bb6|B07|Cm7|F7|Bb6|Bb6"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Fm7|Bb7|Eb6|Eb6|C7|C7|Cm7|F7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bb6|Eb7|Bb6|B07|Cm7|F7|Bb6|Bb6"
+      }
+    }
+  ]
+}

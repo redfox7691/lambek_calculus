@@ -1,0 +1,42 @@
+{
+  "Title": "Harlem Nocturne",
+  "Composer": "Hagen-Rogers",
+  "Key": "Gmin",
+  "Rhythm": "Medium Swing",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Gm/maj7|Gm7|Cm7|Cm7|Cm/maj7|A7alt,Eb7,D7,"
+      },
+      "Endings": [
+        {
+          "Chords": "Gm6|Gm6"
+        },
+        {
+          "Chords": "Gm6|Gm6,F7"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Bb7,Fm7|Bb7,Fm7|Bb7,Fm7|Bb7|Eb7,Bbm7|Eb7,Bbm7|Eb9,Db9,B9,A9"
+      },
+      "Endings": [
+        {
+          "Chords": "G9,C9,F7,"
+        },
+        {
+          "Chords": "G9,F9,Eb9,Db9|Gm6|Gm6"
+        }
+      ]
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Gm/maj7|Gm7|Cm7|Cm7|Cm/maj7|A7alt,,Eb7,D7|Gm6|Gm6"
+      }
+    }
+  ]
+}

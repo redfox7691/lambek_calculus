@@ -1,0 +1,14 @@
+{
+  "Title": "Mr. P.C.",
+  "Composer": "John Coltrane",
+  "Key": "Cmin",
+  "Rhythm": "Up Tempo Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "MainSegment": {
+        "Chords": "Cm7|Cm7|Cm7|Cm7|Fm7|Fm7|Cm7|Cm7|Ab7|G7b13|Cm7|Cm7"
+      }
+    }
+  ]
+}

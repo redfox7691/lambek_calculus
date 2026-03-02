@@ -1,0 +1,14 @@
+{
+  "Title": "Ba-lue Bolivar Ba-lues-are",
+  "Composer": "Thelonious Monk",
+  "Key": "Bb",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "MainSegment": {
+        "Chords": "Bb7|Eb7|Bb7|Bb7|Eb7|Ab7|Eb7|Gm7b5,C7b5b9|Cm7|F7|Bb7b5|Bb7"
+      }
+    }
+  ]
+}

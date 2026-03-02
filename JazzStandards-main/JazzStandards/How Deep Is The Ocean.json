@@ -1,0 +1,33 @@
+{
+  "Title": "How Deep Is The Ocean",
+  "Composer": "Irving Berlin",
+  "Key": "Eb",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Cm7|Dm7b5,G7b9|Cm7|Am7b5,D7b9|Gm7|Am7b5,D7b9|Gm7,Gb7|Fm7,Bb7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Eb7|Eb7|Ab7|Ab7|B7|B7|Bb7|Dm7b5,G7b9"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Cm7|Dm7b5,G7b9|Cm7|Am7b5,D7b9|Gm7|Am7b5,D7b9|Gm7,Gb7|Fm7,Bb7"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "Ebmaj7|Gm7b5,C7b9|Fm7|Abm7,Db7|Ebmaj7,G7|Cm7,F7|Fm7,Bb7|Eb6,G7b9"
+      }
+    }
+  ]
+}

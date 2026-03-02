@@ -1,0 +1,28 @@
+{
+  "Title": "My Way",
+  "Composer": "Revaux-Francois-Thibaud-Anka",
+  "Rhythm": "Ballad",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "C|Cmaj7/B|C7/Bb|A7|Dm7|Dm7/C|G7/B|F/C,C|C,Cmaj7|Gm7,C7|Fmaj7|Fm7|Cmaj7/G,Am7/G|Dm7/G,G7|F/C"
+      },
+      "Endings": [
+        {
+          "Chords": "C"
+        },
+        {
+          "Chords": "C,F/G"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "C,Cmaj7|Gm7,C7|Fmaj7|Fmaj7,Fmaj7/E|Dm7|G7|Em7|Am7|Dm7|G7|F/C|C,(F/G)"
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "Title": "Stolen Moments",
+  "Composer": "Oliver Nelson",
+  "Key": "Cmin",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "i",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Cm7|Dm7/C|Ebmaj7/C|Dm7/C"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Cm7|Cm6|Cm7|Cm6|Fm7|Fm6|Cm7|Cm6"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Dm,D#m|Em,Fm|F#m,Fm|Em,Ebm|Dm7,D#07|C7/E,Fm|Cm|G7"
+      }
+    }
+  ]
+}

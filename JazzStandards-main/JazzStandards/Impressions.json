@@ -1,0 +1,33 @@
+{
+  "Title": "Impressions",
+  "Composer": "John Coltrane",
+  "Key": "Dmin",
+  "Rhythm": "Up Tempo Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Dm11|Dm11|Dm11|Dm11|Dm11|Dm11|Dm11|Dm11"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Dm11|Dm11|Dm11|Dm11|Dm11|Dm11|Dm11|Dm11"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Ebm11|Ebm11|Ebm11|Ebm11|Ebm11|Ebm11|Ebm11|Ebm11"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Dm11|Dm11|Dm11|Dm11|Dm11|Dm11|Dm11|Dm11"
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "Title": "Minor Strain",
+  "Composer": "Bobby Timmons",
+  "Key": "G",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Dm11|Dm11|Dm11|Dm11"
+      }
+    },
+    {
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Cm11|Cm11|Cm11|Cm11"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Gm7|Gm7|Bbm7|Eb7|Am7|Am7,D7|G/D,Am7/D|Bb0/D,Bm7/D"
+      }
+    }
+  ]
+}

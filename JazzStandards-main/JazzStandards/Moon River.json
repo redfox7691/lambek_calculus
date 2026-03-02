@@ -1,0 +1,22 @@
+{
+  "Title": "Moon River",
+  "Composer": "Henry Mancini",
+  "Rhythm": "Waltz",
+  "TimeSignature": "3/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Cmaj7|Am7|Fmaj7#11|Cmaj7/E|Fmaj7#11|Cmaj7/E|Bm7b5|E7b9"
+      },
+      "Endings": [
+        {
+          "Chords": "Am|Am7/G|Fmaj7|Bb7#11|Am,Am/G|F#m7b5,B7b9|Em7,A7|Dm7,G7"
+        },
+        {
+          "Chords": "Am7|Am7/G|F#m7b5|Fmaj7#11|Cmaj7/E|Fmaj7#11|Cmaj7/E|F7|Em7(E7#9)|Am7(A7#9)|Dm7|G7|C6|G7"
+        }
+      ]
+    }
+  ]
+}

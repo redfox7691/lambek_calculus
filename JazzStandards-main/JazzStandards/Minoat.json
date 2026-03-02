@@ -1,0 +1,35 @@
+{
+  "Title": "Minoat",
+  "Composer": "Mal Waldron",
+  "Key": "Cmin",
+  "Rhythm": "Ballad",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "F7#11|Fm9,Bb7b9|Abmaj7#11|G7b13|Cm7,Baug/C#|Dm7b5,G7b13"
+      },
+      "Endings": [
+        {
+          "Chords": "Cm69|C7b9"
+        },
+        {
+          "Chords": "Cm69|Cm69"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Fm/maj7|Abm7,Db9|Gbmaj7,C7b9|B9,Abaug/Bb|Am7b5|Cm7,F7|Ab7#11,Abm6|Gm11,C7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "F7#11|Fm9,Bb7b9|Abmaj7#11|G7b13|Cm7,Baug/C#|Dm7b5,G7b13|Cm69|C7b9"
+      }
+    }
+  ]
+}

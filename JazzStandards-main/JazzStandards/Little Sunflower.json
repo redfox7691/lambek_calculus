@@ -1,0 +1,30 @@
+{
+  "Title": "Little Sunflower",
+  "Composer": "Freddie Hubbard",
+  "Key": "Dmin",
+  "Rhythm": "Even 8ths",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Dm7|Dm7|Dm7|Dm7|Dm7|Dm7|Dm7|Dm7"
+      }
+    },
+    {
+      "Label": "B",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Ebmaj7|Ebmaj7|Ebmaj7|Ebmaj7|Dmaj7|Dmaj7|Dmaj7|Dmaj7"
+      }
+    },
+    {
+      "Label": "A",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Dm7|Dm7|Dm7|Dm7|Dm7|Dm7|Dm7|Dm7"
+      }
+    }
+  ]
+}

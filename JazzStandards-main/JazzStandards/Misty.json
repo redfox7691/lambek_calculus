@@ -1,0 +1,35 @@
+{
+  "Title": "Misty",
+  "Composer": "Erroll Garner",
+  "Key": "Eb",
+  "Rhythm": "Ballad",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Ebmaj7|Bbm7,Eb7|Abmaj7|Abm7,Db7|Ebmaj7,Cm7|Fm7,Bb7"
+      },
+      "Endings": [
+        {
+          "Chords": "Gm7,C7|Fm7,Bb7"
+        },
+        {
+          "Chords": "Eb6|Eb6"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Bbm7|Eb7b9|Abmaj7|Abmaj7|Am7|D7,F7|Gm7,C7|Fm7,Bb7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Ebmaj7|Bbm7,Eb7|Abmaj7|Abm7,Db7|Ebmaj7,Cm7|Fm7,Bb7|Eb6|Fm7,Bb7"
+      }
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "Title": "Lazy Bird",
+  "Composer": "John Coltrane",
+  "Key": "G",
+  "Rhythm": "Up Tempo Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Am7,D7|Cm7,F7|Fm7|Bb7|Ebmaj7|Am7,D7"
+      },
+      "Endings": [
+        {
+          "Chords": "Gmaj7|Abm7,Db7"
+        },
+        {
+          "Chords": "Gmaj7|Gmaj7"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Bm7|E7|Amaj7|Bbm7,Eb7|Am7|D7|Gmaj7|Abm7,Db7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Am7,D7|Cm7,F7|Fm7|Bb7|Ebmaj7|Am7,D7|Gmaj7|Gmaj7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "F7#11|Eb7|Am7|D7b9|Gmaj7|C7b9|Fmaj7|Bb7b9|Eb7|Abmaj7|Db7#11"
+      }
+    }
+  ]
+}

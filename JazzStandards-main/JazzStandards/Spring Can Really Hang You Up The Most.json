@@ -1,0 +1,39 @@
+{
+  "Title": "Spring Can Really Hang You Up The Most",
+  "Composer": "Tommy Wolf",
+  "Rhythm": "Ballad",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Cmaj7,Bbmaj7|Cmaj7,Bbmaj7|Em7,Am7,Dm7,G7|Em7,A7b13|F#m7b5,Fm6|Em7,A7,D7,|Dm7,G7"
+      },
+      "Endings": [
+        {
+          "Chords": "Cmaj7,Bbmaj7"
+        },
+        {
+          "Chords": "Cmaj7"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Gm7,Cmaj7|Gm7,Cmaj7|Gm7,Cmaj7|Gm7,Cmaj7|Cm7,Fmaj7|Cm7,Fmaj7|F#m7,B7,Emaj7,|Am7,D7"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "Gmaj7,Fmaj7|Cmaj7,Bbmaj7|Em7,Am7,Dm7,G7|Em7,A7b13|F#m7b5,Fm6|Em7,A7,D7,|Dm7,G7|Cmaj7,Bbmaj7|Cmaj7,G7"
+      }
+    },
+    {
+      "MainSegment": {
+        "Chords": "Ebm7,Ab7|Dm7,G7|Em7,A7|Dm7,Cmaj7|Dm7,Cmaj7|Bm7b5,E7,Am7,|D7|Dm7,Bb7|Em7,A7|Dm7,Dbmaj7|Cmaj7"
+      }
+    }
+  ]
+}

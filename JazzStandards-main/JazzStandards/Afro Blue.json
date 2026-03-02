@@ -1,0 +1,14 @@
+{
+  "Title": "Afro Blue",
+  "Composer": "Mongo Santamaria",
+  "Key": "Fmin",
+  "Rhythm": "Waltz",
+  "TimeSignature": "3/4",
+  "Sections": [
+    {
+      "MainSegment": {
+        "Chords": "Fm7|Fm7|Db7#9/Ab,C7#9/G|Fm7|Fm7|Fm7|Db7#9/Ab,C7#9/G|Fm7|Eb|Eb|Db,Eb|Fm7|Eb|Eb|Db,Eb|Fm7"
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "Title": "My Little Suede Shoes",
+  "Composer": "Charlie Parker",
+  "Key": "Eb",
+  "Rhythm": "Latin",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Fm7,Bb7|Ebmaj7|Fm7,Bb7|Ebmaj7|Fm7,Bb7|Gm7,C7|Fm7,Bb7|Ebmaj7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Abmaj7|Gm7,C7|Fm7,Bb7|Ebmaj7|Abmaj7|Gm7,C7|Fm7,Bb7|Ebmaj7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Fm7,Bb7|Ebmaj7|Fm7,Bb7|Ebmaj7|Fm7,Bb7|Gm7,C7|Fm7,Bb7|Ebmaj7"
+      }
+    }
+  ]
+}

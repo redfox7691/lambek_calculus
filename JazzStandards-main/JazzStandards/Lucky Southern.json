@@ -1,0 +1,40 @@
+{
+  "Title": "Lucky Southern",
+  "Composer": "Keith Jarrett",
+  "Key": "D",
+  "Rhythm": "Bossa Nova",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "i",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Dmaj7|Dmaj7#5|D6|Dmaj7#5"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Dmaj7|Dmaj7|E7|E7|Gmaj7|Bb7,A7|Dmaj7|Dmaj7,Ebmaj7#11"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Dmaj7|Dmaj7|E7|E7|Gmaj7|Bb7,A7|Dmaj7|Dmaj7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "F#m7|F#m7|Em7|Em7|F#m7|F#m7|Am7|D7"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "Gmaj7|Gm7|D/F#|F07|Em7|Bb7,A7|Dmaj7|Dmaj7,Ebmaj7#11"
+      }
+    }
+  ]
+}

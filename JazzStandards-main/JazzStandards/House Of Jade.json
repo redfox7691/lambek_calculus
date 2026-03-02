@@ -1,0 +1,27 @@
+{
+  "Title": "House Of Jade",
+  "Composer": "Wayne Shorter",
+  "Key": "Cmin",
+  "Rhythm": "Slow Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Dm7b5,Dbmaj7|Cm7,Db7#11|Eb7,F7|Db7,Cm7|Dm7b5,Dbmaj7|Cm7,F7|Eb7,D9sus|Db7,Cm7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Eb13sus|Eb13sus|Eb13sus|Eb13sus|D13sus|D13sus|Em7|Eb7#11"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Dm7b5,Dbmaj7|Cm7,Db7#11|Eb7,F7|Db7,Cm7|Dm7b5,Dbmaj7|Cm7,F7|Eb7,D9sus|Db7,Cm7"
+      }
+    }
+  ]
+}

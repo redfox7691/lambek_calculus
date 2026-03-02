@@ -1,0 +1,35 @@
+{
+  "Title": "Moments To Remember",
+  "Composer": "Robert Allen",
+  "Key": "G",
+  "Rhythm": "Ballad",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Gmaj7,G6|Gmaj7,G6|G,G7#5|C,Am|D7|D7"
+      },
+      "Endings": [
+        {
+          "Chords": "G07,G|G07,G"
+        },
+        {
+          "Chords": "Cm,G|Dm,G7"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "C|G|D7|G,G7|C|G,Em|A7|Am7,D7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Gmaj7,G6|Gmaj7,G6|G,G7#5|C,Am|D7|D7|Cm,G|Cm,G"
+      }
+    }
+  ]
+}

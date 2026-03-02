@@ -1,0 +1,35 @@
+{
+  "Title": "Can't We Be Friends",
+  "Composer": "Swift-James",
+  "Key": "Eb",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "F7|Bb7|Ebmaj7,B7|Cm7,Gm,Gbm,|Fm7|Bb7|Ebmaj7"
+      },
+      "Endings": [
+        {
+          "Chords": "E07"
+        },
+        {
+          "Chords": "Bbm7,Eb7"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Ab7|A07|Eb6|Eb6|Bbm7|Eb7|Am7,D7|Gm7,C7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "F7|Bb7|Ebmaj7,B7|Cm7,,Gm,Gbm|Fm7|Bb7|Ebmaj7|E07"
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "Title": "In Pursuit Of The 27th Man",
+  "Composer": "Horace Silver",
+  "Rhythm": "Latin",
+  "Sections": [
+    {
+      "Label": "i",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "C7b9sus|C7b9sus|C7b9sus|C7b9sus"
+      }
+    },
+    {
+      "Label": "A",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "C7b9sus|C7b9sus|C7b9sus|C7b9sus|C7b9sus|C7b9sus|C7b9sus|C7b9sus"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Gb7|G7#9|Cm7|Cm7|Gb7|G7#9|Ab7|G7#9"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "C7b9sus|C7b9sus|C7b9sus|C7b9sus|C7b9sus|C7b9sus|C7b9sus|C7b9sus"
+      }
+    }
+  ]
+}

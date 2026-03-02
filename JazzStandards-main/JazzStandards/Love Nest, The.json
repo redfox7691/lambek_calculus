@@ -1,0 +1,33 @@
+{
+  "Title": "Love Nest, The",
+  "Composer": "Louis Hirsch",
+  "Key": "Eb",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Ebmaj7,Cm7|Fm7,Bb7|Ebmaj7|Eb7|Abmaj7,Fm7|Bbm7,Eb7|Abmaj7|Abmaj7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Bb7|Bb7|Ebmaj7|C7|Fm7,C7/G|Fm7/Ab,F7/A|Bb7sus|Bb7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Ebmaj7,Cm7|Fm7,Bb7|Ebmaj7|Eb7|Abmaj7,Fm7|Bbm7,Eb7|Abmaj7|Abmaj7"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "Bb7|Bb7|Gm7b5|C7|Fm7|Bb7|Eb6|Fm7,Bb7"
+      }
+    }
+  ]
+}

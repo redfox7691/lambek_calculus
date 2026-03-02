@@ -1,0 +1,14 @@
+{
+  "Title": "Kicker, The",
+  "Composer": "Joe Henderson",
+  "Key": "Bb",
+  "Rhythm": "Up Tempo Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "MainSegment": {
+        "Chords": "Bb7|Bb7|Bb7|Bb7|Ebm7|Ab7|Dbmaj7|Gbmaj7|Cm7b5|F7|Bbm7|F7#9"
+      }
+    }
+  ]
+}

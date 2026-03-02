@@ -1,0 +1,52 @@
+{
+  "Title": "Butterfly",
+  "Composer": "Herbie Hancock",
+  "Key": "Fmin",
+  "Rhythm": "Funk",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "i",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Fm7|Fm7,Am7|Fm7|Fm7,Am7"
+      }
+    },
+    {
+      "Label": "A",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Fm11|Fm11,Am11|Fm11|Fm11,Dm11"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": ",Bb7||||Abmaj7/Bb|Abmaj7#5/Bb|Abmaj7/Bb|Bb13|Eb13sus|Eb13sus|Eb7#5#9|Eb7#5#9|Ab13sus|Ab13sus,Ab13sus/C,C7/E,|,Fm7|Fm7,Am7"
+      }
+    },
+    {
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Fm7|Fm7,Am7"
+      }
+    },
+    {
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Fm11|Fm11|Fm11|Fm11"
+      }
+    },
+    {
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Bb13|Bb13|Bb13|Bb13"
+      }
+    },
+    {
+      "MainSegment": {
+        "Chords": "Amaj7#11"
+      }
+    }
+  ]
+}

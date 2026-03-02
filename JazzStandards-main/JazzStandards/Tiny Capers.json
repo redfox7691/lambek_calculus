@@ -1,0 +1,35 @@
+{
+  "Title": "Tiny Capers",
+  "Composer": "Clifford Brown",
+  "Key": "Bb",
+  "Rhythm": "Medium Up Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bb6,D7|Gm7,Bb7|Ebmaj7,G7|Cm7,C#07|Dm7,Eb7|Dm7,G7"
+      },
+      "Endings": [
+        {
+          "Chords": "Gm7,C7|Cm7,F7"
+        },
+        {
+          "Chords": "Cm7,F7|Bb7"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Eb7b9|Eb7b9|Bb7#11|Bb7#11|Eb7b9|Ebm7,Ab7|Dm7,G7|Cm7,F7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bb6,D7|Gm7,Bb7|Ebmaj7,G7|Cm7,C#07|Dm7,Eb7|Dm7,G7|Cm7,F7|Bb6,F7"
+      }
+    }
+  ]
+}

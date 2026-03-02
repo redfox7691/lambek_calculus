@@ -1,0 +1,28 @@
+{
+  "Title": "Tempus Fugit",
+  "Composer": "Bud Powell",
+  "Key": "Dmin",
+  "Rhythm": "Up Tempo Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Gm7,A7b9|Dm7|A7b9|Dm7|Gm7,A7b9|Dm7|E7,A7b9|Dm7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Em7b5|A7#9|Dm7|E7#9|A7b13|A7b13|D7b13|D7b13"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Gm7,A7b9|Dm7|A7b9|Dm7|Gm7,A7b9|Dm7|E7,A7b9|Dm"
+      }
+    }
+  ]
+}

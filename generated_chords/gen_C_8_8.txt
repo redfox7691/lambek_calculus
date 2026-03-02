@@ -1,0 +1,48 @@
+Chord Generation Report
+=======================
+Tonality: C
+Target chords: 8
+Generated chords: 7
+Max depth: 6
+Branching mode: left
+Style strength: 0.750
+Temperature: 0.900
+Modulation strength: 0.900
+Modulation complexity: 0.500
+Tonal drift: 1.000
+Stats CSV: /Users/Mat/ownCloud/Python/Lambek Calculus/last_line_analysis/JazzStandards_all_cadence.csv
+
+Generated Chord List (in generation order)
+------------------------------------------
+Cmaj7 | Bbmaj7 | Fmaj7 | Dbmaj7 | Gmaj7 | Ebmaj7 | G7
+
+Rule Trace
+----------
+ 1. R_S: C -> F ; Pl.C.M.: IV -> I  (Bbmaj7 -> Fmaj7)
+ 2. Data(I->IV): I -> IV  (Fmaj7 -> Bbmaj7)
+ 3. R_R: F -> d ; Data(VII->i): VII -> i  (Dbmaj7 -> Dm7)
+ 4. R_P: d -> D ; Data(IV->VII): IV -> VII  (Gmaj7 -> Dbmaj7)
+ 5. R_R: D -> b ; Data(III->IV): III -> IV  (Ebmaj7 -> Emaj7)
+ 6. R_D: b -> gb ; Data(bII->III): bII -> III  (G7 -> Bbmaj7)
+
+ASCII Tree
+----------
+└─ I [Cmaj7] @C
+   ├─ IV [Bbmaj7] @F  [R_S + Pl.C.M.]
+   │  ├─ I [Fmaj7] @F  [Data(I->IV)]
+   │  │  ├─ VII [Dbmaj7] @d  [R_R + Data(VII->i)]
+   │  │  │  ├─ IV [Gmaj7] @D  [R_P + Data(IV->VII)]
+   │  │  │  │  ├─ III [Ebmaj7] @b  [R_R + Data(III->IV)]
+   │  │  │  │  │  ├─ bII [G7] @gb  [R_D + Data(bII->III)]
+   │  │  │  │  │  └─ III [Bbmaj7] @gb
+   │  │  │  │  └─ IV [Emaj7] @b
+   │  │  │  └─ VII [Dbmaj7] @D
+   │  │  └─ i [Dm7] @d
+   │  └─ IV [Bbmaj7] @F
+   └─ I [Fmaj7] @F
+
+Forest Snippet
+--------------
+\begin{forest}
+[I [Cmaj7] @C [IV [Bbmaj7] @F [I [Fmaj7] @F [VII [Dbmaj7] @d [IV [Gmaj7] @D [III [Ebmaj7] @b [bII [G7] @gb], edge label={node[midway, left,font=\tiny]{\textit{R_D + Data(bII->III)}}} [III [Bbmaj7] @gb]], edge label={node[midway, left,font=\tiny]{\textit{R_R + Data(III->IV)}}} [IV [Emaj7] @b]], edge label={node[midway, left,font=\tiny]{\textit{R_P + Data(IV->VII)}}} [VII [Dbmaj7] @D]], edge label={node[midway, left,font=\tiny]{\textit{R_R + Data(VII->i)}}} [i [Dm7] @d]], edge label={node[midway, left,font=\tiny]{\textit{Data(I->IV)}}} [IV [Bbmaj7] @F]], edge label={node[midway, left,font=\tiny]{\textit{R_S + Pl.C.M.}}} [I [Fmaj7] @F]]
+\end{forest}

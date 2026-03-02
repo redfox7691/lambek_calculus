@@ -1,0 +1,33 @@
+{
+  "Title": "Milestones (New)",
+  "Composer": "Miles Davis",
+  "Key": "Gmin",
+  "Rhythm": "Up Tempo Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Gm7|Gm7|Gm7|Gm7|Gm7|Gm7|Gm7|Gm7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Gm7|Gm7|Gm7|Gm7|Gm7|Gm7|Gm7|Gm7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Am|Am|Am|Am|Am|Am|Am|Am|Am|Am|Am|Am|Am|Am|Am|Am"
+      }
+    },
+    {
+      "Label": "i",
+      "MainSegment": {
+        "Chords": "Gm7|Gm7|Gm7|Gm7|Gm7|Gm7|Gm7|Gm7"
+      }
+    }
+  ]
+}

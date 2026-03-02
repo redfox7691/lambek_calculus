@@ -1,0 +1,15 @@
+{
+  "Title": "Footprints",
+  "Composer": "Wayne Shorter",
+  "Key": "Cmin",
+  "Rhythm": "Waltz",
+  "TimeSignature": "3/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Cm11|Cm11|Cm11|Cm11|Cm11|Cm11|Cm11|Cm11|Fm11|Fm11|Fm11|Fm11|Cm11|Cm11|Cm11|Cm11|F#m7b5|F7#11|E7alt|A7alt|Cm11|Cm11|Cm11|Cm11"
+      }
+    }
+  ]
+}

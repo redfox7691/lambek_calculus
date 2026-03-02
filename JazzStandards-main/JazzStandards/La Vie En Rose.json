@@ -1,0 +1,26 @@
+{
+  "Title": "La Vie En Rose",
+  "Composer": "Guglielmi-Piaf-David",
+  "Rhythm": "Ballad",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "C,C6|Cmaj7,C6|C|Dm7,G7|Dm7,G7|Dm7,G7|Dm7,G7|C,C#0,Dm7,G7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "C,C6|Cmaj7,C6|C,C7|F|Fm|C|D7|Dm7,G7"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "C,C6|Cmaj7,C6|Dm7,G7|C6"
+      }
+    }
+  ]
+}

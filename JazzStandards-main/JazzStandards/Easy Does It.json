@@ -1,0 +1,26 @@
+{
+  "Title": "Easy Does It",
+  "Composer": "Oliver-Young",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "C6,Am7|Dm7,G7|C6,Am7|Dm7,G7|C6,Am7|Dm7,G7|C6,Eb07|Dm7,C7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "F6,Dm7|Gm7,C7|F6,Dm7|Gm7,C7|F6,Dm7|Dm7,G7|C6,A7|Ab7,G7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "C6,Am7|Dm7,G7|C6,Am7|Dm7,G7|C6,Am7|Dm7,G7|C6,G7|C6"
+      }
+    }
+  ]
+}

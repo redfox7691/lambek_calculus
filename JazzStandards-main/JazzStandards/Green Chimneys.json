@@ -1,0 +1,28 @@
+{
+  "Title": "Green Chimneys",
+  "Composer": "Thelonious Monk",
+  "Key": "G#min",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Abm|Abm|Abm|Abm|Abm|Abm|Abm|Abm"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "F#7|F#7,B7|F#7|F#7,B7|F#7|F#7,B7|F#7|F#7,B7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Abm|Abm|Abm|Abm|Abm|Abm|Abm|Abm"
+      }
+    }
+  ]
+}

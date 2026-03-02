@@ -1,0 +1,33 @@
+{
+  "Title": "Tadd's Delight",
+  "Composer": "Tadd Dameron",
+  "Key": "Ab",
+  "Rhythm": "Medium Up Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bbm7|Bbm7,Eb7b9|Abmaj7|Cm7b5,F7|Bbm7|Bbm7,Eb7b9|Abmaj7|Ebm7,Ab7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Dbmaj7|Gb7#11|Abmaj7|F7b9|Bb7#11|Bb7#11|Eb7|Cm7,F7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bbm7|Bbm7,Eb7b9|Abmaj7|Cm7b5,F7|Bbm7|Bbm7,Eb7b9|Abmaj7|Ebm7,Ab7"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "Dbmaj7|Gb7#11|Abmaj7|Cm7,F7|Fm7,Bb7|Bbm7,Eb7|Abmaj7|F7b9"
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "Title": "I Don't Want To Miss Mississippi",
+  "Composer": "Serger Ellis",
+  "Key": "G",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "G|G|G7|G7|C|C|Cm|Cm|G|Am7,D7|G|E7"
+      },
+      "Endings": [
+        {
+          "Chords": "A7|A7|D7|D7#5"
+        },
+        {
+          "Chords": "A7|D7|G|G"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Am7|D7|G|Em7|Am7|D7|G|Em7|Am7|D7|G|Em7|A7|A7|D7|D7#5"
+      }
+    }
+  ]
+}

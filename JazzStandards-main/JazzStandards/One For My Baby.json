@@ -1,0 +1,38 @@
+{
+  "Title": "One For My Baby",
+  "Composer": "Harold Arlen",
+  "Key": "Eb",
+  "Rhythm": "Ballad",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Ebmaj7,Fm7/Bb|Ebmaj7,Fm7/Bb|Ebmaj7,Fm7/Bb|Ebmaj7,Fm7/Bb|Ebmaj7,Fm7/Bb|Ebmaj7,Fm7/Bb|Ebmaj7,Bbm7|Bbm7,Eb7|Abmaj7|Abmaj7,Db7|Ebmaj7,Fm7|Gm7,C7#9|G7#5,C7#9|Fm7,Gm7,Ab,Ab/Bb|Eb6|Am7b5,D7b9"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Gmaj7,Am7/D|Gmaj7,Am7/D|Gmaj7,Am7/D|Gmaj7,Am7/D|Gmaj7,Am7/D|Gmaj7,Am7/D|Gmaj7,Dm7|Dm7,G7|Cmaj7|Cmaj7,F7|Gmaj7,Am7|Bm7,E7#9|B7#5,E7#9|Am7,Bm7,C,C/D"
+      },
+      "Endings": [
+        {
+          "Chords": "G6|Dm7,G7"
+        }
+      ]
+    },
+    {
+      "Label": "C",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Gm7,C7|Gm7,C7|B7,E7,A7,C/D|G6,G7|Gm7,C7|Gm7,C7|A7,Eb7|D7#5"
+      },
+      "Endings": [
+        {
+          "Chords": "B7,E7b9|Am7|D7|G6,G7/B|C7,C#07|Am7,D7|G6"
+        }
+      ]
+    }
+  ]
+}

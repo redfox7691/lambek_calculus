@@ -1,0 +1,28 @@
+{
+  "Title": "Samba De Orfeu",
+  "Composer": "Luiz Bonfa",
+  "Rhythm": "Bossa Nova",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Cmaj7|Cmaj7|Cmaj7|Cmaj7|Cmaj7,F7#11|Em7,A7|Dm7|G7|Dm7(Ebm7)|G7(Ab7)|Dm7(Ebm7)|G7(Ab7)|Dm7|G7"
+      },
+      "Endings": [
+        {
+          "Chords": "Bb7#11,A7|Dm7,G7"
+        },
+        {
+          "Chords": "Cmaj7|Cmaj7"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Gm7|C7|Fmaj7|Fmaj7|Fm7|Bb7|Ebmaj7|Dm7,G7"
+      }
+    }
+  ]
+}

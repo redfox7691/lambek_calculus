@@ -1,0 +1,27 @@
+{
+  "Title": "Training",
+  "Composer": "Michel Petrucciani",
+  "Key": "Ab",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Dm7,G7|Cm7|C#m7,F#7|Bmaj7|Bbm7,Eb7|Abmaj7|Bbm7,Eb7|Abmaj7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Dm7,G7|Cm7|C#m7,F#7|Bmaj7|Bbm7,Eb7|Abmaj7|Gm7b5,C7|Fm7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Bm7,E7|Gm7b5,C7|Fm7|Em7|Eb7|D7|F#m7/B,Em7/A|Abmaj7|Dm7,G7|Cm7|C#m7,F#7|Bmaj7|Bbm7,Eb7|Abmaj7|Bbm7,Eb7|Abmaj7"
+      }
+    }
+  ]
+}

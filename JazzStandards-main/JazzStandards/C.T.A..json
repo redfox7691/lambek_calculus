@@ -1,0 +1,34 @@
+{
+  "Title": "C.T.A.",
+  "Composer": "Jimmy Heath",
+  "Key": "Bb",
+  "Rhythm": "Up Tempo Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Bb7,Ab7|Gb7,F7|Bb7,Ab7|Gb7,F7|Bb6,G7|Cm7,F7"
+      },
+      "Endings": [
+        {
+          "Chords": "Dm7,G7|Cm7,F7"
+        },
+        {
+          "Chords": "Bb6,F7|Bb6"
+        }
+      ]
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "D7#9|D7#9|G7|G7|C7#9|C7#9|F7|F7"
+      }
+    },
+    {
+      "MainSegment": {
+        "Chords": "Bb7,Ab7|Gb7,F7|Bb7,Ab7|Gb7,F7|Bb6,G7|Cm7,F7|Bb6,F7|Bb6"
+      }
+    }
+  ]
+}

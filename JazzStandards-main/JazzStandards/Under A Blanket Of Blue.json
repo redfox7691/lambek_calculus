@@ -1,0 +1,35 @@
+{
+  "Title": "Under A Blanket Of Blue",
+  "Composer": "Jerry Livingston",
+  "Key": "Ab",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bbm7|Eb7#5|Abmaj7,Cm7|F7|Bbm7|Eb7"
+      },
+      "Endings": [
+        {
+          "Chords": "Abmaj7|F7(A07)"
+        },
+        {
+          "Chords": "Abmaj7,Dbm6|Ab6"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Ab7,Ebm7|Ab7|Dbmaj7|Dbmaj7|Bb7,Fm7|Bb7|Fm7,Bb7|Eb7#5"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bbm7|Eb7#5|Abmaj7,Cm7|F7|Bbm7|Eb7|Abmaj7,Dbm6|Ab6"
+      }
+    }
+  ]
+}

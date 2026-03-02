@@ -1,0 +1,35 @@
+{
+  "Title": "Pure Imagination",
+  "Composer": "Anthony Newley",
+  "Key": "Eb",
+  "Rhythm": "Ballad",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Fm7|Bb9sus|Ebmaj7,,Fm7,F#0|Gm7,C7#9|Fm7|Bb9sus"
+      },
+      "Endings": [
+        {
+          "Chords": "Eb07,Ebmaj7|Gm7,C7#9"
+        },
+        {
+          "Chords": "Gmaj7|Gmaj7"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Abmaj7|Gm7,C7b9|Fm7,Bb9sus|Ebmaj7|Am7b5,D7b13|Gm7|C7,F7|Fm7|Bb7sus"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Fm7|Bb9sus|Ebmaj7,,Fm7,F#0|Gm7,C7#9|Fm7|Bb9sus|Gmaj7|Db7,D7|Eb69|Eb69"
+      }
+    }
+  ]
+}

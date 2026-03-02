@@ -1,0 +1,35 @@
+{
+  "Title": "Nascimento",
+  "Composer": "Barry Harris",
+  "Rhythm": "Bossa Nova",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "i",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Gmaj7|C7|Gmaj7|C7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bmaj7|Bmaj7|Fm7b5|Bb7|Ebm7|Ebm7/Db|Cm7b5|F7"
+      },
+      "Endings": [
+        {
+          "Chords": "Bbmaj7|Am7b5,D7|Gmaj7|F#m7b5,B7|Emaj7|Ebm7b5,Ab7|Dbmaj7|F#7"
+        },
+        {
+          "Chords": "Bbmaj7|Am7b5,D7|Bm7b5|E7|Am7|D7"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Gmaj7|C7|Gmaj7|C7|Gmaj7|C7|Gmaj7|C7"
+      }
+    }
+  ]
+}

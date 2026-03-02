@@ -1,0 +1,23 @@
+{
+  "Title": "Bright Mississippi",
+  "Composer": "Thelonious Monk",
+  "Key": "Ab",
+  "Rhythm": "Up Tempo Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "F7|F7|F7|F7|Bb7|Bb7|Bb7|Bb7"
+      },
+      "Endings": [
+        {
+          "Chords": "Eb7|Eb7|Eb7|Eb7|Abmaj7|Abmaj7|Gm7b5|C7"
+        },
+        {
+          "Chords": "Fm|C7b9|Fm|C7b9|Abmaj7|F7|Bbm7,Eb7|Ab6"
+        }
+      ]
+    }
+  ]
+}

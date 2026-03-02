@@ -1,0 +1,35 @@
+{
+  "Title": "There Is No Greater Love",
+  "Composer": "Isham Jones",
+  "Key": "Bb",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bbmaj7|Eb7|Ab7#11|G7"
+      },
+      "Endings": [
+        {
+          "Chords": "C7|C7|Cm7|F7"
+        },
+        {
+          "Chords": "C7|Cm7,F7|Bb6|Bb6"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Am7b5,D7b9|Gm6|Am7b5,D7b9|Gm6|Am7b5,D7b9|Gm6|C7|F7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bbmaj7|Eb7|Ab7#11|G7|C7|Cm7,F7|Bb6|Cm7,F7"
+      }
+    }
+  ]
+}

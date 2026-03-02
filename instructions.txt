@@ -1,0 +1,265 @@
+Lambek Calculus Project - Instructions
+======================================
+
+Project files
+-------------
+- chord_grade.py: chord -> Roman grade conversion in a given key.
+- lambek_tree.py: automatic Lambek proof-tree generation from a chord sequence or standards dataset.
+- tonality_route.py: shortest route utility on the D/S/R/P tonality lattice.
+- simplify_tree_notation.py: converter from formal prooftree TEX to readable TEX (+ PNG).
+- cadence_stats.py: cadence frequency/percentage extractor from last_line_analysis TXT.
+- generate_chords.py: weighted chord-tree generator with modulation and high-DPI PNG export.
+- requirements_check.sh: quick environment checker.
+
+What your collaborator needs
+----------------------------
+1) Python 3
+2) A LaTeX distribution with pdflatex and packages:
+   - amsmath
+   - amssymb
+   - graphicx
+   - bussproofs
+   - stmaryrd
+   - turnstile
+   - geometry
+   - fontenc
+   - inputenc
+3) For PNG export from lambek_tree.py and simplify_tree_notation.py:
+   - Ghostscript (gs) preferred, OR sips (macOS only)
+4) For route-map PNG export from tonality_route.py:
+   - Graphviz dot
+
+Quick setup check
+-----------------
+Run:
+  bash requirements_check.sh
+
+Main usage
+----------
+A) Generate Lambek tree from direct sequence (auto-tonality + auto-modulation + TEX + PNG)
+
+  python3 lambek_tree.py --sequence <chords...>
+
+Example:
+  python3 lambek_tree.py --sequence D7 G7 Cmaj7
+
+Useful options:
+- --out-dir <folder>   output folder for sequence mode (default: tree_outputs)
+- --basename <name>    custom base filename
+- --dpi <number>       requested PNG DPI (default: 600)
+
+Example:
+  python3 lambek_tree.py --sequence F6 D7 G7 C7 F6 F#m7 B7 E7 A7 D7 G7 Cmaj7 --out-dir tree_outputs_huge --dpi 300
+
+B) Generate Lambek trees from JazzStandards JSON (one prooftree per section)
+
+  python3 lambek_tree.py --standard "<standard title>"
+
+Examples:
+  python3 lambek_tree.py --standard "Alone Together"
+  python3 lambek_tree.py --standard "Stella By Starlight"
+
+Optional standard dataset folder:
+  python3 lambek_tree.py --standard "Alone Together" --standards-dir "JazzStandards-main/JazzStandards"
+
+B2) Generate standard + readable converted version in one command
+
+  python3 lambek_tree.py --standard-readable "<standard title>"
+
+Example:
+  python3 lambek_tree.py --standard-readable "Alone Together"
+
+This creates both:
+- standard_outputs/<StandardName>...
+- standard_outputs_readable/<StandardName>...
+- readable PNGs are rendered at high density by default
+  (effective readable DPI defaults to at least 900 unless overridden).
+
+C) Batch command: analyze all standards in a folder
+
+  python3 lambek_tree.py --all-standards --standards-dir "<folder_with_json_files>"
+
+Example:
+  python3 lambek_tree.py --all-standards --standards-dir "JazzStandards-main/JazzStandards"
+
+D) Fast last-line analysis mode (readable final line)
+
+Single standard:
+  python3 lambek_tree.py analyse "Alone Together"
+
+Single standard with TXT output:
+  python3 lambek_tree.py analyse "Alone Together" --format txt
+
+All standards in one folder:
+  python3 lambek_tree.py analyse "JazzStandards-main/JazzStandards" --format txt
+
+Notes:
+- `analyse` writes into `last_line_analysis`.
+- `--format tex|txt` controls output format (default: tex).
+- In `tex` format, output page layout is landscape for better readability.
+- Last-line extraction is based on the readable-converted analysis
+  (not the raw formal tree line).
+- In `txt` format, sequents are translated to plain readable text
+  (e.g., keyed tags like `[d]{...}` and explicit depth marker `|- (depth=n)`).
+
+Create TXT + cadence CSV in one command:
+  python3 lambek_tree.py analyse "JazzStandards-main/JazzStandards" --format txt --cadence-csv "last_line_analysis/JazzStandards_all_cadence.csv"
+
+Optional (include self patterns like I->I and I->I->I in CSV):
+  --include-self
+
+E) Readable converter (formal TEX -> readable TEX + PNG)
+
+Single TEX file:
+  python3 simplify_tree_notation.py --input "<path_to_tex_file>"
+
+Example:
+  python3 simplify_tree_notation.py --input "standard_outputs/After_You_ve_Gone/After_You_ve_Gone_B_2.tex"
+
+Latest output folder of a standard:
+  python3 simplify_tree_notation.py --standard "After You've Gone"
+
+Useful option:
+- --dpi <number>       requested PNG DPI for readable output (default: 900)
+
+F) Cadence statistics from analysis TXT
+
+Run on a generated last_line_analysis TXT:
+  python3 cadence_stats.py --input "last_line_analysis/JazzStandards_all.txt"
+
+Useful options:
+- --top <n>            number of ranked patterns to print
+- --csv-out <path>     write full ranked tables (single-link + 3-step chains)
+- --include-self       include self patterns (I->I, I->I->I); default is excluded
+
+G) Chord generation from tonality (reverse process)
+
+Basic:
+  python3 generate_chords.py --tonality C --target-chords 8
+
+High-resolution PNG output:
+  python3 generate_chords.py --tonality C --target-chords 8 --png --png-dpi 900
+
+Basic cadence preset mode:
+  python3 generate_chords.py --tonality C --target-chords 16 --basic-cadence-mode
+
+User controls:
+- --max-depth <n>               max generation depth
+- --style-strength <0..1>       how strongly generation follows dataset stats
+- --temperature <value>         randomness of rule sampling (higher = more random)
+- --modulation-strength <0..1>  probability of applying modal key moves (R_D/S/R/P)
+- --modulation-complexity <0..1> low: D/S bias, high: R/P bias
+- --tonal-drift <0..1>          distance from original tonality:
+  0 = stay near original key, 1 = allow maximum drift
+- --initial-cadence-bias <0..1> probability first generated cadence is perfect/plagal
+- --basic-cadence-strength <0..1> boost for very common basic links
+  (derived from standard progressions such as I-V-vi-IV, I-IV-V-I, ii-V-I)
+- --basic-cadence-mode          preset:
+  --initial-cadence-bias 1.0 and --basic-cadence-strength 0.8
+  unless those two options are explicitly provided
+- --branching-mode left|mixed   deterministic chain vs mixed expandable-node selection
+- --seed <int>                  fixed seed for reproducible runs
+
+Randomness note:
+- Without --seed, repeated runs produce different trees.
+- With the same --seed and parameters, runs are reproducible.
+
+Outputs
+-------
+- TEX is always generated.
+- PNG is generated when pdflatex and gs/sips are available.
+- Sequence mode writes to:
+  tree_outputs (or --out-dir)
+- Standard mode writes to:
+  standard_outputs
+- Readable converter writes to:
+  readable_outputs
+- Combined standard-readable mode writes to:
+  standard_outputs_readable
+- Last-line analysis mode writes to:
+  last_line_analysis
+- Cadence stats CSV can be written to:
+  last_line_analysis/*.csv
+- Chord generation reports/images write to:
+  generated_chords/*.txt and generated_chords/*.png
+
+Standard output folders
+-----------------------
+For each standard run, a dedicated folder is created under standard_outputs:
+- first run: <StandardName>
+- second run: <StandardName>_1
+- then: <StandardName>_2, etc.
+
+Tree rendering behavior
+-----------------------
+- Proof tree starts as prooftree.
+- For large trees, it auto-switches to:
+    \begin{scprooftree}{scale}
+  with scale chosen automatically (0.9 down to 0.4).
+- TEX includes the selected scale in a comment:
+    % auto-scale: 0.x
+
+Modulation behavior summary
+---------------------------
+- Uses D/S/R/P tonal accessibility.
+- Left labels show both relation chain and resolved key:
+    R_{...}Base = Target
+- Display order is newest function first.
+- Modulation-only steps keep cumulative boxes (no accidental unboxing).
+
+Simplicity preference in modulation routes
+------------------------------------------
+Among shortest paths, routing now prefers simpler chains:
+1) minimize number of R functions,
+2) then minimize non-D/S functions,
+3) operation preference: D/S > P > R.
+
+Chord handling summary
+----------------------
+- Minor chords use lowercase Roman grade.
+- Diminished chords (dim/o/°) use lowercase Roman grade and are treated as dominant-like function.
+- Half-diminished recognized:
+  - Xm7(b5)
+  - Xm7b5
+  - Xø7
+  - X07 (treated as Xm7b5)
+- MA7 and maj7 are equivalent.
+- Slash bass is ignored for harmonic function (e.g., CMA7/G treated as CMA7).
+- Parenthetical alternates are expanded:
+  - Em7b5(Gm7) -> Em7b5 and Gm7
+  - Ebmaj7#11(Am7b5) -> Ebmaj7#11 and Am7b5
+- Tritone-sub dominant handling:
+  - bII7 -> I (e.g., Db7 -> Cmaj7) is recognized as dominant-functional resolution,
+    but graded literally in-key (Db7 in C -> bII, not V).
+
+Analysis hierarchy (high level)
+-------------------------------
+- Opening ii-V-I / ii-V evidence is strongly prioritized for initial tonality.
+- If ambiguous, early diatonic-consistency scoring is used.
+- Unresolved final dominant can imply missing tonic.
+- Altered dominants (b9/#9/b13/#13/alt) bias toward minor when needed.
+- Preference includes: ii > #iv when both interpretations are possible.
+
+Tonality route usage
+--------------------
+Print shortest route text:
+  python3 tonality_route.py --from C --to a
+
+Export route map PNG:
+  python3 tonality_route.py png --from C --to a --out-dir route_maps
+
+Notes
+-----
+- simplify_tree_notation.py is a converter: input is existing formal .tex; output is converted .tex and .png in readable_outputs.
+- If a command fails due to missing tools/packages, install them and rerun.
+- On non-macOS systems without sips, install Ghostscript for PNG export.
+- On systems without Graphviz, route map PNG export is skipped.
+
+Shell note for parentheses (zsh)
+--------------------------------
+If a chord contains parentheses, quote it (or escape parentheses), otherwise zsh may fail before Python runs.
+Examples:
+  python3 lambek_tree.py --sequence 'Dm7(b5)' G7 Cm7
+  python3 lambek_tree.py --sequence 'G7(#9)' Cm7
+Alternative without parentheses:
+  Dm7b5 (equivalent to Dm7(b5))

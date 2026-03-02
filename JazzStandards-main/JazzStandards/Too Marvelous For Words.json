@@ -1,0 +1,35 @@
+{
+  "Title": "Too Marvelous For Words",
+  "Composer": "Richard Whiting",
+  "Key": "G",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Am7|D7|Am7|D7|Gmaj7|C7#11"
+      },
+      "Endings": [
+        {
+          "Chords": "Bm7|Em7"
+        },
+        {
+          "Chords": "Bmaj7,F#7|B6"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Dm7|G7|Dm7|G7|Cmaj7|F7|Em7,A7|Am7,D7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Am7|D7|Gmaj7,F7|E7b9|Am7|F7|Am7,D7|G6"
+      }
+    }
+  ]
+}

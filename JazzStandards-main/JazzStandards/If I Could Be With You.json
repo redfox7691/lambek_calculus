@@ -1,0 +1,27 @@
+{
+  "Title": "If I Could Be With You",
+  "Composer": "James Johnson",
+  "Key": "Eb",
+  "Rhythm": "Ballad",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "v",
+      "MainSegment": {
+        "Chords": "Ebmaj7,E07|Fm7,Bb7|Ebmaj7,E07|Fm7,Bb7|Eb6|Eb6,C7|F7|Bb7|Bb,G7,C7,F7|Bb6|F7|Bb7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Fm7|Bb7,Bb7#5|Eb6,G7|C7|F7|Bb7|Eb6,C7|F7,Bb7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Fm7|Bb7,Bb7#5|Eb6,G7|C7|Ab6,A07|Eb6/Bb,C7|F7,Bb7|Eb6"
+      }
+    }
+  ]
+}

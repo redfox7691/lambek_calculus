@@ -1,0 +1,35 @@
+{
+  "Title": "Copenhagen",
+  "Composer": "Davis-Melrose",
+  "Key": "Bb",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Ebmaj7|Ebm6|Bb|G7|C7|F7|Bb"
+      },
+      "Endings": [
+        {
+          "Chords": "Bb,Bb7"
+        },
+        {
+          "Chords": "Bb,F7"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Bb|Cm/Bb,Dm/Bb|Bb|Gb|Bb|F7|Bb|Bb,F7|Bb|Cm/Bb,Dm/Bb|Bb|Gb|Bb|F7|Bb|Bb,Bb7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Ebmaj7|Ebm6|Bb|G7|C7|F7|Bb|Bb,Bb7"
+      }
+    }
+  ]
+}

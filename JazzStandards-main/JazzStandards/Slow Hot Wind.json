@@ -1,0 +1,27 @@
+{
+  "Title": "Slow Hot Wind",
+  "Composer": "Henry Mancini",
+  "Rhythm": "Bossa Nova",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Am9|Am9|Am9|Am9|Dm9|Dm9|Am9|Am9"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Fmaj7#11|Fmaj7#11,Emaj7|Ebmaj7|Ebmaj7|Eb7,Ab7sus|Dbmaj7|Cmaj7|Bm7,E7b9"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Am9|Am9|Am9|Am9|Dm9|Dm9|Am9|Am9"
+      }
+    }
+  ]
+}

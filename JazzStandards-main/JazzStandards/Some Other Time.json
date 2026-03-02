@@ -1,0 +1,34 @@
+{
+  "Title": "Some Other Time",
+  "Composer": "Leonard Bernstein",
+  "Rhythm": "Ballad",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Cmaj7,G7sus|Cmaj7,G7sus|Cmaj7,G7sus|C,C/G,F#m7b5,Fm7|Em7,A7|Dm7,G7sus"
+      },
+      "Endings": [
+        {
+          "Chords": "Cmaj7,G7sus|Cmaj7,G7sus"
+        },
+        {
+          "Chords": "Cmaj7,G7sus|Cmaj7,Eb7"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Abmaj7,Eb7|Abmaj7,Eb7|Abmaj7,Eb7|Abmaj7,Eb7|Abmaj7,G7b13|C,Em7,Am7,A7|Ab7#11|Dm7,G7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Cmaj7,G7sus|Cmaj7,G7sus|Cmaj7,G7sus|C,C/G,F#m7b5,Fm7|Em7,A7|Dm7,G7sus|Cmaj7,G7sus|Cmaj7,G7sus"
+      }
+    }
+  ]
+}

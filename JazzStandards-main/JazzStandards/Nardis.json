@@ -1,0 +1,27 @@
+{
+  "Title": "Nardis",
+  "Composer": "Miles Davis",
+  "Key": "Emin",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "B",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Em7|Fmaj7|B7|Cmaj7|Am7|Fmaj7|Emaj7|Em7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Am7|Fmaj7|Am7|Fmaj7|Dm7|G7|Cmaj7|Fmaj7"
+      }
+    },
+    {
+      "MainSegment": {
+        "Chords": "Em7|Fmaj7|B7|Cmaj7|Am7|Fmaj7|Emaj7|Em7"
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "Title": "Witch Hunt",
+  "Composer": "Wayne Shorter",
+  "Key": "Cmin",
+  "Rhythm": "Slow Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "MainSegment": {
+        "Chords": "Cm7|Cm7|Cm7|Cm7|Cm7|Cm7|Cm7|Cm7|Eb7|Eb7|Eb7|Eb7|Cm7|Cm7|Cm7|Cm7|Gbmaj7|F7|Emaj7,Eb7|Eb7|Abm7|A/Ab|Abm7|G7b9b13"
+      }
+    }
+  ]
+}

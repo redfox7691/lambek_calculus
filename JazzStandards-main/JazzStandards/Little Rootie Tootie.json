@@ -1,0 +1,35 @@
+{
+  "Title": "Little Rootie Tootie",
+  "Composer": "Thelonious Monk",
+  "Key": "Ab",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Abmaj7,F7|Bbm7,Eb7|Abmaj7,F7|Bbm7,Eb7|Abmaj7,Ab7|Dbmaj7,D07"
+      },
+      "Endings": [
+        {
+          "Chords": "Ab/Eb,F7|Bbm7,Eb7"
+        },
+        {
+          "Chords": "Ab6/Eb,Eb7|Ab6"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Am7,Ab7|Dbmaj7|Dm7,G7|Gm7b5,C7|F7#11|Fm7,Bb7|Dbm7,Gb7|Bm7,,E9,Eb9"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Abmaj7,F7|Bbm7,Eb7|Abmaj7,F7|Bbm7,Eb7|Abmaj7,Ab7|Dbmaj7,D07|Ab6/Eb,Eb7|Ab6"
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "Title": "Adam's Apple",
+  "Composer": "Wayne Shorter",
+  "Key": "Ab",
+  "Rhythm": "Even 8ths",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "MainSegment": {
+        "Chords": "Ab7|Ab7|Ab7|Ab7|Ab7|Ab7|Ab7|Ab7|Gb7|Gb7|Gb7|Gb7|Ab7|Ab7|Ab7|Ab7|Abm7|Db7|Bbm7|Eb7#9|Ab7|Ab7|Ab7|Ab7"
+      }
+    }
+  ]
+}

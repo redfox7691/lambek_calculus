@@ -1,0 +1,33 @@
+{
+  "Title": "Someday My Prince Will Come",
+  "Composer": "Frank Churchill",
+  "Key": "Bb",
+  "Rhythm": "Waltz",
+  "TimeSignature": "3/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bbmaj7|D7#5|Ebmaj7|G7b9|Cm7|G7b9|Cm7|F7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Dm7|C#07|Cm7|F7|Dm7|C#07|Cm7|F7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bbmaj7|D7#5|Ebmaj7|G7b9|Cm7|G7b9|Cm7|F7"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "Fm7|Bb7|Ebmaj7|E07|Bbmaj7/F|G7|Cm7|F7"
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "Title": "Lazy River",
+  "Composer": "Hoagy Carmichael",
+  "Key": "F",
+  "Rhythm": "Slow Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "D7|D7,Db7,C7,F#0|G7|G7,Ab7,G7,|C7|C7,Db7,C7,|F6,C7|F6"
+      }
+    },
+    {
+      "MainSegment": {
+        "Chords": "D7|D7,Db7,C7,F#0|G7|G7,Ab7,G7,|Bb6,B07|F6/C,D7|G7,C7|F6,D7|G7,C7|F6,A7"
+      }
+    }
+  ]
+}

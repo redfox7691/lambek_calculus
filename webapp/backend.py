@@ -1,0 +1,418 @@
+#!/usr/bin/env python3
+from __future__ import annotations
+
+import json
+import os
+import re
+import shlex
+import subprocess
+import threading
+import uuid
+from dataclasses import dataclass, asdict, field
+from datetime import datetime, timezone
+from pathlib import Path
+from typing import Any
+
+from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
+from pydantic import BaseModel, Field
+
+ROOT = Path(__file__).resolve().parents[1]
+JOB_STORE = ROOT / "webapp" / "job_store"
+JOB_STORE.mkdir(parents=True, exist_ok=True)
+
+ARTIFACT_RE = re.compile(r"(/.+?\.(?:txt|png|csv|tex|pdf))", re.IGNORECASE)
+
+
+@dataclass
+class Job:
+    id: str
+    kind: str
+    command: list[str]
+    status: str = "queued"
+    created_at: str = field(default_factory=lambda: datetime.now(timezone.utc).isoformat())
+    started_at: str | None = None
+    finished_at: str | None = None
+    return_code: int | None = None
+    stdout: str = ""
+    stderr: str = ""
+    artifacts: list[str] = field(default_factory=list)
+    error: str | None = None
+
+
+class JobRegistry:
+    def __init__(self) -> None:
+        self._lock = threading.Lock()
+        self._jobs: dict[str, Job] = {}
+        self._load_existing()
+
+    def create(self, kind: str, command: list[str]) -> Job:
+        job_id = str(uuid.uuid4())
+        job = Job(id=job_id, kind=kind, command=command)
+        with self._lock:
+            self._jobs[job_id] = job
+        self._persist(job)
+        return job
+
+    def get(self, job_id: str) -> Job:
+        with self._lock:
+            job = self._jobs.get(job_id)
+        if not job:
+            raise KeyError(job_id)
+        return job
+
+    def list(self) -> list[Job]:
+        with self._lock:
+            jobs = list(self._jobs.values())
+        return sorted(jobs, key=lambda j: j.created_at, reverse=True)
+
+    def update(self, job_id: str, **kwargs: Any) -> Job:
+        with self._lock:
+            job = self._jobs[job_id]
+            for key, value in kwargs.items():
+                setattr(job, key, value)
+        self._persist(job)
+        return job
+
+    def _persist(self, job: Job) -> None:
+        path = JOB_STORE / f"{job.id}.json"
+        path.write_text(json.dumps(asdict(job), indent=2), encoding="utf-8")
+
+    def _load_existing(self) -> None:
+        for path in sorted(JOB_STORE.glob("*.json")):
+            try:
+                payload = json.loads(path.read_text(encoding="utf-8"))
+                job = Job(**payload)
+                self._jobs[job.id] = job
+            except Exception:
+                continue
+
+
+registry = JobRegistry()
+
+
+class GenerateChordRequest(BaseModel):
+    tonality: str = "C"
+    target_chords: int = Field(default=8, ge=1)
+    max_depth: int = Field(default=64, ge=0)
+    branching_mode: str = Field(default="mixed", pattern="^(left|mixed)$")
+    style_strength: float = Field(default=0.75, ge=0.0, le=1.0)
+    temperature: float = Field(default=0.9, gt=0.0)
+    modulation_strength: float = Field(default=0.25, ge=0.0, le=1.0)
+    modulation_complexity: float = Field(default=0.5, ge=0.0, le=1.0)
+    tonal_drift: float = Field(default=0.5, ge=0.0, le=1.0)
+    initial_cadence_bias: float = Field(default=0.9, ge=0.0, le=1.0)
+    basic_cadence_strength: float = Field(default=0.0, ge=0.0, le=1.0)
+    basic_cadence_mode: bool = False
+    png: bool = True
+    png_dpi: int = Field(default=900, ge=72)
+    seed: int = 0
+
+
+class CadenceStatsRequest(BaseModel):
+    input_txt: str = "last_line_analysis/JazzStandards_all.txt"
+    top_n: int = Field(default=20, ge=1)
+    csv_out: str = "last_line_analysis/cadence_stats_web.csv"
+    include_self: bool = False
+
+
+class AnalyseRequest(BaseModel):
+    standards_folder: str = "JazzStandards-main/JazzStandards"
+    standard_name: str = ""
+    custom_sequence: str = ""
+    format: str = Field(default="txt", pattern="^(txt|tex)$")
+    cadence_csv: str = "last_line_analysis/JazzStandards_all_cadence_web.csv"
+    include_self: bool = False
+    dpi: int = Field(default=600, ge=72)
+    readable_dpi: int = Field(default=900, ge=72)
+
+
+app = FastAPI(title="Lambek Calculus Webapp", version="0.1.0")
+app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
+app.mount("/static", StaticFiles(directory=str(ROOT / "webapp" / "static")), name="static")
+
+
+def _safe_rel(path_like: str) -> str:
+    p = Path(path_like)
+    if p.is_absolute():
+        try:
+            p.relative_to(ROOT)
+        except ValueError as exc:
+            raise HTTPException(status_code=400, detail=f"Path must be under project root: {ROOT}") from exc
+        return str(p)
+    return str((ROOT / p).resolve().relative_to(ROOT))
+
+
+def _find_standard_json(standards_folder: str, standard_name: str) -> Path:
+    folder = ROOT / _safe_rel(standards_folder)
+    candidate = folder / f"{standard_name}.json"
+    if candidate.exists():
+        return candidate
+    lowered = standard_name.strip().lower()
+    for p in folder.glob("*.json"):
+        if p.stem.lower() == lowered:
+            return p
+    raise HTTPException(status_code=404, detail=f"Standard not found: {standard_name}")
+
+
+def _extract_section_labels(song: dict[str, Any]) -> list[str]:
+    sections = song.get("Sections", [])
+    out: list[str] = []
+    for idx, section in enumerate(sections):
+        label = str(section.get("Label", f"S{idx + 1}"))
+        base = f"{label}_{idx + 1}"
+        out.append(base)
+
+        endings = section.get("Endings", [])
+        for eidx, ending in enumerate(endings, start=1):
+            if isinstance(ending, dict) and str(ending.get("Chords", "")).strip():
+                out.append(f"{base}_Ending{eidx}")
+
+    if not out and str(song.get("Chords", "")).strip():
+        out.append("Section_1")
+    return out
+
+
+def _tokenize_sequence_text(sequence: str) -> list[str]:
+    tokens = [t.strip() for t in re.split(r"[\s|,]+", sequence) if t.strip()]
+    return tokens
+
+
+def _job_runner(job_id: str) -> None:
+    job = registry.get(job_id)
+    cmd = job.command
+    registry.update(job_id, status="running", started_at=datetime.now(timezone.utc).isoformat())
+    try:
+        proc = subprocess.Popen(
+            cmd,
+            cwd=str(ROOT),
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+            bufsize=1,
+        )
+        out, err = proc.communicate()
+        artifacts: list[str] = []
+        for line in (out + "\n" + err).splitlines():
+            for match in ARTIFACT_RE.finditer(line):
+                raw_path = match.group(1).strip().rstrip(".,);:")
+                path = Path(raw_path)
+                if path.is_absolute() and path.exists():
+                    artifacts.append(str(path))
+
+        registry.update(
+            job_id,
+            status="done" if proc.returncode == 0 else "error",
+            finished_at=datetime.now(timezone.utc).isoformat(),
+            return_code=proc.returncode,
+            stdout=out,
+            stderr=err,
+            artifacts=sorted(set(artifacts)),
+            error=None if proc.returncode == 0 else "Command failed",
+        )
+    except Exception as exc:  # noqa: BLE001
+        registry.update(
+            job_id,
+            status="error",
+            finished_at=datetime.now(timezone.utc).isoformat(),
+            error=str(exc),
+        )
+
+
+def _submit(kind: str, cmd: list[str]) -> dict[str, Any]:
+    job = registry.create(kind=kind, command=cmd)
+    t = threading.Thread(target=_job_runner, args=(job.id,), daemon=True)
+    t.start()
+    return {"job_id": job.id, "status": job.status, "command": " ".join(shlex.quote(x) for x in cmd)}
+
+
+@app.get("/")
+def home() -> FileResponse:
+    return FileResponse(ROOT / "webapp" / "static" / "index.html")
+
+
+@app.get("/api/health")
+def health() -> dict[str, str]:
+    return {"status": "ok"}
+
+
+@app.get("/api/standards")
+def list_standards(standards_folder: str = "JazzStandards-main/JazzStandards") -> dict[str, Any]:
+    rel = _safe_rel(standards_folder)
+    folder = ROOT / rel
+    if not folder.exists() or not folder.is_dir():
+        raise HTTPException(status_code=400, detail=f"Invalid standards folder: {folder}")
+    names = sorted(p.stem for p in folder.glob("*.json"))
+    return {"standards_folder": str(folder), "count": len(names), "standards": names}
+
+
+@app.get("/api/standards/sections")
+def list_standard_sections(
+    standards_folder: str = "JazzStandards-main/JazzStandards",
+    standard_name: str = "",
+) -> dict[str, Any]:
+    if not standard_name.strip():
+        raise HTTPException(status_code=400, detail="standard_name is required")
+    std_json = _find_standard_json(standards_folder, standard_name)
+    try:
+        song = json.loads(std_json.read_text(encoding="utf-8"))
+    except Exception as exc:  # noqa: BLE001
+        raise HTTPException(status_code=500, detail=f"Cannot parse {std_json.name}: {exc}") from exc
+    sections = _extract_section_labels(song)
+    return {"standard_name": std_json.stem, "sections": sections, "count": len(sections)}
+
+
+@app.post("/api/jobs/generate-chords")
+def create_generate_job(req: GenerateChordRequest) -> dict[str, Any]:
+    script = ROOT / "generate_chords.py"
+    cmd = [
+        "python3",
+        str(script),
+        "--tonality",
+        req.tonality,
+        "--target-chords",
+        str(req.target_chords),
+        "--max-depth",
+        str(req.max_depth),
+        "--branching-mode",
+        req.branching_mode,
+        "--style-strength",
+        str(req.style_strength),
+        "--temperature",
+        str(req.temperature),
+        "--modulation-strength",
+        str(req.modulation_strength),
+        "--modulation-complexity",
+        str(req.modulation_complexity),
+        "--tonal-drift",
+        str(req.tonal_drift),
+        "--initial-cadence-bias",
+        str(req.initial_cadence_bias),
+        "--basic-cadence-strength",
+        str(req.basic_cadence_strength),
+        "--seed",
+        str(req.seed),
+    ]
+    if req.basic_cadence_mode:
+        cmd.append("--basic-cadence-mode")
+    if req.png:
+        cmd.extend(["--png", "--png-dpi", str(req.png_dpi)])
+    return _submit("generate-chords", cmd)
+
+
+@app.post("/api/jobs/cadence-stats")
+def create_cadence_stats_job(req: CadenceStatsRequest) -> dict[str, Any]:
+    script = ROOT / "cadence_stats.py"
+    cmd = [
+        "python3",
+        str(script),
+        "--input",
+        _safe_rel(req.input_txt),
+        "--top-n",
+        str(req.top_n),
+        "--csv-out",
+        _safe_rel(req.csv_out),
+    ]
+    if req.include_self:
+        cmd.append("--include-self")
+    return _submit("cadence-stats", cmd)
+
+
+@app.post("/api/jobs/analyse-standards")
+def create_analyse_job(req: AnalyseRequest) -> dict[str, Any]:
+    script = ROOT / "lambek_tree.py"
+    custom_sequence = req.custom_sequence.strip()
+    if custom_sequence:
+        chords = _tokenize_sequence_text(custom_sequence)
+        if not chords:
+            raise HTTPException(status_code=400, detail="custom_sequence is empty after parsing")
+        cmd = [
+            "python3",
+            str(script),
+            "--sequence",
+            *chords,
+            "--out-dir",
+            "tree_outputs",
+            "--dpi",
+            str(req.readable_dpi),
+        ]
+        return _submit("analyse-sequence", cmd)
+
+    standards_dir_rel = _safe_rel(req.standards_folder)
+    standard_name = req.standard_name.strip()
+    if standard_name:
+        cmd = [
+            "python3",
+            str(script),
+            "--standard-readable",
+            standard_name,
+            "--standards-dir",
+            standards_dir_rel,
+            "--dpi",
+            str(req.dpi),
+            "--readable-dpi",
+            str(req.readable_dpi),
+            "--overwrite",
+        ]
+        return _submit("analyse-standard-readable", cmd)
+
+    cmd = [
+        "python3",
+        str(script),
+        "analyse",
+        standards_dir_rel,
+        "--format",
+        req.format,
+        "--cadence-csv",
+        _safe_rel(req.cadence_csv),
+    ]
+    if req.include_self:
+        cmd.append("--include-self")
+    return _submit("analyse-standards", cmd)
+
+
+@app.get("/api/jobs")
+def list_jobs() -> list[dict[str, Any]]:
+    return [asdict(j) for j in registry.list()]
+
+
+@app.get("/api/jobs/{job_id}")
+def get_job(job_id: str) -> dict[str, Any]:
+    try:
+        return asdict(registry.get(job_id))
+    except KeyError as exc:
+        raise HTTPException(status_code=404, detail="Job not found") from exc
+
+
+@app.get("/api/jobs/{job_id}/artifacts")
+def list_job_artifacts(job_id: str) -> dict[str, Any]:
+    try:
+        job = registry.get(job_id)
+    except KeyError as exc:
+        raise HTTPException(status_code=404, detail="Job not found") from exc
+    return {"job_id": job.id, "artifacts": job.artifacts}
+
+
+@app.get("/api/jobs/{job_id}/download")
+def download_artifact(job_id: str, path: str) -> FileResponse:
+    try:
+        job = registry.get(job_id)
+    except KeyError as exc:
+        raise HTTPException(status_code=404, detail="Job not found") from exc
+
+    abs_path = Path(path).resolve()
+    if str(abs_path) not in set(job.artifacts):
+        raise HTTPException(status_code=400, detail="Artifact not in this job")
+    if not abs_path.exists():
+        raise HTTPException(status_code=404, detail="Artifact not found")
+    return FileResponse(abs_path)
+
+
+if __name__ == "__main__":
+    import uvicorn
+
+    host = os.environ.get("LAMBEK_WEB_HOST", "127.0.0.1")
+    port = int(os.environ.get("LAMBEK_WEB_PORT", "8000"))
+    uvicorn.run("backend:app", host=host, port=port, reload=False)

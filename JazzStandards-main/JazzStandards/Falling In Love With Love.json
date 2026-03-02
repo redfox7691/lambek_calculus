@@ -1,0 +1,22 @@
+{
+  "Title": "Falling In Love With Love",
+  "Composer": "Richard Rodgers",
+  "Key": "Bb",
+  "Rhythm": "Waltz",
+  "TimeSignature": "3/4",
+  "Sections": [
+    {
+      "MainSegment": {
+        "Chords": "Bbmaj7|Bbmaj7|Bbmaj7|Bbmaj7|Cm7|Cm7|F7|F7|Cm7|Cm7|F7|F7|Bbmaj7|Bbmaj7|Bbmaj7|Bbmaj7|Bbmaj7|Bbmaj7|Bbmaj7|Bbmaj7"
+      },
+      "Endings": [
+        {
+          "Chords": "Am7b5|Am7b5|D7b9|D7b9|Gm7|Gm7|C7|C7|Cm7|Cm7|F7|F7"
+        },
+        {
+          "Chords": "Ab7#11|Ab7#11|G7b9|G7b9|Cm7|B07|Cm7|F7|Bbmaj7|Gm7|Cm7|F7"
+        }
+      ]
+    }
+  ]
+}

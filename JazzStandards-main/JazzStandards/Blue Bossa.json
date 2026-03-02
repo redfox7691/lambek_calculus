@@ -1,0 +1,14 @@
+{
+  "Title": "Blue Bossa",
+  "Composer": "Kenny Dorham",
+  "Key": "Cmin",
+  "Rhythm": "Bossa Nova",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "MainSegment": {
+        "Chords": "Cm7|Cm7|Fm7|Fm7|Dm7b5|G7b9|Cm7|Cm7|Ebm7|Ab7|Dbmaj7|Dbmaj7|Dm7b5|G7b9|Cm7|Dm7b5,G7b9"
+      }
+    }
+  ]
+}

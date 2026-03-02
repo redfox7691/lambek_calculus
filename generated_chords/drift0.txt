@@ -1,0 +1,52 @@
+Chord Generation Report
+=======================
+Tonality: C
+Target chords: 8
+Generated chords: 8
+Max depth: 7
+Branching mode: left
+Style strength: 0.800
+Temperature: 0.800
+Modulation strength: 0.900
+Modulation complexity: 0.200
+Tonal drift: 0.000
+Stats CSV: /Users/Mat/ownCloud/Python/Lambek Calculus/last_line_analysis/JazzStandards_all_cadence.csv
+Seed: 11
+
+Generated Chord List (in generation order)
+------------------------------------------
+Cmaj7 | Cm7 | Fm7 | Dm7 | Db7 | Emaj7 | Cmaj7 | Bmaj7
+
+Rule Trace
+----------
+ 1. P.b.: i -> I  (Cm7 -> Cmaj7)
+ 2. Pl.C.m.: iv -> I  (Fm7 -> Cmaj7)
+ 3. Data(ii->iv): ii -> iv  (Dm7 -> Fm7)
+ 4. Data(bII->ii): bII -> ii  (Db7 -> Dm7)
+ 5. Data(III->bII): III -> bII  (Emaj7 -> Db7)
+ 6. Data(I->III): I -> III  (Cmaj7 -> Emaj7)
+ 7. Data(VII->I): VII -> I  (Bmaj7 -> Cmaj7)
+
+ASCII Tree
+----------
+└─ I [Cmaj7] @C
+   ├─ i [Cm7] @C  [P.b.]
+   │  ├─ iv [Fm7] @C  [Pl.C.m.]
+   │  │  ├─ ii [Dm7] @C  [Data(ii->iv)]
+   │  │  │  ├─ bII [Db7] @C  [Data(bII->ii)]
+   │  │  │  │  ├─ III [Emaj7] @C  [Data(III->bII)]
+   │  │  │  │  │  ├─ I [Cmaj7] @C  [Data(I->III)]
+   │  │  │  │  │  │  ├─ VII [Bmaj7] @C  [Data(VII->I)]
+   │  │  │  │  │  │  └─ I [Cmaj7] @C
+   │  │  │  │  │  └─ III [Emaj7] @C
+   │  │  │  │  └─ bII [Db7] @C
+   │  │  │  └─ ii [Dm7] @C
+   │  │  └─ iv [Fm7] @C
+   │  └─ I [Cmaj7] @C
+   └─ I [Cmaj7] @C
+
+Forest Snippet
+--------------
+\begin{forest}
+[I [Cmaj7] @C [i [Cm7] @C [iv [Fm7] @C [ii [Dm7] @C [bII [Db7] @C [III [Emaj7] @C [I [Cmaj7] @C [VII [Bmaj7] @C], edge label={node[midway, left,font=\tiny]{\textit{Data(VII->I)}}} [I [Cmaj7] @C]], edge label={node[midway, left,font=\tiny]{\textit{Data(I->III)}}} [III [Emaj7] @C]], edge label={node[midway, left,font=\tiny]{\textit{Data(III->bII)}}} [bII [Db7] @C]], edge label={node[midway, left,font=\tiny]{\textit{Data(bII->ii)}}} [ii [Dm7] @C]], edge label={node[midway, left,font=\tiny]{\textit{Data(ii->iv)}}} [iv [Fm7] @C]], edge label={node[midway, left,font=\tiny]{\textit{Pl.C.m.}}} [I [Cmaj7] @C]], edge label={node[midway, left,font=\tiny]{\textit{P.b.}}} [I [Cmaj7] @C]]
+\end{forest}

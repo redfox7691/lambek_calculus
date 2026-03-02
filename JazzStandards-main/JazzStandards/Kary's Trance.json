@@ -1,0 +1,28 @@
+{
+  "Title": "Kary's Trance",
+  "Composer": "Lee Konitz",
+  "Key": "Amin",
+  "Rhythm": "Medium Up Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Am6|Am6|Dm6|Dm6|Bm7b5|E7b9|Am6|Am6"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "G7|G7|Cmaj7|Cmaj7|B7|B7|E7|E7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Am6|Am6|Dm6|Dm6|Bm7b5|E7b9|Am6|Am6"
+      }
+    }
+  ]
+}

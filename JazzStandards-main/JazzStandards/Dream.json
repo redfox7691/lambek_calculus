@@ -1,0 +1,33 @@
+{
+  "Title": "Dream",
+  "Composer": "Johnny Mercer",
+  "Key": "Bb",
+  "Rhythm": "Slow Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bb|Bb|Em7|A7|Bb6|Bb6|Dm7|G7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Cm7|Ebm6|Bbmaj7|Bbmaj7|C7|C7|Cm7|F7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bb|Bb|Em7|A7|Bb6|Bb6|Dm7|G7"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "Cm7|Ebm6|Bbmaj7,A7|D7,G7#9|Cm7|F7|Bb6|Cm7,F7"
+      }
+    }
+  ]
+}

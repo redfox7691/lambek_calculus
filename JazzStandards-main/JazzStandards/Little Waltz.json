@@ -1,0 +1,26 @@
+{
+  "Title": "Little Waltz",
+  "Composer": "Ron Carter",
+  "Key": "Fmin",
+  "Rhythm": "Waltz",
+  "TimeSignature": "3/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Fm|C7/E|Ebm6|Dbmaj7|G7|C7|Fm7|C7|Fm|C7/E|Ebm6|Dbmaj7|G7|C7|Fm7|C7|Fm|Fm"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Dm7b5|G7|C7|F7|Bbm7|Eb7|Ab|G7,C7"
+      }
+    },
+    {
+      "MainSegment": {
+        "Chords": "Fm|C7/E|Ebm6|Dbmaj7|G7|C7|F6|F6"
+      }
+    }
+  ]
+}

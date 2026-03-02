@@ -1,0 +1,20 @@
+{
+  "Title": "Best Things In Life Are Free, The",
+  "Composer": "DeSylva-Brown-Henderson",
+  "Rhythm": "Medium Up Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "C6|C6|Cmaj7|Cmaj7|C6|C6/E,Eb07|Dm7|G7|Dm7|Dm7|Dm7|Dm7|G7|Dm7,G7|Cmaj7,C#07|Dm7,G7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Gm7|C7|Fmaj7|Fmaj7|Am7|D7|Dm7|G7|C6|C6|Em7|A7|Dm7|Dm7,G7|C6|C6"
+      }
+    }
+  ]
+}

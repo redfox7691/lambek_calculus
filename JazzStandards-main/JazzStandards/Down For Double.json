@@ -1,0 +1,35 @@
+{
+  "Title": "Down For Double",
+  "Composer": "Freddie Green",
+  "Key": "Bb",
+  "Rhythm": "Medium Up Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bb6,G7|C7,F7|Bb6,G7|C7,F7|Bb6,G7|C7,F7"
+      },
+      "Endings": [
+        {
+          "Chords": "Bb6,Gm7|Cm7,F7"
+        },
+        {
+          "Chords": "Bb6,Cm7|Db07,Bb6"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Bb7|Bb7|Eb6|Eb6|C7|C7|F7|F7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bb6,G7|C7,F7|Bb6,G7|C7,F7|Bb6,G7|C7,F7|Bb6,(Cm7)|Bb6(Db07),(Bb6)"
+      }
+    }
+  ]
+}

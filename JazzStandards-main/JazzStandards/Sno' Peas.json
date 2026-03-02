@@ -1,0 +1,35 @@
+{
+  "Title": "Sno' Peas",
+  "Composer": "Phil Markowitz",
+  "Key": "Ebmin",
+  "Rhythm": "Waltz",
+  "TimeSignature": "3/4",
+  "Sections": [
+    {
+      "Label": "i",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Eb7#9|Abm7|Bb7#9|Ebm7"
+      }
+    },
+    {
+      "Label": "A",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Eb7#9|Abm7|Db7|Cm/maj7,Cm7|Em7|Abm7|Bm7|Ebm7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "D7#9|Db9sus|Gm/maj7|Bm/maj7|Cm/maj7|Em7|Am7|Abm7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Eb7#9|Abm7|Db7|Cm/maj7,Cm7|Em7|Abm7|Bm7|Ebm7"
+      }
+    }
+  ]
+}

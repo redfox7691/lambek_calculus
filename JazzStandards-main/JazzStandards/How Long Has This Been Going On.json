@@ -1,0 +1,35 @@
+{
+  "Title": "How Long Has This Been Going On?",
+  "Composer": "George Gershwin",
+  "Key": "F",
+  "Rhythm": "Ballad",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "C7|C07|C7,F7|Bb7,Eb7|Fmaj7,Ab07|Gm7,,C7,F7|Bbmaj7,C7b13"
+      },
+      "Endings": [
+        {
+          "Chords": "Fmaj7"
+        },
+        {
+          "Chords": "F6,,Cm7,F7"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Bbmaj7,Eb7|Bbmaj7,Eb7|Bbmaj7,Eb7|Bbmaj7,,Bm7b5,E7|Am7,E7b9|Am7,E7b9|Am7,E7b9|Am7,Ab7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "C7|C07|C7,F7|Bb7,Eb7|Fmaj7,Ab07|Gm7,,C7,F7|Bbmaj7,C7b13|F6"
+      }
+    }
+  ]
+}

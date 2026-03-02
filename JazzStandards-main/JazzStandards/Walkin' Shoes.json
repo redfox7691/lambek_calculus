@@ -1,0 +1,35 @@
+{
+  "Title": "Walkin' Shoes",
+  "Composer": "Gerry Mulligan",
+  "Key": "Eb",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Eb6|Ab7|Eb6|Gm7b5,C7|Fm7|Am7,D7|Gmb6,Gbm7"
+      },
+      "Endings": [
+        {
+          "Chords": "Gbm7,Fm,E7#9,"
+        },
+        {
+          "Chords": "E7#9,Fm,E7,Ab7"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "G7|G7|Cm6|Cm6|Cm7|F7|Fm7|Bb7"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "Eb6|Ab7,A07|Eb6,Abmaj7|Gm7b5,C7|Fm7b5,C7|Fm7,Bb7|Eb6|Bb7"
+      }
+    }
+  ]
+}

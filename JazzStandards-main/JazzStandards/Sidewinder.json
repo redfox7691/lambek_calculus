@@ -1,0 +1,14 @@
+{
+  "Title": "Sidewinder",
+  "Composer": "Lee Morgan",
+  "Key": "Eb",
+  "Rhythm": "Funk",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "MainSegment": {
+        "Chords": ",Eb7|,Eb7|,Eb7|,Eb7|,Eb7|,Eb7|,Eb7|,Eb7|,Ab7|,Ab7|,Ab7|,Ab7|,Eb7|,Eb7|,Eb7|,C7b9|,Bb7|,Bb7|,Bb7|,Bb7|,Eb7|,Eb7|Eb7,|"
+      }
+    }
+  ]
+}

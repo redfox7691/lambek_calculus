@@ -1,0 +1,33 @@
+{
+  "Title": "How Little We Know",
+  "Composer": "Hoagy Carmichael",
+  "Key": "F",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Fmaj7|Fmaj7|Gm7|C7|Fmaj7|Fmaj7|Bbm7|Eb7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Fmaj7|Am7,Abm7|Gm7|C7|Fmaj7|Dm7,Am7|Abmaj7|Gm7,C7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Fmaj7|Fmaj7|Gm7|C7|Fmaj7|Fmaj7|Bbm7|Eb7"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "Cm7|F7|Bbmaj7|Eb7|F6/A,Ab07|Gm7,C7sus|F6,D7|Gm7,C7"
+      }
+    }
+  ]
+}

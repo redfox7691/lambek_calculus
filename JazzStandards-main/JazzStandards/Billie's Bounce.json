@@ -1,0 +1,15 @@
+{
+  "Title": "Billie's Bounce",
+  "Composer": "Charlie Parker",
+  "Key": "F",
+  "Rhythm": "Medium Up Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "F7|Bb7|F7|Cm7,F7|Bb7|B07|F7|Am7,D7|Gm7|C7|F7,D7|Gm7,C7"
+      }
+    }
+  ]
+}

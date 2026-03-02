@@ -1,0 +1,27 @@
+{
+  "Title": "A Sound For Sore Ears",
+  "Composer": "Jimmy Heath",
+  "Key": "Eb",
+  "Rhythm": "Even 8ths",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bb7sus|Bb7sus|Bb7sus|Bb7sus|Bb7sus|Bb7sus|Bb7sus|Bb7sus"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "G7sus|G7sus|G7sus|G7sus|G7sus|G7sus|G7sus|G7sus"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "Bm7,E7|Amaj7|Bbm7,Eb7|Abmaj7|Abmaj7|Fmaj7|Dmaj7|Bmaj7"
+      }
+    }
+  ]
+}

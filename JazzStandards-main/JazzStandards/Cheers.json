@@ -1,0 +1,35 @@
+{
+  "Title": "Cheers",
+  "Composer": "Howard McGhee",
+  "Key": "Bb",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bb6|Eb7|Bb6|Gb7|Dm7,G7|Cm7,F7"
+      },
+      "Endings": [
+        {
+          "Chords": "Bb6,C7b9|Cm7,F7"
+        },
+        {
+          "Chords": "Bb6|Bb6"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Fm7|Bb7|Ebmaj7|Ebmaj7|C7|C7|F7|F7#5"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bb6|Eb7|Bb6|Gb7|Dm7,G7|Cm7,F7|Bb6|Cm7,F7"
+      }
+    }
+  ]
+}

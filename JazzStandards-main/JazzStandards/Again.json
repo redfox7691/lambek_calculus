@@ -1,0 +1,33 @@
+{
+  "Title": "Again",
+  "Composer": "Lionel Newman",
+  "Key": "G",
+  "Rhythm": "Ballad",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Gmaj7,Em7|Am7,D7|Bm7,E7|Am7,D7|Bm7,E7b9|Am7b5,D7b9|B7#5,E7b9|Am7,D7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Gmaj7,Em7|Am7,D7|Bm7,E7|Am7,D7|Bm7,E7b9|Am7b5,D7b9|Gmaj7|Dm7,G7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Cmaj7|F9sus|G6,Gmaj7|Dm7,G7|Cmaj7|F9sus|Bm7,E7b9|Am7,D7"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "Gmaj7,Em7|Am7,D7|Bm7,E7|Am7,D7|Bm7,E7b9|Am7b5,D7b9#5|Gmaj7|Gmaj7"
+      }
+    }
+  ]
+}

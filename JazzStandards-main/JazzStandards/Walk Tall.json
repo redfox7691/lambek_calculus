@@ -1,0 +1,20 @@
+{
+  "Title": "Walk Tall",
+  "Composer": "Cannonball Adderley",
+  "Rhythm": "Funk",
+  "TimeSignature": "2/4",
+  "Sections": [
+    {
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "G7,C7|G7,C7|G7,C7|G7,C7|G7,C7|G7,C7|G7,C7|G7,C7|Bm7|Em7|D7sus|Am7,Bm7,Cmaj7,|Bm7|Em7|Am7|D7sus|D7sus|D7sus"
+      }
+    },
+    {
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "G7,C7|G7,C7"
+      }
+    }
+  ]
+}

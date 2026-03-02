@@ -1,0 +1,29 @@
+{
+  "Title": "It's A Lovely Day Today",
+  "Composer": "Irving Berlin",
+  "Key": "Bb",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bbmaj7,Gm7|Cm7,F7|Bbmaj7|Fm7,Bb7|Ebmaj7,Ebm7|Bbmaj7/D,Db07|Cm7|F7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Bbmaj7,Gm7|Cm7,F7|Bbmaj7,Gm7|Cm7,F7|Bbmaj7|D7b9,Gm7"
+      },
+      "Endings": [
+        {
+          "Chords": "C7|F7b9"
+        },
+        {
+          "Chords": "Ab9#11|G7b9|Ebmaj7,Ebm/maj7|Bbmaj7/D,C7|Cm7,F7|Bb6,,Cm7,F7"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "Title": "Wait Till You See Her",
+  "Composer": "Richard Rodgers",
+  "Key": "Eb",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "3/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Fm7|Bb7|Ebmaj7|Cm7|Fm7"
+      },
+      "Endings": [
+        {
+          "Chords": "Bb7|Gm7|C7"
+        },
+        {
+          "Chords": "D7b9|Gm7|Gm7"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Cm7|F7|Bbmaj7|Gm7|Cm7|G7b13|Gm7|C7"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "Fm7|Bb7|Eb6|Gm7/D|Cm7|Cm7/Bb|Am7b5|Ab07"
+      }
+    },
+    {
+      "Label": "D",
+      "MainSegment": {
+        "Chords": "Eb/G|Gb07|Bb7/F|E07|Fm7|Bb7|Eb6|Eb6"
+      }
+    }
+  ]
+}

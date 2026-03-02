@@ -1,0 +1,35 @@
+{
+  "Title": "Eclypso",
+  "Composer": "Tommy Flanagan",
+  "Key": "Eb",
+  "Rhythm": "Latin-Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Fm7,Bb7|Ebmaj7,Cm7|Fm7,Bb7|Ebmaj7,Gm7|Fm7,Bb7|Gm7,Cm7|Fm7,Bb7"
+      },
+      "Endings": [
+        {
+          "Chords": "Ebmaj7,C7"
+        },
+        {
+          "Chords": "Ebmaj7"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Bbm7|Eb7|Abmaj7|Abmaj7|Cm7|F7|Fm7|Bb7,C7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Fm7,Bb7|Ebmaj7,Cm7|Fm7,Bb7|Ebmaj7,Gm7|Fm7,Bb7|Gm7,Cm7|Fm7,Bb7|Ebmaj7,C7"
+      }
+    }
+  ]
+}

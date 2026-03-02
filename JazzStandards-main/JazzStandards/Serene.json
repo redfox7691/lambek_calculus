@@ -1,0 +1,19 @@
+{
+  "Title": "Serene",
+  "Composer": "Eric Dolphy",
+  "Key": "Eb",
+  "Rhythm": "Slow Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "MainSegment": {
+        "Chords": "Ebmaj7|Ab7#11|Db7|Eb7|Ab7|D7b5|Ebmaj7|Dbm7,Gb7|Fm7b5|Bb7b5,,Bm7,E7|Ab7#11|Ab7#11"
+      }
+    },
+    {
+      "MainSegment": {
+        "Chords": "Ab7#11,Gbmaj7|F7#9,A9|A9"
+      }
+    }
+  ]
+}

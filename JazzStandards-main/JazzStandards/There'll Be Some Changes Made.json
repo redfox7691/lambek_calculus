@@ -1,0 +1,21 @@
+{
+  "Title": "There'll Be Some Changes Made",
+  "Composer": "Benton Overstreet",
+  "Key": "Bb",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "G7|G7|C7|C7|D7|G7|C7|C7,F7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "G7|G7|C7|C7|D7|G7|C7,F7|Bb6,G7|C7,F7|Bb6,,A7,Ab7"
+      }
+    }
+  ]
+}

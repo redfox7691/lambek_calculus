@@ -1,0 +1,35 @@
+{
+  "Title": "I'm Just A Lucky So-And-So",
+  "Composer": "Duke Ellington",
+  "Key": "G",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "G6|Cmaj7|G6|Dm7,G7|C7,A7|Am7,D7"
+      },
+      "Endings": [
+        {
+          "Chords": "G6,E7#9|Am7,D7"
+        },
+        {
+          "Chords": "G6|Dm7,G7"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "C7|Gmaj7|C7|Gmaj7|F#m7b5,B7|Em7|Am7|Am7,D7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "G6|Cmaj7|G6|Dm7,G7|C7,A7|Am7,D7|G6,E7#9|Am7,D7"
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "Title": "This Masquerade",
+  "Composer": "Leon Russell",
+  "Key": "Fmin",
+  "Rhythm": "Rock Pop",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "i",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Fm7|Bb7|Fm7|Bb7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Fm|Fm/maj7|Fm7|Bb7|Fm7|Db7|Gm7b5|C7#9|Fm|Fm/maj7|Fm7|Bb7|Db7|Gm7b5,C7b9|Fm|Fm,,Em7,A7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Ebm7|Ab7|Dbmaj7|Bb7b13|Ebm7|Ab7|Dbmaj7|Dbmaj7|Dm7|G13,G7b13|Cmaj7|Cmaj7|Gm7|G13,G7b13|C9sus|Gb7#11"
+      }
+    },
+    {
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Fm7|Bb7|Fm7|B7"
+      }
+    }
+  ]
+}

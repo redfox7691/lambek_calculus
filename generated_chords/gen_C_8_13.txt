@@ -1,0 +1,48 @@
+Chord Generation Report
+=======================
+Tonality: C
+Target chords: 8
+Generated chords: 7
+Max depth: 6
+Branching mode: left
+Style strength: 0.750
+Temperature: 0.900
+Modulation strength: 0.900
+Modulation complexity: 0.500
+Tonal drift: 1.000
+Stats CSV: /Users/Mat/ownCloud/Python/Lambek Calculus/last_line_analysis/JazzStandards_all_cadence.csv
+
+Generated Chord List (in generation order)
+------------------------------------------
+Cmaj7 | Bmaj7 | Dmaj7 | Gbmaj7 | Emaj7 | Gm7 | Cm7
+
+Rule Trace
+----------
+ 1. Data(VII->I): VII -> I  (Bmaj7 -> Cmaj7)
+ 2. R_S: C -> F ; Data(VI->VII): VI -> VII  (Dmaj7 -> Emaj7)
+ 3. R_R: F -> d ; Data(III->VI): III -> VI  (Gbmaj7 -> Bmaj7)
+ 4. R_S: d -> g ; Data(VI->III): VI -> III  (Emaj7 -> Bmaj7)
+ 5. Data(i->VI): i -> VI  (Gm7 -> Emaj7)
+ 6. R_R: g -> Bb ; Data(ii->I): ii -> I  (Cm7 -> Bbmaj7)
+
+ASCII Tree
+----------
+└─ I [Cmaj7] @C
+   ├─ VII [Bmaj7] @C  [Data(VII->I)]
+   │  ├─ VI [Dmaj7] @F  [R_S + Data(VI->VII)]
+   │  │  ├─ III [Gbmaj7] @d  [R_R + Data(III->VI)]
+   │  │  │  ├─ VI [Emaj7] @g  [R_S + Data(VI->III)]
+   │  │  │  │  ├─ i [Gm7] @g  [Data(i->VI)]
+   │  │  │  │  │  ├─ ii [Cm7] @Bb  [R_R + Data(ii->I)]
+   │  │  │  │  │  └─ I [Bbmaj7] @Bb
+   │  │  │  │  └─ VI [Emaj7] @g
+   │  │  │  └─ III [Bmaj7] @g
+   │  │  └─ VI [Bmaj7] @d
+   │  └─ VII [Emaj7] @F
+   └─ I [Cmaj7] @C
+
+Forest Snippet
+--------------
+\begin{forest}
+[I [Cmaj7] @C [VII [Bmaj7] @C [VI [Dmaj7] @F [III [Gbmaj7] @d [VI [Emaj7] @g [i [Gm7] @g [ii [Cm7] @Bb], edge label={node[midway, left,font=\tiny]{\textit{R_R + Data(ii->I)}}} [I [Bbmaj7] @Bb]], edge label={node[midway, left,font=\tiny]{\textit{Data(i->VI)}}} [VI [Emaj7] @g]], edge label={node[midway, left,font=\tiny]{\textit{R_S + Data(VI->III)}}} [III [Bmaj7] @g]], edge label={node[midway, left,font=\tiny]{\textit{R_R + Data(III->VI)}}} [VI [Bmaj7] @d]], edge label={node[midway, left,font=\tiny]{\textit{R_S + Data(VI->VII)}}} [VII [Emaj7] @F]], edge label={node[midway, left,font=\tiny]{\textit{Data(VII->I)}}} [I [Cmaj7] @C]]
+\end{forest}

@@ -1,0 +1,33 @@
+{
+  "Title": "Ceora",
+  "Composer": "Lee Morgan",
+  "Key": "Ab",
+  "Rhythm": "Bossa Nova",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Abmaj7|Bbm7,Eb7|Abmaj7|Ebm7,Ab7|Dbmaj7|Dm7,G7|Cm7|F7#9"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Bbm7|Eb7|Cm7|F7|Dm7|G7|Cm7,F7|Bbm7,Eb7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Abmaj7|Bbm7,Eb7|Abmaj7|Ebm7,Ab7|Dbmaj7|Dm7,G7|Cm7|F7#9"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "Bbm7|Eb7|Cm7b5|F7#9|Bbm7|Eb7|Abmaj7|Bbm7,Eb7"
+      }
+    }
+  ]
+}

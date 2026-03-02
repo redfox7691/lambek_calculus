@@ -1,0 +1,14 @@
+{
+  "Title": "Cantaloupe Island",
+  "Composer": "Herbie Hancock",
+  "Key": "Fmin",
+  "Rhythm": "Rock Pop",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "MainSegment": {
+        "Chords": "Fm11|Fm11|Fm11|Fm11|Db7#11|Db7#11|Db7#11|Db7#11|Dm11|Dm11|Dm11|Dm11|Fm11|Fm11|Fm11|Fm11"
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "Title": "Frenesi",
+  "Composer": "Alberto Dominguez",
+  "Key": "Ab",
+  "Rhythm": "Latin",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Bbm7,Eb7|Bbm7,Eb7|Bbm7,Eb7|Bbm7,Eb7|Abmaj7|Bbm7,Eb7|Abmaj7|Abmaj7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Cmaj7|Db9#11|Cmaj7|Cmaj7|Cmaj7|Bbm7|Eb7|Eb7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bbm7,Eb7|Bbm7,Eb7|Bbm7,Eb7|Bbm7,Eb7|Abmaj7|Bbm7,Eb7|Abmaj7|Abmaj7"
+      }
+    }
+  ]
+}

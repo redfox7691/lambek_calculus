@@ -1,0 +1,39 @@
+{
+  "Title": "Moondance",
+  "Composer": "Van Morrison",
+  "Key": "Amin",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Am7,Bm7/E|Am7,Bm7/E|Am7,Bm7/E|Am7,Bm7/E|Am7,Bm7/E|Am7,Bm7/E|Am7,Bm7/E|Am7,Bm7/E"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Dm7|Am7|Dm7|Am7|Dm7|Am7|Dm7|E7b13"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "Am7,Dm7|Am7,Dm7|Am7,Dm7|Am7,Dm7|Am7,Dm7|Am7,Dm7|Am7,Dm7|E7b13"
+      }
+    },
+    {
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Am7,Bm7/E|Am7,Bm7/E|Am7,Bm7/E|Am7,Bm7/E"
+      }
+    },
+    {
+      "MainSegment": {
+        "Chords": "Am,G|F,Em|Dm,E7b13|Am"
+      }
+    }
+  ]
+}

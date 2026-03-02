@@ -1,0 +1,35 @@
+{
+  "Title": "Nancy (With The Laughing Face)",
+  "Composer": "Jimmy Van-Heusen",
+  "Key": "Eb",
+  "Rhythm": "Ballad",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Fm7,C7b9|Fm7,Bb7|Ebmaj7,Ab7|Gm7,Gb07|Fm7,Fm7/Eb|Dm7b5,G7b9"
+      },
+      "Endings": [
+        {
+          "Chords": "Cm7,F7|Fm7,C7b9"
+        },
+        {
+          "Chords": "Cm7,,F7,Bb7|Eb6,,Dm7b5,G7"
+        }
+      ]
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Cm6|Dm7b5,G7b9|Cm6|F7,Bb7|Ebmaj7,Cm7|Fm7,,Dm7b5,G7|Cm7,F7|Bb7sus,C7b9"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Fm7,C7b9|Fm7,Bb7|Ebmaj7,Ab7|Gm7,Gb07|Fm7,Fm7/Eb|Dm7b5,G7b9|Cm7,,F7,Bb7|Eb6,,Gm7,C7"
+      }
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "Title": "I Like The Likes Of You",
+  "Composer": "Vernon Duke",
+  "Key": "Eb",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Ebmaj7,Cm7|Fm7,Bb7|Ebmaj7,Cm7|Fm7,Bb7|Ebmaj7,Cm7|F7,Bb7"
+      },
+      "Endings": [
+        {
+          "Chords": "Eb6|Fm7,Bb7"
+        },
+        {
+          "Chords": "Eb6|Bbm7,Eb7"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Abmaj7|Abmaj7|Eb6|Eb6|F7|F7|Fm7,Bb7|Fm7,Bb7#5"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Ebmaj7,Cm7|Fm7,Bb7|Ebmaj7,Cm7|Fm7,Bb7|Ebmaj7,Cm7|F7,Bb7|Eb6|Fm7,Bb7"
+      }
+    }
+  ]
+}

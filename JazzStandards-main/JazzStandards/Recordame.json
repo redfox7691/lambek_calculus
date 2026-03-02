@@ -1,0 +1,19 @@
+{
+  "Title": "Recordame",
+  "Composer": "Joe Henderson",
+  "Key": "Amin",
+  "Rhythm": "Bossa Nova",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "MainSegment": {
+        "Chords": "Am|Am|Am|Am|Cm|Cm|Cm|Cm7,F7"
+      }
+    },
+    {
+      "MainSegment": {
+        "Chords": "Bbmaj7|Bbm7,Eb7|Abmaj7|Abm7,Db7|Gbmaj7|Gm7,C7|Fmaj7|E7#9"
+      }
+    }
+  ]
+}

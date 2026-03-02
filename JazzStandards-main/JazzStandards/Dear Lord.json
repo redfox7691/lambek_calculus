@@ -1,0 +1,21 @@
+{
+  "Title": "Dear Lord",
+  "Composer": "John Coltrane",
+  "Key": "D",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Dmaj7|Dmaj7|Dmaj7|Dmaj7|Em7|Em7|Em7|Em7|Dmaj7|Dmaj7|Dmaj7|Dmaj7|Bm|Bm/maj7|Bm7|Bm6|Bm|Bm/maj7|Bm7|Bm6|Em7|Em7|A7sus|A7sus|A7sus|A7sus|A7#5|A7#5|Dmaj7|Bm7|Em7|A7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Dmaj7|Dmaj7|Dmaj7|Dmaj7|Em7|Em7|Em7|Em7|Dmaj7|Dmaj7|Dmaj7|Dmaj7|Gmaj7|Gmaj7|Gmaj7|Gmaj7|Gmaj7|Gmaj7|Gmaj7|Gmaj7|F#m7|F#m7|Gmaj7|Gmaj7|Em7|F#m7|Gmaj7|A7sus|Bbmaj7|Bbmaj7|Dmaj7|Dmaj7"
+      }
+    }
+  ]
+}

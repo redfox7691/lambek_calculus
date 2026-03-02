@@ -1,0 +1,28 @@
+{
+  "Title": "Ugly Beauty",
+  "Composer": "Thelonious Monk",
+  "Key": "Db",
+  "Rhythm": "Waltz",
+  "TimeSignature": "3/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Dm7b5|G13b9|Dm7b5|Dbmaj7,Eb7#11|Ebm7|Ab13b9|Dbmaj7|Dbmaj7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Abm7|Db7b9|Bb7#5#9|Fm7,Bb7#11|Ab9sus|Ab7#11|Abm7|G7b5"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Dm7b5|G13b9|Dm7b5|Dbmaj7,Eb7#11|Ebm7|Ab13b9|Ab13b9|Dbmaj7"
+      }
+    }
+  ]
+}

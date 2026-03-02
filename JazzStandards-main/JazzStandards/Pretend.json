@@ -1,0 +1,34 @@
+{
+  "Title": "Pretend",
+  "Composer": "Douglas-Parman-Lavere",
+  "Rhythm": "Ballad",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Cmaj7|Cmaj7|Dm7|Dm7|G7|G7"
+      },
+      "Endings": [
+        {
+          "Chords": "Cmaj7|G7sus"
+        },
+        {
+          "Chords": "C6|C6"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Em7|Dm7,G7|C6|C6|F#m7b5|B7b9|Em7,Eb07|Dm7,G7sus"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Cmaj7|Cmaj7|Dm7|Dm7|G7|G7|Cmaj7|Dm7,G7sus"
+      }
+    }
+  ]
+}

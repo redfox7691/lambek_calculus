@@ -1,0 +1,40 @@
+{
+  "Title": "Katrina Ballerina",
+  "Composer": "Woody Shaw",
+  "Key": "Gmin",
+  "Rhythm": "Waltz",
+  "TimeSignature": "3/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Gm7|F7|Ebmaj7|F7|Abmaj7#11|Gbmaj7#11"
+      },
+      "Endings": [
+        {
+          "Chords": "Gbm7,Abm7,D7#9,|D7#9"
+        },
+        {
+          "Chords": "Am7b5,D7#9|Gm7"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Abmaj7|Bb7|Abmaj7|Bb7|Abmaj7|Bb7|Abmaj7|Bb7|Amaj7|B7|Amaj7|B7|Dm11,Cm11|Cm11,Bbm11|Bbm11,Abm11|D7#9"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Gm7|F7|Ebmaj7|F7|Abmaj7#11|Gbmaj7#11|Am7b5,D7#9|Gm7"
+      }
+    },
+    {
+      "MainSegment": {
+        "Chords": "Bb7#11|Bb7#11|Bb7#11|Bb7#11|Bb7#11|Bb7#11|Bb7#11|D7#9"
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "Title": "Nuages",
+  "Composer": "Django Reinhardt",
+  "Key": "G",
+  "Rhythm": "Slow Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bbm6|D7/A|G6|G6|Bbm6|D7/A|G6,D7/A|G6/B|B7/F#|B7|Em6|Em6|A7,Ab7|A7|D7|D7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Bbm6|D7/A|G6|G6|Ab7|G7|C|C|Cm6|Cm6|G6|G6|Bbm6|D7/A|G6,D7|G6"
+      }
+    }
+  ]
+}

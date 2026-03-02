@@ -1,0 +1,40 @@
+{
+  "Title": "Wouldn't It Be Loverly",
+  "Composer": "Frederick Loewe",
+  "Key": "G",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "G6,Em7|Am7,D7sus|G6,Em7|A7,D7|G6,D7/F#|Dm6/F,E7"
+      },
+      "Endings": [
+        {
+          "Chords": "G6/D,D07|Am7/D,D7"
+        },
+        {
+          "Chords": "G6/D,D7|G6"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Dmaj7,Eb07|A7/E,A7|Dmaj7,F#7/C#|Bm7,D7/A|G6,F#7|Bm7,E9|A6,Eb07|Am7/D,D7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "G6,Em7|Am7,D7sus|G6,Em7|A7,D7|G6,D7/F#|Dm6/F,E7|G6,Em7|Am7,D7|G6|Am7,D7"
+      }
+    },
+    {
+      "MainSegment": {
+        "Chords": "G6|F9|G6"
+      }
+    }
+  ]
+}

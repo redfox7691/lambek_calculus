@@ -1,0 +1,29 @@
+{
+  "Title": "Lover",
+  "Composer": "Richard Rodgers",
+  "Key": "Eb",
+  "Rhythm": "Up Tempo Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Ebmaj7|Ebmaj7|Am7|D7|Abm7|Db7|Gm7|C7|F#m7|B7|Fm7|Bb7"
+      },
+      "Endings": [
+        {
+          "Chords": "Gm7|C7|Fm7|Bb7"
+        },
+        {
+          "Chords": "Ebmaj7|Fm7/Bb|Ebmaj7|Am7,D7"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Gmaj7|Em7|Am7|D7|Gmaj7|Em7|Am7|D7|Bbmaj7|Gm7|Cm7|F7|Gm7|C7|Fm7|Bb7"
+      }
+    }
+  ]
+}

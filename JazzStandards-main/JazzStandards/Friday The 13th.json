@@ -1,0 +1,14 @@
+{
+  "Title": "Friday The 13th",
+  "Composer": "Thelonious Monk",
+  "Key": "G",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "MainSegment": {
+        "Chords": "Gmaj7,F7|Eb7,D7|Gmaj7,F7|Eb7,D7|Gmaj7,F7|Eb7,D7|Gmaj7,F7|Eb7,D7"
+      }
+    }
+  ]
+}

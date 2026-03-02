@@ -1,0 +1,38 @@
+{
+  "Title": "Yesterday's Gardenias",
+  "Composer": "Robertson Mysels",
+  "Key": "Bb",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bbmaj7,Cm7|Dm7,G7b9|Cm7,B07|Cm7,F7|Bbmaj7,Eb7#11|Dm7,Gm7|Em7|A7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Dmaj7,Bm7|Abm7,Db7|Gbmaj7,Abm7|Bbm7,Bb7|Ebmaj7,Cm7|A7|Dmaj7,Bm7|Cm7,F7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bbmaj7,Cm7|Dm7,G7b9|Cm7,B07|Cm7,F7|Bbmaj7,Eb7#11|Dm7,Gm7|Em7,A7|Am7b5,D7b9"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "Ebmaj7,Cm7|Am7,D7|Gm7,Dm7b5|G7b9,Db7#11|Cm7,Dm7|Ebmaj7,F7sus|Bb6,Db7|Gbmaj7,F7sus"
+      }
+    },
+    {
+      "MainSegment": {
+        "Chords": "Bb"
+      }
+    }
+  ]
+}

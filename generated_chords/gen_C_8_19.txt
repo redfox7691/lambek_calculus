@@ -1,0 +1,48 @@
+Chord Generation Report
+=======================
+Tonality: C
+Target chords: 8
+Generated chords: 7
+Max depth: 6
+Branching mode: mixed
+Style strength: 0.450
+Temperature: 1.400
+Modulation strength: 0.900
+Modulation complexity: 0.800
+Tonal drift: 0.600
+Stats CSV: /Users/Mat/ownCloud/Python/Lambek Calculus/last_line_analysis/JazzStandards_all_cadence.csv
+
+Generated Chord List (in generation order)
+------------------------------------------
+Cmaj7 | Am7 | Bmaj7 | Fmaj7 | Ebmaj7 | E7 | Abmaj7
+
+Rule Trace
+----------
+ 1. R.b.: vi -> I  (Am7 -> Cmaj7)
+ 2. Data(VII->vi): VII -> vi  (Bmaj7 -> Am7)
+ 3. R_P: C -> c ; Data(IV->VII): IV -> VII  (Fmaj7 -> Bmaj7)
+ 4. R_R: c -> Eb ; Data(I->IV): I -> IV  (Ebmaj7 -> Abmaj7)
+ 5. R_P: Eb -> eb ; Data(bII->i): bII -> i  (E7 -> Ebm7)
+ 6. R_S: eb -> ab ; Data(I->bII): I -> bII  (Abmaj7 -> A7)
+
+ASCII Tree
+----------
+└─ I [Cmaj7] @C
+   ├─ vi [Am7] @C  [R.b.]
+   │  ├─ VII [Bmaj7] @C  [Data(VII->vi)]
+   │  │  ├─ IV [Fmaj7] @c  [R_P + Data(IV->VII)]
+   │  │  │  ├─ I [Ebmaj7] @Eb  [R_R + Data(I->IV)]
+   │  │  │  │  ├─ bII [E7] @eb  [R_P + Data(bII->i)]
+   │  │  │  │  │  ├─ I [Abmaj7] @ab  [R_S + Data(I->bII)]
+   │  │  │  │  │  └─ bII [A7] @ab
+   │  │  │  │  └─ i [Ebm7] @eb
+   │  │  │  └─ IV [Abmaj7] @Eb
+   │  │  └─ VII [Bmaj7] @c
+   │  └─ vi [Am7] @C
+   └─ I [Cmaj7] @C
+
+Forest Snippet
+--------------
+\begin{forest}
+[I [Cmaj7] @C [vi [Am7] @C [VII [Bmaj7] @C [IV [Fmaj7] @c [I [Ebmaj7] @Eb [bII [E7] @eb [I [Abmaj7] @ab], edge label={node[midway, left,font=\tiny]{\textit{R_S + Data(I->bII)}}} [bII [A7] @ab]], edge label={node[midway, left,font=\tiny]{\textit{R_P + Data(bII->i)}}} [i [Ebm7] @eb]], edge label={node[midway, left,font=\tiny]{\textit{R_R + Data(I->IV)}}} [IV [Abmaj7] @Eb]], edge label={node[midway, left,font=\tiny]{\textit{R_P + Data(IV->VII)}}} [VII [Bmaj7] @c]], edge label={node[midway, left,font=\tiny]{\textit{Data(VII->vi)}}} [vi [Am7] @C]], edge label={node[midway, left,font=\tiny]{\textit{R.b.}}} [I [Cmaj7] @C]]
+\end{forest}

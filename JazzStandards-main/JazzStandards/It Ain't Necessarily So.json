@@ -1,0 +1,28 @@
+{
+  "Title": "It Ain't Necessarily So",
+  "Composer": "George Gershwin",
+  "Key": "Gmin",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Gm7,C7|Gm7,C7|Gm7,C7|Gm7,C7|C7,Db7|C7,Db7|A7b9#5,D7#9|Gm7,C7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Bbm7,Eb7|Abmaj7|Am7,D7|Gmaj7|Gm7,C7|Fmaj7|A7|D7b13"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Gm7,C7|Gm7,C7|Gm7,C7|Gm7,C7|C7,Db7|C7,Db7|A7b9#5,D7#9|Gm7,C7"
+      }
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+Chord Generation Report
+=======================
+Tonality: C
+Target chords: 8
+Generated chords: 7
+Max depth: 6
+Branching mode: left
+Style strength: 0.750
+Temperature: 0.900
+Modulation strength: 0.900
+Modulation complexity: 0.500
+Tonal drift: 1.000
+Stats CSV: /Users/Mat/ownCloud/Python/Lambek Calculus/last_line_analysis/JazzStandards_all_cadence.csv
+
+Generated Chord List (in generation order)
+------------------------------------------
+Cmaj7 | Amaj7 | Bb7 | Dm7 | Emaj7 | Abm7 | Gbm7
+
+Rule Trace
+----------
+ 1. R_R: C -> a ; P.b.: I -> i  (Amaj7 -> Am7)
+ 2. R_P: a -> A ; Data(bII->I): bII -> I  (Bb7 -> Amaj7)
+ 3. R_R: A -> gb ; Data(bVI->bII): bVI -> bII  (Dm7 -> G7)
+ 4. R_S: gb -> b ; Data(IV->bVI): IV -> bVI  (Emaj7 -> Gm7)
+ 5. R_P: b -> B ; Data(vi->IV): vi -> IV  (Abm7 -> Emaj7)
+ 6. R_R: B -> ab ; Data(bVII->vi): bVII -> vi  (Gbm7 -> Fm7)
+
+ASCII Tree
+----------
+└─ I [Cmaj7] @C
+   ├─ I [Amaj7] @a  [R_R + P.b.]
+   │  ├─ bII [Bb7] @A  [R_P + Data(bII->I)]
+   │  │  ├─ bVI [Dm7] @gb  [R_R + Data(bVI->bII)]
+   │  │  │  ├─ IV [Emaj7] @b  [R_S + Data(IV->bVI)]
+   │  │  │  │  ├─ vi [Abm7] @B  [R_P + Data(vi->IV)]
+   │  │  │  │  │  ├─ bVII [Gbm7] @ab  [R_R + Data(bVII->vi)]
+   │  │  │  │  │  └─ vi [Fm7] @ab
+   │  │  │  │  └─ IV [Emaj7] @B
+   │  │  │  └─ bVI [Gm7] @b
+   │  │  └─ bII [G7] @gb
+   │  └─ I [Amaj7] @A
+   └─ i [Am7] @a
+
+Forest Snippet
+--------------
+\begin{forest}
+[I [Cmaj7] @C [I [Amaj7] @a [bII [Bb7] @A [bVI [Dm7] @gb [IV [Emaj7] @b [vi [Abm7] @B [bVII [Gbm7] @ab], edge label={node[midway, left,font=\tiny]{\textit{R_R + Data(bVII->vi)}}} [vi [Fm7] @ab]], edge label={node[midway, left,font=\tiny]{\textit{R_P + Data(vi->IV)}}} [IV [Emaj7] @B]], edge label={node[midway, left,font=\tiny]{\textit{R_S + Data(IV->bVI)}}} [bVI [Gm7] @b]], edge label={node[midway, left,font=\tiny]{\textit{R_R + Data(bVI->bII)}}} [bII [G7] @gb]], edge label={node[midway, left,font=\tiny]{\textit{R_P + Data(bII->I)}}} [I [Amaj7] @A]], edge label={node[midway, left,font=\tiny]{\textit{R_R + P.b.}}} [i [Am7] @a]]
+\end{forest}

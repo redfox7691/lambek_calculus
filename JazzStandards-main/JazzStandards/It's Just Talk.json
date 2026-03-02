@@ -1,0 +1,36 @@
+{
+  "Title": "It's Just Talk",
+  "Composer": "Pat Metheny",
+  "Key": "C#min",
+  "Rhythm": "Latin",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "i",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "C#m9|C#m9|C9#11|C9#11"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "C#m9|C#m9|C9#11|C9#11|C#m9|C#m9|C9#11|C9#11|F#m7|F#m7|Gadd9|G/A,,A/B,C#m9|C#m9|C#m9"
+      },
+      "Endings": [
+        {
+          "Chords": "C9#11|C9#11"
+        },
+        {
+          "Chords": "C#m9|C#m9"
+        }
+      ]
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "F#m9|E/G#,Amaj7|C/D|C/D|Gmaj9,Bb9|Ebmaj9,Amaj7/B|E69|E69|Gmaj7/A|Dmaj9|Amaj7/B|Emaj9|Bmaj7/C#|F#maj9|F#m9|Amaj7/B"
+      }
+    }
+  ]
+}

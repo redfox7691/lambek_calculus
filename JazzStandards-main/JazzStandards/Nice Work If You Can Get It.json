@@ -1,0 +1,34 @@
+{
+  "Title": "Nice Work If You Can Get It",
+  "Composer": "George Gershwin",
+  "Key": "G",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "B7#5,E7|A7#5,D7|G7,C7|A7,A#07|Bm7,Em7|Am7,D7|Am7,D7sus"
+      },
+      "Endings": [
+        {
+          "Chords": "G6,C7"
+        },
+        {
+          "Chords": "G6,B7#5"
+        }
+      ]
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Em7|C7|Em7|A7b13|Dm|Em7b5,A7b9|Am7|D7#5"
+      }
+    },
+    {
+      "MainSegment": {
+        "Chords": "B7#5,E7|A7#5,D7|G7,C7|A7,A#07|Bm7,Em7|Am7,D7|B7#5,E7|Am7,D7sus|G6|C7"
+      }
+    }
+  ]
+}

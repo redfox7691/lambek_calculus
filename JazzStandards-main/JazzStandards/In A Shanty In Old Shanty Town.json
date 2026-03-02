@@ -1,0 +1,33 @@
+{
+  "Title": "In A Shanty In Old Shanty Town",
+  "Composer": "Little-Siras",
+  "Key": "F",
+  "Rhythm": "Waltz",
+  "TimeSignature": "3/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Fmaj7|A7|D7|D7|G7|Gb7|G7|G7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "C7|C7|F6|F6,D7|G7|G7|Gm7|C7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Fmaj7|A7|D7|D7|G7|Gb7|G7|G7"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "Bb6|Bbm6|Fmaj7,A7|D7|Gm7|C7|F6|C7"
+      }
+    }
+  ]
+}

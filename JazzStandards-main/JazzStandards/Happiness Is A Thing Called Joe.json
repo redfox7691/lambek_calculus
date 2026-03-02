@@ -1,0 +1,38 @@
+{
+  "Title": "Happiness Is A Thing Called Joe",
+  "Composer": "Harold Arlen",
+  "Key": "F",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "F6,Gm7|Am7,Gm7|F6,Gm7|Am7,Gm7|F6,Gm7|Am7,D7|Gm7|C7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "C7|C7|C7|C7|Fmaj7|Bm7,E7|Am7,D7|Gm7,C7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "F6,Gm7|Am7,Gm7|F6,Gm7|Am7,Gm7|F6,Db7|Cm7,F7|Bbmaj7|Bbmaj7"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "Bbmaj7|Bbm7|Am7|D7|Gm7|C7|Fmaj7,D7|Gm7,C7"
+      }
+    },
+    {
+      "MainSegment": {
+        "Chords": "Gm7|C7|F6|F6"
+      }
+    }
+  ]
+}

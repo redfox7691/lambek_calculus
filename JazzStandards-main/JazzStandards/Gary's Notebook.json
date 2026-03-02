@@ -1,0 +1,27 @@
+{
+  "Title": "Gary's Notebook",
+  "Composer": "Lee Morgan",
+  "Key": "Cmin",
+  "Rhythm": "Waltz",
+  "TimeSignature": "3/4",
+  "Sections": [
+    {
+      "Label": "i",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Cm7|Db7#11|Cm7|Db7#11"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Cm7|Db7#11|Cm7|Db7#11"
+      }
+    },
+    {
+      "MainSegment": {
+        "Chords": "Cm7|Db7#11|Cm7|Db7#11|Fm6|Gb7#11|Fm6|Fm6|Cm7|Db7#11|Cm7|Cm7|Ebm7|Ab7|Dm7|G7#9|Cm7|Db7#11|Cm7|Db7#11"
+      }
+    }
+  ]
+}

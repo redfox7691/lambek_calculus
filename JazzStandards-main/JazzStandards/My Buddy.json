@@ -1,0 +1,23 @@
+{
+  "Title": "My Buddy",
+  "Composer": "Walter Donaldson",
+  "Key": "G",
+  "Rhythm": "Waltz",
+  "TimeSignature": "3/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Gmaj7|G#07|Am7|D7|G6|Bb07|Am7|D7|G6|G6,G7/F|E7|E7|Am7"
+      },
+      "Endings": [
+        {
+          "Chords": "A7|Am7|D7"
+        },
+        {
+          "Chords": "D7|G6|G6"
+        }
+      ]
+    }
+  ]
+}

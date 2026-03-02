@@ -1,0 +1,28 @@
+{
+  "Title": "Phase Dance",
+  "Composer": "Pat Metheny",
+  "Key": "Bmin",
+  "Rhythm": "Even 8ths",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Bm9|Bm9|Bm9|Bm9|Bbmaj7#11|Bbmaj7#11|Bbmaj7#11|Bbmaj7#11"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "A13sus|A13sus|A13sus|A13sus|G69|G69|G69|G69"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Bm9|Bm9|Bm9|Bm9|Bbmaj9#11|Bbmaj9#11|Bbmaj9#11|Bbmaj9#11"
+      }
+    }
+  ]
+}

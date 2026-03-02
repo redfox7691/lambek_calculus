@@ -1,0 +1,34 @@
+{
+  "Title": "Bark For Barksdale",
+  "Composer": "Gerry Mulligan",
+  "Key": "F",
+  "Rhythm": "Up Tempo Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "F|F|Gm7|C7|F|Bb7|G7,C7|F"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Bb|Bb|Cm7|F7|Bb|Eb7|C7,F7|Bb,C7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "F|F|Gm7|C7|F|Bb7|G7,C7|F"
+      }
+    },
+    {
+      "Label": "i",
+      "MainSegment": {
+        "Chords": "Bm7b5,Bbm7|Bbm7,A7|Ab7,G7|G7,C7|F|F"
+      }
+    }
+  ]
+}

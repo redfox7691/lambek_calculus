@@ -1,0 +1,28 @@
+{
+  "Title": "Dear Old Stockholm",
+  "Composer": "Traditional",
+  "Key": "Dmin",
+  "Rhythm": "Medium Swing",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "Repeats": 1,
+      "MainSegment": {
+        "Chords": "Dm|Em7b5,A7b9|Gm7,C7|Fmaj7|Em7b5,A7b9|Dm|Em7b5|A7b9|Dm7|Dm6|Dm7|Dm6"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Fmaj7|Gm7,C7|Fmaj7|Em7b5,A7b9"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "Dm|Em7b5,A7b9|Gm7,C7|Fmaj7|Em7b5,A7b9|Dm|C7sus|C7sus|C7sus|C7sus|C7sus|C7sus|C7sus,A7b9|Dm|Dm"
+      }
+    }
+  ]
+}

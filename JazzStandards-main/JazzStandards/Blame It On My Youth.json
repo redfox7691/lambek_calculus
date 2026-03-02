@@ -1,0 +1,33 @@
+{
+  "Title": "Blame It On My Youth",
+  "Composer": "Oscar Levant",
+  "Key": "Eb",
+  "Rhythm": "Ballad",
+  "TimeSignature": "4/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Ebmaj7,Fm7|Gm7,Cm7|Fm7,E07|Fm7,Bb7|Fm7,E07|Fm7,Bb7|Gm7,,Fm7,Bb7|Ebmaj7,Eb7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Abmaj7,Bb7|Gm7,Cm7|Fm7,Bb7|Ebmaj7|Dm7b5,G7b13|Cm7|Fm7|Bb7"
+      }
+    },
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Ebmaj7,Fm7|Gm7,Cm7|Fm7,E07|Fm7,Bb7|Fm7,E07|Fm7,Bb7|Gm7,,Fm7,Bb7|Bbm7,Eb7"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "Abmaj7,Bb7|Gm7,Cm7|Fm7,Fm7/Eb|Db7,C7b13|Fm7,E07|Fm7,Bb7|Eb6,Cm7|Fm7,Bb7"
+      }
+    }
+  ]
+}

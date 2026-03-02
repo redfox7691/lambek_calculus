@@ -1,0 +1,31 @@
+{
+  "Title": "It's A Dance",
+  "Composer": "Michel Petrucciani",
+  "Rhythm": "Waltz",
+  "TimeSignature": "3/4",
+  "Sections": [
+    {
+      "Label": "A",
+      "MainSegment": {
+        "Chords": "Ebmaj7|A7#5|G7#5|Bm7|E7|Gmaj7|A7|Am7,D7|Gmaj7|F#7|Bm7|E7|Fm7|Bb7|Ebmaj7|Eb7,D7"
+      }
+    },
+    {
+      "Label": "B",
+      "MainSegment": {
+        "Chords": "Ebmaj7|A7#5|G7#5|Bm7|E7|Gmaj7|A7|Am7,D7|Gmaj7|F#7|Bm7|E7|Em7|A7|Dmaj7|Fm7,Bb7"
+      }
+    },
+    {
+      "Label": "C",
+      "MainSegment": {
+        "Chords": "Ebmaj7|G7b9|Cm7|F7|Fm7|B7|Bmaj7/F#|F#7|Bmaj7/F#|F#7|Bmaj7/F#|F#7|Ebmaj7|Bb7"
+      }
+    },
+    {
+      "MainSegment": {
+        "Chords": "Em7|A7|Dm7|Dm7"
+      }
+    }
+  ]
+}
