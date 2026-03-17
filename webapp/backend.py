@@ -129,6 +129,17 @@ class AnalyseRequest(BaseModel):
     readable_dpi: int = Field(default=900, ge=72)
 
 
+class RouteRequest(BaseModel):
+    from_tonality: str
+    to_tonality: str
+    spelling: str = Field(default="auto", pattern="^(auto|flats|sharps)$")
+
+
+class TableauRequest(BaseModel):
+    sequence: str
+    mode: str = Field(default="both", pattern="^(tree|arc|both)$")
+
+
 app = FastAPI(title="Lambek Calculus Webapp", version="0.1.0")
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
 app.mount("/static", StaticFiles(directory=str(ROOT / "webapp" / "static")), name="static")
@@ -192,6 +203,7 @@ def _job_runner(job_id: str) -> None:
             stderr=subprocess.PIPE,
             text=True,
             bufsize=1,
+            env={**os.environ, "MPLBACKEND": "Agg"},
         )
         out, err = proc.communicate()
         artifacts: list[str] = []
@@ -264,6 +276,23 @@ def list_standard_sections(
     return {"standard_name": std_json.stem, "sections": sections, "count": len(sections)}
 
 
+def _find_stats_csv() -> Path | None:
+    """Locate the cadence stats CSV, checking several known filenames/locations."""
+    candidates = [
+        ROOT / "last_line_analysis" / "JazzStandards_all_cadence.csv",
+        ROOT / "last_line_analysis" / "cadence_stats_all.csv",
+        ROOT.parent / "last_line_analysis" / "JazzStandards_all_cadence.csv",
+        ROOT.parent / "last_line_analysis" / "cadence_stats_all.csv",
+        # Walk up to the repo root (handles nested worktrees)
+        ROOT.parents[2] / "last_line_analysis" / "JazzStandards_all_cadence.csv",
+        ROOT.parents[2] / "last_line_analysis" / "cadence_stats_all.csv",
+    ]
+    for p in candidates:
+        if p.exists():
+            return p
+    return None
+
+
 @app.post("/api/jobs/generate-chords")
 def create_generate_job(req: GenerateChordRequest) -> dict[str, Any]:
     script = ROOT / "generate_chords.py"
@@ -299,6 +328,9 @@ def create_generate_job(req: GenerateChordRequest) -> dict[str, Any]:
         cmd.append("--basic-cadence-mode")
     if req.png:
         cmd.extend(["--png", "--png-dpi", str(req.png_dpi)])
+    stats_csv = _find_stats_csv()
+    if stats_csv:
+        cmd.extend(["--stats-csv", str(stats_csv)])
     return _submit("generate-chords", cmd)
 
 
@@ -371,6 +403,42 @@ def create_analyse_job(req: AnalyseRequest) -> dict[str, Any]:
     if req.include_self:
         cmd.append("--include-self")
     return _submit("analyse-standards", cmd)
+
+
+@app.post("/api/jobs/route")
+def create_route_job(req: RouteRequest) -> dict[str, Any]:
+    script = ROOT / "route_explorer" / "route_app.py"
+    out_dir = ROOT / "route_outputs"
+    out_dir.mkdir(exist_ok=True)
+    save_path = str(out_dir / f"route_{uuid.uuid4().hex[:8]}.png")
+    cmd = [
+        "python3", str(script),
+        "--from", req.from_tonality,
+        "--to", req.to_tonality,
+        "--spelling", req.spelling,
+        "--save", save_path,
+        "--no-show",
+    ]
+    return _submit("route", cmd)
+
+
+@app.post("/api/jobs/tableau")
+def create_tableau_job(req: TableauRequest) -> dict[str, Any]:
+    script = ROOT / "proof_tableau.py"
+    chords = _tokenize_sequence_text(req.sequence)
+    if not chords:
+        raise HTTPException(status_code=400, detail="sequence is empty after parsing")
+    out_dir = ROOT / "tableau_outputs"
+    out_dir.mkdir(exist_ok=True)
+    save_path = str(out_dir / f"tableau_{uuid.uuid4().hex[:8]}.png")
+    cmd = [
+        "python3", str(script),
+        "--sequence", *chords,
+        "--mode", req.mode,
+        "--save", save_path,
+        "--no-show",
+    ]
+    return _submit("tableau", cmd)
 
 
 @app.get("/api/jobs")

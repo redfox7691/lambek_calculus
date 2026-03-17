@@ -1,523 +1,965 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Lambek Calculus Web App</title>
   <style>
-    :root {
-      --bg: #f6f2e9;
-      --panel: #fffdf8;
-      --text: #1f1b14;
-      --muted: #6b6155;
-      --accent: #0f6a4b;
-      --border: #d8cfbf;
-    }
-    body {
-      margin: 0;
-      color: var(--text);
-      background: radial-gradient(900px 600px at 90% 0%, #ecf5ee 0%, var(--bg) 70%);
-      font-family: Georgia, "Times New Roman", serif;
-    }
-    .wrap { max-width: 1200px; margin: 24px auto; padding: 0 16px 32px; }
-    h1 { margin: 0 0 12px; }
-    .layout { display: grid; grid-template-columns: 1.1fr 1fr; gap: 16px; }
-    .panel {
-      background: var(--panel);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 14px;
-      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
-    }
-    .title-row { display: flex; justify-content: space-between; align-items: center; }
-    h2 { margin: 0 0 8px; font-size: 1.2rem; }
-    h3 { margin: 14px 0 8px; font-size: 1rem; }
-    .muted { color: var(--muted); font-size: 0.92rem; }
-    .hint { color: var(--muted); font-size: 0.84rem; margin-top: 2px; }
-    label { display: block; margin: 8px 0 3px; color: var(--muted); font-size: 0.92rem; }
-    input, select {
-      width: 100%; box-sizing: border-box; padding: 8px 10px;
-      border: 1px solid var(--border); border-radius: 8px; background: white;
-    }
-    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
-    .btns { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
-    button {
-      border: 0; border-radius: 8px; padding: 10px 12px;
-      background: var(--accent); color: #fff; cursor: pointer;
-    }
-    button.secondary { background: #5f6b77; }
-    pre {
-      background: #fbfaf7; border: 1px solid var(--border); border-radius: 8px;
-      padding: 10px; overflow: auto; max-height: 220px; font-size: 0.84rem;
-    }
-    .preview {
-      min-height: 120px; border: 1px dashed var(--border); border-radius: 10px;
-      background: #fff; display: flex; align-items: center; justify-content: center;
-      overflow: auto; padding: 8px;
-    }
-    .preview img { max-width: 100%; height: auto; border-radius: 6px; }
-    .loading {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      color: var(--muted);
-      font-size: 0.92rem;
-    }
-    .spinner {
-      width: 18px;
-      height: 18px;
-      border: 2px solid #cfd8d2;
-      border-top-color: var(--accent);
-      border-radius: 50%;
-      animation: spin 0.8s linear infinite;
-    }
-    @keyframes spin {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
-    }
-    .chords-box {
-      border: 1px solid var(--border); border-radius: 8px; background: #fff;
-      padding: 8px; min-height: 44px; font-size: 0.93rem; line-height: 1.35;
-    }
-    .jobs { margin-top: 16px; }
-    .job { border-top: 1px solid var(--border); margin-top: 10px; padding-top: 10px; }
-    .job small { color: var(--muted); }
-    a { color: #0f4ea8; text-decoration: none; }
-    @media (max-width: 920px) { .layout { grid-template-columns: 1fr; } }
+    :root{--bg:#f6f2e9;--panel:#fffdf8;--text:#1f1b14;--muted:#6b6155;--accent:#0f6a4b;--border:#d8cfbf;}
+    *{box-sizing:border-box;}
+    body{margin:0;color:var(--text);background:radial-gradient(900px 600px at 90% 0%,#ecf5ee 0%,var(--bg) 70%);font-family:Georgia,"Times New Roman",serif;}
+    .wrap{max-width:1300px;margin:0 auto;padding:18px 16px 40px;}
+    h1{margin:0 0 3px;font-size:1.5rem;}
+    .sub{color:var(--muted);font-size:.9rem;margin-bottom:16px;}
+    /* tabs */
+    .tabs{display:flex;gap:2px;border-bottom:2px solid var(--border);}
+    .tab-btn{padding:8px 16px;border:1px solid transparent;border-bottom:none;border-radius:8px 8px 0 0;cursor:pointer;background:none;color:var(--muted);font:inherit;font-size:.9rem;transition:background .1s;}
+    .tab-btn:hover{background:#ede8de;}
+    .tab-btn.active{background:var(--panel);border-color:var(--border);color:var(--accent);font-weight:bold;border-bottom:2px solid var(--panel);margin-bottom:-2px;}
+    .tab-pane{display:none;padding-top:14px;}
+    .tab-pane.active{display:block;}
+    /* layout */
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+    @media(max-width:860px){.two-col{grid-template-columns:1fr;}}
+    /* panel */
+    .panel{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:14px;box-shadow:0 6px 18px rgba(0,0,0,.05);}
+    .panel+.panel{margin-top:14px;}
+    /* forms */
+    h2{margin:0 0 6px;font-size:1.15rem;}
+    h3{margin:12px 0 5px;font-size:.95rem;}
+    .muted{color:var(--muted);font-size:.88rem;}
+    .hint{color:var(--muted);font-size:.82rem;margin-top:2px;}
+    label{display:block;margin:7px 0 2px;color:var(--muted);font-size:.88rem;}
+    input[type=text],input[type=number],select,textarea{width:100%;padding:7px 9px;border:1px solid var(--border);border-radius:7px;background:#fff;font:inherit;font-size:.9rem;color:var(--text);}
+    input[type=checkbox],input[type=radio]{width:auto;}
+    textarea{resize:vertical;font-family:"Courier New",monospace;font-size:.8rem;}
+    /* buttons */
+    .btns{display:flex;gap:7px;flex-wrap:wrap;margin-top:8px;}
+    button{border:0;border-radius:7px;padding:8px 13px;background:var(--accent);color:#fff;cursor:pointer;font:inherit;font-size:.9rem;}
+    button.sec{background:#5f6b77;}
+    button.blue{background:#3070c8;}
+    button:disabled{opacity:.5;cursor:default;}
+    /* preview */
+    .preview{min-height:110px;border:1px dashed var(--border);border-radius:9px;background:#fff;display:flex;align-items:center;justify-content:center;overflow:auto;padding:8px;margin-top:8px;}
+    .preview img{max-width:100%;height:auto;border-radius:5px;display:block;}
+    .svg-out{border:1px solid var(--border);border-radius:9px;background:#fff;padding:8px;margin-top:8px;overflow-x:auto;}
+    /* loading */
+    .loading{display:flex;align-items:center;gap:9px;color:var(--muted);font-size:.9rem;}
+    .spinner{width:16px;height:16px;border:2px solid #cfd8d2;border-top-color:var(--accent);border-radius:50%;animation:spin .8s linear infinite;flex-shrink:0;}
+    @keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+    /* misc */
+    pre{background:#fbfaf7;border:1px solid var(--border);border-radius:7px;padding:8px;overflow:auto;max-height:200px;font-size:.8rem;margin:0;}
+    .chords-box{border:1px solid var(--border);border-radius:7px;background:#fff;padding:7px;min-height:40px;font-size:.9rem;}
+    .job{border-top:1px solid var(--border);margin-top:9px;padding-top:9px;}
+    .tr{display:flex;justify-content:space-between;align-items:center;}
+    a{color:#0f4ea8;text-decoration:none;}
+    .badge{display:inline-block;padding:2px 7px;border-radius:20px;font-size:.75rem;font-family:sans-serif;font-weight:bold;}
+    .bd{background:#d1fae5;color:#065f46;}.be{background:#fee2e2;color:#991b1b;}
+    .br{background:#dbeafe;color:#1e40af;}.bq{background:#fef3c7;color:#92400e;}
+    .radio-row{display:flex;gap:14px;align-items:center;margin:5px 0;flex-wrap:wrap;}
+    .radio-row label{display:inline-flex;align-items:center;gap:4px;margin:0;cursor:pointer;color:var(--text);}
+    .latex-area{background:#f8f6f0;border:1px solid var(--border);border-radius:7px;padding:7px;margin-top:7px;}
+    hr.sep{border:none;border-top:1px solid var(--border);margin:14px 0;}
+    .offline-warn{display:none;background:#fef3c7;border:1px solid #f59e0b;border-radius:7px;padding:10px;margin-bottom:12px;font-size:.88rem;}
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <h1>Lambek Calculus Web App</h1>
-    <div class="muted">Two main areas: <b>Analysis</b> and <b>Generation</b>.</div>
-
-    <div class="layout">
-      <section class="panel">
-        <div class="title-row"><h2>Analysis</h2></div>
-        <div class="muted">Select a standard and section menu, then run readable analysis (PNG included).</div>
-
-        <label>Standards Folder</label>
-        <input id="a_folder" value="JazzStandards-main/JazzStandards" />
-        <label><input id="a_custom_toggle" type="checkbox" onchange="toggleCustomSequenceMode()" /> Personalized chord sequence</label>
-        <label id="a_custom_label" style="display:none;">Write your sequence (example: Dm7 G7 Cmaj7 Am7)</label>
-        <input id="a_custom_sequence" style="display:none;" placeholder="Dm7 G7 Cmaj7 Am7" />
-        <div id="a_custom_hint" class="hint" style="display:none;">When enabled, standards and parts are disabled.</div>
-        <div id="a_custom_examples" class="btns" style="display:none;">
-          <button type="button" class="secondary" onclick="setCustomSequence('Cmaj7 Am7 Dm7 G7')">Example: Basic</button>
-          <button type="button" class="secondary" onclick="setCustomSequence('Dm7 G7 Cmaj7')">Example: ii-V-I</button>
-          <button type="button" class="secondary" onclick="setCustomSequence('Bbmaj7 G7 Cm7 F7 Dm7 G7 Cmaj7')">Example: Turnaround</button>
-          <button type="button" class="secondary" onclick="setCustomSequence('Cm7 F7 Bbmaj7 Ebmaj7 Am7b5 D7 Gm7')">Example: Minor route</button>
-        </div>
-        <div class="btns">
-          <button id="a_load_btn" type="button" class="secondary" onclick="loadStandards()">Load Standards</button>
-        </div>
-
-        <label>Available Standards</label>
-        <select id="a_standard" onchange="loadSections()"></select>
-
-        <label>Available Parts (A_1, B_2, ...)</label>
-        <select id="a_section" onchange="refreshJobs()"></select>
-        <div class="hint">Section selector is used for preview focus after analysis output is generated.</div>
-
-        <div class="row">
-          <div>
-            <label>DPI (formal)</label>
-            <input id="a_dpi" type="number" min="72" value="600" />
-          </div>
-          <div>
-            <label>DPI (readable PNG)</label>
-            <input id="a_readable_dpi" type="number" min="72" value="600" />
-          </div>
-        </div>
-
-        <div class="btns">
-          <button type="button" onclick="submitAnalysisStandard()">Run Selected Analysis</button>
-        </div>
-
-        <h3>Analysis PNG Preview</h3>
-        <div class="preview" id="analysis_preview"><span class="muted">No analysis PNG yet</span></div>
-      </section>
-
-      <section class="panel">
-        <h2>Generation</h2>
-        <div class="row">
-          <div><label>Tonality</label><input id="g_tonality" value="C" /></div>
-          <div><label>Target Chords</label><input id="g_target" type="number" value="16" min="1" /></div>
-        </div>
-
-        <div class="row">
-          <div>
-            <label>Tonal Drift</label>
-            <input id="g_drift" type="number" step="0.1" min="0" max="1" value="0.6" />
-            <div class="hint">Allowed range: 0 to 1. 0 = stay near original key, 1 = maximum drift.</div>
-          </div>
-          <div>
-            <label>Creative Variation</label>
-            <input id="g_temp" type="number" step="0.1" min="0.1" value="1.1" />
-            <div class="hint">Positive value only (> 0). Typical range: 0.5 to 2.0.</div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div>
-            <label>Style Strength</label>
-            <input id="g_style" type="number" step="0.05" min="0" max="1" value="0.45" />
-            <div class="hint">Allowed range: 0 to 1. Higher = closer to dataset cadences.</div>
-          </div>
-          <div>
-            <label>PNG DPI</label>
-            <input id="g_dpi" type="number" min="72" value="600" />
-          </div>
-        </div>
-
-        <label><input id="g_basic_mode" type="checkbox" checked /> Basic Cadence Mode</label>
-        <label><input id="g_enable_png" type="checkbox" checked onchange="refreshJobs()" /> Enable Generation PNG Preview</label>
-
-        <div class="btns">
-          <button type="button" onclick="submitGenerate()">Run Generation</button>
-        </div>
-
-        <h3>Generated Chord List</h3>
-        <div id="generation_chords" class="chords-box"><span class="muted">No generated progression yet</span></div>
-
-        <h3>Generation PNG Preview</h3>
-        <div class="preview" id="generation_preview"><span class="muted">No generation PNG yet</span></div>
-      </section>
-    </div>
-
-    <section class="panel jobs">
-      <div class="title-row">
-        <h2>History</h2>
-        <button type="button" class="secondary" onclick="refreshJobs()">Refresh History</button>
-      </div>
-      <div class="row">
-        <div>
-          <label>Analysis History (PNG)</label>
-          <select id="h_analysis_select" onchange="loadAnalysisHistorySelection()"></select>
-          <div class="preview" id="h_analysis_preview"><span class="muted">No analysis history selected</span></div>
-        </div>
-        <div>
-          <label>Generation History (Chord List)</label>
-          <select id="h_generation_select" onchange="loadGenerationHistorySelection()"></select>
-          <div id="h_generation_chords" class="chords-box"><span class="muted">No generation history selected</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="panel jobs">
-      <div class="title-row">
-        <h2>Jobs</h2>
-        <button type="button" class="secondary" onclick="refreshJobs()">Refresh</button>
-      </div>
-      <div id="jobs"></div>
-    </section>
+<div class="wrap">
+  <h1>Lambek Calculus Web App</h1>
+  <div class="sub">Formal proof trees for jazz harmony &mdash; Analysis &bull; Generation &bull; Tonality Route</div>
+  <div id="offline_warn" class="offline-warn">
+    <b>Offline mode:</b> The Tonality Route visualiser works without a server. Analysis and Generation require the FastAPI server (<code>bash run_webapp.sh</code>).
   </div>
 
-  <script>
-    let cachedJobs = [];
+  <!-- ── Tab navigation ── -->
+  <nav class="tabs">
+    <button class="tab-btn active" data-tab="analysis"   onclick="showTab('analysis')">Analysis</button>
+    <button class="tab-btn"        data-tab="generation" onclick="showTab('generation')">Generation</button>
+    <button class="tab-btn"        data-tab="route"      onclick="showTab('route')">Tonality Route</button>
+    <button class="tab-btn"        data-tab="history"    onclick="showTab('history')">History</button>
+    <button class="tab-btn"        data-tab="jobs"       onclick="showTab('jobs')">Jobs</button>
+  </nav>
 
-    async function post(url, payload) {
-      const res = await fetch(url, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload)
-      });
-      if (!res.ok) throw new Error(await res.text());
-      return res.json();
-    }
-
-    async function loadStandards() {
-      const folder = document.getElementById('a_folder').value;
-      const res = await fetch('/api/standards?standards_folder=' + encodeURIComponent(folder));
-      if (!res.ok) throw new Error(await res.text());
-      const data = await res.json();
-      const select = document.getElementById('a_standard');
-      select.innerHTML = '';
-      for (const name of data.standards) {
-        const opt = document.createElement('option');
-        opt.value = name;
-        opt.textContent = name;
-        select.appendChild(opt);
-      }
-      if (!data.standards.length) {
-        const opt = document.createElement('option');
-        opt.value = '';
-        opt.textContent = '(No standards found)';
-        select.appendChild(opt);
-      }
-      await loadSections();
-    }
-
-    async function loadSections() {
-      const folder = document.getElementById('a_folder').value;
-      const standard = document.getElementById('a_standard').value;
-      const select = document.getElementById('a_section');
-      select.innerHTML = '';
-      if (!standard) {
-        const opt = document.createElement('option');
-        opt.value = '';
-        opt.textContent = '(No section)';
-        select.appendChild(opt);
-        return;
-      }
-      const res = await fetch('/api/standards/sections?standards_folder=' + encodeURIComponent(folder) + '&standard_name=' + encodeURIComponent(standard));
-      if (!res.ok) throw new Error(await res.text());
-      const data = await res.json();
-      for (const name of data.sections) {
-        const opt = document.createElement('option');
-        opt.value = name;
-        opt.textContent = name;
-        select.appendChild(opt);
-      }
-      if (!data.sections.length) {
-        const opt = document.createElement('option');
-        opt.value = '';
-        opt.textContent = '(No section labels found)';
-        select.appendChild(opt);
-      }
-    }
-
-    async function submitAnalysisStandard() {
-      const customEnabled = document.getElementById('a_custom_toggle').checked;
-      const payload = {
-        standards_folder: document.getElementById('a_folder').value,
-        standard_name: document.getElementById('a_standard').value,
-        dpi: parseInt(document.getElementById('a_dpi').value, 10),
-        readable_dpi: parseInt(document.getElementById('a_readable_dpi').value, 10),
-        custom_sequence: customEnabled ? document.getElementById('a_custom_sequence').value : ''
-      };
-      await post('/api/jobs/analyse-standards', payload);
-      await refreshJobs();
-    }
-
-    function toggleCustomSequenceMode() {
-      const enabled = document.getElementById('a_custom_toggle').checked;
-      const folder = document.getElementById('a_folder');
-      const std = document.getElementById('a_standard');
-      const sec = document.getElementById('a_section');
-      const loadBtn = document.getElementById('a_load_btn');
-      const customLabel = document.getElementById('a_custom_label');
-      const customInput = document.getElementById('a_custom_sequence');
-      const customHint = document.getElementById('a_custom_hint');
-      const customExamples = document.getElementById('a_custom_examples');
-
-      folder.disabled = enabled;
-      std.disabled = enabled;
-      sec.disabled = enabled;
-      loadBtn.disabled = enabled;
-      customLabel.style.display = enabled ? '' : 'none';
-      customInput.style.display = enabled ? '' : 'none';
-      customHint.style.display = enabled ? '' : 'none';
-      customExamples.style.display = enabled ? 'flex' : 'none';
-    }
-
-    function setCustomSequence(value) {
-      const input = document.getElementById('a_custom_sequence');
-      input.value = value;
-      input.focus();
-    }
-
-    async function submitGenerate() {
-      const enablePng = document.getElementById('g_enable_png').checked;
-      const payload = {
-        tonality: document.getElementById('g_tonality').value,
-        target_chords: parseInt(document.getElementById('g_target').value, 10),
-        tonal_drift: parseFloat(document.getElementById('g_drift').value),
-        temperature: parseFloat(document.getElementById('g_temp').value),
-        style_strength: parseFloat(document.getElementById('g_style').value),
-        png: enablePng,
-        png_dpi: parseInt(document.getElementById('g_dpi').value, 10),
-        basic_cadence_mode: document.getElementById('g_basic_mode').checked
-      };
-      await post('/api/jobs/generate-chords', payload);
-      await refreshJobs();
-    }
-
-    function buildPreview(containerId, pngPath, jobId) {
-      const root = document.getElementById(containerId);
-      if (!pngPath || !jobId) {
-        root.innerHTML = '<span class="muted">No PNG available yet</span>';
-        return;
-      }
-      const src = `/api/jobs/${jobId}/download?path=${encodeURIComponent(pngPath)}`;
-      root.innerHTML = `<a href="${src}" target="_blank"><img src="${src}" alt="preview" /></a>`;
-    }
-
-    async function extractGenerationChordList(job) {
-      const txt = (job.artifacts || []).find(a => a.toLowerCase().endsWith('.txt'));
-      if (!txt) return '';
-      const url = `/api/jobs/${job.id}/download?path=${encodeURIComponent(txt)}`;
-      const res = await fetch(url);
-      if (!res.ok) return '';
-      const body = await res.text();
-      const lines = body.split(/\r?\n/);
-
-      const idx = lines.findIndex(l => l.trim() === 'Final Chord Progression (Readable)');
-      if (idx >= 0 && lines[idx + 2]) return lines[idx + 2].trim();
-
-      const jdx = lines.findIndex(l => l.trim() === 'Generated Chord List (in generation order)');
-      if (jdx >= 0 && lines[jdx + 2]) return lines[jdx + 2].trim();
-      return '';
-    }
-
-    async function refreshJobs() {
-      const res = await fetch('/api/jobs');
-      const jobs = await res.json();
-      cachedJobs = jobs;
-
-      let latestGen = null;
-      let latestAna = null;
-      for (const j of jobs) {
-        const pngs = (j.artifacts || []).filter(a => a.toLowerCase().endsWith('.png'));
-        if (j.kind === 'generate-chords' && !latestGen) {
-          latestGen = { job: j, png: pngs[pngs.length - 1] || null };
-        }
-        if ((j.kind === 'analyse-standard-readable' || j.kind === 'analyse-standards' || j.kind === 'analyse-sequence') && !latestAna) {
-          let chosen = pngs[pngs.length - 1] || null;
-          const sec = document.getElementById('a_section').value;
-          if (sec) {
-            const secHit = pngs.find(p => p.includes('_' + sec + '.png') || p.includes(sec + '.png'));
-            if (secHit) chosen = secHit;
-          }
-          latestAna = { job: j, png: chosen };
-        }
-      }
-
-      const genPreview = document.getElementById('generation_preview');
-      const pngEnabled = document.getElementById('g_enable_png').checked;
-      if (!pngEnabled) {
-        genPreview.innerHTML = '<span class="muted">Generation PNG preview disabled.</span>';
-      } else if (latestGen?.job && (latestGen.job.status === 'queued' || latestGen.job.status === 'running')) {
-        genPreview.innerHTML = '<div class="loading"><span class="spinner"></span><span>Generating PNG preview...</span></div>';
-      } else if (latestGen?.job && latestGen.job.status === 'error') {
-        genPreview.innerHTML = '<span class="muted">Generation failed. Check job logs below.</span>';
-      } else {
-        buildPreview('generation_preview', latestGen?.png, latestGen?.job?.id);
-      }
-      const anaPreview = document.getElementById('analysis_preview');
-      if (latestAna?.job && (latestAna.job.status === 'queued' || latestAna.job.status === 'running')) {
-        anaPreview.innerHTML = '<div class="loading"><span class="spinner"></span><span>Generating analysis preview...</span></div>';
-      } else if (latestAna?.job && latestAna.job.status === 'error') {
-        anaPreview.innerHTML = '<span class="muted">Analysis failed. Check job logs below.</span>';
-      } else {
-        buildPreview('analysis_preview', latestAna?.png, latestAna?.job?.id);
-      }
-
-      const chordsBox = document.getElementById('generation_chords');
-      if (latestGen?.job) {
-        const progression = await extractGenerationChordList(latestGen.job);
-        if (progression) {
-          chordsBox.textContent = progression;
-        } else {
-          chordsBox.innerHTML = '<span class="muted">Chord list not available yet</span>';
-        }
-      } else {
-        chordsBox.innerHTML = '<span class="muted">No generated progression yet</span>';
-      }
-
-      const jobsRoot = document.getElementById('jobs');
-      jobsRoot.innerHTML = jobs.map(j => {
-        const links = (j.artifacts || []).map(a =>
-          `<li><a href="/api/jobs/${j.id}/download?path=${encodeURIComponent(a)}" target="_blank">${a.split('/').pop()}</a></li>`
-        ).join('');
-        return `
-          <div class="job">
-            <div><b>${j.kind}</b> | ${j.status} | ${j.id}</div>
-            <small>${(j.command || []).join(' ')}</small>
-            <details><summary>stdout/stderr</summary><pre>${escapeHtml((j.stdout || '') + '\n' + (j.stderr || ''))}</pre></details>
-            <ul>${links}</ul>
+  <!-- ════════════════════ ANALYSIS ════════════════════ -->
+  <div id="tab-analysis" class="tab-pane active">
+    <div class="two-col">
+      <div class="panel">
+        <h2>Analysis</h2>
+        <div class="muted">Readable LaTeX proof tree + PNG for a standard or custom sequence.</div>
+        <label>Standards Folder</label>
+        <input id="a_folder" type="text" value="JazzStandards-main/JazzStandards"/>
+        <label><input id="a_custom_toggle" type="checkbox" onchange="toggleCustomSeq()"/> &nbsp;Custom chord sequence</label>
+        <div id="a_custom_area" style="display:none">
+          <label>Sequence (space-separated)</label>
+          <input id="a_custom_seq" type="text" placeholder="Dm7 G7 Cmaj7 Am7"/>
+          <div class="btns" style="margin-top:5px">
+            <button type="button" class="sec" onclick="setCustomSeq('Dm7 G7 Cmaj7')">ii-V-I</button>
+            <button type="button" class="sec" onclick="setCustomSeq('Cmaj7 Am7 Dm7 G7')">Basic</button>
+            <button type="button" class="sec" onclick="setCustomSeq('Bbmaj7 G7 Cm7 F7 Dm7 G7 Cmaj7')">Turnaround</button>
+            <button type="button" class="sec" onclick="setCustomSeq('Cm7 F7 Bbmaj7 Ebmaj7 Am7b5 D7 Gm7')">Minor</button>
           </div>
-        `;
-      }).join('');
+        </div>
+        <div id="a_std_area">
+          <div class="btns"><button type="button" class="sec" onclick="loadStandards()">Load Standards</button></div>
+          <label>Standard</label>
+          <select id="a_standard" onchange="loadSections()"></select>
+          <label>Section (preview focus)</label>
+          <select id="a_section" onchange="refreshJobs()"></select>
+        </div>
+        <div class="two-col" style="margin-top:9px">
+          <div><label>DPI (formal)</label><input id="a_dpi" type="number" min="72" value="600"/></div>
+          <div><label>DPI (readable)</label><input id="a_rdpi" type="number" min="72" value="600"/></div>
+        </div>
+        <div class="btns"><button type="button" onclick="submitAnalysis()">Run Analysis</button></div>
+      </div>
+      <div class="panel">
+        <h2>Analysis Result</h2>
+        <div class="preview" id="analysis_preview"><span class="muted">No analysis yet</span></div>
+        <div id="latex_section" style="display:none;margin-top:10px">
+          <div class="tr"><h3 style="margin:0">LaTeX Code</h3>
+            <button type="button" class="blue" onclick="copyLatex()" style="padding:5px 10px;font-size:.82rem">Copy</button></div>
+          <div class="hint">Paste into your paper (requires bussproofs, amsmath, amssymb).</div>
+          <select id="latex_file_sel" onchange="loadSelLatex()" style="margin-top:5px"></select>
+          <div class="latex-area"><textarea id="latex_content" rows="10" readonly></textarea></div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-      renderHistoryMenus(jobs);
-    }
+  <!-- ════════════════════ GENERATION ════════════════════ -->
+  <div id="tab-generation" class="tab-pane">
+    <div class="two-col">
+      <div class="panel">
+        <h2>Generation</h2>
+        <div class="muted">Generate a chord sequence using the reverse Lambek process.</div>
+        <div class="two-col">
+          <div><label>Tonality</label><input id="g_tonality" type="text" value="C"/></div>
+          <div><label>Target Chords</label><input id="g_target" type="number" value="16" min="1"/></div>
+        </div>
+        <div class="two-col">
+          <div><label>Tonal Drift (0–1)</label><input id="g_drift" type="number" step=".1" min="0" max="1" value="0.6"/></div>
+          <div><label>Creative Variation (&gt;0)</label><input id="g_temp" type="number" step=".1" min=".1" value="1.1"/></div>
+        </div>
+        <div class="two-col">
+          <div><label>Style Strength (0–1)</label><input id="g_style" type="number" step=".05" min="0" max="1" value="0.45"/></div>
+          <div><label>PNG DPI</label><input id="g_dpi" type="number" min="72" value="600"/></div>
+        </div>
+        <label><input id="g_basic" type="checkbox" checked/> &nbsp;Basic Cadence Mode</label>
+        <label><input id="g_png" type="checkbox" checked onchange="refreshJobs()"/> &nbsp;Enable PNG Preview</label>
+        <div class="btns"><button type="button" onclick="submitGenerate()">Run Generation</button></div>
+      </div>
+      <div class="panel">
+        <h2>Generation Result</h2>
+        <h3>Generated Chord Progression</h3>
+        <div id="gen_chords" class="chords-box"><span class="muted">No generated progression yet</span></div>
+        <h3>PNG Preview &nbsp;<label style="font-weight:normal;font-size:.82rem">Zoom: <span id="g_zoom_val">70</span>%
+          <input id="g_zoom" type="range" min="10" max="100" value="70" step="5" style="width:90px;vertical-align:middle"
+                 oninput="document.getElementById('g_zoom_val').textContent=this.value;applyGenZoom()"/>
+        </label></h3>
+        <div class="preview" id="gen_preview"><span class="muted">No generation PNG yet</span></div>
+      </div>
+    </div>
 
-    function _jobLabel(j) {
-      const ts = (j.created_at || '').replace('T', ' ').slice(0, 19);
-      return `${ts} | ${j.kind} | ${j.status} | ${j.id.slice(0, 8)}`;
-    }
+    <!-- Proof Tableau section inside Generation -->
+    <div class="panel" style="margin-top:14px">
+      <h2>Proof Tableau <span class="muted" style="font-weight:normal;font-size:.9rem">— Lambek derivation as the reverse of the generation process</span></h2>
+      <div class="muted">Enter any chord sequence (or use the generated one above) to see its Lambek proof tableau.</div>
+      <div class="two-col" style="margin-top:8px">
+        <div>
+          <label>Chord sequence (space-separated)</label>
+          <input id="t_seq" type="text" placeholder="Dm7 G7 Cmaj7"/>
+          <div class="btns" style="margin-top:5px">
+            <button type="button" class="sec" onclick="setTSeq('Dm7 G7 Cmaj7')">ii-V-I in C</button>
+            <button type="button" class="sec" onclick="setTSeq('Am7 D7 Gmaj7 Em7')">in G</button>
+            <button type="button" class="sec" onclick="setTSeq('Cm7 F7 Bbmaj7 Ebmaj7 Am7b5 D7 Gm7')">Minor route</button>
+            <button type="button" class="sec" onclick="fillFromGeneration()">Use Generated ↑</button>
+          </div>
+        </div>
+        <div>
+          <label>Zoom: <span id="t_zoom_val">60</span>%</label>
+          <input id="t_zoom" type="range" min="10" max="100" value="60" step="5"
+                 style="width:100%" oninput="document.getElementById('t_zoom_val').textContent=this.value; redrawTableauIfPresent()"/>
+          <div class="btns" style="margin-top:10px">
+            <button type="button" onclick="drawTableauJS()">Draw Proof Tableau</button>
+          </div>
+        </div>
+      </div>
+      <div id="tableau_out" style="display:flex;justify-content:center;margin-top:10px"></div>
+    </div>
+  </div>
 
-    function renderHistoryMenus(jobs) {
-      const genSel = document.getElementById('h_generation_select');
-      const anaSel = document.getElementById('h_analysis_select');
-      const prevGen = genSel.value;
-      const prevAna = anaSel.value;
+  <!-- ════════════════════ TONALITY ROUTE ════════════════════ -->
+  <div id="tab-route" class="tab-pane">
+    <div class="two-col">
+      <div class="panel">
+        <h2>Tonality Route</h2>
+        <div class="muted">Shortest path between two tonalities on the 24-key D/S/R/P lattice. Works offline &mdash; pure JavaScript.</div>
+        <div class="hint" style="margin-bottom:8px">D = dominant (+5th) &bull; S = subdominant (&minus;5th) &bull; R = relative (same key sig) &bull; P = parallel (same root)</div>
+        <label>From tonality</label>
+        <input id="r_from" type="text" value="C" placeholder="e.g. C, Eb, f#, am"/>
+        <label>To tonality</label>
+        <input id="r_to" type="text" value="a" placeholder="e.g. a, Bb, G, F#m"/>
+        <label>Note spelling</label>
+        <div class="radio-row">
+          <label><input type="radio" name="r_spell" value="auto" checked/> Auto</label>
+          <label><input type="radio" name="r_spell" value="flats"/> Flats</label>
+          <label><input type="radio" name="r_spell" value="sharps"/> Sharps</label>
+        </div>
+        <div class="btns"><button type="button" onclick="drawRouteJS()">Find &amp; Draw Route</button></div>
+        <div class="hint" style="margin-top:8px">Examples: C → a, Eb → f#, F → C, G → em</div>
+        <div id="route_text" style="margin-top:10px;font-family:'Courier New',monospace;font-size:.85rem;background:#f4f0e6;border:1px solid var(--border);border-radius:7px;padding:9px;display:none"></div>
+      </div>
+      <div class="panel">
+        <h2>Route Visualisation</h2>
+        <div class="muted">Circle-of-fifths lattice with highlighted modulation path.</div>
+        <div id="route_svg" class="svg-out" style="min-height:220px;display:flex;align-items:center;justify-content:center">
+          <span class="muted">No route computed yet</span>
+        </div>
+      </div>
+    </div>
+  </div>
 
-      const genJobs = jobs.filter(j => j.kind === 'generate-chords');
-      const anaJobs = jobs.filter(j =>
-        j.kind === 'analyse-standard-readable' || j.kind === 'analyse-standards' || j.kind === 'analyse-sequence'
-      );
+  <!-- ════════════════════ HISTORY ════════════════════ -->
+  <div id="tab-history" class="tab-pane">
+    <div class="two-col">
+      <div class="panel">
+        <h2>Analysis History</h2>
+        <select id="h_ana_sel" onchange="loadAnaHist()"></select>
+        <div class="preview" id="h_ana_prev" style="min-height:180px"><span class="muted">Select a job above</span></div>
+      </div>
+      <div class="panel">
+        <h2>Generation History</h2>
+        <select id="h_gen_sel" onchange="loadGenHist()"></select>
+        <div id="h_gen_chords" class="chords-box" style="margin-top:7px"><span class="muted">Select a job above</span></div>
+      </div>
+    </div>
+  </div>
 
-      genSel.innerHTML = '';
-      for (const j of genJobs) {
-        const opt = document.createElement('option');
-        opt.value = j.id;
-        opt.textContent = _jobLabel(j);
-        genSel.appendChild(opt);
+  <!-- ════════════════════ JOBS ════════════════════ -->
+  <div id="tab-jobs" class="tab-pane">
+    <div class="panel">
+      <div class="tr"><h2>All Jobs</h2><button type="button" class="sec" onclick="refreshJobs()">Refresh</button></div>
+      <div id="jobs"></div>
+    </div>
+  </div>
+</div><!-- /wrap -->
+
+<script>
+// ════════════════════════════════════════════════════════
+//  MUSIC THEORY — pure JS (Route + Tableau work offline)
+// ════════════════════════════════════════════════════════
+
+const NOTE_TO_PC = {
+  C:0,'B#':0,'C#':1,DB:1,D:2,'D#':3,EB:3,E:4,FB:4,'E#':5,F:5,
+  'F#':6,GB:6,G:7,'G#':8,AB:8,A:9,'A#':10,BB:10,B:11,CB:11
+};
+const FIFTHS_ORDER = [0,7,2,9,4,11,6,1,8,3,10,5];
+const FIFTHS_COL   = {};
+FIFTHS_ORDER.forEach((pc,i) => FIFTHS_COL[pc] = i);
+const PC_FLAT  = {0:'C',1:'Db',2:'D',3:'Eb',4:'E',5:'F',6:'Gb',7:'G',8:'Ab',9:'A',10:'Bb',11:'B'};
+const PC_SHARP = {0:'C',1:'C#',2:'D',3:'D#',4:'E',5:'F',6:'F#',7:'G',8:'G#',9:'A',10:'A#',11:'B'};
+
+const MAJOR_DEG = {0:'I',1:'bII',2:'II',3:'bIII',4:'III',5:'IV',6:'#IV',7:'V',8:'bVI',9:'VI',10:'bVII',11:'VII'};
+const MINOR_DEG = Object.assign({},MAJOR_DEG,{3:'III',8:'VI',10:'VII',11:'#VII'});
+
+function escX(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+
+// ── Note/chord parsing ──────────────────────────────────
+
+function _parseNote(tok){
+  tok = tok.trim().replace(/♯/g,'#').replace(/♭/g,'b');
+  const letter = tok[0].toUpperCase();
+  const acc    = tok.slice(1).replace(/b/g,'B');
+  const note   = letter + acc;
+  return (note in NOTE_TO_PC) ? note : null;
+}
+
+function chordRootNote(chord){
+  const m = chord.match(/^\s*([A-Ga-g])([#b♯♭]?)/);
+  if (!m) return null;
+  return _parseNote(m[1] + m[2]);
+}
+
+function chordRootPC(chord){
+  const n = chordRootNote(chord);
+  return n !== null ? NOTE_TO_PC[n] : null;
+}
+
+function isMinorChord(chord){
+  const m = chord.match(/^\s*[A-Ga-g][#b♯♭]?(.*)/);
+  if (!m) return false;
+  const rest = m[1].replace(/\([^)]*\)/g,'').toLowerCase().replace(/\s/g,'');
+  if (rest.startsWith('maj') || rest.startsWith('ma')) return false;
+  if (rest.startsWith('07') || rest.startsWith('0/7')) return true;
+  return rest.startsWith('m') || rest.startsWith('min') || rest.startsWith('-');
+}
+
+function isDimChord(chord){
+  const m = chord.match(/^\s*[A-Ga-g][#b♯♭]?(.*)/);
+  if (!m) return false;
+  const raw = m[1]; const low = raw.toLowerCase().replace(/\s/g,'');
+  if (low.includes('m7(b5)')||low.includes('m7b5')||raw.includes('ø')||low.startsWith('07')) return false;
+  return low.includes('dim') || raw.includes('°') || low.startsWith('o');
+}
+
+function chordToGrade(chord, keyPC, keyMode){
+  const pc = chordRootPC(chord);
+  if (pc === null) return '?';
+  const delta = ((pc - keyPC) % 12 + 12) % 12;
+  const deg_map = keyMode === 'm' ? MINOR_DEG : MAJOR_DEG;
+  const roman = deg_map[delta];
+  const lower = isMinorChord(chord) || isDimChord(chord);
+  if (!lower) return roman;
+  return roman.replace(/[IViv]+/g, s => s.toLowerCase());
+}
+
+// ── Key inference ───────────────────────────────────────
+
+function inferKey(chords){
+  const MAJ_SC = [0,2,4,5,7,9,11];
+  const MIN_SC = [0,2,3,5,7,8,10];
+  let best = {pc:0, mode:'M'}; let bestScore = -Infinity;
+  for (let kpc = 0; kpc < 12; kpc++){
+    for (const [mode, sc] of [['M',MAJ_SC],['m',MIN_SC]]){
+      const scalePCs = sc.map(d => (d + kpc) % 12);
+      let score = 0;
+      for (const ch of chords){
+        const pc = chordRootPC(ch);
+        if (pc === null) continue;
+        if (scalePCs.includes(pc)) score += 2;
+        const g = chordToGrade(ch, kpc, mode).toUpperCase();
+        if (g === 'I') score += 4;
+        if (g === 'V') score += 2;
+        if (g === 'II' || g === 'IV' || g === 'VI') score += 1;
       }
-      if (!genJobs.length) {
-        const opt = document.createElement('option');
-        opt.value = '';
-        opt.textContent = '(No generation jobs)';
-        genSel.appendChild(opt);
+      // bonus for ii-V-I runs
+      for (let i = 0; i < chords.length - 2; i++){
+        const g1 = chordToGrade(chords[i], kpc, mode);
+        const g2 = chordToGrade(chords[i+1], kpc, mode);
+        const g3 = chordToGrade(chords[i+2], kpc, mode);
+        if ((g1==='ii'||g1==='II') && g2.toUpperCase()==='V' && g3.toUpperCase()==='I') score += 12;
+        if (g2.toUpperCase()==='V' && g3.toUpperCase()==='I') score += 5;
       }
-
-      anaSel.innerHTML = '';
-      for (const j of anaJobs) {
-        const pngCount = (j.artifacts || []).filter(a => a.toLowerCase().endsWith('.png')).length;
-        const opt = document.createElement('option');
-        opt.value = j.id;
-        opt.textContent = `${_jobLabel(j)} | png:${pngCount}`;
-        anaSel.appendChild(opt);
-      }
-      if (!anaJobs.length) {
-        const opt = document.createElement('option');
-        opt.value = '';
-        opt.textContent = '(No analysis jobs)';
-        anaSel.appendChild(opt);
-      }
-
-      if (prevGen && genJobs.some(j => j.id === prevGen)) genSel.value = prevGen;
-      if (prevAna && anaJobs.some(j => j.id === prevAna)) anaSel.value = prevAna;
-
-      loadGenerationHistorySelection();
-      loadAnalysisHistorySelection();
+      if (score > bestScore){ bestScore = score; best = {pc:kpc, mode}; }
     }
+  }
+  return best;
+}
 
-    async function loadGenerationHistorySelection() {
-      const sel = document.getElementById('h_generation_select');
-      const box = document.getElementById('h_generation_chords');
-      const id = sel.value;
-      const job = cachedJobs.find(j => j.id === id);
-      if (!job) {
-        box.innerHTML = '<span class="muted">No generation history selected</span>';
-        return;
+// ── Proof tree builder ──────────────────────────────────
+
+function buildProofTree(chords){
+  const key = inferKey(chords);
+  const {pc: kpc, mode: kmode} = key;
+  const kName = (kmode==='M' ? PC_FLAT[kpc] : PC_FLAT[kpc].toLowerCase()+PC_FLAT[kpc].slice(1));
+
+  // create leaves
+  const leaves = chords.map(ch => ({
+    chord: ch, grade: chordToGrade(ch,kpc,kmode), key: kName,
+    isLeaf: true, rule: null, left: null, right: null
+  }));
+
+  // left-spine reduction
+  let acc = leaves[0];
+  for (let i = 1; i < leaves.length; i++){
+    const right = leaves[i];
+    const lg = acc.grade, rg = right.grade;
+    let rule = `${lg}\\${rg}`;  // Lambek backslash elimination
+    acc = {chord: right.chord, grade: right.grade, key: kName,
+           isLeaf: false, rule, left: acc, right};
+  }
+  return {root: acc, leaves};
+}
+
+function collectLeaves(node){
+  if (node.isLeaf) return [node];
+  return [...collectLeaves(node.left), ...collectLeaves(node.right)];
+}
+
+function leftSpineSteps(root){
+  const steps = [];
+  let n = root;
+  while (!n.isLeaf){ steps.push({internal:n, right:n.right}); n = n.left; }
+  steps.reverse();
+  return steps;
+}
+
+// ════════════════════════════════════════════════════════
+//  ROUTE SVG
+// ════════════════════════════════════════════════════════
+
+function parseTonality(s){
+  s = s.trim();
+  const m = s.match(/^([A-Ga-g])([#b♯♭]?)(.*)/);
+  if (!m) return null;
+  const note = _parseNote(m[1] + m[2]);
+  if (note === null) return null;
+  const pc = NOTE_TO_PC[note];
+  const suffix = m[3].trim().toLowerCase();
+  const mode = (m[1] === m[1].toLowerCase()) ? 'm' :
+               (suffix.startsWith('min') || (suffix.startsWith('m') && !suffix.startsWith('maj'))) ? 'm' : 'M';
+  return {pc, mode};
+}
+
+function tonalityKey(t){ return t.pc * 2 + (t.mode==='M' ? 0 : 1); }
+
+function applyOp(t, op){
+  if (op==='D') return {pc:(t.pc+7)%12, mode:t.mode};
+  if (op==='S') return {pc:(t.pc+5)%12, mode:t.mode};
+  if (op==='P') return {pc:t.pc, mode:t.mode==='M'?'m':'M'};
+  if (op==='R') return t.mode==='M' ? {pc:(t.pc+9)%12,mode:'m'} : {pc:(t.pc+3)%12,mode:'M'};
+}
+
+function shortestPath(start, goal){
+  if (tonalityKey(start)===tonalityKey(goal)) return {nodes:[start],ops:[]};
+  const queue=[start], seen=new Set([tonalityKey(start)]), parent={};
+  while (queue.length){
+    const cur = queue.shift();
+    for (const op of ['D','S','R','P']){
+      const nxt = applyOp(cur, op);
+      const k = tonalityKey(nxt);
+      if (seen.has(k)) continue;
+      seen.add(k); parent[k]={from:cur,op};
+      if (k===tonalityKey(goal)){
+        const nodes=[goal], ops=[];
+        let x=goal;
+        while (tonalityKey(x)!==tonalityKey(start)){
+          const p=parent[tonalityKey(x)]; ops.push(p.op); nodes.push(p.from); x=p.from;
+        }
+        nodes.reverse(); ops.reverse();
+        return {nodes,ops};
       }
-      const progression = await extractGenerationChordList(job);
-      box.textContent = progression || '(No chord list found for this job)';
+      queue.push(nxt);
     }
+  }
+  return null;
+}
 
-    function loadAnalysisHistorySelection() {
-      const sel = document.getElementById('h_analysis_select');
-      const id = sel.value;
-      const job = cachedJobs.find(j => j.id === id);
-      if (!job) {
-        document.getElementById('h_analysis_preview').innerHTML = '<span class="muted">No analysis history selected</span>';
-        return;
+function tonalityName(t, spelling){
+  const d = spelling==='sharps' ? PC_SHARP : PC_FLAT;
+  const r = d[t.pc];
+  return t.mode==='M' ? r : r[0].toLowerCase()+r.slice(1);
+}
+
+function makeRouteSVG(start, goal, nodes, ops, spelling){
+  const CG=88, NR=24, ML=56, MR=18, MT=80, MB=100, RM=130;
+  const W=ML+11*CG+MR, H=MT+RM+NR+MB;
+
+  const nodeXY=(t)=>({x:ML+FIFTHS_COL[t.pc]*CG, y:MT+(t.mode==='M'?0:RM)});
+  const pathSet=new Set(nodes.map(n=>tonalityKey(n)));
+  const EC={'D':'#1565c0','S':'#1565c0','R':'#2e7d32','P':'#c62828'};
+  const BG={'D':'#bbdefb','S':'#bbdefb','R':'#c8e6c9','P':'#fce4ec'};
+
+  let s=`<svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block">`;
+  s+=`<defs>
+    <marker id="a-ds" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 L1.5,3 z" fill="#1565c0"/></marker>
+    <marker id="a-r"  markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 L1.5,3 z" fill="#2e7d32"/></marker>
+    <marker id="a-p"  markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 L1.5,3 z" fill="#c62828"/></marker>
+  </defs>`;
+
+  // background edges
+  const drawn=new Set();
+  for (const pc of FIFTHS_ORDER){
+    for (const mode of ['M','m']){
+      const t={pc,mode};
+      for (const op of ['D','S','R','P']){
+        const nxt=applyOp(t,op);
+        const ek=[Math.min(tonalityKey(t),tonalityKey(nxt)),Math.max(tonalityKey(t),tonalityKey(nxt)),op].join('-');
+        if (drawn.has(ek)) continue; drawn.add(ek);
+        const {x:x0,y:y0}=nodeXY(t), {x:x1,y:y1}=nodeXY(nxt);
+        if (Math.abs(FIFTHS_COL[t.pc]-FIFTHS_COL[nxt.pc])>6) continue;
+        s+=`<line x1="${x0}" y1="${y0}" x2="${x1}" y2="${y1}" stroke="${BG[op]}" stroke-width="0.9" opacity="0.55"/>`;
       }
-      const pngs = (job.artifacts || []).filter(a => a.toLowerCase().endsWith('.png'));
-      const chosen = pngs[pngs.length - 1] || null;
-      buildPreview('h_analysis_preview', chosen, job.id);
     }
+  }
 
-    function escapeHtml(s) {
-      return s.replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
+  // path arrows
+  for (let i=0;i<ops.length;i++){
+    const {x:x0,y:y0}=nodeXY(nodes[i]), {x:x1,y:y1}=nodeXY(nodes[i+1]);
+    const dx=x1-x0, dy=y1-y0, dist=Math.sqrt(dx*dx+dy*dy)||1;
+    const ux=dx/dist, uy=dy/dist;
+    const sx0=x0+ux*(NR+1), sy0=y0+uy*(NR+1);
+    const sx1=x1-ux*(NR+9), sy1=y1-uy*(NR+9);
+    const op=ops[i], col=EC[op];
+    const mk=op==='R'?'r':op==='P'?'p':'ds';
+    s+=`<line x1="${sx0.toFixed(1)}" y1="${sy0.toFixed(1)}" x2="${sx1.toFixed(1)}" y2="${sy1.toFixed(1)}" stroke="${col}" stroke-width="2.6" marker-end="url(#a-${mk})"/>`;
+    const mx=(x0+x1)/2, my=(y0+y1)/2;
+    const lx=mx+(Math.abs(dx)<5?-14:0), ly=my-9;
+    s+=`<text x="${lx.toFixed(0)}" y="${ly.toFixed(0)}" text-anchor="middle" font-size="10" font-weight="bold" fill="${col}">${op}</text>`;
+  }
+
+  // nodes
+  for (const pc of FIFTHS_ORDER){
+    for (const mode of ['M','m']){
+      const t={pc,mode}; const {x,y}=nodeXY(t);
+      const isS=tonalityKey(t)===tonalityKey(start);
+      const isG=tonalityKey(t)===tonalityKey(goal);
+      const isP=pathSet.has(tonalityKey(t));
+      let fc='white',ec='#bbb',tc='#888',r=NR,sw=1;
+      if (isS){fc='#51cf66';ec='#2b8a3e';tc='black';r=NR+3;sw=2;}
+      else if (isG){fc='#ff922b';ec='#d9480f';tc='black';r=NR+3;sw=2;}
+      else if (isP){fc='#ffe066';ec='#f08c00';tc='black';r=NR+1;sw=1.8;}
+      const nm=tonalityName(t,spelling);
+      s+=`<circle cx="${x}" cy="${y}" r="${r}" fill="${fc}" stroke="${ec}" stroke-width="${sw}"/>`;
+      s+=`<text x="${x}" y="${y+3.5}" text-anchor="middle" font-size="${nm.length>2?7.5:9.5}" font-weight="${isP?'bold':'normal'}" fill="${tc}">${escX(nm)}</text>`;
     }
+  }
 
-    loadStandards().catch(console.error);
-    refreshJobs().catch(console.error);
-    setInterval(() => refreshJobs().catch(console.error), 6000);
-  </script>
+  // row labels — placed above each row of circles
+  s+=`<text x="${ML}" y="${MT-NR-6}" text-anchor="middle" font-size="9" fill="#888" font-style="italic">Major</text>`;
+  s+=`<text x="${ML}" y="${MT+RM-NR-6}" text-anchor="middle" font-size="9" fill="#888" font-style="italic">Minor</text>`;
+  // col headers
+  FIFTHS_ORDER.forEach((pc,i)=>{
+    s+=`<text x="${ML+i*CG}" y="${MT-NR-18}" text-anchor="middle" font-size="7" fill="#aaa">${escX(PC_FLAT[pc])}</text>`;
+  });
+
+  // title
+  const sn=tonalityName(start,spelling), gn=tonalityName(goal,spelling);
+  const opStr=ops.length?ops.join(' → '):'(same key)';
+  s+=`<text x="${W/2}" y="15" text-anchor="middle" font-size="11" font-weight="bold" fill="#1f1b14">${escX(sn)} → ${escX(gn)}  |  ${ops.length} step${ops.length!==1?'s':''}  [${opStr}]</text>`;
+
+  // legend
+  const ly0=H-MB+22;
+  [{col:'#51cf66',ec:'#2b8a3e',lbl:`Start (${sn})`},{col:'#ff922b',ec:'#d9480f',lbl:`Goal (${gn})`},
+   {col:'#ffe066',ec:'#f08c00',lbl:'Path node'},{col:'white',ec:'#bbb',lbl:'Other key'}
+  ].forEach((it,i)=>{
+    const lx=30+i*235;
+    s+=`<rect x="${lx}" y="${ly0}" width="13" height="13" fill="${it.col}" stroke="${it.ec}" stroke-width="1" rx="2"/>`;
+    s+=`<text x="${lx+17}" y="${ly0+10}" font-size="9" fill="#333">${escX(it.lbl)}</text>`;
+  });
+  [{col:'#1565c0',lbl:'D (dominant, +5th)'},{col:'#1565c0',lbl:'S (subdominant, −5th)'},
+   {col:'#2e7d32',lbl:'R (relative)'},{col:'#c62828',lbl:'P (parallel)'}
+  ].forEach((it,i)=>{
+    const lx=30+i*235;
+    s+=`<line x1="${lx}" y1="${ly0+27}" x2="${lx+14}" y2="${ly0+27}" stroke="${it.col}" stroke-width="2.5"/>`;
+    s+=`<text x="${lx+18}" y="${ly0+31}" font-size="9" fill="#333">${escX(it.lbl)}</text>`;
+  });
+
+  s+=`</svg>`;
+  return s;
+}
+
+// ════════════════════════════════════════════════════════
+//  TABLEAU SVG
+// ════════════════════════════════════════════════════════
+
+// Layout constants (pixels, screen coords y↓)
+const XS=118, YS=130;     // x-step, y-step per level
+const BW=88,  BH=40;      // chord box size
+const RW=78,  RH=26;      // rule node size
+// rule node sits 0.659 * YS above the internal node (proportional to Python logic)
+const RULE_ABOVE = Math.round(0.659 * YS); // ≈ 86
+
+function staircaseLayout(root){
+  const pos=new Map();
+  const steps=leftSpineSteps(root);
+  let leftmost=root; while(!leftmost.isLeaf) leftmost=leftmost.left;
+  pos.set(leftmost,{x:0,y:0});
+  let curX=0, curY=0;
+  for (const {internal,right} of steps){
+    const rx=curX+XS, ry=curY;
+    pos.set(right,{x:rx,y:ry});
+    const nx=(curX+rx)/2, ny=curY+YS;
+    pos.set(internal,{x:nx,y:ny});
+    curX=nx; curY=ny;
+  }
+  return pos;
+}
+
+function makeTreeSVG(root, title='', zoom=1){
+  const pos=staircaseLayout(root);
+  const steps=leftSpineSteps(root);
+  const allNodes=[...pos.keys()];
+  const allX=allNodes.map(n=>pos.get(n).x);
+  const allY=allNodes.map(n=>pos.get(n).y);
+  const minX=Math.min(...allX)-BW/2-8;
+  const maxY=Math.max(...allY)+BH/2+8;
+  const ML=10, MR=10, MT=title?52:14, MB=10;
+  const W=Math.max(...allX)+BW/2-minX+ML+MR;
+  const H=maxY-0+MT+MB;
+  const tx=x=>x-minX+ML, ty=y=>y+MT;
+  const leaves=collectLeaves(root);
+
+  const SW=(W*zoom).toFixed(0), SH=(H*zoom).toFixed(0);
+  let s=`<svg viewBox="0 0 ${W.toFixed(0)} ${H.toFixed(0)}" width="${SW}" height="${SH}" xmlns="http://www.w3.org/2000/svg" style="display:block;max-width:100%">`;
+  if (title) s+=`<text x="${W/2}" y="20" text-anchor="middle" font-size="11" font-weight="bold" fill="#333">${escX(title)}</text>`;
+
+  // edges + rule nodes + internal nodes
+  for (const {internal,right} of steps){
+    const {x:nx,y:ny}=pos.get(internal);
+    const {x:lx,y:ly}=pos.get(internal.left);
+    const {x:rx,y:ry}=pos.get(right);
+    const ruX=tx(nx), ruY=ty(ny)-RULE_ABOVE;
+    // lines
+    s+=`<line x1="${tx(lx).toFixed(1)}" y1="${(ty(ly)+BH/2).toFixed(1)}" x2="${ruX.toFixed(1)}" y2="${(ruY-RH/2).toFixed(1)}" stroke="#c0392b" stroke-width="1.4"/>`;
+    s+=`<line x1="${tx(rx).toFixed(1)}" y1="${(ty(ry)+BH/2).toFixed(1)}" x2="${ruX.toFixed(1)}" y2="${(ruY-RH/2).toFixed(1)}" stroke="#c0392b" stroke-width="1.4"/>`;
+    s+=`<line x1="${ruX.toFixed(1)}" y1="${(ruY+RH/2).toFixed(1)}" x2="${tx(nx).toFixed(1)}" y2="${(ty(ny)-BH/2).toFixed(1)}" stroke="#c0392b" stroke-width="1.4"/>`;
+    // rule box
+    s+=`<rect x="${(ruX-RW/2).toFixed(1)}" y="${(ruY-RH/2).toFixed(1)}" width="${RW}" height="${RH}" rx="5" fill="#fde8e8" stroke="#c0392b" stroke-width="1.2"/>`;
+    s+=`<text x="${ruX.toFixed(1)}" y="${(ruY+5).toFixed(1)}" text-anchor="middle" font-size="9" font-weight="bold" fill="#c0392b" font-family="monospace">${escX(internal.rule||'/')}</text>`;
+    // internal box
+    s+=`<rect x="${(tx(nx)-BW/2).toFixed(1)}" y="${(ty(ny)-BH/2).toFixed(1)}" width="${BW}" height="${BH}" rx="5" fill="#fff3cd" stroke="#b07d00" stroke-width="1.4"/>`;
+    s+=`<text x="${tx(nx).toFixed(1)}" y="${(ty(ny)-4).toFixed(1)}" text-anchor="middle" font-size="9" font-weight="bold" fill="#1f1b14">${escX(internal.chord)}</text>`;
+    s+=`<text x="${tx(nx).toFixed(1)}" y="${(ty(ny)+11).toFixed(1)}" text-anchor="middle" font-size="8" fill="#555">/${escX(internal.grade)}</text>`;
+  }
+
+  // leaf nodes (drawn last = on top)
+  for (const lf of leaves){
+    const {x,y}=pos.get(lf);
+    s+=`<rect x="${(tx(x)-BW/2).toFixed(1)}" y="${(ty(y)-BH/2).toFixed(1)}" width="${BW}" height="${BH}" rx="5" fill="#dce8ff" stroke="#3a6db5" stroke-width="1.4"/>`;
+    s+=`<text x="${tx(x).toFixed(1)}" y="${(ty(y)-4).toFixed(1)}" text-anchor="middle" font-size="9" font-weight="bold" fill="#1f1b14">${escX(lf.chord)}</text>`;
+    s+=`<text x="${tx(x).toFixed(1)}" y="${(ty(y)+11).toFixed(1)}" text-anchor="middle" font-size="8" fill="#555">/${escX(lf.grade)}</text>`;
+  }
+
+  s+=`<text x="${(ML+3).toFixed(0)}" y="${(ty(0)+BH/2+14).toFixed(0)}" font-size="8" fill="#aaa" font-style="italic">Key: ${escX(leaves[0].key)}</text>`;
+  s+=`</svg>`; return s;
+}
+
+function makeArcSVG(root, title=''){
+  const XG=115, YA=65, AI=52;  // x-gap, base arc depth, increment per level
+  const steps=leftSpineSteps(root);
+  const leaves=collectLeaves(root);
+  const n=leaves.length;
+  const leafX=leaves.map((_,i)=>55+i*XG);
+  const totalDepth=YA+steps.length*AI;
+  const MT=title?38:18, MB=28, ML=8, MR=8;
+  const BOX_W=88, BOX_H=42;
+  const W=ML+(n-1)*XG+120+MR;
+  const H=MT+BOX_H/2+totalDepth+32+MB;
+  const chordY=MT+BOX_H/2;
+
+  let s=`<svg viewBox="0 0 ${W.toFixed(0)} ${H.toFixed(0)}" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block">`;
+  if (title) s+=`<text x="${W/2}" y="22" text-anchor="middle" font-size="11" font-weight="bold" fill="#333">${escX(title)}</text>`;
+
+  // chord boxes
+  for (let i=0;i<n;i++){
+    const cx=leafX[i];
+    s+=`<rect x="${cx-BOX_W/2}" y="${chordY-BOX_H/2}" width="${BOX_W}" height="${BOX_H}" rx="5" fill="#dce8ff" stroke="#3a6db5" stroke-width="1.4"/>`;
+    s+=`<text x="${cx}" y="${chordY-3}" text-anchor="middle" font-size="9" font-weight="bold" fill="#1f1b14">${escX(leaves[i].chord)}</text>`;
+    s+=`<text x="${cx}" y="${chordY+13}" text-anchor="middle" font-size="8" fill="#555">/${escX(leaves[i].grade)}</text>`;
+  }
+
+  // arcs
+  for (let si=0;si<steps.length;si++){
+    const {internal,right}=steps[si];
+    const ri=leaves.indexOf(right);
+    const aL=leafX[0], aR=leafX[ri];
+    const aBot=chordY+YA+si*AI;
+    const midX=(aL+aR)/2;
+    const c1x=aL+(aR-aL)*0.25, c2x=aL+(aR-aL)*0.75;
+    s+=`<path d="M${aL},${chordY} C${c1x},${aBot} ${c2x},${aBot} ${aR},${chordY}" fill="none" stroke="#c0392b" stroke-width="1.8" opacity=".85"/>`;
+    const rw=78,rh=26;
+    s+=`<rect x="${midX-rw/2}" y="${aBot-rh/2}" width="${rw}" height="${rh}" rx="5" fill="#fde8e8" stroke="#c0392b" stroke-width="1.2"/>`;
+    s+=`<text x="${midX}" y="${aBot+5}" text-anchor="middle" font-size="9" font-weight="bold" fill="#c0392b" font-family="monospace">${escX(internal.rule||'/')}</text>`;
+  }
+
+  // result
+  const botY=chordY+totalDepth+18;
+  s+=`<text x="${W/2}" y="${botY}" text-anchor="middle" font-size="10" fill="#333" font-style="italic">&#8866; ${escX(root.chord)} / ${escX(root.grade)}</text>`;
+  s+=`<text x="${ML+3}" y="${chordY-BOX_H/2-5}" font-size="8" fill="#aaa" font-style="italic">Key: ${escX(leaves[0].key)}</text>`;
+  s+=`</svg>`; return s;
+}
+
+// ════════════════════════════════════════════════════════
+//  UI HANDLERS
+// ════════════════════════════════════════════════════════
+
+function showTab(name){
+  document.querySelectorAll('.tab-pane').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  document.getElementById('tab-'+name).classList.add('active');
+  document.querySelector(`.tab-btn[data-tab="${name}"]`).classList.add('active');
+}
+
+// Route JS
+function drawRouteJS(){
+  const fromStr=document.getElementById('r_from').value.trim();
+  const toStr=document.getElementById('r_to').value.trim();
+  const spelling=document.querySelector('input[name="r_spell"]:checked').value;
+  const start=parseTonality(fromStr), goal=parseTonality(toStr);
+  if (!start){alert('Cannot parse "From" tonality: '+fromStr); return;}
+  if (!goal) {alert('Cannot parse "To" tonality: '+toStr); return;}
+
+  // auto spelling
+  const sp = spelling==='auto' ? ((fromStr.includes('#')||toStr.includes('#')) ? 'sharps' : 'flats') : spelling;
+  const result=shortestPath(start,goal);
+  if (!result){document.getElementById('route_svg').innerHTML='<span style="color:#c00">No route found.</span>'; return;}
+  const {nodes,ops}=result;
+
+  // text summary
+  const sn=tonalityName(start,sp), gn=tonalityName(goal,sp);
+  const pathStr=nodes.map(n=>tonalityName(n,sp)).join(' → ');
+  const textEl=document.getElementById('route_text');
+  textEl.style.display='';
+  textEl.textContent=`From : ${sn}\nTo   : ${gn}\nSteps: ${ops.length}\nOps  : ${ops.join(' → ')||'(same key)'}\nPath : ${pathStr}`;
+
+  document.getElementById('route_svg').innerHTML=makeRouteSVG(start,goal,nodes,ops,sp);
+}
+
+// Tableau JS
+function setTSeq(v){document.getElementById('t_seq').value=v;}
+function fillFromGeneration(){
+  const raw=document.getElementById('gen_chords').textContent.trim();
+  if (!raw || raw.includes('No generated')){ alert('Run Generation first to get a chord sequence.'); return; }
+  // Strip arrow separators (→, ->, –>, etc.) then collapse extra spaces
+  const cleaned=raw.replace(/\s*(?:→|->|–>|—>)\s*/g,' ').replace(/\s+/g,' ').trim();
+  document.getElementById('t_seq').value=cleaned;
+}
+
+function drawTableauJS(){
+  const seqStr=document.getElementById('t_seq').value.trim();
+  if (!seqStr){alert('Enter a chord sequence.'); return;}
+  const chords=seqStr.split(/\s+/).filter(Boolean);
+  if (chords.length<2){alert('Need at least 2 chords.'); return;}
+  const zoom=parseInt(document.getElementById('t_zoom').value,10)/100;
+  let {root}=buildProofTree(chords);
+  const svg=makeTreeSVG(root,'Tree Tableau',zoom);
+  document.getElementById('tableau_out').innerHTML=`<div style="margin-top:8px">${svg}</div>`;
+}
+
+function redrawTableauIfPresent(){
+  if (document.getElementById('tableau_out').innerHTML.trim()) drawTableauJS();
+}
+
+// ── Analysis ─────────────────────────────────────────────
+function toggleCustomSeq(){
+  const on=document.getElementById('a_custom_toggle').checked;
+  document.getElementById('a_custom_area').style.display=on?'':'none';
+  document.getElementById('a_std_area').style.display=on?'none':'';
+}
+function setCustomSeq(v){document.getElementById('a_custom_seq').value=v;}
+
+async function loadStandards(){
+  const folder=document.getElementById('a_folder').value;
+  try{
+    const res=await fetch('/api/standards?standards_folder='+encodeURIComponent(folder));
+    if(!res.ok) throw new Error(await res.text());
+    const data=await res.json();
+    const sel=document.getElementById('a_standard');
+    sel.innerHTML='';
+    if(!data.standards.length){ sel.innerHTML='<option>(No standards found)</option>'; }
+    else { data.standards.forEach(n=>{const o=document.createElement('option');o.value=n;o.textContent=n;sel.appendChild(o);}); }
+    await loadSections();
+  }catch(e){console.warn('loadStandards:',e.message);}
+}
+
+async function loadSections(){
+  const folder=document.getElementById('a_folder').value;
+  const std=document.getElementById('a_standard').value;
+  const sel=document.getElementById('a_section');
+  sel.innerHTML='';
+  if(!std){sel.innerHTML='<option>(none)</option>';return;}
+  try{
+    const res=await fetch('/api/standards/sections?standards_folder='+encodeURIComponent(folder)+'&standard_name='+encodeURIComponent(std));
+    if(!res.ok) throw new Error(await res.text());
+    const data=await res.json();
+    if(!data.sections.length){sel.innerHTML='<option>(no sections)</option>';}
+    else{data.sections.forEach(n=>{const o=document.createElement('option');o.value=n;o.textContent=n;sel.appendChild(o);});}
+  }catch(e){sel.innerHTML='<option>(error)</option>';}
+}
+
+async function submitAnalysis(){
+  const cust=document.getElementById('a_custom_toggle').checked;
+  const payload={
+    standards_folder:document.getElementById('a_folder').value,
+    standard_name:document.getElementById('a_standard').value,
+    dpi:parseInt(document.getElementById('a_dpi').value,10),
+    readable_dpi:parseInt(document.getElementById('a_rdpi').value,10),
+    custom_sequence:cust?document.getElementById('a_custom_seq').value:''
+  };
+  setLoading('analysis_preview','Submitting analysis…');
+  try{ await post('/api/jobs/analyse-standards',payload); await refreshJobs(); }
+  catch(e){ document.getElementById('analysis_preview').innerHTML=`<span style="color:#c00">Error: ${escX(e.message)}</span>`; }
+}
+
+// ── Generation ───────────────────────────────────────────
+async function submitGenerate(){
+  const png=document.getElementById('g_png').checked;
+  const payload={
+    tonality:document.getElementById('g_tonality').value,
+    target_chords:parseInt(document.getElementById('g_target').value,10),
+    tonal_drift:parseFloat(document.getElementById('g_drift').value),
+    temperature:parseFloat(document.getElementById('g_temp').value),
+    style_strength:parseFloat(document.getElementById('g_style').value),
+    png, png_dpi:parseInt(document.getElementById('g_dpi').value,10),
+    basic_cadence_mode:document.getElementById('g_basic').checked
+  };
+  setLoading('gen_preview','Submitting generation…');
+  try{ await post('/api/jobs/generate-chords',payload); await refreshJobs(); }
+  catch(e){ document.getElementById('gen_preview').innerHTML=`<span style="color:#c00">Error: ${escX(e.message)}</span>`; }
+}
+
+async function extractChordList(job){
+  const txt=(job.artifacts||[]).find(a=>a.toLowerCase().endsWith('.txt'));
+  if(!txt) return '';
+  const res=await fetch(`/api/jobs/${job.id}/download?path=${encodeURIComponent(txt)}`);
+  if(!res.ok) return '';
+  const body=await res.text();
+  const lines=body.split(/\r?\n/);
+  const i=lines.findIndex(l=>l.trim()==='Final Chord Progression (Readable)');
+  if(i>=0&&lines[i+2]) return lines[i+2].trim();
+  const j=lines.findIndex(l=>l.trim()==='Generated Chord List (in generation order)');
+  if(j>=0&&lines[j+2]) return lines[j+2].trim();
+  return '';
+}
+
+// ── LaTeX export ─────────────────────────────────────────
+async function loadLatexFromJob(job){
+  const texFiles=(job.artifacts||[]).filter(a=>a.toLowerCase().endsWith('.tex'));
+  const sec=document.getElementById('latex_section');
+  if(!texFiles.length){sec.style.display='none'; return;}
+  sec.style.display='';
+  const sel=document.getElementById('latex_file_sel');
+  const prev=sel.value;
+  sel.innerHTML='';
+  texFiles.forEach(f=>{const o=document.createElement('option');o.value=f;o.textContent=f.split('/').pop();sel.appendChild(o);});
+  if(prev&&texFiles.includes(prev)) sel.value=prev;
+  await loadSelLatex();
+}
+async function loadSelLatex(){
+  const path=document.getElementById('latex_file_sel').value;
+  const job=cachedJobs.find(j=>(j.artifacts||[]).includes(path));
+  if(!job||!path) return;
+  try{
+    const res=await fetch(`/api/jobs/${job.id}/download?path=${encodeURIComponent(path)}`);
+    document.getElementById('latex_content').value=res.ok?await res.text():'(Error loading file)';
+  }catch{ document.getElementById('latex_content').value='(Error)'; }
+}
+async function copyLatex(){
+  const v=document.getElementById('latex_content').value;
+  try{await navigator.clipboard.writeText(v);}
+  catch{document.getElementById('latex_content').select();document.execCommand('copy');}
+}
+
+// ── Refresh / polling ─────────────────────────────────────
+let cachedJobs=[];
+
+async function post(url,payload){
+  const res=await fetch(url,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+  if(!res.ok) throw new Error(await res.text());
+  return res.json();
+}
+
+function setLoading(id,msg){
+  document.getElementById(id).innerHTML=`<div class="loading"><span class="spinner"></span><span>${msg}</span></div>`;
+}
+
+function applyGenZoom(){
+  const v=document.getElementById('g_zoom')?.value||70;
+  const img=document.querySelector('#gen_preview img');
+  if(img) img.style.width=v+'%';
+}
+
+function buildPreview(id,png,jobId){
+  const el=document.getElementById(id);
+  if(!png||!jobId){el.innerHTML='<span class="muted">No image available</span>';return;}
+  const src=`/api/jobs/${jobId}/download?path=${encodeURIComponent(png)}`;
+  el.innerHTML=`<a href="${src}" target="_blank"><img src="${src}" loading="lazy" style="display:block"/></a>`;
+  if(id==='gen_preview') applyGenZoom();
+}
+
+function _setPngPreview(id,job,secFilter){
+  const el=document.getElementById(id);
+  if(!job){el.innerHTML='<span class="muted">No result yet</span>';return;}
+  if(job.status==='queued'||job.status==='running'){
+    el.innerHTML='<div class="loading"><span class="spinner"></span><span>Working…</span></div>';return;}
+  if(job.status==='error'){el.innerHTML='<span class="muted" style="color:#c00">Job failed — see Jobs tab.</span>';return;}
+  const pngs=(job.artifacts||[]).filter(a=>a.endsWith('.png'));
+  let chosen=pngs[pngs.length-1]||null;
+  if(secFilter){const hit=pngs.find(p=>p.includes('_'+secFilter+'.png')||p.includes(secFilter+'.png'));if(hit)chosen=hit;}
+  buildPreview(id,chosen,job.id);
+}
+
+function statusBadge(s){
+  const cls=s==='done'?'bd':s==='error'?'be':s==='running'?'br':'bq';
+  return `<span class="badge ${cls}">${s}</span>`;
+}
+
+function escH(s){return (s||'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));}
+
+async function refreshJobs(){
+  let jobs; try{const r=await fetch('/api/jobs');jobs=await r.json();}catch{return;}
+  cachedJobs=jobs;
+  const anaKinds=['analyse-standard-readable','analyse-standards','analyse-sequence'];
+  let latestAna=null, latestGen=null;
+  for(const j of jobs){
+    if(!latestAna&&anaKinds.includes(j.kind)) latestAna=j;
+    if(!latestGen&&j.kind==='generate-chords') latestGen=j;
+  }
+
+  // analysis preview
+  _setPngPreview('analysis_preview',latestAna,document.getElementById('a_section').value);
+  if(latestAna&&latestAna.status==='done') await loadLatexFromJob(latestAna);
+
+  // generation preview
+  if(!document.getElementById('g_png').checked){
+    document.getElementById('gen_preview').innerHTML='<span class="muted">PNG preview disabled.</span>';
+  }else{
+    _setPngPreview('gen_preview',latestGen,null);
+  }
+
+  // generation chord list
+  const cb=document.getElementById('gen_chords');
+  if(latestGen&&latestGen.status==='done'){
+    const prog=await extractChordList(latestGen);
+    cb.textContent=prog||(cb.textContent.includes('No generated')?'No generated progression yet':'Loading…');
+  }else if(latestGen&&(latestGen.status==='running'||latestGen.status==='queued')){
+    cb.innerHTML='<span class="muted">Generating…</span>';
+  }
+
+  // jobs list
+  document.getElementById('jobs').innerHTML=jobs.map(j=>{
+    const links=(j.artifacts||[]).map(a=>`<li><a href="/api/jobs/${j.id}/download?path=${encodeURIComponent(a)}" target="_blank">${a.split('/').pop()}</a></li>`).join('');
+    return `<div class="job">
+      <div>${statusBadge(j.status)} <b>${j.kind}</b> <small>${j.id.slice(0,8)}</small></div>
+      <small>${(j.created_at||'').replace('T',' ').slice(0,19)}</small>
+      <details><summary style="cursor:pointer;color:var(--muted);font-size:.83rem">stdout/stderr</summary><pre>${escH((j.stdout||'')+(j.stderr||''))}</pre></details>
+      <ul style="margin:3px 0;padding-left:16px;font-size:.86rem">${links}</ul>
+    </div>`;
+  }).join('');
+
+  renderHistory(jobs);
+}
+
+function _fillSel(id,jobs,empty){
+  const sel=document.getElementById(id); const prev=sel.value; sel.innerHTML='';
+  if(!jobs.length){sel.innerHTML=`<option>${empty}</option>`;return;}
+  jobs.forEach(j=>{const o=document.createElement('option');o.value=j.id;const pc=(j.artifacts||[]).filter(a=>a.endsWith('.png')).length;o.textContent=`${(j.created_at||'').replace('T',' ').slice(0,19)} | ${j.kind} | ${j.id.slice(0,8)}${pc?` | png:${pc}`:''}`;sel.appendChild(o);});
+  if(prev&&jobs.some(j=>j.id===prev)) sel.value=prev;
+}
+
+function renderHistory(jobs){
+  const ak=['analyse-standard-readable','analyse-standards','analyse-sequence'];
+  _fillSel('h_ana_sel',jobs.filter(j=>ak.includes(j.kind)),'(No analysis jobs)');
+  _fillSel('h_gen_sel',jobs.filter(j=>j.kind==='generate-chords'),'(No generation jobs)');
+  loadAnaHist(); loadGenHist().catch(()=>{});
+}
+
+function loadAnaHist(){
+  const id=document.getElementById('h_ana_sel').value;
+  const job=cachedJobs.find(j=>j.id===id);
+  if(!job){document.getElementById('h_ana_prev').innerHTML='<span class="muted">Select a job above</span>';return;}
+  const pngs=(job.artifacts||[]).filter(a=>a.endsWith('.png'));
+  buildPreview('h_ana_prev',pngs[pngs.length-1]||null,job.id);
+}
+
+async function loadGenHist(){
+  const id=document.getElementById('h_gen_sel').value;
+  const job=cachedJobs.find(j=>j.id===id);
+  const box=document.getElementById('h_gen_chords');
+  if(!job){box.innerHTML='<span class="muted">Select a job above</span>';return;}
+  const p=await extractChordList(job);
+  box.textContent=p||'(No chord list found)';
+}
+
+// ── Init ─────────────────────────────────────────────────
+if(window.location.protocol==='file:'){
+  document.getElementById('offline_warn').style.display='block';
+}
+
+loadStandards().catch(()=>{});
+refreshJobs().catch(()=>{});
+setInterval(()=>refreshJobs().catch(()=>{}),6000);
+</script>
 </body>
 </html>
