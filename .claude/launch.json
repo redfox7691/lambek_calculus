@@ -1,0 +1,9 @@
+{
+  "version": "0.0.1",
+  "configurations": [{
+    "name": "lambek-webapp",
+    "runtimeExecutable": "bash",
+    "runtimeArgs": ["run_webapp.sh"],
+    "port": 8000
+  }]
+}

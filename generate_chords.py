@@ -480,6 +480,154 @@ def _render_png_from_dot(dot_source: str, out_png: Path, dpi: int) -> tuple[bool
     return True, ""
 
 
+# ── Pure-Python SVG tree renderer (no Graphviz required) ──────────────────
+
+def _tree_to_svg(root: "Node", title: str = "") -> str:
+    """Render the generation tree as SVG without any external dependencies."""
+    import html as _html
+
+    # ── layout constants ──────────────────────────────────────────────────
+    BW, BH = 110, 38   # node box
+    XG, YG = 24, 90    # min horizontal gap between boxes; vertical gap between levels
+    ML, MR, MT_base, MB = 20, 20, 20, 20
+
+    # ── collect all nodes and compute subtree widths ──────────────────────
+    def _subtree_width(node: "Node") -> float:
+        if node.left is None and node.right is None:
+            return float(BW)
+        children_w = 0.0
+        if node.left:
+            children_w += _subtree_width(node.left) + XG
+        if node.right:
+            children_w += _subtree_width(node.right) + XG
+        if children_w:
+            children_w -= XG
+        return max(float(BW), children_w)
+
+    # ── assign (x, y) positions top-down, centred over subtrees ──────────
+    positions: dict[int, tuple[float, float]] = {}
+
+    def _assign(node: "Node", x_left: float, depth: int) -> None:
+        w = _subtree_width(node)
+        cx = x_left + w / 2
+        cy = float(depth * (BH + YG))
+        positions[id(node)] = (cx, cy)
+
+        child_x = x_left
+        for child in [c for c in (node.left, node.right) if c is not None]:
+            _assign(child, child_x, depth + 1)
+            child_x += _subtree_width(child) + XG
+
+    _assign(root, 0.0, 0)
+
+    all_x = [p[0] for p in positions.values()]
+    all_y = [p[1] for p in positions.values()]
+    title_h = 20 if title else 0
+    W = int(max(all_x) + BW / 2 + ML + MR)
+    H = int(max(all_y) + BH + MT_base + MB + title_h)
+    MT = MT_base + title_h
+
+    def tx(x: float) -> float: return x + ML
+    def ty(y: float) -> float: return y + MT
+
+    def esc(s: str) -> str: return _html.escape(str(s))
+
+    lines: list[str] = []
+    lines.append(
+        f'<svg viewBox="0 0 {W} {H}" xmlns="http://www.w3.org/2000/svg" '
+        f'style="width:100%;max-width:{W}px;display:block;'
+        f'font-family:\'Segoe UI\',Arial,sans-serif">'
+    )
+
+    if title:
+        lines.append(
+            f'<text x="{W//2}" y="16" text-anchor="middle" '
+            f'font-size="12" font-weight="bold" fill="#333">{esc(title)}</text>'
+        )
+
+    # ── draw edges ────────────────────────────────────────────────────────
+    for node in list(positions.keys()):
+        # we need the Node object — rebuild mapping
+        pass
+
+    all_nodes: list["Node"] = []
+
+    def _collect(n: "Node") -> None:
+        all_nodes.append(n)
+        if n.left:  _collect(n.left)
+        if n.right: _collect(n.right)
+
+    _collect(root)
+
+    for node in all_nodes:
+        if id(node) not in positions:
+            continue
+        px, py = positions[id(node)]
+        pcx, pcy = tx(px), ty(py)
+
+        # Left child (generated, blue arrow with rule label)
+        if node.left and id(node.left) in positions:
+            cx, cy = positions[id(node.left)]
+            ccx, ccy = tx(cx), ty(cy)
+            lines.append(
+                f'<line x1="{pcx:.1f}" y1="{pcy + BH/2:.1f}" '
+                f'x2="{ccx:.1f}" y2="{ccy - BH/2:.1f}" '
+                f'stroke="#1f6feb" stroke-width="1.8" '
+                f'marker-end="url(#arr-blue)"/>'
+            )
+            # Rule label mid-edge
+            if node.left.via_rule:
+                mx, my = (pcx + ccx) / 2, (pcy + ccy) / 2
+                lines.append(
+                    f'<text x="{mx + 4:.1f}" y="{my:.1f}" '
+                    f'font-size="8" fill="#1f6feb">{esc(node.left.via_rule)}</text>'
+                )
+
+        # Right child (target/fixed, dashed grey)
+        if node.right and id(node.right) in positions:
+            cx, cy = positions[id(node.right)]
+            ccx, ccy = tx(cx), ty(cy)
+            lines.append(
+                f'<line x1="{pcx:.1f}" y1="{pcy + BH/2:.1f}" '
+                f'x2="{ccx:.1f}" y2="{ccy - BH/2:.1f}" '
+                f'stroke="#9aa0a6" stroke-width="1.2" stroke-dasharray="4,3"/>'
+            )
+
+    # ── draw nodes ────────────────────────────────────────────────────────
+    for node in all_nodes:
+        if id(node) not in positions:
+            continue
+        px, py = positions[id(node)]
+        cx, cy = tx(px), ty(py)
+        bx, by = cx - BW / 2, cy - BH / 2
+
+        fill   = "#dce8ff" if node.generated else "#f0f0f0"
+        stroke = "#3a6db5" if node.generated else "#999"
+        tc     = "#1a2a4a" if node.generated else "#555"
+
+        lines.append(
+            f'<rect x="{bx:.1f}" y="{by:.1f}" width="{BW}" height="{BH}" rx="6" '
+            f'fill="{fill}" stroke="{stroke}" stroke-width="1.4"/>'
+        )
+        # degree + chord name
+        label = node.display_label
+        lines.append(
+            f'<text x="{cx:.1f}" y="{cy + 5:.1f}" text-anchor="middle" '
+            f'font-size="9" font-weight="bold" fill="{tc}">{esc(label)}</text>'
+        )
+
+    # ── arrowhead marker def ──────────────────────────────────────────────
+    lines.insert(1,
+        '<defs><marker id="arr-blue" markerWidth="8" markerHeight="6" '
+        'refX="7" refY="3" orient="auto">'
+        '<path d="M0,0 L8,3 L0,6 L1.5,3 z" fill="#1f6feb"/>'
+        '</marker></defs>'
+    )
+
+    lines.append('</svg>')
+    return '\n'.join(lines)
+
+
 def _collect_generated_nodes(root: Node) -> list[Node]:
     out: list[Node] = []
     stack = [root]
@@ -837,13 +985,21 @@ def main() -> int:
         print(f"Warning: generated {generated_count}/{args.target_chords} chords ({stop_reason}).")
 
     if args.png:
-        out_png = out_txt.with_suffix(".png")
-        dot_src = _tree_to_dot(root)
-        ok, msg = _render_png_from_dot(dot_src, out_png, args.png_dpi)
-        if ok:
-            print(f"Tree PNG written to: {out_png}")
-        else:
-            print(f"Warning: {msg}")
+        # Try SVG first (no external dependencies); fall back to graphviz dot if available.
+        out_svg = out_txt.with_suffix(".svg")
+        try:
+            svg_src = _tree_to_svg(root, title=base)
+            out_svg.write_text(svg_src, encoding="utf-8")
+            print(f"Tree SVG written to: {out_svg}")
+        except Exception as exc:  # noqa: BLE001
+            print(f"Warning: SVG render failed ({exc}); trying graphviz fallback.")
+            out_png = out_txt.with_suffix(".png")
+            dot_src = _tree_to_dot(root)
+            ok, msg = _render_png_from_dot(dot_src, out_png, args.png_dpi)
+            if ok:
+                print(f"Tree PNG written to: {out_png}")
+            else:
+                print(f"Warning: {msg}")
 
     return 0
 

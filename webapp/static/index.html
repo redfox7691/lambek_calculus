@@ -850,12 +850,35 @@ function applyGenZoom(){
   if(img) img.style.width=v+'%';
 }
 
-function buildPreview(id,png,jobId){
+// Pick best image: prefer .svg (no LaTeX) over .png, with optional section filter
+function _bestImage(artifacts,secFilter){
+  const imgs=(artifacts||[]).filter(a=>/\.(svg|png)$/i.test(a));
+  if(!imgs.length) return null;
+  if(secFilter){
+    const hit=imgs.find(a=>a.includes('_'+secFilter+'.svg')||a.includes(secFilter+'.svg'))
+             ||imgs.find(a=>a.includes('_'+secFilter+'.png')||a.includes(secFilter+'.png'));
+    if(hit) return hit;
+  }
+  const svgs=imgs.filter(a=>a.toLowerCase().endsWith('.svg'));
+  const pngs=imgs.filter(a=>a.toLowerCase().endsWith('.png'));
+  return svgs[svgs.length-1]||pngs[pngs.length-1]||null;
+}
+
+function buildPreview(id,imgPath,jobId){
   const el=document.getElementById(id);
-  if(!png||!jobId){el.innerHTML='<span class="muted">No image available</span>';return;}
-  const src=`/api/jobs/${jobId}/download?path=${encodeURIComponent(png)}`;
-  el.innerHTML=`<a href="${src}" target="_blank"><img src="${src}" loading="lazy" style="display:block"/></a>`;
-  if(id==='gen_preview') applyGenZoom();
+  if(!imgPath||!jobId){el.innerHTML='<span class="muted">No image available</span>';return;}
+  const src=`/api/jobs/${jobId}/download?path=${encodeURIComponent(imgPath)}`;
+  if(imgPath.toLowerCase().endsWith('.svg')){
+    fetch(src).then(r=>r.text()).then(svg=>{
+      el.innerHTML=`<div style="overflow:auto;width:100%">${svg}</div>`;
+      if(id==='gen_preview') applyGenZoom();
+    }).catch(()=>{
+      el.innerHTML=`<img src="${src}" loading="lazy" style="display:block;width:100%"/>`;
+    });
+  } else {
+    el.innerHTML=`<a href="${src}" target="_blank"><img src="${src}" loading="lazy" style="display:block"/></a>`;
+    if(id==='gen_preview') applyGenZoom();
+  }
 }
 
 function _setPngPreview(id,job,secFilter){
@@ -864,10 +887,7 @@ function _setPngPreview(id,job,secFilter){
   if(job.status==='queued'||job.status==='running'){
     el.innerHTML='<div class="loading"><span class="spinner"></span><span>Working…</span></div>';return;}
   if(job.status==='error'){el.innerHTML='<span class="muted" style="color:#c00">Job failed — see Jobs tab.</span>';return;}
-  const pngs=(job.artifacts||[]).filter(a=>a.endsWith('.png'));
-  let chosen=pngs[pngs.length-1]||null;
-  if(secFilter){const hit=pngs.find(p=>p.includes('_'+secFilter+'.png')||p.includes(secFilter+'.png'));if(hit)chosen=hit;}
-  buildPreview(id,chosen,job.id);
+  buildPreview(id,_bestImage(job.artifacts,secFilter),job.id);
 }
 
 function statusBadge(s){
@@ -939,8 +959,7 @@ function loadAnaHist(){
   const id=document.getElementById('h_ana_sel').value;
   const job=cachedJobs.find(j=>j.id===id);
   if(!job){document.getElementById('h_ana_prev').innerHTML='<span class="muted">Select a job above</span>';return;}
-  const pngs=(job.artifacts||[]).filter(a=>a.endsWith('.png'));
-  buildPreview('h_ana_prev',pngs[pngs.length-1]||null,job.id);
+  buildPreview('h_ana_prev',_bestImage(job.artifacts,null),job.id);
 }
 
 async function loadGenHist(){

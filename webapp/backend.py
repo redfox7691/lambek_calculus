@@ -23,7 +23,7 @@ ROOT = Path(__file__).resolve().parents[1]
 JOB_STORE = ROOT / "webapp" / "job_store"
 JOB_STORE.mkdir(parents=True, exist_ok=True)
 
-ARTIFACT_RE = re.compile(r"(/.+?\.(?:txt|png|csv|tex|pdf))", re.IGNORECASE)
+ARTIFACT_RE = re.compile(r"(/.+?\.(?:txt|png|svg|csv|tex|pdf))", re.IGNORECASE)
 
 
 @dataclass
@@ -213,6 +213,27 @@ def _job_runner(job_id: str) -> None:
                 path = Path(raw_path)
                 if path.is_absolute() and path.exists():
                     artifacts.append(str(path))
+
+        # ── post-process: convert any .tex proof trees → .svg ─────────────
+        tex_to_svg = ROOT / "tex_to_svg.py"
+        if tex_to_svg.exists():
+            extra: list[str] = []
+            for art in list(artifacts):
+                if art.lower().endswith(".tex"):
+                    svg_path = Path(art).with_suffix(".svg")
+                    if not svg_path.exists():
+                        try:
+                            subprocess.run(
+                                ["python3", str(tex_to_svg), art, "--out", str(svg_path)],
+                                cwd=str(ROOT),
+                                capture_output=True,
+                                timeout=30,
+                            )
+                        except Exception:  # noqa: BLE001
+                            pass
+                    if svg_path.exists():
+                        extra.append(str(svg_path))
+            artifacts.extend(extra)
 
         registry.update(
             job_id,
@@ -475,7 +496,8 @@ def download_artifact(job_id: str, path: str) -> FileResponse:
         raise HTTPException(status_code=400, detail="Artifact not in this job")
     if not abs_path.exists():
         raise HTTPException(status_code=404, detail="Artifact not found")
-    return FileResponse(abs_path)
+    media = "image/svg+xml" if abs_path.suffix.lower() == ".svg" else None
+    return FileResponse(abs_path, media_type=media)
 
 
 if __name__ == "__main__":
