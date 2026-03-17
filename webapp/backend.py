@@ -300,6 +300,8 @@ def list_standard_sections(
 def _find_stats_csv() -> Path | None:
     """Locate the cadence stats CSV, checking several known filenames/locations."""
     candidates = [
+        # Bundled copy always present in the repo (used for cloud deployment)
+        ROOT / "webapp" / "data" / "cadence_stats_all.csv",
         ROOT / "last_line_analysis" / "JazzStandards_all_cadence.csv",
         ROOT / "last_line_analysis" / "cadence_stats_all.csv",
         ROOT.parent / "last_line_analysis" / "JazzStandards_all_cadence.csv",
@@ -503,6 +505,7 @@ def download_artifact(job_id: str, path: str) -> FileResponse:
 if __name__ == "__main__":
     import uvicorn
 
-    host = os.environ.get("LAMBEK_WEB_HOST", "127.0.0.1")
-    port = int(os.environ.get("LAMBEK_WEB_PORT", "8000"))
+    host = os.environ.get("LAMBEK_WEB_HOST", "0.0.0.0")
+    # Render (and most cloud platforms) inject $PORT; fall back to LAMBEK_WEB_PORT then 8000
+    port = int(os.environ.get("PORT") or os.environ.get("LAMBEK_WEB_PORT", "8000"))
     uvicorn.run("backend:app", host=host, port=port, reload=False)

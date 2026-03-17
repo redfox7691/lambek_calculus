@@ -1,0 +1,2735 @@
+category,pattern,count,percentage
+single_link,ii -> V,8784,30.247934
+single_link,V -> I,4442,15.296143
+single_link,V -> i,1455,5.010331
+single_link,V -> ii,1327,4.569559
+single_link,I -> ii,673,2.317493
+single_link,vi -> ii,595,2.048898
+single_link,I -> V,559,1.924931
+single_link,I -> vi,555,1.911157
+single_link,I -> IV,433,1.491047
+single_link,bII -> I,419,1.442837
+single_link,i -> ii,295,1.015840
+single_link,I -> bii,252,0.867769
+single_link,i -> V,223,0.767906
+single_link,bII -> i,205,0.705923
+single_link,biii -> ii,202,0.695592
+single_link,bii -> ii,172,0.592287
+single_link,I -> i,166,0.571625
+single_link,IV -> V,158,0.544077
+single_link,V -> iii,155,0.533747
+single_link,II -> ii,149,0.513085
+single_link,III -> ii,146,0.502755
+single_link,V -> VI,131,0.451102
+single_link,i -> vi,130,0.447658
+single_link,IV -> I,126,0.433884
+single_link,i -> iv,126,0.433884
+single_link,VI -> ii,125,0.430441
+single_link,i -> IV,118,0.406336
+single_link,iii -> ii,117,0.402893
+single_link,i -> VI,117,0.402893
+single_link,IV -> ii,112,0.385675
+single_link,VII -> ii,106,0.365014
+single_link,iii -> biii,105,0.361570
+single_link,I -> biii,105,0.361570
+single_link,iii -> vi,102,0.351240
+single_link,I -> II,100,0.344353
+single_link,bii -> V,93,0.320248
+single_link,I -> bII,90,0.309917
+single_link,V -> v,84,0.289256
+single_link,V -> IV,83,0.285813
+single_link,V -> vi,82,0.282369
+single_link,iv -> ii,80,0.275482
+single_link,ii -> iii,73,0.251377
+single_link,i -> iii,69,0.237603
+single_link,bII -> ii,67,0.230716
+single_link,I -> iii,66,0.227273
+single_link,I -> bVII,66,0.227273
+single_link,VII -> i,64,0.220386
+single_link,I -> VI,62,0.213499
+single_link,VI -> V,61,0.210055
+single_link,V -> bii,60,0.206612
+single_link,i -> bII,59,0.203168
+single_link,i -> VII,58,0.199725
+single_link,bVII -> I,56,0.192837
+single_link,IV -> iii,55,0.189394
+single_link,I -> VII,55,0.189394
+single_link,VII -> III,54,0.185950
+single_link,V -> III,54,0.185950
+single_link,iv -> I,53,0.182507
+single_link,III -> VI,52,0.179063
+single_link,ii -> I,51,0.175620
+single_link,III -> IV,51,0.175620
+single_link,VI -> i,50,0.172176
+single_link,I -> vii,50,0.172176
+single_link,i -> bii,49,0.168733
+single_link,i -> vii,48,0.165289
+single_link,bVI -> ii,48,0.165289
+single_link,VI -> VII,48,0.165289
+single_link,V -> bII,46,0.158402
+single_link,ii -> i,46,0.158402
+single_link,i -> v,45,0.154959
+single_link,i -> I,45,0.154959
+single_link,vi -> V,43,0.148072
+single_link,III -> V,43,0.148072
+single_link,ii -> biii,42,0.144628
+single_link,v -> i,42,0.144628
+single_link,iii -> IV,42,0.144628
+single_link,I -> III,42,0.144628
+single_link,iv -> V,42,0.144628
+single_link,VII -> I,40,0.137741
+single_link,ii -> III,40,0.137741
+single_link,i -> III,39,0.134298
+single_link,iv -> i,39,0.134298
+single_link,III -> VII,39,0.134298
+single_link,I -> bVI,38,0.130854
+single_link,ii -> bII,37,0.127410
+single_link,bII -> V,36,0.123967
+single_link,I -> iv,36,0.123967
+single_link,V -> bVI,36,0.123967
+single_link,II -> V,35,0.120523
+single_link,vii -> ii,35,0.120523
+single_link,II -> I,34,0.117080
+single_link,V -> bvi,34,0.117080
+single_link,VI -> iv,34,0.117080
+single_link,bii -> i,33,0.113636
+single_link,V -> II,33,0.113636
+single_link,III -> i,33,0.113636
+single_link,ii -> bii,32,0.110193
+single_link,iii -> VII,32,0.110193
+single_link,I -> v,32,0.110193
+single_link,I -> bIII,31,0.106749
+single_link,III -> I,31,0.106749
+single_link,vi -> III,30,0.103306
+single_link,IV -> VI,30,0.103306
+single_link,vii -> iii,30,0.103306
+single_link,V -> bVII,29,0.099862
+single_link,bVII -> ii,29,0.099862
+single_link,V -> vii,29,0.099862
+single_link,VI -> III,29,0.099862
+single_link,vi -> iii,28,0.096419
+single_link,bII -> III,28,0.096419
+single_link,IV -> iv,28,0.096419
+single_link,III -> iii,28,0.096419
+single_link,VII -> VI,28,0.096419
+single_link,IV -> VII,28,0.096419
+single_link,VII -> V,28,0.096419
+single_link,IV -> bVII,27,0.092975
+single_link,iv -> iii,27,0.092975
+single_link,vi -> VI,26,0.089532
+single_link,VI -> bII,26,0.089532
+single_link,vi -> vii,25,0.086088
+single_link,V -> VII,24,0.082645
+single_link,v -> ii,24,0.082645
+single_link,vii -> vi,24,0.082645
+single_link,iii -> I,24,0.082645
+single_link,vi -> IV,24,0.082645
+single_link,biii -> I,24,0.082645
+single_link,VI -> IV,23,0.079201
+single_link,bIII -> ii,22,0.075758
+single_link,vii -> I,22,0.075758
+single_link,v -> I,22,0.075758
+single_link,bii -> VII,21,0.072314
+single_link,IV -> II,21,0.072314
+single_link,V -> bvii,20,0.068871
+single_link,II -> III,20,0.068871
+single_link,IV -> i,20,0.068871
+single_link,iii -> i,19,0.065427
+single_link,bVI -> bVII,19,0.065427
+single_link,v -> VI,19,0.065427
+single_link,i -> II,19,0.065427
+single_link,bVII -> V,18,0.061983
+single_link,IV -> III,18,0.061983
+single_link,ii -> v,18,0.061983
+single_link,bVI -> I,18,0.061983
+single_link,ii -> iv,18,0.061983
+single_link,bVII -> bIII,18,0.061983
+single_link,vii -> IV,18,0.061983
+single_link,III -> iv,17,0.058540
+single_link,ii -> bVII,17,0.058540
+single_link,vii -> III,17,0.058540
+single_link,bii -> I,17,0.058540
+single_link,vi -> v,17,0.058540
+single_link,IV -> vii,17,0.058540
+single_link,I -> bvii,17,0.058540
+single_link,V -> bIII,16,0.055096
+single_link,biii -> iii,16,0.055096
+single_link,bIII -> bVI,16,0.055096
+single_link,iii -> VI,16,0.055096
+single_link,VII -> IV,16,0.055096
+single_link,iv -> VII,16,0.055096
+single_link,VI -> I,16,0.055096
+single_link,vi -> i,16,0.055096
+single_link,VI -> vii,16,0.055096
+single_link,VII -> v,15,0.051653
+single_link,III -> bII,15,0.051653
+single_link,bIII -> bVII,15,0.051653
+single_link,bIII -> IV,15,0.051653
+single_link,iv -> III,14,0.048209
+single_link,bVI -> bII,14,0.048209
+single_link,bvi -> vi,14,0.048209
+single_link,bIII -> I,14,0.048209
+single_link,II -> IV,14,0.048209
+single_link,vii -> VI,14,0.048209
+single_link,VII -> bii,13,0.044766
+single_link,vii -> i,13,0.044766
+single_link,vii -> bii,13,0.044766
+single_link,VI -> vi,13,0.044766
+single_link,vi -> I,13,0.044766
+single_link,VI -> v,13,0.044766
+single_link,IV -> bIII,13,0.044766
+single_link,iv -> bII,13,0.044766
+single_link,III -> vi,12,0.041322
+single_link,III -> II,12,0.041322
+single_link,bVII -> bII,12,0.041322
+single_link,bVII -> vi,12,0.041322
+single_link,iv -> vii,12,0.041322
+single_link,bIII -> V,12,0.041322
+single_link,bIII -> II,12,0.041322
+single_link,vi -> bvii,12,0.041322
+single_link,VI -> II,12,0.041322
+single_link,bvii -> V,12,0.041322
+single_link,iii -> bIII,12,0.041322
+single_link,bII -> II,11,0.037879
+single_link,VI -> bVII,11,0.037879
+single_link,bVI -> vi,11,0.037879
+single_link,ii -> II,11,0.037879
+single_link,IV -> vi,11,0.037879
+single_link,v -> iii,11,0.037879
+single_link,VI -> bii,11,0.037879
+single_link,bVI -> V,11,0.037879
+single_link,VII -> bII,11,0.037879
+single_link,biii -> V,11,0.037879
+single_link,v -> iv,11,0.037879
+single_link,vii -> V,11,0.037879
+single_link,vi -> bvi,11,0.037879
+single_link,bIII -> iii,11,0.037879
+single_link,bII -> VII,11,0.037879
+single_link,bvii -> vi,11,0.037879
+single_link,bVII -> i,10,0.034435
+single_link,V -> iv,10,0.034435
+single_link,v -> V,10,0.034435
+single_link,IV -> v,10,0.034435
+single_link,bVII -> bVI,10,0.034435
+single_link,iii -> V,10,0.034435
+single_link,IV -> bII,10,0.034435
+single_link,iii -> III,10,0.034435
+single_link,II -> bII,10,0.034435
+single_link,iii -> iv,10,0.034435
+single_link,VII -> iii,10,0.034435
+single_link,bvi -> ii,10,0.034435
+single_link,iii -> v,10,0.034435
+single_link,v -> vi,10,0.034435
+single_link,bII -> bIII,10,0.034435
+single_link,ii -> bVI,9,0.030992
+single_link,bIII -> biii,9,0.030992
+single_link,vi -> bVII,9,0.030992
+single_link,III -> bii,9,0.030992
+single_link,ii -> bIII,9,0.030992
+single_link,bII -> bii,9,0.030992
+single_link,ii -> vi,9,0.030992
+single_link,VII -> bvi,9,0.030992
+single_link,iv -> v,9,0.030992
+single_link,bIII -> bII,9,0.030992
+single_link,ii -> vii,9,0.030992
+single_link,v -> bII,9,0.030992
+single_link,II -> vi,9,0.030992
+single_link,VII -> vi,9,0.030992
+single_link,V -> biii,9,0.030992
+single_link,vi -> bII,8,0.027548
+single_link,II -> iv,8,0.027548
+single_link,v -> bIII,8,0.027548
+single_link,II -> VI,8,0.027548
+single_link,II -> i,8,0.027548
+single_link,bII -> VI,8,0.027548
+single_link,bVII -> iii,7,0.024105
+single_link,iii -> vii,7,0.024105
+single_link,vi -> iv,7,0.024105
+single_link,bVII -> IV,7,0.024105
+single_link,ii -> IV,7,0.024105
+single_link,bVII -> v,7,0.024105
+single_link,iv -> VI,7,0.024105
+single_link,ii -> VI,7,0.024105
+single_link,bvii -> bVI,7,0.024105
+single_link,II -> VII,7,0.024105
+single_link,vi -> VII,7,0.024105
+single_link,III -> vii,7,0.024105
+single_link,v -> IV,7,0.024105
+single_link,II -> bIII,6,0.020661
+single_link,bII -> iv,6,0.020661
+single_link,iv -> bVII,6,0.020661
+single_link,bII -> bVI,6,0.020661
+single_link,bii -> III,6,0.020661
+single_link,VII -> vii,6,0.020661
+single_link,IV -> bvi,6,0.020661
+single_link,bvi -> I,6,0.020661
+single_link,bIII -> vi,6,0.020661
+single_link,v -> II,6,0.020661
+single_link,ii -> VII,6,0.020661
+single_link,vi -> II,6,0.020661
+single_link,bvii -> vii,6,0.020661
+single_link,bii -> vii,6,0.020661
+single_link,VI -> iii,6,0.020661
+single_link,VI -> bvii,6,0.020661
+single_link,bVII -> vii,6,0.020661
+single_link,vi -> bVI,6,0.020661
+single_link,vii -> bvii,6,0.020661
+single_link,bVI -> bIII,6,0.020661
+single_link,bvi -> IV,6,0.020661
+single_link,biii -> bVII,6,0.020661
+single_link,i -> bVII,5,0.017218
+single_link,v -> biii,5,0.017218
+single_link,II -> iii,5,0.017218
+single_link,bii -> VI,5,0.017218
+single_link,bIII -> III,5,0.017218
+single_link,IV -> bVI,5,0.017218
+single_link,II -> vii,5,0.017218
+single_link,iii -> bii,5,0.017218
+single_link,iv -> biii,5,0.017218
+single_link,II -> bii,5,0.017218
+single_link,bVII -> VII,5,0.017218
+single_link,vi -> bIII,4,0.013774
+single_link,VI -> biii,4,0.013774
+single_link,biii -> bVI,4,0.013774
+single_link,I -> bvi,4,0.013774
+single_link,iv -> II,4,0.013774
+single_link,v -> bvii,4,0.013774
+single_link,IV -> bii,4,0.013774
+single_link,iv -> vi,4,0.013774
+single_link,iii -> II,4,0.013774
+single_link,bVI -> VI,4,0.013774
+single_link,bII -> IV,4,0.013774
+single_link,v -> III,4,0.013774
+single_link,III -> v,4,0.013774
+single_link,III -> bVI,4,0.013774
+single_link,bvi -> V,4,0.013774
+single_link,vii -> bVII,4,0.013774
+single_link,bVII -> VI,4,0.013774
+single_link,vii -> VII,4,0.013774
+single_link,vii -> bII,3,0.010331
+single_link,bii -> iii,3,0.010331
+single_link,IV -> bvii,3,0.010331
+single_link,bii -> iv,3,0.010331
+single_link,bIII -> v,3,0.010331
+single_link,bii -> IV,3,0.010331
+single_link,bII -> iii,3,0.010331
+single_link,bii -> II,3,0.010331
+single_link,VI -> bIII,3,0.010331
+single_link,bVI -> IV,3,0.010331
+single_link,bIII -> i,3,0.010331
+single_link,vi -> bii,3,0.010331
+single_link,vi -> biii,3,0.010331
+single_link,bvii -> IV,3,0.010331
+single_link,bVI -> v,3,0.010331
+single_link,bVI -> III,3,0.010331
+single_link,III -> bIII,3,0.010331
+single_link,bvi -> bVII,3,0.010331
+single_link,II -> bvi,3,0.010331
+single_link,VII -> bVII,3,0.010331
+single_link,iii -> bVII,3,0.010331
+single_link,biii -> bvi,3,0.010331
+single_link,bVI -> bvi,3,0.010331
+single_link,II -> bVII,3,0.010331
+single_link,bVI -> iv,3,0.010331
+single_link,bVII -> bvii,3,0.010331
+single_link,vii -> bVI,3,0.010331
+single_link,bIII -> VII,3,0.010331
+single_link,bVI -> II,2,0.006887
+single_link,bIII -> iv,2,0.006887
+single_link,biii -> v,2,0.006887
+single_link,v -> bvi,2,0.006887
+single_link,bvi -> v,2,0.006887
+single_link,bII -> vi,2,0.006887
+single_link,bvii -> I,2,0.006887
+single_link,biii -> II,2,0.006887
+single_link,bii -> vi,2,0.006887
+single_link,i -> bIII,2,0.006887
+single_link,vii -> II,2,0.006887
+single_link,v -> bVII,2,0.006887
+single_link,bvi -> bii,2,0.006887
+single_link,iii -> bII,2,0.006887
+single_link,v -> bii,2,0.006887
+single_link,biii -> iv,2,0.006887
+single_link,bvii -> iv,2,0.006887
+single_link,iv -> bvii,2,0.006887
+single_link,#IV -> bVI,2,0.006887
+single_link,VI -> bVI,2,0.006887
+single_link,i -> bvii,2,0.006887
+single_link,bvii -> ii,2,0.006887
+single_link,biii -> bIII,2,0.006887
+single_link,bII -> vii,2,0.006887
+single_link,biii -> bii,2,0.006887
+single_link,v -> bVI,2,0.006887
+single_link,bVI -> VII,2,0.006887
+single_link,bii -> biii,2,0.006887
+single_link,iv -> IV,2,0.006887
+single_link,bVI -> bvii,2,0.006887
+single_link,vii -> v,2,0.006887
+single_link,VII -> II,2,0.006887
+single_link,bvi -> bII,2,0.006887
+single_link,bVI -> iii,2,0.006887
+single_link,bVII -> III,2,0.006887
+single_link,bii -> v,2,0.006887
+single_link,vii -> biii,2,0.006887
+single_link,bvii -> II,2,0.006887
+single_link,bii -> bVI,2,0.006887
+single_link,IV -> biii,2,0.006887
+single_link,biii -> bvii,2,0.006887
+single_link,v -> vii,1,0.003444
+single_link,v -> VII,1,0.003444
+single_link,iv -> bVI,1,0.003444
+single_link,bVI -> biii,1,0.003444
+single_link,i -> bvi,1,0.003444
+single_link,bvii -> VII,1,0.003444
+single_link,bvii -> bIII,1,0.003444
+single_link,bvi -> III,1,0.003444
+single_link,bIII -> vii,1,0.003444
+single_link,vii -> bvi,1,0.003444
+single_link,bii -> bvii,1,0.003444
+single_link,bvii -> i,1,0.003444
+single_link,bVII -> bii,1,0.003444
+single_link,bvii -> bII,1,0.003444
+single_link,#IV -> VII,1,0.003444
+single_link,#IV -> bII,1,0.003444
+single_link,II -> biii,1,0.003444
+single_link,biii -> i,1,0.003444
+single_link,bIII -> bvii,1,0.003444
+single_link,bii -> bVII,1,0.003444
+single_link,VII -> biii,1,0.003444
+single_link,bvi -> bIII,1,0.003444
+single_link,III -> biii,1,0.003444
+single_link,II -> v,1,0.003444
+single_link,bvi -> VI,1,0.003444
+single_link,bvii -> biii,1,0.003444
+single_link,i -> biii,1,0.003444
+single_link,bvi -> VII,1,0.003444
+single_link,bvii -> III,1,0.003444
+single_link,VII -> bIII,1,0.003444
+single_link,vii -> bIII,1,0.003444
+single_link,VI -> bvi,1,0.003444
+single_link,III -> bVII,1,0.003444
+single_link,bVI -> bii,1,0.003444
+single_link,bII -> bVII,1,0.003444
+single_link,biii -> vi,1,0.003444
+single_link,bii -> bIII,1,0.003444
+single_link,bVII -> II,1,0.003444
+single_link,bvii -> iii,1,0.003444
+three_step_chain,ii -> V -> I,2933,14.781031
+three_step_chain,V -> ii -> V,1238,6.238976
+three_step_chain,ii -> V -> ii,770,3.880462
+three_step_chain,ii -> V -> i,760,3.830066
+three_step_chain,I -> ii -> V,549,2.766719
+three_step_chain,vi -> ii -> V,545,2.746560
+three_step_chain,V -> I -> ii,426,2.146853
+three_step_chain,I -> vi -> ii,422,2.126695
+three_step_chain,V -> I -> V,346,1.743688
+three_step_chain,V -> I -> IV,298,1.501789
+three_step_chain,V -> I -> vi,261,1.315325
+three_step_chain,I -> V -> I,238,1.199415
+three_step_chain,i -> ii -> V,205,1.033110
+three_step_chain,biii -> ii -> V,177,0.892002
+three_step_chain,V -> i -> i,161,0.811369
+three_step_chain,bii -> ii -> V,144,0.725697
+three_step_chain,V -> I -> bii,140,0.705538
+three_step_chain,II -> ii -> V,136,0.685380
+three_step_chain,V -> V -> I,128,0.645064
+three_step_chain,III -> ii -> V,126,0.634985
+three_step_chain,V -> I -> I,126,0.634985
+three_step_chain,I -> bii -> ii,121,0.609787
+three_step_chain,ii -> V -> iii,112,0.564431
+three_step_chain,VI -> ii -> V,101,0.508996
+three_step_chain,V -> i -> ii,101,0.508996
+three_step_chain,ii -> V -> V,100,0.503956
+three_step_chain,V -> I -> i,100,0.503956
+three_step_chain,ii -> V -> VI,99,0.498916
+three_step_chain,VII -> ii -> V,97,0.488837
+three_step_chain,iii -> biii -> ii,95,0.478758
+three_step_chain,IV -> ii -> V,95,0.478758
+three_step_chain,V -> i -> V,94,0.473719
+three_step_chain,I -> biii -> ii,93,0.468679
+three_step_chain,I -> IV -> V,91,0.458600
+three_step_chain,I -> bii -> V,86,0.433402
+three_step_chain,ii -> V -> v,78,0.393086
+three_step_chain,I -> IV -> I,78,0.393086
+three_step_chain,iii -> ii -> V,77,0.388046
+three_step_chain,iv -> ii -> V,67,0.337651
+three_step_chain,iii -> vi -> ii,66,0.332611
+three_step_chain,V -> i -> iii,61,0.307413
+three_step_chain,i -> V -> i,60,0.302374
+three_step_chain,V -> i -> IV,57,0.287255
+three_step_chain,ii -> ii -> V,56,0.282215
+three_step_chain,V -> i -> vi,54,0.272136
+three_step_chain,bII -> ii -> V,51,0.257018
+three_step_chain,ii -> V -> bii,51,0.257018
+three_step_chain,V -> i -> VI,51,0.257018
+three_step_chain,IV -> V -> I,49,0.246938
+three_step_chain,ii -> V -> IV,49,0.246938
+three_step_chain,I -> ii -> iii,46,0.231820
+three_step_chain,V -> iii -> vi,46,0.231820
+three_step_chain,i -> i -> vi,46,0.231820
+three_step_chain,V -> I -> bII,44,0.221741
+three_step_chain,bVI -> ii -> V,44,0.221741
+three_step_chain,I -> i -> V,43,0.216701
+three_step_chain,V -> i -> iv,42,0.211662
+three_step_chain,I -> II -> ii,40,0.201582
+three_step_chain,V -> I -> biii,38,0.191503
+three_step_chain,I -> V -> ii,36,0.181424
+three_step_chain,V -> I -> VI,36,0.181424
+three_step_chain,I -> I -> ii,36,0.181424
+three_step_chain,ii -> V -> bII,35,0.176385
+three_step_chain,V -> I -> II,35,0.176385
+three_step_chain,V -> I -> bVII,34,0.171345
+three_step_chain,V -> I -> iii,33,0.166305
+three_step_chain,i -> ii -> III,33,0.166305
+three_step_chain,ii -> V -> vi,32,0.161266
+three_step_chain,VII -> i -> ii,32,0.161266
+three_step_chain,V -> iii -> biii,31,0.156226
+three_step_chain,i -> V -> ii,31,0.156226
+three_step_chain,vii -> ii -> V,30,0.151187
+three_step_chain,i -> vi -> ii,30,0.151187
+three_step_chain,iv -> iv -> ii,28,0.141108
+three_step_chain,bVII -> ii -> V,28,0.141108
+three_step_chain,ii -> V -> III,26,0.131029
+three_step_chain,i -> iv -> i,25,0.125989
+three_step_chain,ii -> V -> bvi,25,0.125989
+three_step_chain,V -> i -> bII,25,0.125989
+three_step_chain,I -> IV -> iii,25,0.125989
+three_step_chain,V -> i -> bii,24,0.120949
+three_step_chain,I -> ii -> biii,24,0.120949
+three_step_chain,I -> iv -> I,23,0.115910
+three_step_chain,I -> I -> IV,23,0.115910
+three_step_chain,iv -> V -> i,23,0.115910
+three_step_chain,ii -> V -> bVII,22,0.110870
+three_step_chain,I -> bII -> I,22,0.110870
+three_step_chain,ii -> V -> bVI,22,0.110870
+three_step_chain,I -> I -> vi,21,0.105831
+three_step_chain,i -> bii -> ii,21,0.105831
+three_step_chain,I -> ii -> I,21,0.105831
+three_step_chain,V -> I -> vii,21,0.105831
+three_step_chain,V -> i -> III,21,0.105831
+three_step_chain,I -> V -> V,21,0.105831
+three_step_chain,i -> i -> VI,21,0.105831
+three_step_chain,V -> I -> VII,21,0.105831
+three_step_chain,i -> V -> I,20,0.100791
+three_step_chain,bIII -> ii -> V,20,0.100791
+three_step_chain,I -> I -> V,20,0.100791
+three_step_chain,I -> bVII -> I,20,0.100791
+three_step_chain,I -> IV -> ii,20,0.100791
+three_step_chain,i -> i -> ii,20,0.100791
+three_step_chain,i -> ii -> i,20,0.100791
+three_step_chain,V -> V -> i,20,0.100791
+three_step_chain,i -> iii -> ii,19,0.095752
+three_step_chain,i -> VI -> i,19,0.095752
+three_step_chain,V -> I -> v,19,0.095752
+three_step_chain,V -> I -> bVI,19,0.095752
+three_step_chain,I -> V -> vi,18,0.090712
+three_step_chain,ii -> iii -> IV,18,0.090712
+three_step_chain,bII -> V -> I,18,0.090712
+three_step_chain,V -> i -> vii,17,0.085673
+three_step_chain,ii -> biii -> I,17,0.085673
+three_step_chain,I -> IV -> vii,17,0.085673
+three_step_chain,i -> IV -> VII,17,0.085673
+three_step_chain,V -> bII -> I,17,0.085673
+three_step_chain,v -> ii -> V,16,0.080633
+three_step_chain,I -> i -> IV,16,0.080633
+three_step_chain,VII -> III -> ii,16,0.080633
+three_step_chain,V -> V -> ii,16,0.080633
+three_step_chain,i -> vi -> VI,16,0.080633
+three_step_chain,V -> IV -> V,16,0.080633
+three_step_chain,bII -> i -> i,16,0.080633
+three_step_chain,I -> III -> IV,16,0.080633
+three_step_chain,V -> I -> III,16,0.080633
+three_step_chain,ii -> iii -> ii,16,0.080633
+three_step_chain,VII -> III -> VII,16,0.080633
+three_step_chain,IV -> I -> ii,16,0.080633
+three_step_chain,bII -> I -> I,15,0.075593
+three_step_chain,bII -> I -> i,15,0.075593
+three_step_chain,VI -> V -> I,15,0.075593
+three_step_chain,IV -> I -> V,15,0.075593
+three_step_chain,iv -> iii -> biii,15,0.075593
+three_step_chain,I -> iii -> vi,15,0.075593
+three_step_chain,i -> i -> IV,15,0.075593
+three_step_chain,III -> V -> i,15,0.075593
+three_step_chain,iii -> ii -> I,15,0.075593
+three_step_chain,i -> VI -> ii,15,0.075593
+three_step_chain,V -> i -> v,15,0.075593
+three_step_chain,V -> vi -> vii,15,0.075593
+three_step_chain,bII -> I -> ii,15,0.075593
+three_step_chain,i -> iv -> V,15,0.075593
+three_step_chain,bII -> i -> iv,15,0.075593
+three_step_chain,ii -> V -> vii,14,0.070554
+three_step_chain,V -> vi -> ii,14,0.070554
+three_step_chain,i -> bII -> i,14,0.070554
+three_step_chain,I -> iii -> biii,14,0.070554
+three_step_chain,V -> I -> bIII,13,0.065514
+three_step_chain,iii -> ii -> bii,13,0.065514
+three_step_chain,ii -> biii -> iii,13,0.065514
+three_step_chain,bII -> i -> ii,13,0.065514
+three_step_chain,V -> I -> iv,13,0.065514
+three_step_chain,I -> V -> II,13,0.065514
+three_step_chain,IV -> iii -> ii,13,0.065514
+three_step_chain,bii -> V -> V,13,0.065514
+three_step_chain,i -> iv -> ii,13,0.065514
+three_step_chain,i -> iii -> VII,12,0.060475
+three_step_chain,i -> VII -> i,12,0.060475
+three_step_chain,iii -> iii -> ii,12,0.060475
+three_step_chain,V -> i -> VII,12,0.060475
+three_step_chain,III -> ii -> i,12,0.060475
+three_step_chain,bii -> V -> I,12,0.060475
+three_step_chain,III -> IV -> ii,12,0.060475
+three_step_chain,V -> i -> I,12,0.060475
+three_step_chain,VII -> V -> i,12,0.060475
+three_step_chain,I -> V -> i,12,0.060475
+three_step_chain,i -> I -> i,12,0.060475
+three_step_chain,III -> VII -> ii,12,0.060475
+three_step_chain,i -> i -> iv,12,0.060475
+three_step_chain,I -> bII -> ii,11,0.055435
+three_step_chain,V -> VI -> ii,11,0.055435
+three_step_chain,bII -> I -> IV,11,0.055435
+three_step_chain,I -> vii -> I,11,0.055435
+three_step_chain,IV -> V -> V,11,0.055435
+three_step_chain,ii -> i -> VII,11,0.055435
+three_step_chain,bII -> I -> VII,11,0.055435
+three_step_chain,bII -> I -> bII,11,0.055435
+three_step_chain,I -> II -> IV,11,0.055435
+three_step_chain,V -> iii -> ii,11,0.055435
+three_step_chain,IV -> iii -> biii,11,0.055435
+three_step_chain,VI -> V -> i,11,0.055435
+three_step_chain,bII -> i -> V,11,0.055435
+three_step_chain,i -> vi -> vi,10,0.050396
+three_step_chain,V -> bii -> i,10,0.050396
+three_step_chain,i -> vi -> III,10,0.050396
+three_step_chain,i -> bII -> III,10,0.050396
+three_step_chain,ii -> bII -> I,10,0.050396
+three_step_chain,bII -> I -> vi,10,0.050396
+three_step_chain,ii -> II -> ii,10,0.050396
+three_step_chain,i -> bii -> VII,10,0.050396
+three_step_chain,bII -> I -> bii,10,0.050396
+three_step_chain,V -> bvi -> vi,10,0.050396
+three_step_chain,V -> ii -> bII,10,0.050396
+three_step_chain,I -> V -> iii,10,0.050396
+three_step_chain,I -> IV -> II,10,0.050396
+three_step_chain,i -> VI -> iv,10,0.050396
+three_step_chain,i -> iv -> iv,10,0.050396
+three_step_chain,V -> IV -> I,10,0.050396
+three_step_chain,v -> v -> i,10,0.050396
+three_step_chain,i -> i -> v,10,0.050396
+three_step_chain,ii -> III -> ii,10,0.050396
+three_step_chain,I -> i -> vii,10,0.050396
+three_step_chain,V -> II -> ii,10,0.050396
+three_step_chain,I -> I -> i,10,0.050396
+three_step_chain,ii -> iii -> biii,9,0.045356
+three_step_chain,VII -> i -> VII,9,0.045356
+three_step_chain,III -> iii -> VII,9,0.045356
+three_step_chain,VII -> VI -> VII,9,0.045356
+three_step_chain,I -> IV -> IV,9,0.045356
+three_step_chain,V -> II -> I,9,0.045356
+three_step_chain,V -> VI -> bII,9,0.045356
+three_step_chain,I -> vi -> V,9,0.045356
+three_step_chain,v -> i -> i,9,0.045356
+three_step_chain,I -> iii -> ii,9,0.045356
+three_step_chain,ii -> I -> V,9,0.045356
+three_step_chain,i -> VI -> IV,9,0.045356
+three_step_chain,iii -> IV -> V,9,0.045356
+three_step_chain,ii -> V -> bIII,9,0.045356
+three_step_chain,V -> I -> bvii,9,0.045356
+three_step_chain,bII -> I -> V,9,0.045356
+three_step_chain,I -> i -> I,9,0.045356
+three_step_chain,i -> VII -> VI,9,0.045356
+three_step_chain,IV -> IV -> ii,9,0.045356
+three_step_chain,i -> iv -> vii,9,0.045356
+three_step_chain,vi -> bvii -> V,9,0.045356
+three_step_chain,bii -> V -> i,9,0.045356
+three_step_chain,VI -> i -> V,8,0.040316
+three_step_chain,i -> V -> bvii,8,0.040316
+three_step_chain,bii -> ii -> biii,8,0.040316
+three_step_chain,ii -> I -> ii,8,0.040316
+three_step_chain,bii -> V -> ii,8,0.040316
+three_step_chain,V -> ii -> bVII,8,0.040316
+three_step_chain,I -> V -> IV,8,0.040316
+three_step_chain,V -> v -> I,8,0.040316
+three_step_chain,IV -> I -> vi,8,0.040316
+three_step_chain,ii -> iv -> I,8,0.040316
+three_step_chain,ii -> V -> iv,8,0.040316
+three_step_chain,i -> VI -> VII,8,0.040316
+three_step_chain,I -> I -> bii,8,0.040316
+three_step_chain,i -> ii -> iii,8,0.040316
+three_step_chain,ii -> bii -> ii,8,0.040316
+three_step_chain,v -> i -> iv,8,0.040316
+three_step_chain,IV -> bVII -> I,8,0.040316
+three_step_chain,V -> i -> II,8,0.040316
+three_step_chain,i -> iii -> IV,8,0.040316
+three_step_chain,II -> V -> I,8,0.040316
+three_step_chain,VI -> iv -> ii,8,0.040316
+three_step_chain,i -> IV -> V,8,0.040316
+three_step_chain,bvii -> vi -> ii,8,0.040316
+three_step_chain,ii -> V -> VII,8,0.040316
+three_step_chain,I -> bII -> II,7,0.035277
+three_step_chain,i -> IV -> VI,7,0.035277
+three_step_chain,IV -> VI -> bVII,7,0.035277
+three_step_chain,III -> VI -> ii,7,0.035277
+three_step_chain,ii -> bII -> i,7,0.035277
+three_step_chain,VI -> VII -> i,7,0.035277
+three_step_chain,bII -> I -> bIII,7,0.035277
+three_step_chain,vi -> VI -> i,7,0.035277
+three_step_chain,ii -> bVII -> I,7,0.035277
+three_step_chain,bII -> I -> VI,7,0.035277
+three_step_chain,I -> bVII -> bVI,7,0.035277
+three_step_chain,i -> v -> VI,7,0.035277
+three_step_chain,ii -> V -> II,7,0.035277
+three_step_chain,VI -> i -> VI,7,0.035277
+three_step_chain,I -> vi -> vi,7,0.035277
+three_step_chain,I -> II -> I,7,0.035277
+three_step_chain,IV -> V -> iii,7,0.035277
+three_step_chain,I -> vi -> IV,7,0.035277
+three_step_chain,vi -> V -> ii,7,0.035277
+three_step_chain,III -> VI -> VII,7,0.035277
+three_step_chain,I -> bVII -> vi,7,0.035277
+three_step_chain,VI -> vii -> bii,7,0.035277
+three_step_chain,V -> vi -> vi,7,0.035277
+three_step_chain,bIII -> bII -> I,7,0.035277
+three_step_chain,I -> vi -> iii,7,0.035277
+three_step_chain,i -> V -> V,7,0.035277
+three_step_chain,VII -> bii -> i,7,0.035277
+three_step_chain,i -> IV -> i,7,0.035277
+three_step_chain,i -> V -> III,7,0.035277
+three_step_chain,bvi -> ii -> V,7,0.035277
+three_step_chain,i -> vii -> VI,7,0.035277
+three_step_chain,IV -> iv -> I,7,0.035277
+three_step_chain,I -> i -> i,7,0.035277
+three_step_chain,IV -> II -> ii,7,0.035277
+three_step_chain,V -> bVI -> ii,7,0.035277
+three_step_chain,VI -> bii -> ii,7,0.035277
+three_step_chain,V -> VI -> VI,6,0.030237
+three_step_chain,IV -> V -> vi,6,0.030237
+three_step_chain,I -> i -> VII,6,0.030237
+three_step_chain,bVII -> V -> I,6,0.030237
+three_step_chain,i -> v -> i,6,0.030237
+three_step_chain,IV -> iv -> iii,6,0.030237
+three_step_chain,iii -> VI -> VII,6,0.030237
+three_step_chain,VI -> VII -> ii,6,0.030237
+three_step_chain,VII -> VII -> ii,6,0.030237
+three_step_chain,I -> VI -> I,6,0.030237
+three_step_chain,iii -> IV -> iii,6,0.030237
+three_step_chain,IV -> iii -> vi,6,0.030237
+three_step_chain,vi -> V -> I,6,0.030237
+three_step_chain,V -> IV -> ii,6,0.030237
+three_step_chain,vi -> IV -> ii,6,0.030237
+three_step_chain,bII -> I -> II,6,0.030237
+three_step_chain,ii -> III -> IV,6,0.030237
+three_step_chain,iii -> VII -> ii,6,0.030237
+three_step_chain,I -> ii -> bIII,6,0.030237
+three_step_chain,I -> I -> biii,6,0.030237
+three_step_chain,VI -> bII -> ii,6,0.030237
+three_step_chain,III -> III -> ii,6,0.030237
+three_step_chain,V -> ii -> ii,6,0.030237
+three_step_chain,II -> I -> V,6,0.030237
+three_step_chain,vi -> III -> ii,6,0.030237
+three_step_chain,I -> bVI -> I,6,0.030237
+three_step_chain,ii -> iii -> vi,6,0.030237
+three_step_chain,iv -> V -> I,6,0.030237
+three_step_chain,i -> VI -> v,6,0.030237
+three_step_chain,i -> i -> V,6,0.030237
+three_step_chain,I -> bVII -> bII,6,0.030237
+three_step_chain,bii -> i -> vii,6,0.030237
+three_step_chain,vi -> vi -> ii,6,0.030237
+three_step_chain,iii -> IV -> VI,6,0.030237
+three_step_chain,i -> VI -> V,6,0.030237
+three_step_chain,bvii -> V -> I,6,0.030237
+three_step_chain,i -> V -> VI,6,0.030237
+three_step_chain,bii -> i -> V,6,0.030237
+three_step_chain,i -> vii -> vi,6,0.030237
+three_step_chain,i -> v -> v,6,0.030237
+three_step_chain,III -> VI -> III,6,0.030237
+three_step_chain,VI -> III -> VI,6,0.030237
+three_step_chain,biii -> ii -> bii,6,0.030237
+three_step_chain,III -> V -> I,6,0.030237
+three_step_chain,I -> bII -> bIII,6,0.030237
+three_step_chain,V -> bvii -> vi,6,0.030237
+three_step_chain,I -> I -> VI,6,0.030237
+three_step_chain,VI -> VI -> iv,6,0.030237
+three_step_chain,bIII -> bVI -> bVII,6,0.030237
+three_step_chain,I -> bII -> V,5,0.025198
+three_step_chain,bII -> V -> i,5,0.025198
+three_step_chain,i -> iv -> iii,5,0.025198
+three_step_chain,i -> iii -> VI,5,0.025198
+three_step_chain,ii -> v -> i,5,0.025198
+three_step_chain,vi -> ii -> ii,5,0.025198
+three_step_chain,iv -> VII -> VII,5,0.025198
+three_step_chain,V -> iii -> iii,5,0.025198
+three_step_chain,iv -> I -> V,5,0.025198
+three_step_chain,iv -> I -> ii,5,0.025198
+three_step_chain,I -> II -> II,5,0.025198
+three_step_chain,bVII -> I -> V,5,0.025198
+three_step_chain,vii -> bii -> ii,5,0.025198
+three_step_chain,IV -> ii -> iii,5,0.025198
+three_step_chain,I -> IV -> vi,5,0.025198
+three_step_chain,ii -> i -> vii,5,0.025198
+three_step_chain,I -> vii -> vi,5,0.025198
+three_step_chain,I -> VII -> I,5,0.025198
+three_step_chain,bVI -> bII -> ii,5,0.025198
+three_step_chain,I -> vi -> bII,5,0.025198
+three_step_chain,IV -> V -> i,5,0.025198
+three_step_chain,v -> v -> iii,5,0.025198
+three_step_chain,vi -> vii -> ii,5,0.025198
+three_step_chain,ii -> i -> ii,5,0.025198
+three_step_chain,I -> iii -> IV,5,0.025198
+three_step_chain,biii -> I -> ii,5,0.025198
+three_step_chain,bIII -> IV -> ii,5,0.025198
+three_step_chain,iv -> i -> ii,5,0.025198
+three_step_chain,i -> iv -> III,5,0.025198
+three_step_chain,i -> IV -> ii,5,0.025198
+three_step_chain,I -> bii -> VII,5,0.025198
+three_step_chain,III -> I -> II,5,0.025198
+three_step_chain,V -> IV -> bII,5,0.025198
+three_step_chain,I -> I -> III,5,0.025198
+three_step_chain,VI -> vi -> III,5,0.025198
+three_step_chain,I -> bIII -> V,5,0.025198
+three_step_chain,II -> ii -> ii,5,0.025198
+three_step_chain,ii -> iv -> V,5,0.025198
+three_step_chain,i -> III -> vi,5,0.025198
+three_step_chain,I -> III -> III,5,0.025198
+three_step_chain,bII -> i -> bII,5,0.025198
+three_step_chain,bii -> V -> iii,5,0.025198
+three_step_chain,I -> i -> ii,5,0.025198
+three_step_chain,I -> VII -> ii,5,0.025198
+three_step_chain,vi -> iii -> biii,5,0.025198
+three_step_chain,V -> bVI -> vi,5,0.025198
+three_step_chain,I -> vi -> v,5,0.025198
+three_step_chain,i -> II -> ii,5,0.025198
+three_step_chain,IV -> V -> ii,5,0.025198
+three_step_chain,bVII -> bVI -> ii,5,0.025198
+three_step_chain,IV -> VI -> VII,5,0.025198
+three_step_chain,bVII -> vii -> IV,5,0.025198
+three_step_chain,i -> V -> vii,5,0.025198
+three_step_chain,IV -> V -> III,5,0.025198
+three_step_chain,V -> III -> i,5,0.025198
+three_step_chain,V -> III -> IV,5,0.025198
+three_step_chain,i -> III -> V,5,0.025198
+three_step_chain,III -> VI -> V,5,0.025198
+three_step_chain,V -> III -> V,5,0.025198
+three_step_chain,bII -> bIII -> bII,5,0.025198
+three_step_chain,I -> II -> III,5,0.025198
+three_step_chain,vi -> V -> vi,5,0.025198
+three_step_chain,iv -> v -> VI,5,0.025198
+three_step_chain,I -> VI -> V,5,0.025198
+three_step_chain,vi -> vi -> III,5,0.025198
+three_step_chain,i -> vii -> iii,5,0.025198
+three_step_chain,VI -> V -> VI,5,0.025198
+three_step_chain,I -> IV -> VII,5,0.025198
+three_step_chain,I -> vi -> I,5,0.025198
+three_step_chain,vii -> IV -> IV,5,0.025198
+three_step_chain,ii -> V -> biii,5,0.025198
+three_step_chain,ii -> i -> V,5,0.025198
+three_step_chain,v -> I -> IV,5,0.025198
+three_step_chain,V -> bvi -> IV,5,0.025198
+three_step_chain,V -> VI -> iv,5,0.025198
+three_step_chain,i -> iv -> bII,5,0.025198
+three_step_chain,I -> vii -> IV,5,0.025198
+three_step_chain,iii -> vi -> iii,5,0.025198
+three_step_chain,V -> bVII -> I,5,0.025198
+three_step_chain,bII -> I -> bvii,5,0.025198
+three_step_chain,VI -> V -> ii,5,0.025198
+three_step_chain,I -> bVI -> ii,5,0.025198
+three_step_chain,VII -> VI -> V,5,0.025198
+three_step_chain,i -> VI -> VI,5,0.025198
+three_step_chain,vi -> V -> i,5,0.025198
+three_step_chain,bii -> VII -> V,5,0.025198
+three_step_chain,vi -> ii -> v,5,0.025198
+three_step_chain,I -> I -> bII,4,0.020158
+three_step_chain,V -> vi -> V,4,0.020158
+three_step_chain,V -> VII -> I,4,0.020158
+three_step_chain,VII -> I -> IV,4,0.020158
+three_step_chain,V -> v -> ii,4,0.020158
+three_step_chain,biii -> iii -> vi,4,0.020158
+three_step_chain,V -> v -> v,4,0.020158
+three_step_chain,III -> iv -> III,4,0.020158
+three_step_chain,III -> III -> II,4,0.020158
+three_step_chain,I -> bIII -> bVI,4,0.020158
+three_step_chain,IV -> I -> I,4,0.020158
+three_step_chain,vi -> ii -> bII,4,0.020158
+three_step_chain,III -> bII -> III,4,0.020158
+three_step_chain,I -> IV -> bVII,4,0.020158
+three_step_chain,VI -> ii -> bII,4,0.020158
+three_step_chain,V -> IV -> iii,4,0.020158
+three_step_chain,bVI -> bVII -> ii,4,0.020158
+three_step_chain,vii -> vi -> ii,4,0.020158
+three_step_chain,ii -> bVI -> I,4,0.020158
+three_step_chain,VI -> i -> vi,4,0.020158
+three_step_chain,VII -> IV -> VII,4,0.020158
+three_step_chain,VI -> III -> VII,4,0.020158
+three_step_chain,I -> vi -> bVII,4,0.020158
+three_step_chain,iv -> vii -> i,4,0.020158
+three_step_chain,i -> vii -> I,4,0.020158
+three_step_chain,vii -> I -> I,4,0.020158
+three_step_chain,i -> bii -> V,4,0.020158
+three_step_chain,V -> III -> III,4,0.020158
+three_step_chain,ii -> IV -> V,4,0.020158
+three_step_chain,i -> III -> IV,4,0.020158
+three_step_chain,I -> biii -> I,4,0.020158
+three_step_chain,bIII -> vi -> ii,4,0.020158
+three_step_chain,I -> II -> V,4,0.020158
+three_step_chain,IV -> I -> IV,4,0.020158
+three_step_chain,ii -> i -> iv,4,0.020158
+three_step_chain,V -> VI -> V,4,0.020158
+three_step_chain,VI -> V -> IV,4,0.020158
+three_step_chain,bii -> VII -> I,4,0.020158
+three_step_chain,bII -> bII -> I,4,0.020158
+three_step_chain,vi -> vii -> vi,4,0.020158
+three_step_chain,iii -> V -> I,4,0.020158
+three_step_chain,vi -> vii -> iii,4,0.020158
+three_step_chain,I -> vii -> iii,4,0.020158
+three_step_chain,VI -> VII -> V,4,0.020158
+three_step_chain,V -> vi -> IV,4,0.020158
+three_step_chain,III -> iii -> ii,4,0.020158
+three_step_chain,IV -> ii -> v,4,0.020158
+three_step_chain,bii -> i -> ii,4,0.020158
+three_step_chain,II -> bII -> I,4,0.020158
+three_step_chain,ii -> i -> i,4,0.020158
+three_step_chain,V -> v -> iv,4,0.020158
+three_step_chain,III -> III -> I,4,0.020158
+three_step_chain,bIII -> V -> V,4,0.020158
+three_step_chain,V -> V -> iii,4,0.020158
+three_step_chain,II -> I -> vi,4,0.020158
+three_step_chain,bIII -> bVII -> I,4,0.020158
+three_step_chain,IV -> vii -> iii,4,0.020158
+three_step_chain,I -> III -> ii,4,0.020158
+three_step_chain,i -> VI -> vi,4,0.020158
+three_step_chain,V -> VI -> i,4,0.020158
+three_step_chain,VI -> II -> VI,4,0.020158
+three_step_chain,II -> VI -> ii,4,0.020158
+three_step_chain,bVII -> i -> ii,4,0.020158
+three_step_chain,I -> IV -> i,4,0.020158
+three_step_chain,I -> bvii -> bVI,4,0.020158
+three_step_chain,V -> vi -> I,4,0.020158
+three_step_chain,VI -> iii -> ii,4,0.020158
+three_step_chain,I -> vi -> bvi,4,0.020158
+three_step_chain,V -> VI -> IV,4,0.020158
+three_step_chain,i -> I -> IV,4,0.020158
+three_step_chain,III -> IV -> V,4,0.020158
+three_step_chain,V -> iii -> I,4,0.020158
+three_step_chain,VI -> ii -> bii,4,0.020158
+three_step_chain,ii -> bII -> ii,4,0.020158
+three_step_chain,vi -> VI -> ii,4,0.020158
+three_step_chain,III -> III -> iv,4,0.020158
+three_step_chain,i -> iv -> VII,4,0.020158
+three_step_chain,iii -> IV -> ii,4,0.020158
+three_step_chain,V -> III -> iii,4,0.020158
+three_step_chain,VII -> I -> bii,4,0.020158
+three_step_chain,III -> i -> V,4,0.020158
+three_step_chain,III -> II -> bII,4,0.020158
+three_step_chain,VII -> I -> bII,4,0.020158
+three_step_chain,V -> ii -> iv,4,0.020158
+three_step_chain,ii -> V -> bvii,4,0.020158
+three_step_chain,IV -> VII -> III,4,0.020158
+three_step_chain,VII -> III -> VI,4,0.020158
+three_step_chain,V -> VII -> i,4,0.020158
+three_step_chain,I -> bVI -> bVII,4,0.020158
+three_step_chain,bII -> III -> V,4,0.020158
+three_step_chain,bII -> i -> III,4,0.020158
+three_step_chain,i -> VI -> III,4,0.020158
+three_step_chain,III -> iv -> iv,4,0.020158
+three_step_chain,V -> IV -> bIII,4,0.020158
+three_step_chain,V -> ii -> biii,4,0.020158
+three_step_chain,vii -> vi -> V,4,0.020158
+three_step_chain,VI -> III -> ii,4,0.020158
+three_step_chain,VII -> i -> i,4,0.020158
+three_step_chain,IV -> v -> vi,4,0.020158
+three_step_chain,i -> iii -> vi,4,0.020158
+three_step_chain,IV -> V -> bvii,4,0.020158
+three_step_chain,I -> II -> iv,4,0.020158
+three_step_chain,IV -> bIII -> IV,4,0.020158
+three_step_chain,I -> V -> vii,4,0.020158
+three_step_chain,VI -> iv -> iv,4,0.020158
+three_step_chain,i -> i -> iii,4,0.020158
+three_step_chain,VII -> v -> ii,4,0.020158
+three_step_chain,V -> bvi -> ii,4,0.020158
+three_step_chain,V -> V -> bVI,4,0.020158
+three_step_chain,bii -> i -> IV,4,0.020158
+three_step_chain,i -> IV -> iii,4,0.020158
+three_step_chain,V -> vi -> bvii,4,0.020158
+three_step_chain,VI -> V -> VII,4,0.020158
+three_step_chain,ii -> iii -> bIII,4,0.020158
+three_step_chain,i -> bII -> bII,4,0.020158
+three_step_chain,i -> bII -> ii,4,0.020158
+three_step_chain,vi -> bVII -> ii,4,0.020158
+three_step_chain,i -> vii -> i,4,0.020158
+three_step_chain,III -> IV -> bVII,4,0.020158
+three_step_chain,V -> bVII -> VII,4,0.020158
+three_step_chain,bVII -> VII -> I,4,0.020158
+three_step_chain,V -> vi -> III,4,0.020158
+three_step_chain,III -> i -> vi,4,0.020158
+three_step_chain,III -> vi -> V,4,0.020158
+three_step_chain,I -> v -> I,4,0.020158
+three_step_chain,VII -> IV -> ii,4,0.020158
+three_step_chain,V -> VI -> vii,4,0.020158
+three_step_chain,bii -> ii -> iii,4,0.020158
+three_step_chain,bVII -> bIII -> IV,4,0.020158
+three_step_chain,bII -> VII -> bII,4,0.020158
+three_step_chain,VII -> bII -> ii,4,0.020158
+three_step_chain,bII -> II -> bIII,3,0.015119
+three_step_chain,I -> bIII -> ii,3,0.015119
+three_step_chain,iii -> VII -> v,3,0.015119
+three_step_chain,i -> V -> VII,3,0.015119
+three_step_chain,IV -> V -> bIII,3,0.015119
+three_step_chain,IV -> bVII -> iii,3,0.015119
+three_step_chain,bVII -> iii -> vi,3,0.015119
+three_step_chain,iii -> vii -> ii,3,0.015119
+three_step_chain,bII -> III -> III,3,0.015119
+three_step_chain,bVI -> vi -> bIII,3,0.015119
+three_step_chain,I -> vi -> vii,3,0.015119
+three_step_chain,V -> bVII -> vi,3,0.015119
+three_step_chain,VI -> biii -> ii,3,0.015119
+three_step_chain,II -> I -> II,3,0.015119
+three_step_chain,iv -> iii -> i,3,0.015119
+three_step_chain,I -> i -> v,3,0.015119
+three_step_chain,IV -> III -> ii,3,0.015119
+three_step_chain,I -> I -> vii,3,0.015119
+three_step_chain,bii -> III -> i,3,0.015119
+three_step_chain,III -> i -> III,3,0.015119
+three_step_chain,III -> VII -> III,3,0.015119
+three_step_chain,VI -> bII -> III,3,0.015119
+three_step_chain,VI -> I -> ii,3,0.015119
+three_step_chain,V -> ii -> II,3,0.015119
+three_step_chain,bVI -> bVI -> ii,3,0.015119
+three_step_chain,vii -> i -> bII,3,0.015119
+three_step_chain,I -> V -> bVII,3,0.015119
+three_step_chain,I -> bIII -> bVII,3,0.015119
+three_step_chain,bVII -> I -> II,3,0.015119
+three_step_chain,VI -> VII -> VI,3,0.015119
+three_step_chain,VI -> IV -> V,3,0.015119
+three_step_chain,V -> v -> V,3,0.015119
+three_step_chain,i -> bII -> V,3,0.015119
+three_step_chain,iv -> I -> biii,3,0.015119
+three_step_chain,iii -> I -> VI,3,0.015119
+three_step_chain,v -> V -> I,3,0.015119
+three_step_chain,I -> ii -> bII,3,0.015119
+three_step_chain,I -> bVII -> v,3,0.015119
+three_step_chain,I -> bii -> IV,3,0.015119
+three_step_chain,iv -> i -> iv,3,0.015119
+three_step_chain,i -> I -> ii,3,0.015119
+three_step_chain,V -> bii -> I,3,0.015119
+three_step_chain,bvi -> vi -> ii,3,0.015119
+three_step_chain,I -> V -> bII,3,0.015119
+three_step_chain,I -> biii -> V,3,0.015119
+three_step_chain,biii -> V -> V,3,0.015119
+three_step_chain,vii -> iii -> ii,3,0.015119
+three_step_chain,bII -> I -> vii,3,0.015119
+three_step_chain,II -> I -> III,3,0.015119
+three_step_chain,I -> bVII -> V,3,0.015119
+three_step_chain,ii -> v -> ii,3,0.015119
+three_step_chain,iii -> I -> bVI,3,0.015119
+three_step_chain,v -> i -> v,3,0.015119
+three_step_chain,ii -> bii -> III,3,0.015119
+three_step_chain,IV -> V -> bII,3,0.015119
+three_step_chain,ii -> VII -> ii,3,0.015119
+three_step_chain,VI -> IV -> ii,3,0.015119
+three_step_chain,iv -> i -> V,3,0.015119
+three_step_chain,i -> V -> v,3,0.015119
+three_step_chain,VII -> v -> i,3,0.015119
+three_step_chain,bVII -> I -> vi,3,0.015119
+three_step_chain,i -> II -> III,3,0.015119
+three_step_chain,bvi -> vi -> bvii,3,0.015119
+three_step_chain,iii -> v -> iii,3,0.015119
+three_step_chain,bii -> ii -> bII,3,0.015119
+three_step_chain,I -> bVI -> vi,3,0.015119
+three_step_chain,I -> ii -> ii,3,0.015119
+three_step_chain,i -> V -> iii,3,0.015119
+three_step_chain,i -> i -> II,3,0.015119
+three_step_chain,I -> bIII -> IV,3,0.015119
+three_step_chain,I -> VII -> bvi,3,0.015119
+three_step_chain,IV -> V -> bVI,3,0.015119
+three_step_chain,bvii -> bVI -> V,3,0.015119
+three_step_chain,I -> v -> iv,3,0.015119
+three_step_chain,vi -> vii -> V,3,0.015119
+three_step_chain,V -> III -> I,3,0.015119
+three_step_chain,V -> V -> vi,3,0.015119
+three_step_chain,v -> VI -> ii,3,0.015119
+three_step_chain,VII -> I -> ii,3,0.015119
+three_step_chain,iv -> III -> VI,3,0.015119
+three_step_chain,iv -> ii -> bII,3,0.015119
+three_step_chain,I -> IV -> III,3,0.015119
+three_step_chain,III -> III -> i,3,0.015119
+three_step_chain,vii -> V -> i,3,0.015119
+three_step_chain,V -> bIII -> iii,3,0.015119
+three_step_chain,i -> vi -> iii,3,0.015119
+three_step_chain,bII -> III -> ii,3,0.015119
+three_step_chain,III -> IV -> II,3,0.015119
+three_step_chain,V -> v -> bII,3,0.015119
+three_step_chain,iii -> iv -> iii,3,0.015119
+three_step_chain,bIII -> II -> bII,3,0.015119
+three_step_chain,II -> bII -> V,3,0.015119
+three_step_chain,II -> II -> ii,3,0.015119
+three_step_chain,V -> vi -> VI,3,0.015119
+three_step_chain,i -> VII -> vi,3,0.015119
+three_step_chain,I -> vi -> bvii,3,0.015119
+three_step_chain,bvii -> V -> ii,3,0.015119
+three_step_chain,III -> I -> bII,3,0.015119
+three_step_chain,I -> bII -> VII,3,0.015119
+three_step_chain,VI -> III -> I,3,0.015119
+three_step_chain,III -> bII -> i,3,0.015119
+three_step_chain,bII -> i -> VI,3,0.015119
+three_step_chain,II -> VII -> bvi,3,0.015119
+three_step_chain,ii -> bII -> V,3,0.015119
+three_step_chain,IV -> iv -> ii,3,0.015119
+three_step_chain,iii -> iii -> i,3,0.015119
+three_step_chain,VI -> VI -> VII,3,0.015119
+three_step_chain,VII -> III -> V,3,0.015119
+three_step_chain,ii -> iii -> iv,3,0.015119
+three_step_chain,I -> iii -> bii,3,0.015119
+three_step_chain,i -> VI -> bII,3,0.015119
+three_step_chain,IV -> i -> VI,3,0.015119
+three_step_chain,VI -> v -> i,3,0.015119
+three_step_chain,v -> II -> i,3,0.015119
+three_step_chain,II -> i -> v,3,0.015119
+three_step_chain,I -> VII -> VI,3,0.015119
+three_step_chain,VI -> VI -> V,3,0.015119
+three_step_chain,bIII -> iii -> bVII,3,0.015119
+three_step_chain,iv -> iv -> II,3,0.015119
+three_step_chain,vii -> VI -> VI,3,0.015119
+three_step_chain,VII -> V -> I,3,0.015119
+three_step_chain,VII -> VII -> i,3,0.015119
+three_step_chain,bVI -> bIII -> bVII,3,0.015119
+three_step_chain,v -> vi -> ii,3,0.015119
+three_step_chain,bVI -> bVII -> V,3,0.015119
+three_step_chain,i -> bII -> I,3,0.015119
+three_step_chain,i -> ii -> bII,3,0.015119
+three_step_chain,ii -> iii -> III,3,0.015119
+three_step_chain,vi -> IV -> iii,3,0.015119
+three_step_chain,bIII -> I -> IV,3,0.015119
+three_step_chain,I -> IV -> bIII,3,0.015119
+three_step_chain,i -> I -> I,3,0.015119
+three_step_chain,III -> V -> VI,3,0.015119
+three_step_chain,ii -> bii -> i,3,0.015119
+three_step_chain,VII -> VII -> iii,3,0.015119
+three_step_chain,VII -> iii -> iii,3,0.015119
+three_step_chain,iii -> v -> VI,3,0.015119
+three_step_chain,VII -> iii -> VII,3,0.015119
+three_step_chain,bII -> I -> iv,3,0.015119
+three_step_chain,I -> VI -> IV,3,0.015119
+three_step_chain,i -> IV -> IV,3,0.015119
+three_step_chain,IV -> IV -> iv,3,0.015119
+three_step_chain,i -> i -> VII,3,0.015119
+three_step_chain,bIII -> bIII -> ii,3,0.015119
+three_step_chain,iv -> V -> VI,3,0.015119
+three_step_chain,VI -> iv -> V,3,0.015119
+three_step_chain,IV -> vii -> bvii,3,0.015119
+three_step_chain,V -> vii -> I,3,0.015119
+three_step_chain,vii -> I -> vii,3,0.015119
+three_step_chain,bII -> VI -> ii,3,0.015119
+three_step_chain,III -> I -> VI,3,0.015119
+three_step_chain,bVI -> bVII -> I,3,0.015119
+three_step_chain,iv -> bII -> I,3,0.015119
+three_step_chain,III -> VI -> II,3,0.015119
+three_step_chain,IV -> VI -> i,3,0.015119
+three_step_chain,v -> i -> bii,3,0.015119
+three_step_chain,biii -> iii -> ii,3,0.015119
+three_step_chain,bII -> bII -> i,3,0.015119
+three_step_chain,IV -> VII -> VII,3,0.015119
+three_step_chain,III -> i -> iv,3,0.015119
+three_step_chain,iv -> VII -> VI,3,0.015119
+three_step_chain,VI -> v -> VI,3,0.015119
+three_step_chain,VI -> VI -> i,3,0.015119
+three_step_chain,bVII -> bIII -> bVII,3,0.015119
+three_step_chain,i -> i -> I,3,0.015119
+three_step_chain,vi -> vi -> v,3,0.015119
+three_step_chain,IV -> I -> bVII,3,0.015119
+three_step_chain,vi -> I -> II,3,0.015119
+three_step_chain,VI -> i -> i,3,0.015119
+three_step_chain,V -> iv -> iii,3,0.015119
+three_step_chain,iv -> iii -> vi,3,0.015119
+three_step_chain,bIII -> biii -> bVII,3,0.015119
+three_step_chain,v -> V -> i,3,0.015119
+three_step_chain,i -> III -> VI,3,0.015119
+three_step_chain,I -> VII -> V,3,0.015119
+three_step_chain,bII -> i -> VII,3,0.015119
+three_step_chain,V -> vii -> VI,3,0.015119
+three_step_chain,III -> IV -> VI,3,0.015119
+three_step_chain,iii -> III -> III,3,0.015119
+three_step_chain,I -> VI -> iv,3,0.015119
+three_step_chain,i -> iv -> v,3,0.015119
+three_step_chain,IV -> iv -> VII,3,0.015119
+three_step_chain,I -> VI -> bvii,3,0.015119
+three_step_chain,I -> ii -> i,3,0.015119
+three_step_chain,bVI -> V -> ii,3,0.015119
+three_step_chain,vii -> iii -> vi,3,0.015119
+three_step_chain,iii -> IV -> I,3,0.015119
+three_step_chain,bII -> VII -> I,3,0.015119
+three_step_chain,VI -> iv -> bII,3,0.015119
+three_step_chain,VI -> bvii -> vii,3,0.015119
+three_step_chain,I -> VI -> VI,3,0.015119
+three_step_chain,V -> IV -> i,3,0.015119
+three_step_chain,vii -> VII -> ii,3,0.015119
+three_step_chain,i -> IV -> II,3,0.015119
+three_step_chain,ii -> v -> I,3,0.015119
+three_step_chain,IV -> iii -> V,3,0.015119
+three_step_chain,vi -> iv -> V,3,0.015119
+three_step_chain,III -> i -> bII,3,0.015119
+three_step_chain,VI -> iv -> i,3,0.015119
+three_step_chain,IV -> iii -> v,3,0.015119
+three_step_chain,ii -> biii -> V,3,0.015119
+three_step_chain,biii -> V -> bVI,3,0.015119
+three_step_chain,i -> bVII -> bIII,3,0.015119
+three_step_chain,I -> bii -> vii,3,0.015119
+three_step_chain,vii -> bvii -> vi,3,0.015119
+three_step_chain,vii -> VI -> V,3,0.015119
+three_step_chain,IV -> IV -> I,3,0.015119
+three_step_chain,i -> III -> VII,3,0.015119
+three_step_chain,iii -> bIII -> II,3,0.015119
+three_step_chain,bIII -> II -> bii,3,0.015119
+three_step_chain,II -> bii -> I,3,0.015119
+three_step_chain,vi -> vi -> iii,2,0.010079
+three_step_chain,i -> III -> ii,2,0.010079
+three_step_chain,I -> I -> bIII,2,0.010079
+three_step_chain,bII -> V -> V,2,0.010079
+three_step_chain,I -> bII -> iv,2,0.010079
+three_step_chain,I -> iii -> iii,2,0.010079
+three_step_chain,i -> bVII -> i,2,0.010079
+three_step_chain,V -> iii -> vii,2,0.010079
+three_step_chain,vi -> III -> iv,2,0.010079
+three_step_chain,bVII -> bII -> bVI,2,0.010079
+three_step_chain,bVII -> vi -> ii,2,0.010079
+three_step_chain,bII -> III -> IV,2,0.010079
+three_step_chain,III -> IV -> iv,2,0.010079
+three_step_chain,IV -> iv -> iv,2,0.010079
+three_step_chain,bVII -> iii -> biii,2,0.010079
+three_step_chain,biii -> ii -> bII,2,0.010079
+three_step_chain,iii -> i -> v,2,0.010079
+three_step_chain,i -> VII -> VII,2,0.010079
+three_step_chain,IV -> iii -> IV,2,0.010079
+three_step_chain,bIII -> biii -> bVI,2,0.010079
+three_step_chain,biii -> bVI -> bVII,2,0.010079
+three_step_chain,III -> iii -> VI,2,0.010079
+three_step_chain,V -> IV -> III,2,0.010079
+three_step_chain,ii -> bVII -> V,2,0.010079
+three_step_chain,v -> i -> IV,2,0.010079
+three_step_chain,V -> vii -> III,2,0.010079
+three_step_chain,VII -> III -> iv,2,0.010079
+three_step_chain,bii -> iii -> VI,2,0.010079
+three_step_chain,iii -> VI -> biii,2,0.010079
+three_step_chain,biii -> ii -> ii,2,0.010079
+three_step_chain,vi -> iii -> IV,2,0.010079
+three_step_chain,iv -> I -> vi,2,0.010079
+three_step_chain,V -> iv -> I,2,0.010079
+three_step_chain,i -> bii -> i,2,0.010079
+three_step_chain,vi -> III -> V,2,0.010079
+three_step_chain,I -> IV -> iv,2,0.010079
+three_step_chain,I -> v -> biii,2,0.010079
+three_step_chain,III -> vi -> VI,2,0.010079
+three_step_chain,III -> I -> III,2,0.010079
+three_step_chain,I -> III -> I,2,0.010079
+three_step_chain,I -> bVII -> bIII,2,0.010079
+three_step_chain,V -> iii -> VI,2,0.010079
+three_step_chain,vii -> I -> vi,2,0.010079
+three_step_chain,vi -> ii -> I,2,0.010079
+three_step_chain,VI -> VII -> I,2,0.010079
+three_step_chain,v -> V -> ii,2,0.010079
+three_step_chain,VI -> i -> bII,2,0.010079
+three_step_chain,ii -> I -> iii,2,0.010079
+three_step_chain,ii -> I -> I,2,0.010079
+three_step_chain,IV -> vi -> ii,2,0.010079
+three_step_chain,i -> vii -> IV,2,0.010079
+three_step_chain,iii -> I -> vii,2,0.010079
+three_step_chain,V -> VI -> I,2,0.010079
+three_step_chain,bii -> V -> III,2,0.010079
+three_step_chain,V -> ii -> v,2,0.010079
+three_step_chain,ii -> v -> V,2,0.010079
+three_step_chain,V -> ii -> I,2,0.010079
+three_step_chain,i -> ii -> IV,2,0.010079
+three_step_chain,IV -> vi -> i,2,0.010079
+three_step_chain,biii -> I -> V,2,0.010079
+three_step_chain,ii -> I -> biii,2,0.010079
+three_step_chain,i -> IV -> v,2,0.010079
+three_step_chain,IV -> v -> v,2,0.010079
+three_step_chain,v -> v -> I,2,0.010079
+three_step_chain,I -> iii -> VII,2,0.010079
+three_step_chain,v -> iii -> iii,2,0.010079
+three_step_chain,bII -> ii -> bVI,2,0.010079
+three_step_chain,ii -> bIII -> I,2,0.010079
+three_step_chain,II -> V -> iii,2,0.010079
+three_step_chain,bVII -> bVI -> V,2,0.010079
+three_step_chain,IV -> ii -> ii,2,0.010079
+three_step_chain,bII -> I -> bVII,2,0.010079
+three_step_chain,VI -> III -> V,2,0.010079
+three_step_chain,III -> V -> II,2,0.010079
+three_step_chain,II -> I -> bVII,2,0.010079
+three_step_chain,i -> iv -> I,2,0.010079
+three_step_chain,vi -> V -> bIII,2,0.010079
+three_step_chain,V -> bIII -> bIII,2,0.010079
+three_step_chain,bvi -> vi -> vi,2,0.010079
+three_step_chain,I -> V -> III,2,0.010079
+three_step_chain,V -> III -> VII,2,0.010079
+three_step_chain,bVII -> V -> IV,2,0.010079
+three_step_chain,V -> bIII -> i,2,0.010079
+three_step_chain,I -> vi -> bii,2,0.010079
+three_step_chain,vi -> bii -> ii,2,0.010079
+three_step_chain,bVII -> I -> I,2,0.010079
+three_step_chain,ii -> vi -> ii,2,0.010079
+three_step_chain,I -> vi -> biii,2,0.010079
+three_step_chain,IV -> vii -> III,2,0.010079
+three_step_chain,ii -> iii -> I,2,0.010079
+three_step_chain,II -> IV -> V,2,0.010079
+three_step_chain,I -> VI -> bVII,2,0.010079
+three_step_chain,vi -> ii -> bii,2,0.010079
+three_step_chain,bVII -> bIII -> vi,2,0.010079
+three_step_chain,i -> ii -> VII,2,0.010079
+three_step_chain,I -> I -> iv,2,0.010079
+three_step_chain,I -> bii -> II,2,0.010079
+three_step_chain,II -> bIII -> III,2,0.010079
+three_step_chain,VI -> IV -> VI,2,0.010079
+three_step_chain,IV -> VI -> III,2,0.010079
+three_step_chain,III -> vi -> vi,2,0.010079
+three_step_chain,VI -> v -> iv,2,0.010079
+three_step_chain,iv -> VI -> ii,2,0.010079
+three_step_chain,I -> vi -> II,2,0.010079
+three_step_chain,v -> iv -> V,2,0.010079
+three_step_chain,I -> bvii -> I,2,0.010079
+three_step_chain,ii -> ii -> I,2,0.010079
+three_step_chain,ii -> I -> vi,2,0.010079
+three_step_chain,bIII -> V -> I,2,0.010079
+three_step_chain,V -> IV -> bVII,2,0.010079
+three_step_chain,IV -> bVII -> bII,2,0.010079
+three_step_chain,V -> bIII -> bVII,2,0.010079
+three_step_chain,bVII -> I -> bII,2,0.010079
+three_step_chain,bvii -> IV -> ii,2,0.010079
+three_step_chain,bVI -> vi -> iii,2,0.010079
+three_step_chain,bVII -> i -> bii,2,0.010079
+three_step_chain,I -> i -> bIII,2,0.010079
+three_step_chain,V -> ii -> VI,2,0.010079
+three_step_chain,V -> bIII -> ii,2,0.010079
+three_step_chain,I -> I -> iii,2,0.010079
+three_step_chain,I -> I -> VII,2,0.010079
+three_step_chain,IV -> i -> I,2,0.010079
+three_step_chain,V -> bIII -> V,2,0.010079
+three_step_chain,bVI -> I -> V,2,0.010079
+three_step_chain,I -> II -> VII,2,0.010079
+three_step_chain,iv -> v -> i,2,0.010079
+three_step_chain,v -> i -> V,2,0.010079
+three_step_chain,i -> I -> biii,2,0.010079
+three_step_chain,V -> vi -> iii,2,0.010079
+three_step_chain,VII -> bII -> I,2,0.010079
+three_step_chain,i -> IV -> bVII,2,0.010079
+three_step_chain,iv -> ii -> ii,2,0.010079
+three_step_chain,i -> bII -> bii,2,0.010079
+three_step_chain,I -> iv -> iii,2,0.010079
+three_step_chain,V -> V -> VI,2,0.010079
+three_step_chain,i -> ii -> ii,2,0.010079
+three_step_chain,IV -> II -> I,2,0.010079
+three_step_chain,i -> IV -> vi,2,0.010079
+three_step_chain,III -> i -> i,2,0.010079
+three_step_chain,iv -> ii -> III,2,0.010079
+three_step_chain,II -> III -> iii,2,0.010079
+three_step_chain,III -> iii -> IV,2,0.010079
+three_step_chain,II -> III -> I,2,0.010079
+three_step_chain,VII -> bvi -> bii,2,0.010079
+three_step_chain,V -> v -> biii,2,0.010079
+three_step_chain,v -> biii -> V,2,0.010079
+three_step_chain,i -> vi -> i,2,0.010079
+three_step_chain,V -> bVII -> vii,2,0.010079
+three_step_chain,iv -> bII -> iv,2,0.010079
+three_step_chain,bII -> iv -> ii,2,0.010079
+three_step_chain,IV -> IV -> V,2,0.010079
+three_step_chain,V -> vii -> IV,2,0.010079
+three_step_chain,vi -> i -> II,2,0.010079
+three_step_chain,I -> V -> bvi,2,0.010079
+three_step_chain,bII -> ii -> VI,2,0.010079
+three_step_chain,iii -> biii -> V,2,0.010079
+three_step_chain,ii -> iv -> bVII,2,0.010079
+three_step_chain,VI -> VII -> v,2,0.010079
+three_step_chain,VII -> III -> IV,2,0.010079
+three_step_chain,iv -> I -> II,2,0.010079
+three_step_chain,II -> vi -> II,2,0.010079
+three_step_chain,vi -> II -> vi,2,0.010079
+three_step_chain,II -> vi -> bVI,2,0.010079
+three_step_chain,vi -> bVI -> ii,2,0.010079
+three_step_chain,V -> iii -> iv,2,0.010079
+three_step_chain,iii -> iii -> II,2,0.010079
+three_step_chain,bVII -> vi -> bvi,2,0.010079
+three_step_chain,III -> II -> i,2,0.010079
+three_step_chain,vi -> v -> IV,2,0.010079
+three_step_chain,V -> v -> bIII,2,0.010079
+three_step_chain,V -> VI -> VII,2,0.010079
+three_step_chain,iv -> bVII -> I,2,0.010079
+three_step_chain,IV -> iv -> bVII,2,0.010079
+three_step_chain,III -> I -> V,2,0.010079
+three_step_chain,I -> VI -> III,2,0.010079
+three_step_chain,VI -> V -> III,2,0.010079
+three_step_chain,III -> V -> VII,2,0.010079
+three_step_chain,I -> VII -> bVII,2,0.010079
+three_step_chain,i -> vii -> III,2,0.010079
+three_step_chain,bII -> VI -> VI,2,0.010079
+three_step_chain,I -> iii -> I,2,0.010079
+three_step_chain,bVI -> bVII -> bII,2,0.010079
+three_step_chain,II -> III -> III,2,0.010079
+three_step_chain,iii -> vi -> VI,2,0.010079
+three_step_chain,i -> vi -> iv,2,0.010079
+three_step_chain,biii -> I -> biii,2,0.010079
+three_step_chain,iv -> vi -> iii,2,0.010079
+three_step_chain,i -> bII -> IV,2,0.010079
+three_step_chain,i -> III -> III,2,0.010079
+three_step_chain,VI -> III -> iv,2,0.010079
+three_step_chain,v -> VI -> VI,2,0.010079
+three_step_chain,VI -> VII -> III,2,0.010079
+three_step_chain,biii -> ii -> vi,2,0.010079
+three_step_chain,ii -> vi -> V,2,0.010079
+three_step_chain,VI -> bII -> I,2,0.010079
+three_step_chain,bII -> I -> III,2,0.010079
+three_step_chain,VI -> V -> iii,2,0.010079
+three_step_chain,V -> v -> IV,2,0.010079
+three_step_chain,V -> v -> i,2,0.010079
+three_step_chain,bII -> i -> v,2,0.010079
+three_step_chain,VII -> VI -> v,2,0.010079
+three_step_chain,v -> i -> VI,2,0.010079
+three_step_chain,IV -> I -> II,2,0.010079
+three_step_chain,v -> v -> ii,2,0.010079
+three_step_chain,VII -> VI -> VI,2,0.010079
+three_step_chain,IV -> I -> i,2,0.010079
+three_step_chain,bvii -> iv -> bvii,2,0.010079
+three_step_chain,iv -> iv -> VII,2,0.010079
+three_step_chain,iv -> VII -> III,2,0.010079
+three_step_chain,I -> IV -> VI,2,0.010079
+three_step_chain,IV -> VI -> V,2,0.010079
+three_step_chain,IV -> bVII -> bIII,2,0.010079
+three_step_chain,bVII -> bIII -> II,2,0.010079
+three_step_chain,#IV -> bVI -> bVII,2,0.010079
+three_step_chain,bIII -> bVI -> bII,2,0.010079
+three_step_chain,bII -> bVI -> bII,2,0.010079
+three_step_chain,ii -> I -> bii,2,0.010079
+three_step_chain,VI -> vii -> i,2,0.010079
+three_step_chain,VI -> VI -> ii,2,0.010079
+three_step_chain,I -> i -> bvii,2,0.010079
+three_step_chain,I -> bII -> i,2,0.010079
+three_step_chain,iii -> III -> II,2,0.010079
+three_step_chain,ii -> biii -> ii,2,0.010079
+three_step_chain,I -> bVI -> bIII,2,0.010079
+three_step_chain,bii -> I -> vii,2,0.010079
+three_step_chain,vii -> I -> II,2,0.010079
+three_step_chain,VI -> II -> ii,2,0.010079
+three_step_chain,vii -> IV -> VI,2,0.010079
+three_step_chain,IV -> VI -> bII,2,0.010079
+three_step_chain,VI -> I -> V,2,0.010079
+three_step_chain,IV -> III -> VI,2,0.010079
+three_step_chain,II -> iii -> III,2,0.010079
+three_step_chain,vi -> vi -> IV,2,0.010079
+three_step_chain,IV -> bIII -> I,2,0.010079
+three_step_chain,bIII -> IV -> I,2,0.010079
+three_step_chain,III -> VII -> VII,2,0.010079
+three_step_chain,VII -> VII -> III,2,0.010079
+three_step_chain,V -> bii -> ii,2,0.010079
+three_step_chain,bvii -> ii -> V,2,0.010079
+three_step_chain,vi -> ii -> vii,2,0.010079
+three_step_chain,ii -> vii -> V,2,0.010079
+three_step_chain,vii -> V -> III,2,0.010079
+three_step_chain,VII -> i -> vi,2,0.010079
+three_step_chain,III -> VII -> v,2,0.010079
+three_step_chain,ii -> i -> bII,2,0.010079
+three_step_chain,i -> bII -> VII,2,0.010079
+three_step_chain,V -> VI -> vi,2,0.010079
+three_step_chain,VI -> vi -> VII,2,0.010079
+three_step_chain,vii -> I -> i,2,0.010079
+three_step_chain,i -> V -> II,2,0.010079
+three_step_chain,V -> bii -> V,2,0.010079
+three_step_chain,vi -> III -> VII,2,0.010079
+three_step_chain,IV -> V -> bvi,2,0.010079
+three_step_chain,V -> iii -> v,2,0.010079
+three_step_chain,V -> v -> bvii,2,0.010079
+three_step_chain,I -> vi -> i,2,0.010079
+three_step_chain,bii -> VII -> iii,2,0.010079
+three_step_chain,VI -> IV -> II,2,0.010079
+three_step_chain,vi -> ii -> i,2,0.010079
+three_step_chain,i -> vii -> ii,2,0.010079
+three_step_chain,vii -> iii -> bii,2,0.010079
+three_step_chain,II -> III -> V,2,0.010079
+three_step_chain,IV -> III -> i,2,0.010079
+three_step_chain,IV -> VII -> V,2,0.010079
+three_step_chain,V -> III -> VI,2,0.010079
+three_step_chain,bIII -> biii -> bIII,2,0.010079
+three_step_chain,biii -> bIII -> ii,2,0.010079
+three_step_chain,IV -> IV -> iii,2,0.010079
+three_step_chain,V -> iii -> bIII,2,0.010079
+three_step_chain,iii -> bIII -> I,2,0.010079
+three_step_chain,ii -> bIII -> iii,2,0.010079
+three_step_chain,III -> IV -> III,2,0.010079
+three_step_chain,III -> i -> v,2,0.010079
+three_step_chain,vi -> iii -> vi,2,0.010079
+three_step_chain,VI -> bII -> VI,2,0.010079
+three_step_chain,V -> VI -> III,2,0.010079
+three_step_chain,I -> III -> V,2,0.010079
+three_step_chain,i -> vi -> v,2,0.010079
+three_step_chain,VI -> I -> i,2,0.010079
+three_step_chain,V -> ii -> vi,2,0.010079
+three_step_chain,vii -> I -> IV,2,0.010079
+three_step_chain,iii -> bIII -> iii,2,0.010079
+three_step_chain,bIII -> iii -> ii,2,0.010079
+three_step_chain,i -> vi -> IV,2,0.010079
+three_step_chain,bVI -> bVII -> i,2,0.010079
+three_step_chain,I -> bVII -> ii,2,0.010079
+three_step_chain,bii -> V -> biii,2,0.010079
+three_step_chain,V -> biii -> iii,2,0.010079
+three_step_chain,I -> v -> V,2,0.010079
+three_step_chain,v -> VI -> i,2,0.010079
+three_step_chain,bII -> III -> VII,2,0.010079
+three_step_chain,IV -> I -> biii,2,0.010079
+three_step_chain,VI -> bII -> V,2,0.010079
+three_step_chain,IV -> II -> V,2,0.010079
+three_step_chain,iii -> I -> IV,2,0.010079
+three_step_chain,i -> VII -> III,2,0.010079
+three_step_chain,VI -> VI -> III,2,0.010079
+three_step_chain,vi -> bII -> I,2,0.010079
+three_step_chain,III -> bii -> i,2,0.010079
+three_step_chain,i -> iv -> VI,2,0.010079
+three_step_chain,VII -> vi -> V,2,0.010079
+three_step_chain,ii -> ii -> i,2,0.010079
+three_step_chain,iv -> iv -> bII,2,0.010079
+three_step_chain,iv -> bII -> ii,2,0.010079
+three_step_chain,II -> I -> IV,2,0.010079
+three_step_chain,IV -> iii -> VI,2,0.010079
+three_step_chain,VI -> VII -> bII,2,0.010079
+three_step_chain,i -> iii -> i,2,0.010079
+three_step_chain,iii -> I -> vi,2,0.010079
+three_step_chain,IV -> V -> IV,2,0.010079
+three_step_chain,vii -> IV -> bii,2,0.010079
+three_step_chain,IV -> bii -> ii,2,0.010079
+three_step_chain,IV -> bVII -> V,2,0.010079
+three_step_chain,iv -> bII -> III,2,0.010079
+three_step_chain,I -> bii -> i,2,0.010079
+three_step_chain,II -> vii -> iii,2,0.010079
+three_step_chain,bIII -> IV -> bVII,2,0.010079
+three_step_chain,iii -> VII -> III,2,0.010079
+three_step_chain,vii -> ii -> iv,2,0.010079
+three_step_chain,III -> I -> VII,2,0.010079
+three_step_chain,I -> VII -> III,2,0.010079
+three_step_chain,VII -> VII -> I,2,0.010079
+three_step_chain,III -> V -> V,2,0.010079
+three_step_chain,IV -> III -> I,2,0.010079
+three_step_chain,iii -> i -> V,2,0.010079
+three_step_chain,i -> V -> bii,2,0.010079
+three_step_chain,I -> bVI -> iv,2,0.010079
+three_step_chain,bvi -> IV -> ii,2,0.010079
+three_step_chain,II -> IV -> bII,2,0.010079
+three_step_chain,VII -> bii -> VII,2,0.010079
+three_step_chain,bii -> VII -> ii,2,0.010079
+three_step_chain,VI -> iv -> I,2,0.010079
+three_step_chain,VII -> vii -> ii,2,0.010079
+three_step_chain,vi -> VI -> III,2,0.010079
+three_step_chain,III -> iii -> iv,2,0.010079
+three_step_chain,III -> ii -> ii,2,0.010079
+three_step_chain,bII -> i -> bii,2,0.010079
+three_step_chain,V -> bVII -> bvii,2,0.010079
+three_step_chain,II -> V -> bii,2,0.010079
+three_step_chain,v -> III -> bII,2,0.010079
+three_step_chain,bII -> III -> VI,2,0.010079
+three_step_chain,III -> i -> VI,2,0.010079
+three_step_chain,iv -> bII -> i,2,0.010079
+three_step_chain,vi -> iv -> ii,2,0.010079
+three_step_chain,bVI -> ii -> bVI,2,0.010079
+three_step_chain,VII -> vi -> i,2,0.010079
+three_step_chain,vi -> i -> ii,2,0.010079
+three_step_chain,ii -> III -> iv,2,0.010079
+three_step_chain,IV -> I -> bii,2,0.010079
+three_step_chain,ii -> bVII -> v,2,0.010079
+three_step_chain,ii -> i -> iii,2,0.010079
+three_step_chain,V -> bII -> i,2,0.010079
+three_step_chain,bVI -> vi -> IV,2,0.010079
+three_step_chain,V -> vii -> bVI,2,0.010079
+three_step_chain,vii -> bVI -> V,2,0.010079
+three_step_chain,vi -> bVI -> bII,2,0.010079
+three_step_chain,IV -> I -> VI,2,0.010079
+three_step_chain,bII -> V -> VI,2,0.010079
+three_step_chain,III -> VI -> VI,2,0.010079
+three_step_chain,VI -> bVII -> bIII,2,0.010079
+three_step_chain,bVII -> bIII -> V,2,0.010079
+three_step_chain,bvii -> vii -> iii,2,0.010079
+three_step_chain,III -> iii -> v,2,0.010079
+three_step_chain,iii -> v -> vi,2,0.010079
+three_step_chain,bII -> bII -> bii,2,0.010079
+three_step_chain,i -> III -> iii,2,0.010079
+three_step_chain,vi -> bVI -> I,2,0.010079
+three_step_chain,VI -> VII -> II,2,0.010079
+three_step_chain,VII -> II -> III,2,0.010079
+three_step_chain,II -> III -> ii,2,0.010079
+three_step_chain,bVI -> bvi -> bII,2,0.010079
+three_step_chain,VI -> bVII -> IV,2,0.010079
+three_step_chain,I -> II -> vi,2,0.010079
+three_step_chain,II -> vi -> V,2,0.010079
+three_step_chain,ii -> III -> III,2,0.010079
+three_step_chain,VI -> i -> iv,2,0.010079
+three_step_chain,v -> i -> I,2,0.010079
+three_step_chain,VII -> III -> iii,2,0.010079
+three_step_chain,v -> iii -> ii,2,0.010079
+three_step_chain,V -> V -> III,2,0.010079
+three_step_chain,V -> III -> bII,2,0.010079
+three_step_chain,V -> bVI -> III,2,0.010079
+three_step_chain,v -> iv -> ii,2,0.010079
+three_step_chain,vi -> VI -> V,2,0.010079
+three_step_chain,VII -> I -> V,2,0.010079
+three_step_chain,IV -> VII -> i,2,0.010079
+three_step_chain,VII -> i -> bII,2,0.010079
+three_step_chain,v -> VI -> VII,2,0.010079
+three_step_chain,V -> bVI -> bII,2,0.010079
+three_step_chain,biii -> I -> IV,2,0.010079
+three_step_chain,V -> bII -> IV,2,0.010079
+three_step_chain,bII -> i -> IV,2,0.010079
+three_step_chain,VI -> vi -> iv,2,0.010079
+three_step_chain,I -> bVI -> iii,2,0.010079
+three_step_chain,bVI -> iii -> biii,2,0.010079
+three_step_chain,biii -> iii -> IV,2,0.010079
+three_step_chain,vii -> IV -> iii,2,0.010079
+three_step_chain,bIII -> bVII -> III,2,0.010079
+three_step_chain,iv -> vii -> iii,2,0.010079
+three_step_chain,bIII -> II -> bIII,2,0.010079
+three_step_chain,IV -> I -> iii,2,0.010079
+three_step_chain,bii -> IV -> V,2,0.010079
+three_step_chain,III -> III -> VI,2,0.010079
+three_step_chain,vi -> I -> ii,2,0.010079
+three_step_chain,ii -> III -> iii,2,0.010079
+three_step_chain,bII -> i -> vii,2,0.010079
+three_step_chain,bVII -> i -> bVII,2,0.010079
+three_step_chain,bii -> vii -> iii,2,0.010079
+three_step_chain,V -> bvii -> II,2,0.010079
+three_step_chain,bvii -> II -> bvi,2,0.010079
+three_step_chain,II -> bvi -> vi,2,0.010079
+three_step_chain,bvi -> vi -> VII,2,0.010079
+three_step_chain,vi -> VII -> vii,2,0.010079
+three_step_chain,VII -> vii -> bii,2,0.010079
+three_step_chain,II -> II -> vii,2,0.010079
+three_step_chain,V -> bVI -> VI,2,0.010079
+three_step_chain,V -> V -> bVII,2,0.010079
+three_step_chain,i -> bII -> iii,2,0.010079
+three_step_chain,bII -> iii -> iii,2,0.010079
+three_step_chain,iii -> i -> ii,2,0.010079
+three_step_chain,i -> ii -> vii,2,0.010079
+three_step_chain,ii -> vii -> VI,2,0.010079
+three_step_chain,IV -> III -> bIII,2,0.010079
+three_step_chain,III -> bIII -> II,2,0.010079
+three_step_chain,I -> iv -> V,2,0.010079
+three_step_chain,I -> bVII -> iii,2,0.010079
+three_step_chain,I -> VI -> bii,2,0.010079
+three_step_chain,VII -> V -> III,2,0.010079
+three_step_chain,II -> V -> ii,2,0.010079
+three_step_chain,iii -> I -> II,2,0.010079
+three_step_chain,iii -> biii -> bVII,2,0.010079
+three_step_chain,bII -> I -> v,2,0.010079
+three_step_chain,vi -> vii -> bvii,2,0.010079
+three_step_chain,III -> VI -> i,2,0.010079
+three_step_chain,III -> vii -> bII,2,0.010079
+three_step_chain,vii -> bII -> VII,2,0.010079
+three_step_chain,VII -> V -> ii,2,0.010079
+three_step_chain,VII -> I -> VII,2,0.010079
+three_step_chain,I -> VII -> v,2,0.010079
+three_step_chain,i -> bII -> VI,2,0.010079
+three_step_chain,bII -> I -> iii,2,0.010079
+three_step_chain,vii -> VI -> i,2,0.010079
+three_step_chain,V -> IV -> IV,2,0.010079
+three_step_chain,VI -> iv -> VII,2,0.010079
+three_step_chain,VII -> VII -> vi,2,0.010079
+three_step_chain,VII -> vi -> III,2,0.010079
+three_step_chain,ii -> bII -> III,2,0.010079
+three_step_chain,IV -> bvi -> bVII,2,0.010079
+three_step_chain,bvi -> bVII -> ii,2,0.010079
+three_step_chain,iii -> VII -> I,2,0.010079
+three_step_chain,iv -> V -> V,2,0.010079
+three_step_chain,VI -> II -> V,2,0.010079
+three_step_chain,V -> biii -> ii,2,0.010079
+three_step_chain,V -> iii -> i,2,0.010079
+three_step_chain,IV -> II -> iv,2,0.010079
+three_step_chain,vii -> III -> VI,2,0.010079
+three_step_chain,V -> vi -> bVII,2,0.010079
+three_step_chain,vi -> bVII -> V,2,0.010079
+three_step_chain,bVII -> V -> vi,2,0.010079
+three_step_chain,i -> v -> V,2,0.010079
+three_step_chain,ii -> ii -> vii,2,0.010079
+three_step_chain,IV -> II -> VII,2,0.010079
+three_step_chain,I -> V -> v,2,0.010079
+three_step_chain,V -> biii -> I,2,0.010079
+three_step_chain,biii -> I -> iii,2,0.010079
+three_step_chain,iii -> bii -> VI,2,0.010079
+three_step_chain,bii -> VI -> v,2,0.010079
+three_step_chain,VI -> v -> bII,2,0.010079
+three_step_chain,I -> vii -> bVII,2,0.010079
+three_step_chain,iii -> vi -> bvi,2,0.010079
+three_step_chain,vi -> bvi -> I,2,0.010079
+three_step_chain,v -> vii -> bII,1,0.005040
+three_step_chain,vii -> bII -> ii,1,0.005040
+three_step_chain,vi -> V -> V,1,0.005040
+three_step_chain,III -> vi -> ii,1,0.005040
+three_step_chain,VII -> v -> VII,1,0.005040
+three_step_chain,v -> VII -> ii,1,0.005040
+three_step_chain,vi -> V -> iii,1,0.005040
+three_step_chain,I -> i -> bVII,1,0.005040
+three_step_chain,I -> ii -> bVI,1,0.005040
+three_step_chain,ii -> bVI -> II,1,0.005040
+three_step_chain,bVI -> II -> I,1,0.005040
+three_step_chain,VI -> bVII -> bVII,1,0.005040
+three_step_chain,I -> vi -> iv,1,0.005040
+three_step_chain,vi -> iv -> bVII,1,0.005040
+three_step_chain,iv -> bVII -> bII,1,0.005040
+three_step_chain,bII -> bVI -> vi,1,0.005040
+three_step_chain,vi -> vii -> I,1,0.005040
+three_step_chain,vii -> I -> bII,1,0.005040
+three_step_chain,ii -> bVII -> vi,1,0.005040
+three_step_chain,bIII -> bVI -> ii,1,0.005040
+three_step_chain,III -> VI -> biii,1,0.005040
+three_step_chain,vi -> iii -> iii,1,0.005040
+three_step_chain,VII -> VII -> VI,1,0.005040
+three_step_chain,vii -> I -> V,1,0.005040
+three_step_chain,IV -> iv -> i,1,0.005040
+three_step_chain,IV -> IV -> bVII,1,0.005040
+three_step_chain,bii -> ii -> v,1,0.005040
+three_step_chain,bVII -> V -> II,1,0.005040
+three_step_chain,bii -> ii -> bVI,1,0.005040
+three_step_chain,bVI -> I -> bii,1,0.005040
+three_step_chain,IV -> VII -> ii,1,0.005040
+three_step_chain,i -> ii -> v,1,0.005040
+three_step_chain,i -> bii -> III,1,0.005040
+three_step_chain,i -> III -> i,1,0.005040
+three_step_chain,III -> i -> bii,1,0.005040
+three_step_chain,IV -> I -> vii,1,0.005040
+three_step_chain,v -> I -> iv,1,0.005040
+three_step_chain,III -> iv -> VII,1,0.005040
+three_step_chain,vi -> ii -> iv,1,0.005040
+three_step_chain,bii -> VII -> bii,1,0.005040
+three_step_chain,I -> VII -> vii,1,0.005040
+three_step_chain,I -> IV -> bvii,1,0.005040
+three_step_chain,bVII -> vi -> IV,1,0.005040
+three_step_chain,I -> iv -> bVI,1,0.005040
+three_step_chain,bVI -> bVI -> I,1,0.005040
+three_step_chain,bVI -> I -> vi,1,0.005040
+three_step_chain,III -> I -> bVII,1,0.005040
+three_step_chain,bVII -> bIII -> iv,1,0.005040
+three_step_chain,bIII -> iv -> V,1,0.005040
+three_step_chain,iv -> V -> iii,1,0.005040
+three_step_chain,VII -> VI -> IV,1,0.005040
+three_step_chain,VI -> VI -> IV,1,0.005040
+three_step_chain,v -> I -> III,1,0.005040
+three_step_chain,bii -> iv -> III,1,0.005040
+three_step_chain,iv -> III -> V,1,0.005040
+three_step_chain,VII -> I -> i,1,0.005040
+three_step_chain,II -> III -> bii,1,0.005040
+three_step_chain,V -> ii -> i,1,0.005040
+three_step_chain,vii -> vi -> IV,1,0.005040
+three_step_chain,IV -> bVII -> ii,1,0.005040
+three_step_chain,vii -> I -> VII,1,0.005040
+three_step_chain,VII -> I -> vii,1,0.005040
+three_step_chain,biii -> I -> bii,1,0.005040
+three_step_chain,bVI -> bVI -> bII,1,0.005040
+three_step_chain,bII -> ii -> I,1,0.005040
+three_step_chain,I -> bIII -> v,1,0.005040
+three_step_chain,VI -> I -> iii,1,0.005040
+three_step_chain,I -> bii -> I,1,0.005040
+three_step_chain,III -> IV -> vi,1,0.005040
+three_step_chain,vi -> i -> III,1,0.005040
+three_step_chain,bVII -> v -> biii,1,0.005040
+three_step_chain,v -> biii -> I,1,0.005040
+three_step_chain,biii -> I -> I,1,0.005040
+three_step_chain,bii -> IV -> i,1,0.005040
+three_step_chain,i -> ii -> bIII,1,0.005040
+three_step_chain,v -> I -> iii,1,0.005040
+three_step_chain,bII -> I -> bVI,1,0.005040
+three_step_chain,I -> bVI -> biii,1,0.005040
+three_step_chain,bVI -> biii -> v,1,0.005040
+three_step_chain,bII -> ii -> bII,1,0.005040
+three_step_chain,ii -> bII -> iii,1,0.005040
+three_step_chain,i -> vi -> vii,1,0.005040
+three_step_chain,vi -> v -> ii,1,0.005040
+three_step_chain,VI -> bii -> II,1,0.005040
+three_step_chain,bii -> II -> iv,1,0.005040
+three_step_chain,II -> iv -> iii,1,0.005040
+three_step_chain,iii -> IV -> bvi,1,0.005040
+three_step_chain,IV -> bvi -> I,1,0.005040
+three_step_chain,bvi -> I -> v,1,0.005040
+three_step_chain,I -> VI -> bIII,1,0.005040
+three_step_chain,VI -> bIII -> vi,1,0.005040
+three_step_chain,bIII -> v -> ii,1,0.005040
+three_step_chain,bIII -> I -> I,1,0.005040
+three_step_chain,bii -> I -> II,1,0.005040
+three_step_chain,VI -> III -> bII,1,0.005040
+three_step_chain,III -> bII -> bii,1,0.005040
+three_step_chain,bII -> bii -> VI,1,0.005040
+three_step_chain,bii -> VI -> bII,1,0.005040
+three_step_chain,v -> bIII -> IV,1,0.005040
+three_step_chain,i -> v -> bvi,1,0.005040
+three_step_chain,v -> bvi -> vi,1,0.005040
+three_step_chain,v -> ii -> biii,1,0.005040
+three_step_chain,iii -> ii -> i,1,0.005040
+three_step_chain,iv -> III -> iii,1,0.005040
+three_step_chain,bIII -> bVI -> IV,1,0.005040
+three_step_chain,bVI -> IV -> ii,1,0.005040
+three_step_chain,VII -> bII -> V,1,0.005040
+three_step_chain,II -> I -> bvi,1,0.005040
+three_step_chain,I -> bvi -> v,1,0.005040
+three_step_chain,bvi -> v -> II,1,0.005040
+three_step_chain,v -> II -> I,1,0.005040
+three_step_chain,V -> bII -> vi,1,0.005040
+three_step_chain,bII -> vi -> V,1,0.005040
+three_step_chain,bIII -> bIII -> III,1,0.005040
+three_step_chain,V -> iii -> V,1,0.005040
+three_step_chain,IV -> bII -> bII,1,0.005040
+three_step_chain,bIII -> i -> bvi,1,0.005040
+three_step_chain,vi -> ii -> IV,1,0.005040
+three_step_chain,vi -> biii -> ii,1,0.005040
+three_step_chain,VI -> ii -> ii,1,0.005040
+three_step_chain,bVI -> I -> ii,1,0.005040
+three_step_chain,bVI -> I -> IV,1,0.005040
+three_step_chain,VII -> ii -> bii,1,0.005040
+three_step_chain,bii -> III -> iii,1,0.005040
+three_step_chain,bIII -> V -> i,1,0.005040
+three_step_chain,VI -> bVII -> I,1,0.005040
+three_step_chain,iii -> III -> bii,1,0.005040
+three_step_chain,III -> bii -> iii,1,0.005040
+three_step_chain,bii -> iii -> i,1,0.005040
+three_step_chain,I -> vii -> vii,1,0.005040
+three_step_chain,bII -> i -> I,1,0.005040
+three_step_chain,I -> bVI -> V,1,0.005040
+three_step_chain,I -> bIII -> II,1,0.005040
+three_step_chain,I -> III -> VII,1,0.005040
+three_step_chain,IV -> V -> bVII,1,0.005040
+three_step_chain,I -> bvii -> VII,1,0.005040
+three_step_chain,bvii -> VII -> bII,1,0.005040
+three_step_chain,vi -> vi -> I,1,0.005040
+three_step_chain,bii -> II -> bIII,1,0.005040
+three_step_chain,VI -> vii -> VI,1,0.005040
+three_step_chain,vii -> VI -> ii,1,0.005040
+three_step_chain,iv -> II -> ii,1,0.005040
+three_step_chain,i -> iii -> iv,1,0.005040
+three_step_chain,v -> bvii -> bIII,1,0.005040
+three_step_chain,bvii -> bIII -> vi,1,0.005040
+three_step_chain,vi -> vi -> i,1,0.005040
+three_step_chain,III -> VII -> i,1,0.005040
+three_step_chain,vi -> III -> I,1,0.005040
+three_step_chain,VI -> I -> III,1,0.005040
+three_step_chain,IV -> bIII -> V,1,0.005040
+three_step_chain,IV -> bVI -> I,1,0.005040
+three_step_chain,bVI -> I -> I,1,0.005040
+three_step_chain,vi -> ii -> vi,1,0.005040
+three_step_chain,bIII -> III -> ii,1,0.005040
+three_step_chain,VII -> VII -> v,1,0.005040
+three_step_chain,vi -> bvii -> vii,1,0.005040
+three_step_chain,bvii -> vii -> V,1,0.005040
+three_step_chain,vii -> V -> ii,1,0.005040
+three_step_chain,III -> bii -> vii,1,0.005040
+three_step_chain,bii -> vii -> III,1,0.005040
+three_step_chain,vii -> III -> ii,1,0.005040
+three_step_chain,I -> bVI -> IV,1,0.005040
+three_step_chain,bVI -> IV -> iii,1,0.005040
+three_step_chain,iii -> biii -> II,1,0.005040
+three_step_chain,v -> iii -> i,1,0.005040
+three_step_chain,II -> I -> I,1,0.005040
+three_step_chain,bII -> i -> vi,1,0.005040
+three_step_chain,bii -> ii -> ii,1,0.005040
+three_step_chain,ii -> ii -> biii,1,0.005040
+three_step_chain,VI -> vi -> i,1,0.005040
+three_step_chain,bii -> iv -> iv,1,0.005040
+three_step_chain,bVI -> vi -> bVII,1,0.005040
+three_step_chain,vi -> bVII -> iii,1,0.005040
+three_step_chain,bVII -> iii -> IV,1,0.005040
+three_step_chain,ii -> i -> vi,1,0.005040
+three_step_chain,i -> vi -> I,1,0.005040
+three_step_chain,I -> bii -> vi,1,0.005040
+three_step_chain,bii -> vi -> II,1,0.005040
+three_step_chain,I -> v -> vi,1,0.005040
+three_step_chain,i -> I -> iii,1,0.005040
+three_step_chain,iii -> ii -> II,1,0.005040
+three_step_chain,vii -> vii -> V,1,0.005040
+three_step_chain,vii -> V -> V,1,0.005040
+three_step_chain,V -> V -> bIII,1,0.005040
+three_step_chain,bIII -> IV -> V,1,0.005040
+three_step_chain,bII -> i -> iii,1,0.005040
+three_step_chain,IV -> VI -> vii,1,0.005040
+three_step_chain,vii -> bii -> III,1,0.005040
+three_step_chain,vii -> II -> V,1,0.005040
+three_step_chain,v -> v -> bVII,1,0.005040
+three_step_chain,v -> bVII -> bVII,1,0.005040
+three_step_chain,bVII -> bVII -> bIII,1,0.005040
+three_step_chain,bVII -> bIII -> bIII,1,0.005040
+three_step_chain,bIII -> bIII -> bVI,1,0.005040
+three_step_chain,bIII -> bVI -> bVI,1,0.005040
+three_step_chain,bVI -> bVI -> v,1,0.005040
+three_step_chain,bVI -> v -> v,1,0.005040
+three_step_chain,iv -> i -> I,1,0.005040
+three_step_chain,VII -> I -> v,1,0.005040
+three_step_chain,vii -> V -> bIII,1,0.005040
+three_step_chain,vi -> I -> V,1,0.005040
+three_step_chain,VI -> bII -> II,1,0.005040
+three_step_chain,bII -> II -> ii,1,0.005040
+three_step_chain,I -> bVI -> III,1,0.005040
+three_step_chain,bVI -> III -> I,1,0.005040
+three_step_chain,II -> III -> VI,1,0.005040
+three_step_chain,II -> III -> bII,1,0.005040
+three_step_chain,II -> VII -> iii,1,0.005040
+three_step_chain,VII -> iii -> VI,1,0.005040
+three_step_chain,iii -> VI -> bvii,1,0.005040
+three_step_chain,VI -> bvii -> V,1,0.005040
+three_step_chain,VI -> iv -> v,1,0.005040
+three_step_chain,V -> V -> VII,1,0.005040
+three_step_chain,i -> I -> bII,1,0.005040
+three_step_chain,bII -> II -> III,1,0.005040
+three_step_chain,vi -> VII -> I,1,0.005040
+three_step_chain,V -> ii -> III,1,0.005040
+three_step_chain,ii -> III -> vii,1,0.005040
+three_step_chain,III -> vii -> IV,1,0.005040
+three_step_chain,vii -> IV -> i,1,0.005040
+three_step_chain,vii -> vi -> i,1,0.005040
+three_step_chain,vi -> i -> V,1,0.005040
+three_step_chain,vi -> i -> iv,1,0.005040
+three_step_chain,iii -> i -> bII,1,0.005040
+three_step_chain,VI -> bII -> bII,1,0.005040
+three_step_chain,bII -> bII -> vi,1,0.005040
+three_step_chain,IV -> IV -> bii,1,0.005040
+three_step_chain,IV -> bii -> I,1,0.005040
+three_step_chain,i -> bIII -> bII,1,0.005040
+three_step_chain,iii -> I -> bii,1,0.005040
+three_step_chain,biii -> ii -> iii,1,0.005040
+three_step_chain,bVII -> bVII -> v,1,0.005040
+three_step_chain,bVII -> v -> iv,1,0.005040
+three_step_chain,v -> iv -> iii,1,0.005040
+three_step_chain,iii -> biii -> bVI,1,0.005040
+three_step_chain,biii -> bVI -> ii,1,0.005040
+three_step_chain,III -> IV -> v,1,0.005040
+three_step_chain,IV -> v -> i,1,0.005040
+three_step_chain,v -> i -> II,1,0.005040
+three_step_chain,iv -> III -> i,1,0.005040
+three_step_chain,ii -> I -> IV,1,0.005040
+three_step_chain,V -> bVI -> I,1,0.005040
+three_step_chain,i -> VII -> V,1,0.005040
+three_step_chain,I -> bII -> bii,1,0.005040
+three_step_chain,vi -> iii -> ii,1,0.005040
+three_step_chain,I -> iv -> vi,1,0.005040
+three_step_chain,VII -> bvi -> III,1,0.005040
+three_step_chain,bvi -> III -> bIII,1,0.005040
+three_step_chain,III -> bIII -> vii,1,0.005040
+three_step_chain,bIII -> vii -> III,1,0.005040
+three_step_chain,vii -> III -> vii,1,0.005040
+three_step_chain,III -> vii -> vii,1,0.005040
+three_step_chain,vii -> vii -> bvi,1,0.005040
+three_step_chain,vii -> bvi -> bVII,1,0.005040
+three_step_chain,vii -> V -> bvi,1,0.005040
+three_step_chain,V -> bvi -> bvi,1,0.005040
+three_step_chain,bvi -> bvi -> I,1,0.005040
+three_step_chain,bvi -> I -> iii,1,0.005040
+three_step_chain,I -> iii -> vii,1,0.005040
+three_step_chain,iii -> vii -> bii,1,0.005040
+three_step_chain,vii -> bii -> I,1,0.005040
+three_step_chain,bii -> I -> III,1,0.005040
+three_step_chain,V -> bii -> VII,1,0.005040
+three_step_chain,ii -> vii -> ii,1,0.005040
+three_step_chain,IV -> I -> v,1,0.005040
+three_step_chain,I -> bii -> bvii,1,0.005040
+three_step_chain,V -> bII -> bIII,1,0.005040
+three_step_chain,bII -> bIII -> I,1,0.005040
+three_step_chain,bIII -> I -> bIII,1,0.005040
+three_step_chain,vii -> IV -> vi,1,0.005040
+three_step_chain,bvii -> i -> bii,1,0.005040
+three_step_chain,biii -> ii -> iv,1,0.005040
+three_step_chain,iv -> bVII -> ii,1,0.005040
+three_step_chain,bii -> V -> VII,1,0.005040
+three_step_chain,V -> bIII -> II,1,0.005040
+three_step_chain,iii -> II -> II,1,0.005040
+three_step_chain,V -> III -> II,1,0.005040
+three_step_chain,VI -> V -> iv,1,0.005040
+three_step_chain,V -> iv -> III,1,0.005040
+three_step_chain,iv -> III -> II,1,0.005040
+three_step_chain,VII -> vi -> v,1,0.005040
+three_step_chain,bII -> II -> I,1,0.005040
+three_step_chain,II -> bvi -> ii,1,0.005040
+three_step_chain,v -> bIII -> vi,1,0.005040
+three_step_chain,IV -> II -> III,1,0.005040
+three_step_chain,III -> VII -> VI,1,0.005040
+three_step_chain,VII -> VI -> III,1,0.005040
+three_step_chain,bii -> II -> VII,1,0.005040
+three_step_chain,bVII -> I -> biii,1,0.005040
+three_step_chain,V -> iii -> III,1,0.005040
+three_step_chain,iii -> III -> I,1,0.005040
+three_step_chain,V -> II -> V,1,0.005040
+three_step_chain,II -> V -> i,1,0.005040
+three_step_chain,VI -> v -> I,1,0.005040
+three_step_chain,v -> I -> VI,1,0.005040
+three_step_chain,VI -> III -> i,1,0.005040
+three_step_chain,bVII -> bVII -> ii,1,0.005040
+three_step_chain,iv -> III -> ii,1,0.005040
+three_step_chain,V -> bvii -> IV,1,0.005040
+three_step_chain,iii -> vi -> i,1,0.005040
+three_step_chain,i -> II -> vii,1,0.005040
+three_step_chain,II -> vii -> bvii,1,0.005040
+three_step_chain,VI -> V -> bii,1,0.005040
+three_step_chain,V -> bii -> iv,1,0.005040
+three_step_chain,bii -> iv -> VII,1,0.005040
+three_step_chain,iv -> VII -> i,1,0.005040
+three_step_chain,i -> iii -> bII,1,0.005040
+three_step_chain,vii -> III -> III,1,0.005040
+three_step_chain,bVII -> bII -> bIII,1,0.005040
+three_step_chain,bIII -> bII -> bVI,1,0.005040
+three_step_chain,vi -> iii -> vii,1,0.005040
+three_step_chain,iii -> vii -> I,1,0.005040
+three_step_chain,vi -> VI -> iii,1,0.005040
+three_step_chain,I -> v -> v,1,0.005040
+three_step_chain,v -> iii -> bIII,1,0.005040
+three_step_chain,iii -> bIII -> v,1,0.005040
+three_step_chain,bIII -> v -> bii,1,0.005040
+three_step_chain,v -> bii -> I,1,0.005040
+three_step_chain,bii -> I -> v,1,0.005040
+three_step_chain,vii -> vi -> iii,1,0.005040
+three_step_chain,vi -> iii -> I,1,0.005040
+three_step_chain,bII -> III -> bII,1,0.005040
+three_step_chain,iv -> iv -> v,1,0.005040
+three_step_chain,III -> V -> ii,1,0.005040
+three_step_chain,iii -> iv -> III,1,0.005040
+three_step_chain,IV -> V -> VII,1,0.005040
+three_step_chain,v -> IV -> V,1,0.005040
+three_step_chain,I -> bVII -> bii,1,0.005040
+three_step_chain,bVII -> bii -> ii,1,0.005040
+three_step_chain,IV -> bIII -> biii,1,0.005040
+three_step_chain,i -> bII -> iv,1,0.005040
+three_step_chain,V -> V -> vii,1,0.005040
+three_step_chain,VI -> I -> VII,1,0.005040
+three_step_chain,ii -> III -> bII,1,0.005040
+three_step_chain,i -> v -> III,1,0.005040
+three_step_chain,v -> III -> v,1,0.005040
+three_step_chain,III -> v -> II,1,0.005040
+three_step_chain,i -> v -> I,1,0.005040
+three_step_chain,v -> I -> v,1,0.005040
+three_step_chain,I -> v -> II,1,0.005040
+three_step_chain,II -> ii -> bII,1,0.005040
+three_step_chain,ii -> biii -> iv,1,0.005040
+three_step_chain,biii -> iv -> V,1,0.005040
+three_step_chain,I -> bvii -> vi,1,0.005040
+three_step_chain,VI -> IV -> i,1,0.005040
+three_step_chain,vi -> VI -> bii,1,0.005040
+three_step_chain,VI -> bii -> vi,1,0.005040
+three_step_chain,bii -> vi -> ii,1,0.005040
+three_step_chain,i -> v -> ii,1,0.005040
+three_step_chain,I -> bvii -> iv,1,0.005040
+three_step_chain,iv -> bvii -> bII,1,0.005040
+three_step_chain,bvii -> bII -> bIII,1,0.005040
+three_step_chain,V -> vi -> bii,1,0.005040
+three_step_chain,IV -> VII -> I,1,0.005040
+three_step_chain,bIII -> II -> V,1,0.005040
+three_step_chain,II -> V -> bII,1,0.005040
+three_step_chain,bVI -> bVII -> bIII,1,0.005040
+three_step_chain,bVII -> bIII -> bVI,1,0.005040
+three_step_chain,bVI -> bII -> I,1,0.005040
+three_step_chain,#IV -> bII -> bVI,1,0.005040
+three_step_chain,bVI -> bII -> II,1,0.005040
+three_step_chain,bII -> II -> VI,1,0.005040
+three_step_chain,II -> VI -> bVI,1,0.005040
+three_step_chain,VI -> bVI -> bIII,1,0.005040
+three_step_chain,bVI -> bIII -> I,1,0.005040
+three_step_chain,iii -> bVII -> ii,1,0.005040
+three_step_chain,V -> IV -> bvii,1,0.005040
+three_step_chain,IV -> bvii -> V,1,0.005040
+three_step_chain,ii -> VI -> iv,1,0.005040
+three_step_chain,vi -> I -> bvi,1,0.005040
+three_step_chain,I -> bvi -> ii,1,0.005040
+three_step_chain,II -> ii -> II,1,0.005040
+three_step_chain,vii -> i -> vii,1,0.005040
+three_step_chain,IV -> I -> bIII,1,0.005040
+three_step_chain,iv -> VII -> V,1,0.005040
+three_step_chain,I -> II -> biii,1,0.005040
+three_step_chain,II -> biii -> iii,1,0.005040
+three_step_chain,vii -> vi -> vi,1,0.005040
+three_step_chain,i -> ii -> II,1,0.005040
+three_step_chain,ii -> II -> III,1,0.005040
+three_step_chain,II -> III -> iv,1,0.005040
+three_step_chain,III -> iv -> v,1,0.005040
+three_step_chain,i -> iii -> III,1,0.005040
+three_step_chain,III -> II -> IV,1,0.005040
+three_step_chain,II -> IV -> VI,1,0.005040
+three_step_chain,III -> bVI -> I,1,0.005040
+three_step_chain,IV -> IV -> bVI,1,0.005040
+three_step_chain,IV -> bVI -> bVII,1,0.005040
+three_step_chain,bVII -> bII -> V,1,0.005040
+three_step_chain,bii -> V -> bvi,1,0.005040
+three_step_chain,bII -> bIII -> bVII,1,0.005040
+three_step_chain,bIII -> bVII -> IV,1,0.005040
+three_step_chain,bVII -> IV -> I,1,0.005040
+three_step_chain,vi -> VI -> II,1,0.005040
+three_step_chain,II -> ii -> v,1,0.005040
+three_step_chain,V -> III -> bii,1,0.005040
+three_step_chain,III -> bii -> bii,1,0.005040
+three_step_chain,vii -> vi -> VI,1,0.005040
+three_step_chain,vi -> iii -> bIII,1,0.005040
+three_step_chain,iii -> bIII -> ii,1,0.005040
+three_step_chain,i -> vi -> V,1,0.005040
+three_step_chain,II -> VI -> I,1,0.005040
+three_step_chain,iii -> i -> vi,1,0.005040
+three_step_chain,vi -> i -> VII,1,0.005040
+three_step_chain,i -> II -> iii,1,0.005040
+three_step_chain,IV -> i -> iv,1,0.005040
+three_step_chain,III -> VI -> iii,1,0.005040
+three_step_chain,iv -> I -> I,1,0.005040
+three_step_chain,VII -> ii -> iii,1,0.005040
+three_step_chain,iii -> III -> ii,1,0.005040
+three_step_chain,V -> biii -> V,1,0.005040
+three_step_chain,vi -> III -> vii,1,0.005040
+three_step_chain,IV -> III -> bII,1,0.005040
+three_step_chain,IV -> vi -> V,1,0.005040
+three_step_chain,I -> ii -> iv,1,0.005040
+three_step_chain,ii -> iv -> biii,1,0.005040
+three_step_chain,iv -> biii -> i,1,0.005040
+three_step_chain,biii -> i -> I,1,0.005040
+three_step_chain,V -> bIII -> bvii,1,0.005040
+three_step_chain,bIII -> bvii -> ii,1,0.005040
+three_step_chain,V -> III -> ii,1,0.005040
+three_step_chain,II -> iii -> II,1,0.005040
+three_step_chain,iii -> II -> ii,1,0.005040
+three_step_chain,V -> vi -> bvi,1,0.005040
+three_step_chain,I -> v -> bVII,1,0.005040
+three_step_chain,bII -> VII -> III,1,0.005040
+three_step_chain,VII -> V -> V,1,0.005040
+three_step_chain,V -> iii -> IV,1,0.005040
+three_step_chain,iii -> i -> VI,1,0.005040
+three_step_chain,bVI -> ii -> bii,1,0.005040
+three_step_chain,iii -> ii -> ii,1,0.005040
+three_step_chain,vi -> VI -> VI,1,0.005040
+three_step_chain,V -> ii -> iii,1,0.005040
+three_step_chain,I -> I -> bVII,1,0.005040
+three_step_chain,I -> bVII -> IV,1,0.005040
+three_step_chain,bvi -> IV -> V,1,0.005040
+three_step_chain,V -> I -> bvi,1,0.005040
+three_step_chain,I -> bvi -> I,1,0.005040
+three_step_chain,bvi -> I -> I,1,0.005040
+three_step_chain,I -> I -> v,1,0.005040
+three_step_chain,iii -> VII -> iii,1,0.005040
+three_step_chain,VII -> iii -> ii,1,0.005040
+three_step_chain,iv -> I -> VII,1,0.005040
+three_step_chain,iv -> I -> vii,1,0.005040
+three_step_chain,vii -> I -> iv,1,0.005040
+three_step_chain,V -> v -> iii,1,0.005040
+three_step_chain,v -> iii -> I,1,0.005040
+three_step_chain,iii -> ii -> bII,1,0.005040
+three_step_chain,IV -> iv -> v,1,0.005040
+three_step_chain,iii -> iii -> VII,1,0.005040
+three_step_chain,I -> VI -> ii,1,0.005040
+three_step_chain,iii -> bii -> i,1,0.005040
+three_step_chain,VI -> II -> III,1,0.005040
+three_step_chain,i -> IV -> III,1,0.005040
+three_step_chain,IV -> V -> VI,1,0.005040
+three_step_chain,V -> bVI -> bVII,1,0.005040
+three_step_chain,VI -> bVI -> V,1,0.005040
+three_step_chain,bVI -> V -> i,1,0.005040
+three_step_chain,VII -> i -> bii,1,0.005040
+three_step_chain,bII -> vii -> ii,1,0.005040
+three_step_chain,I -> bii -> bVII,1,0.005040
+three_step_chain,V -> IV -> bVI,1,0.005040
+three_step_chain,IV -> bVI -> V,1,0.005040
+three_step_chain,bVI -> V -> vii,1,0.005040
+three_step_chain,ii -> ii -> bIII,1,0.005040
+three_step_chain,bIII -> iii -> V,1,0.005040
+three_step_chain,iii -> V -> vii,1,0.005040
+three_step_chain,v -> bII -> III,1,0.005040
+three_step_chain,ii -> i -> III,1,0.005040
+three_step_chain,i -> v -> IV,1,0.005040
+three_step_chain,v -> IV -> VI,1,0.005040
+three_step_chain,II -> VII -> i,1,0.005040
+three_step_chain,vi -> iii -> v,1,0.005040
+three_step_chain,iii -> v -> ii,1,0.005040
+three_step_chain,III -> VII -> I,1,0.005040
+three_step_chain,bVII -> I -> IV,1,0.005040
+three_step_chain,VII -> biii -> bvi,1,0.005040
+three_step_chain,biii -> bvi -> V,1,0.005040
+three_step_chain,bvi -> V -> ii,1,0.005040
+three_step_chain,V -> VII -> V,1,0.005040
+three_step_chain,VII -> V -> VI,1,0.005040
+three_step_chain,bVI -> bII -> III,1,0.005040
+three_step_chain,vii -> bVII -> I,1,0.005040
+three_step_chain,bVII -> I -> III,1,0.005040
+three_step_chain,vi -> v -> bIII,1,0.005040
+three_step_chain,v -> bIII -> iv,1,0.005040
+three_step_chain,bIII -> iv -> bII,1,0.005040
+three_step_chain,III -> i -> vii,1,0.005040
+three_step_chain,vi -> III -> VI,1,0.005040
+three_step_chain,III -> bII -> V,1,0.005040
+three_step_chain,II -> VII -> bVII,1,0.005040
+three_step_chain,ii -> vi -> I,1,0.005040
+three_step_chain,vi -> I -> vii,1,0.005040
+three_step_chain,bVII -> I -> ii,1,0.005040
+three_step_chain,ii -> v -> iii,1,0.005040
+three_step_chain,v -> iii -> vi,1,0.005040
+three_step_chain,IV -> iv -> V,1,0.005040
+three_step_chain,v -> bII -> bII,1,0.005040
+three_step_chain,bII -> bII -> bVI,1,0.005040
+three_step_chain,bII -> bVI -> IV,1,0.005040
+three_step_chain,biii -> iii -> biii,1,0.005040
+three_step_chain,I -> bVI -> bvi,1,0.005040
+three_step_chain,bVI -> bvi -> bIII,1,0.005040
+three_step_chain,bvi -> bIII -> IV,1,0.005040
+three_step_chain,III -> biii -> bvi,1,0.005040
+three_step_chain,biii -> bvi -> ii,1,0.005040
+three_step_chain,iv -> ii -> iv,1,0.005040
+three_step_chain,iv -> V -> vii,1,0.005040
+three_step_chain,vii -> I -> iii,1,0.005040
+three_step_chain,I -> iii -> i,1,0.005040
+three_step_chain,iii -> i -> III,1,0.005040
+three_step_chain,I -> v -> iii,1,0.005040
+three_step_chain,v -> iii -> v,1,0.005040
+three_step_chain,VI -> i -> II,1,0.005040
+three_step_chain,i -> II -> iv,1,0.005040
+three_step_chain,II -> iv -> ii,1,0.005040
+three_step_chain,iv -> ii -> IV,1,0.005040
+three_step_chain,IV -> i -> bii,1,0.005040
+three_step_chain,ii -> I -> i,1,0.005040
+three_step_chain,I -> i -> II,1,0.005040
+three_step_chain,bII -> bII -> III,1,0.005040
+three_step_chain,bII -> bVI -> bIII,1,0.005040
+three_step_chain,bVI -> bIII -> biii,1,0.005040
+three_step_chain,I -> III -> bii,1,0.005040
+three_step_chain,biii -> II -> ii,1,0.005040
+three_step_chain,V -> ii -> bIII,1,0.005040
+three_step_chain,ii -> bIII -> ii,1,0.005040
+three_step_chain,bIII -> ii -> v,1,0.005040
+three_step_chain,v -> ii -> bVI,1,0.005040
+three_step_chain,ii -> bVI -> v,1,0.005040
+three_step_chain,bVI -> v -> bIII,1,0.005040
+three_step_chain,V -> v -> II,1,0.005040
+three_step_chain,v -> II -> IV,1,0.005040
+three_step_chain,II -> IV -> II,1,0.005040
+three_step_chain,II -> V -> V,1,0.005040
+three_step_chain,IV -> iii -> I,1,0.005040
+three_step_chain,VII -> III -> II,1,0.005040
+three_step_chain,III -> II -> v,1,0.005040
+three_step_chain,II -> v -> IV,1,0.005040
+three_step_chain,v -> IV -> VII,1,0.005040
+three_step_chain,VII -> III -> i,1,0.005040
+three_step_chain,IV -> vi -> bII,1,0.005040
+three_step_chain,bVII -> bII -> I,1,0.005040
+three_step_chain,I -> VII -> vi,1,0.005040
+three_step_chain,bIII -> bVII -> ii,1,0.005040
+three_step_chain,bII -> I -> bvi,1,0.005040
+three_step_chain,I -> bvi -> VI,1,0.005040
+three_step_chain,bvi -> VI -> VI,1,0.005040
+three_step_chain,VI -> VI -> biii,1,0.005040
+three_step_chain,bII -> iv -> iv,1,0.005040
+three_step_chain,V -> III -> vi,1,0.005040
+three_step_chain,iv -> iii -> bIII,1,0.005040
+three_step_chain,II -> iv -> biii,1,0.005040
+three_step_chain,iv -> biii -> bii,1,0.005040
+three_step_chain,biii -> bii -> vii,1,0.005040
+three_step_chain,iii -> i -> IV,1,0.005040
+three_step_chain,VI -> bVII -> vii,1,0.005040
+three_step_chain,ii -> I -> iv,1,0.005040
+three_step_chain,I -> iv -> v,1,0.005040
+three_step_chain,iv -> v -> bVI,1,0.005040
+three_step_chain,v -> bVI -> bVII,1,0.005040
+three_step_chain,VII -> I -> II,1,0.005040
+three_step_chain,II -> IV -> I,1,0.005040
+three_step_chain,iv -> VI -> VII,1,0.005040
+three_step_chain,III -> iv -> VI,1,0.005040
+three_step_chain,bII -> ii -> IV,1,0.005040
+three_step_chain,ii -> IV -> I,1,0.005040
+three_step_chain,VII -> VI -> iii,1,0.005040
+three_step_chain,vii -> i -> I,1,0.005040
+three_step_chain,VII -> VI -> II,1,0.005040
+three_step_chain,VI -> II -> I,1,0.005040
+three_step_chain,IV -> bIII -> bVI,1,0.005040
+three_step_chain,bIII -> bVI -> VII,1,0.005040
+three_step_chain,bVI -> VII -> III,1,0.005040
+three_step_chain,vi -> vii -> bii,1,0.005040
+three_step_chain,vii -> bii -> biii,1,0.005040
+three_step_chain,bii -> biii -> ii,1,0.005040
+three_step_chain,I -> bIII -> iii,1,0.005040
+three_step_chain,iii -> bVII -> V,1,0.005040
+three_step_chain,III -> VII -> bII,1,0.005040
+three_step_chain,I -> VI -> vii,1,0.005040
+three_step_chain,iii -> vi -> I,1,0.005040
+three_step_chain,vi -> I -> vi,1,0.005040
+three_step_chain,I -> IV -> v,1,0.005040
+three_step_chain,i -> V -> bVI,1,0.005040
+three_step_chain,I -> bVII -> bVII,1,0.005040
+three_step_chain,vi -> bIII -> i,1,0.005040
+three_step_chain,I -> II -> vii,1,0.005040
+three_step_chain,vii -> iii -> VI,1,0.005040
+three_step_chain,IV -> bVII -> IV,1,0.005040
+three_step_chain,VI -> bii -> VI,1,0.005040
+three_step_chain,bii -> VI -> VII,1,0.005040
+three_step_chain,VII -> v -> V,1,0.005040
+three_step_chain,iv -> iii -> VII,1,0.005040
+three_step_chain,IV -> III -> III,1,0.005040
+three_step_chain,II -> bII -> vii,1,0.005040
+three_step_chain,iii -> VII -> bii,1,0.005040
+three_step_chain,i -> I -> V,1,0.005040
+three_step_chain,III -> iii -> bII,1,0.005040
+three_step_chain,iii -> bII -> i,1,0.005040
+three_step_chain,vi -> V -> III,1,0.005040
+three_step_chain,II -> bii -> vii,1,0.005040
+three_step_chain,bii -> vii -> VI,1,0.005040
+three_step_chain,vii -> VI -> vii,1,0.005040
+three_step_chain,ii -> VI -> i,1,0.005040
+three_step_chain,VI -> i -> VII,1,0.005040
+three_step_chain,iii -> I -> iii,1,0.005040
+three_step_chain,III -> II -> bVII,1,0.005040
+three_step_chain,II -> bVII -> bII,1,0.005040
+three_step_chain,iv -> III -> bII,1,0.005040
+three_step_chain,III -> IV -> I,1,0.005040
+three_step_chain,IV -> I -> VII,1,0.005040
+three_step_chain,iii -> VI -> VI,1,0.005040
+three_step_chain,VI -> VII -> VII,1,0.005040
+three_step_chain,VII -> I -> I,1,0.005040
+three_step_chain,ii -> III -> V,1,0.005040
+three_step_chain,i -> i -> III,1,0.005040
+three_step_chain,III -> I -> i,1,0.005040
+three_step_chain,III -> I -> bIII,1,0.005040
+three_step_chain,iv -> IV -> ii,1,0.005040
+three_step_chain,IV -> bvi -> v,1,0.005040
+three_step_chain,bii -> I -> IV,1,0.005040
+three_step_chain,II -> II -> vi,1,0.005040
+three_step_chain,II -> vi -> vi,1,0.005040
+three_step_chain,bVI -> bvii -> bVI,1,0.005040
+three_step_chain,bvii -> bVI -> ii,1,0.005040
+three_step_chain,IV -> bII -> V,1,0.005040
+three_step_chain,vii -> vi -> vii,1,0.005040
+three_step_chain,V -> vii -> vi,1,0.005040
+three_step_chain,iv -> I -> VI,1,0.005040
+three_step_chain,II -> bII -> VI,1,0.005040
+three_step_chain,bII -> VI -> IV,1,0.005040
+three_step_chain,VI -> IV -> bII,1,0.005040
+three_step_chain,IV -> bII -> I,1,0.005040
+three_step_chain,I -> III -> bVI,1,0.005040
+three_step_chain,I -> i -> vi,1,0.005040
+three_step_chain,VI -> V -> V,1,0.005040
+three_step_chain,ii -> vi -> bvi,1,0.005040
+three_step_chain,vi -> III -> vi,1,0.005040
+three_step_chain,IV -> V -> vii,1,0.005040
+three_step_chain,vi -> III -> iii,1,0.005040
+three_step_chain,III -> iii -> V,1,0.005040
+three_step_chain,iii -> V -> V,1,0.005040
+three_step_chain,iii -> VI -> ii,1,0.005040
+three_step_chain,iv -> bVII -> iii,1,0.005040
+three_step_chain,v -> VI -> III,1,0.005040
+three_step_chain,I -> V -> VII,1,0.005040
+three_step_chain,vi -> ii -> III,1,0.005040
+three_step_chain,ii -> III -> bVI,1,0.005040
+three_step_chain,vi -> III -> IV,1,0.005040
+three_step_chain,IV -> VI -> vi,1,0.005040
+three_step_chain,VI -> vi -> VI,1,0.005040
+three_step_chain,ii -> bVII -> ii,1,0.005040
+three_step_chain,I -> ii -> vi,1,0.005040
+three_step_chain,ii -> vi -> vii,1,0.005040
+three_step_chain,vii -> iii -> II,1,0.005040
+three_step_chain,i -> VII -> bII,1,0.005040
+three_step_chain,iv -> vii -> vii,1,0.005040
+three_step_chain,vii -> vii -> iii,1,0.005040
+three_step_chain,vii -> iii -> i,1,0.005040
+three_step_chain,VII -> i -> iv,1,0.005040
+three_step_chain,I -> i -> iii,1,0.005040
+three_step_chain,bVII -> bvii -> vi,1,0.005040
+three_step_chain,i -> II -> vi,1,0.005040
+three_step_chain,II -> vi -> VII,1,0.005040
+three_step_chain,i -> IV -> bii,1,0.005040
+three_step_chain,VI -> bVII -> VI,1,0.005040
+three_step_chain,bVII -> VI -> VI,1,0.005040
+three_step_chain,VI -> VI -> v,1,0.005040
+three_step_chain,VI -> v -> bIII,1,0.005040
+three_step_chain,v -> bIII -> iii,1,0.005040
+three_step_chain,vi -> II -> i,1,0.005040
+three_step_chain,bii -> ii -> bVII,1,0.005040
+three_step_chain,ii -> bVII -> bvii,1,0.005040
+three_step_chain,bVII -> bvii -> biii,1,0.005040
+three_step_chain,bvii -> biii -> v,1,0.005040
+three_step_chain,bVI -> vi -> iv,1,0.005040
+three_step_chain,iv -> ii -> vi,1,0.005040
+three_step_chain,ii -> vi -> biii,1,0.005040
+three_step_chain,ii -> bii -> V,1,0.005040
+three_step_chain,ii -> iii -> V,1,0.005040
+three_step_chain,III -> II -> III,1,0.005040
+three_step_chain,VII -> i -> II,1,0.005040
+three_step_chain,v -> v -> IV,1,0.005040
+three_step_chain,v -> IV -> ii,1,0.005040
+three_step_chain,vi -> vii -> IV,1,0.005040
+three_step_chain,vii -> IV -> ii,1,0.005040
+three_step_chain,VI -> vii -> II,1,0.005040
+three_step_chain,vii -> II -> ii,1,0.005040
+three_step_chain,VI -> IV -> III,1,0.005040
+three_step_chain,V -> VI -> II,1,0.005040
+three_step_chain,bVII -> v -> v,1,0.005040
+three_step_chain,v -> v -> bII,1,0.005040
+three_step_chain,iv -> V -> ii,1,0.005040
+three_step_chain,I -> i -> biii,1,0.005040
+three_step_chain,i -> biii -> bVII,1,0.005040
+three_step_chain,i -> iii -> I,1,0.005040
+three_step_chain,iii -> I -> I,1,0.005040
+three_step_chain,bvi -> V -> I,1,0.005040
+three_step_chain,VII -> IV -> IV,1,0.005040
+three_step_chain,vi -> IV -> bVII,1,0.005040
+three_step_chain,vi -> bVII -> vii,1,0.005040
+three_step_chain,bVII -> vii -> iii,1,0.005040
+three_step_chain,iii -> vi -> V,1,0.005040
+three_step_chain,iv -> II -> iii,1,0.005040
+three_step_chain,II -> iii -> IV,1,0.005040
+three_step_chain,III -> bii -> I,1,0.005040
+three_step_chain,I -> vi -> bVI,1,0.005040
+three_step_chain,I -> VII -> IV,1,0.005040
+three_step_chain,VII -> IV -> I,1,0.005040
+three_step_chain,v -> VI -> v,1,0.005040
+three_step_chain,bII -> II -> V,1,0.005040
+three_step_chain,II -> V -> VII,1,0.005040
+three_step_chain,iii -> ii -> iii,1,0.005040
+three_step_chain,VII -> i -> V,1,0.005040
+three_step_chain,v -> v -> III,1,0.005040
+three_step_chain,v -> III -> ii,1,0.005040
+three_step_chain,vii -> vii -> v,1,0.005040
+three_step_chain,vii -> v -> bii,1,0.005040
+three_step_chain,v -> bii -> ii,1,0.005040
+three_step_chain,v -> vi -> bII,1,0.005040
+three_step_chain,vi -> bII -> bII,1,0.005040
+three_step_chain,VI -> VI -> iii,1,0.005040
+three_step_chain,VII -> bvi -> VII,1,0.005040
+three_step_chain,VI -> IV -> v,1,0.005040
+three_step_chain,VI -> bvii -> III,1,0.005040
+three_step_chain,bvii -> III -> bVI,1,0.005040
+three_step_chain,III -> bVI -> ii,1,0.005040
+three_step_chain,I -> bIII -> I,1,0.005040
+three_step_chain,bIII -> I -> bVI,1,0.005040
+three_step_chain,v -> I -> i,1,0.005040
+three_step_chain,biii -> V -> I,1,0.005040
+three_step_chain,III -> VI -> bII,1,0.005040
+three_step_chain,V -> vi -> bVI,1,0.005040
+three_step_chain,ii -> I -> II,1,0.005040
+three_step_chain,bii -> V -> IV,1,0.005040
+three_step_chain,i -> VI -> II,1,0.005040
+three_step_chain,IV -> bIII -> II,1,0.005040
+three_step_chain,bIII -> II -> ii,1,0.005040
+three_step_chain,VII -> VI -> ii,1,0.005040
+three_step_chain,bVII -> vi -> V,1,0.005040
+three_step_chain,ii -> VII -> I,1,0.005040
+three_step_chain,VI -> V -> II,1,0.005040
+three_step_chain,V -> bVI -> bvi,1,0.005040
+three_step_chain,bvi -> bII -> bIII,1,0.005040
+three_step_chain,bII -> bIII -> VII,1,0.005040
+three_step_chain,bIII -> VII -> bIII,1,0.005040
+three_step_chain,VII -> bIII -> vi,1,0.005040
+three_step_chain,biii -> iii -> iii,1,0.005040
+three_step_chain,V -> VII -> III,1,0.005040
+three_step_chain,III -> III -> VII,1,0.005040
+three_step_chain,bIII -> bVII -> bVII,1,0.005040
+three_step_chain,III -> VI -> iv,1,0.005040
+three_step_chain,v -> ii -> VII,1,0.005040
+three_step_chain,ii -> VII -> III,1,0.005040
+three_step_chain,VI -> ii -> iv,1,0.005040
+three_step_chain,bII -> ii -> III,1,0.005040
+three_step_chain,IV -> bvii -> bVI,1,0.005040
+three_step_chain,bII -> III -> i,1,0.005040
+three_step_chain,V -> bii -> VI,1,0.005040
+three_step_chain,bii -> VI -> ii,1,0.005040
+three_step_chain,VI -> ii -> VI,1,0.005040
+three_step_chain,ii -> VI -> IV,1,0.005040
+three_step_chain,IV -> i -> bII,1,0.005040
+three_step_chain,vi -> IV -> III,1,0.005040
+three_step_chain,I -> I -> II,1,0.005040
+three_step_chain,II -> iv -> I,1,0.005040
+three_step_chain,vi -> vi -> V,1,0.005040
+three_step_chain,V -> vii -> bIII,1,0.005040
+three_step_chain,III -> I -> bii,1,0.005040
+three_step_chain,bII -> bIII -> ii,1,0.005040
+three_step_chain,V -> vii -> ii,1,0.005040
+three_step_chain,vii -> ii -> IV,1,0.005040
+three_step_chain,ii -> IV -> ii,1,0.005040
+three_step_chain,IV -> ii -> vii,1,0.005040
+three_step_chain,ii -> vii -> III,1,0.005040
+three_step_chain,vii -> III -> i,1,0.005040
+three_step_chain,ii -> iv -> III,1,0.005040
+three_step_chain,iv -> III -> I,1,0.005040
+three_step_chain,bVI -> III -> V,1,0.005040
+three_step_chain,III -> V -> bVI,1,0.005040
+three_step_chain,i -> II -> i,1,0.005040
+three_step_chain,II -> i -> ii,1,0.005040
+three_step_chain,ii -> vi -> i,1,0.005040
+three_step_chain,vi -> i -> vi,1,0.005040
+three_step_chain,i -> vi -> bVI,1,0.005040
+three_step_chain,bVI -> I -> bII,1,0.005040
+three_step_chain,iii -> V -> i,1,0.005040
+three_step_chain,vi -> vi -> iv,1,0.005040
+three_step_chain,iii -> VII -> vi,1,0.005040
+three_step_chain,VII -> vi -> iii,1,0.005040
+three_step_chain,iv -> i -> vi,1,0.005040
+three_step_chain,VI -> III -> iii,1,0.005040
+three_step_chain,III -> iii -> vii,1,0.005040
+three_step_chain,iii -> vii -> vi,1,0.005040
+three_step_chain,I -> I -> bVI,1,0.005040
+three_step_chain,I -> bVI -> v,1,0.005040
+three_step_chain,bVI -> v -> bII,1,0.005040
+three_step_chain,VII -> V -> bVI,1,0.005040
+three_step_chain,bVI -> III -> IV,1,0.005040
+three_step_chain,IV -> II -> VI,1,0.005040
+three_step_chain,II -> VI -> VI,1,0.005040
+three_step_chain,V -> III -> iv,1,0.005040
+three_step_chain,IV -> bII -> II,1,0.005040
+three_step_chain,bII -> II -> bII,1,0.005040
+three_step_chain,I -> bII -> III,1,0.005040
+three_step_chain,III -> ii -> bII,1,0.005040
+three_step_chain,v -> I -> vi,1,0.005040
+three_step_chain,vi -> ii -> bVII,1,0.005040
+three_step_chain,ii -> bVII -> bIII,1,0.005040
+three_step_chain,bIII -> vi -> bVI,1,0.005040
+three_step_chain,bVI -> bvii -> vii,1,0.005040
+three_step_chain,bvii -> vii -> bVI,1,0.005040
+three_step_chain,vii -> bVI -> bII,1,0.005040
+three_step_chain,bVI -> bII -> i,1,0.005040
+three_step_chain,i -> V -> vi,1,0.005040
+three_step_chain,V -> V -> bII,1,0.005040
+three_step_chain,bII -> IV -> i,1,0.005040
+three_step_chain,IV -> i -> v,1,0.005040
+three_step_chain,IV -> i -> IV,1,0.005040
+three_step_chain,v -> II -> ii,1,0.005040
+three_step_chain,vii -> ii -> ii,1,0.005040
+three_step_chain,VI -> iv -> VI,1,0.005040
+three_step_chain,V -> iv -> VI,1,0.005040
+three_step_chain,I -> bvii -> ii,1,0.005040
+three_step_chain,bII -> IV -> III,1,0.005040
+three_step_chain,IV -> III -> vii,1,0.005040
+three_step_chain,III -> vii -> vi,1,0.005040
+three_step_chain,vii -> vi -> v,1,0.005040
+three_step_chain,bII -> ii -> biii,1,0.005040
+three_step_chain,ii -> biii -> biii,1,0.005040
+three_step_chain,biii -> biii -> iv,1,0.005040
+three_step_chain,iii -> ii -> bVI,1,0.005040
+three_step_chain,iii -> v -> I,1,0.005040
+three_step_chain,v -> iii -> VI,1,0.005040
+three_step_chain,IV -> i -> V,1,0.005040
+three_step_chain,vii -> III -> V,1,0.005040
+three_step_chain,V -> VII -> VII,1,0.005040
+three_step_chain,I -> vi -> bIII,1,0.005040
+three_step_chain,vi -> bIII -> bII,1,0.005040
+three_step_chain,bIII -> bII -> VII,1,0.005040
+three_step_chain,IV -> VII -> v,1,0.005040
+three_step_chain,V -> IV -> II,1,0.005040
+three_step_chain,IV -> II -> iii,1,0.005040
+three_step_chain,iii -> III -> IV,1,0.005040
+three_step_chain,V -> IV -> VI,1,0.005040
+three_step_chain,ii -> i -> I,1,0.005040
+three_step_chain,i -> I -> III,1,0.005040
+three_step_chain,I -> III -> VI,1,0.005040
+three_step_chain,V -> VII -> bii,1,0.005040
+three_step_chain,VII -> bii -> biii,1,0.005040
+three_step_chain,bii -> biii -> bii,1,0.005040
+three_step_chain,biii -> bii -> VII,1,0.005040
+three_step_chain,VII -> V -> VII,1,0.005040
+three_step_chain,IV -> iii -> iii,1,0.005040
+three_step_chain,iii -> iii -> I,1,0.005040
+three_step_chain,iii -> I -> V,1,0.005040
+three_step_chain,iii -> ii -> IV,1,0.005040
+three_step_chain,bIII -> bIII -> bVII,1,0.005040
+three_step_chain,bVII -> III -> v,1,0.005040
+three_step_chain,III -> v -> bVI,1,0.005040
+three_step_chain,v -> bVI -> vi,1,0.005040
+three_step_chain,IV -> iii -> bIII,1,0.005040
+three_step_chain,iii -> bIII -> bVII,1,0.005040
+three_step_chain,VI -> ii -> I,1,0.005040
+three_step_chain,bii -> V -> vi,1,0.005040
+three_step_chain,ii -> bii -> I,1,0.005040
+three_step_chain,bii -> I -> VII,1,0.005040
+three_step_chain,II -> bIII -> II,1,0.005040
+three_step_chain,II -> bIII -> ii,1,0.005040
+three_step_chain,IV -> bII -> ii,1,0.005040
+three_step_chain,iii -> vi -> vii,1,0.005040
+three_step_chain,bii -> i -> bii,1,0.005040
+three_step_chain,II -> I -> VII,1,0.005040
+three_step_chain,vii -> iii -> vii,1,0.005040
+three_step_chain,i -> vi -> VII,1,0.005040
+three_step_chain,vi -> VII -> IV,1,0.005040
+three_step_chain,VII -> IV -> v,1,0.005040
+three_step_chain,IV -> v -> iv,1,0.005040
+three_step_chain,v -> iv -> v,1,0.005040
+three_step_chain,iv -> v -> v,1,0.005040
+three_step_chain,V -> vii -> vii,1,0.005040
+three_step_chain,V -> vi -> II,1,0.005040
+three_step_chain,vi -> II -> vii,1,0.005040
+three_step_chain,IV -> ii -> I,1,0.005040
+three_step_chain,ii -> I -> bvii,1,0.005040
+three_step_chain,bIII -> III -> IV,1,0.005040
+three_step_chain,iii -> I -> bIII,1,0.005040
+three_step_chain,bvii -> vii -> biii,1,0.005040
+three_step_chain,vii -> biii -> bvi,1,0.005040
+three_step_chain,IV -> vii -> VII,1,0.005040
+three_step_chain,vii -> VII -> vii,1,0.005040
+three_step_chain,VII -> vii -> vii,1,0.005040
+three_step_chain,IV -> VII -> IV,1,0.005040
+three_step_chain,bVII -> VI -> bVII,1,0.005040
+three_step_chain,iii -> VII -> V,1,0.005040
+three_step_chain,bII -> bii -> bVI,1,0.005040
+three_step_chain,bii -> bVI -> ii,1,0.005040
+three_step_chain,bVII -> bIII -> I,1,0.005040
+three_step_chain,i -> v -> vi,1,0.005040
+three_step_chain,v -> vi -> III,1,0.005040
+three_step_chain,vi -> III -> i,1,0.005040
+three_step_chain,III -> i -> VII,1,0.005040
+three_step_chain,vii -> iii -> I,1,0.005040
+three_step_chain,bIII -> I -> V,1,0.005040
+three_step_chain,ii -> I -> v,1,0.005040
+three_step_chain,v -> I -> V,1,0.005040
+three_step_chain,I -> i -> iv,1,0.005040
+three_step_chain,I -> iv -> biii,1,0.005040
+three_step_chain,ii -> bIII -> VII,1,0.005040
+three_step_chain,bIII -> VII -> I,1,0.005040
+three_step_chain,iv -> I -> bii,1,0.005040
+three_step_chain,I -> bii -> v,1,0.005040
+three_step_chain,bii -> v -> v,1,0.005040
+three_step_chain,v -> v -> bvii,1,0.005040
+three_step_chain,v -> bvii -> iv,1,0.005040
+three_step_chain,iv -> bvii -> V,1,0.005040
+three_step_chain,I -> i -> VI,1,0.005040
+three_step_chain,VI -> VI -> vi,1,0.005040
+three_step_chain,i -> vii -> V,1,0.005040
+three_step_chain,vii -> V -> I,1,0.005040
+three_step_chain,ii -> bIII -> V,1,0.005040
+three_step_chain,biii -> bVI -> bvi,1,0.005040
+three_step_chain,bvi -> bII -> ii,1,0.005040
+three_step_chain,VII -> bvi -> ii,1,0.005040
+three_step_chain,i -> V -> iv,1,0.005040
+three_step_chain,V -> iv -> V,1,0.005040
+three_step_chain,I -> vii -> III,1,0.005040
+three_step_chain,bII -> V -> iii,1,0.005040
+three_step_chain,V -> VI -> bvi,1,0.005040
+three_step_chain,iv -> iv -> i,1,0.005040
+three_step_chain,iv -> i -> i,1,0.005040
+three_step_chain,biii -> iii -> iv,1,0.005040
+three_step_chain,biii -> ii -> biii,1,0.005040
+three_step_chain,VII -> V -> IV,1,0.005040
+three_step_chain,IV -> bII -> VI,1,0.005040
+three_step_chain,VI -> VI -> bIII,1,0.005040
+three_step_chain,VI -> bIII -> I,1,0.005040
+three_step_chain,bIII -> I -> III,1,0.005040
+three_step_chain,III -> III -> bVII,1,0.005040
+three_step_chain,III -> bII -> I,1,0.005040
+three_step_chain,bVI -> bii -> bVI,1,0.005040
+three_step_chain,bii -> bVI -> bVI,1,0.005040
+three_step_chain,bVI -> V -> V,1,0.005040
+three_step_chain,V -> V -> IV,1,0.005040
+three_step_chain,bII -> V -> ii,1,0.005040
+three_step_chain,IV -> VI -> ii,1,0.005040
+three_step_chain,I -> iv -> VII,1,0.005040
+three_step_chain,bVII -> V -> V,1,0.005040
+three_step_chain,III -> IV -> bIII,1,0.005040
+three_step_chain,IV -> bIII -> bII,1,0.005040
+three_step_chain,vii -> IV -> III,1,0.005040
+three_step_chain,IV -> iii -> i,1,0.005040
+three_step_chain,I -> bVII -> VI,1,0.005040
+three_step_chain,bVII -> VI -> IV,1,0.005040
+three_step_chain,I -> bii -> III,1,0.005040
+three_step_chain,bii -> III -> bii,1,0.005040
+three_step_chain,i -> iii -> iii,1,0.005040
+three_step_chain,V -> IV -> biii,1,0.005040
+three_step_chain,I -> bII -> bVII,1,0.005040
+three_step_chain,I -> III -> iv,1,0.005040
+three_step_chain,IV -> VI -> bii,1,0.005040
+three_step_chain,VI -> bii -> i,1,0.005040
+three_step_chain,bVII -> I -> bVI,1,0.005040
+three_step_chain,bVI -> I -> iii,1,0.005040
+three_step_chain,vii -> i -> V,1,0.005040
+three_step_chain,v -> V -> V,1,0.005040
+three_step_chain,bvii -> vii -> ii,1,0.005040
+three_step_chain,IV -> V -> bii,1,0.005040
+three_step_chain,ii -> v -> bIII,1,0.005040
+three_step_chain,v -> bIII -> bVI,1,0.005040
+three_step_chain,bIII -> bVI -> vi,1,0.005040
+three_step_chain,bVI -> vi -> ii,1,0.005040
+three_step_chain,iv -> iii -> vii,1,0.005040
+three_step_chain,iii -> vii -> biii,1,0.005040
+three_step_chain,vii -> biii -> vi,1,0.005040
+three_step_chain,biii -> vi -> i,1,0.005040
+three_step_chain,vii -> v -> bIII,1,0.005040
+three_step_chain,v -> bIII -> ii,1,0.005040
+three_step_chain,II -> IV -> III,1,0.005040
+three_step_chain,IV -> III -> V,1,0.005040
+three_step_chain,V -> v -> vi,1,0.005040
+three_step_chain,I -> vii -> ii,1,0.005040
+three_step_chain,bVII -> v -> bII,1,0.005040
+three_step_chain,v -> bII -> I,1,0.005040
+three_step_chain,VII -> v -> vi,1,0.005040
+three_step_chain,II -> I -> ii,1,0.005040
+three_step_chain,I -> ii -> vii,1,0.005040
+three_step_chain,i -> bii -> bii,1,0.005040
+three_step_chain,bii -> bii -> I,1,0.005040
+three_step_chain,bii -> I -> I,1,0.005040
+three_step_chain,I -> bii -> bIII,1,0.005040
+three_step_chain,iv -> biii -> ii,1,0.005040
+three_step_chain,II -> V -> IV,1,0.005040
+three_step_chain,I -> II -> bVII,1,0.005040
+three_step_chain,II -> bVII -> I,1,0.005040
+three_step_chain,vi -> IV -> I,1,0.005040
+three_step_chain,I -> III -> i,1,0.005040
+three_step_chain,VI -> IV -> biii,1,0.005040
+three_step_chain,IV -> biii -> bvii,1,0.005040
+three_step_chain,biii -> bvii -> bVI,1,0.005040
+three_step_chain,V -> v -> bvi,1,0.005040
+three_step_chain,V -> vii -> iii,1,0.005040
+three_step_chain,vi -> v -> i,1,0.005040
+three_step_chain,bVI -> V -> I,1,0.005040
+three_step_chain,VII -> I -> iii,1,0.005040
+three_step_chain,IV -> vi -> iii,1,0.005040
+three_step_chain,vi -> iii -> VII,1,0.005040
+three_step_chain,bVI -> bIII -> VII,1,0.005040
+three_step_chain,bVI -> bII -> V,1,0.005040
+three_step_chain,iv -> iv -> V,1,0.005040
+three_step_chain,bvi -> vi -> v,1,0.005040
+three_step_chain,vi -> biii -> bvii,1,0.005040
+three_step_chain,bII -> IV -> IV,1,0.005040
+three_step_chain,I -> bVII -> II,1,0.005040
+three_step_chain,bVII -> II -> vi,1,0.005040
+three_step_chain,vi -> ii -> VI,1,0.005040
+three_step_chain,iii -> vi -> vi,1,0.005040
+three_step_chain,biii -> V -> bii,1,0.005040
+three_step_chain,iv -> III -> vii,1,0.005040
+three_step_chain,III -> vii -> i,1,0.005040
+three_step_chain,iv -> vii -> III,1,0.005040
+three_step_chain,bIII -> iii -> bIII,1,0.005040
+three_step_chain,iii -> bIII -> V,1,0.005040
+three_step_chain,bvi -> vi -> bvi,1,0.005040
+three_step_chain,i -> VII -> IV,1,0.005040
+three_step_chain,bVI -> II -> VI,1,0.005040
+three_step_chain,II -> VI -> bIII,1,0.005040
+three_step_chain,VI -> bIII -> bVII,1,0.005040
+three_step_chain,bVII -> III -> VII,1,0.005040
+three_step_chain,I -> bVI -> VII,1,0.005040
+three_step_chain,bVI -> VII -> V,1,0.005040
+three_step_chain,VII -> V -> bVII,1,0.005040
+three_step_chain,VI -> IV -> bVI,1,0.005040
+three_step_chain,vi -> VI -> iv,1,0.005040
+three_step_chain,VI -> i -> ii,1,0.005040
+three_step_chain,III -> IV -> iii,1,0.005040
+three_step_chain,IV -> iii -> VII,1,0.005040
+three_step_chain,VII -> ii -> III,1,0.005040
+three_step_chain,VI -> I -> bIII,1,0.005040
+three_step_chain,bIII -> V -> iii,1,0.005040
+three_step_chain,VI -> VI -> bVII,1,0.005040
+three_step_chain,IV -> V -> v,1,0.005040
+three_step_chain,bvi -> IV -> bvi,1,0.005040
+three_step_chain,bVII -> vi -> v,1,0.005040
+three_step_chain,iii -> V -> iii,1,0.005040
+three_step_chain,V -> iii -> VII,1,0.005040
+three_step_chain,VI -> i -> vii,1,0.005040
+three_step_chain,ii -> bII -> iv,1,0.005040
+three_step_chain,ii -> vii -> bVII,1,0.005040
+three_step_chain,vii -> bVII -> vi,1,0.005040
+three_step_chain,iv -> IV -> v,1,0.005040
+three_step_chain,I -> v -> ii,1,0.005040
+three_step_chain,V -> v -> VI,1,0.005040
+three_step_chain,v -> VI -> I,1,0.005040
+three_step_chain,VI -> I -> vi,1,0.005040
+three_step_chain,I -> iii -> bIII,1,0.005040
+three_step_chain,bVI -> iv -> ii,1,0.005040
+three_step_chain,III -> IV -> VII,1,0.005040
+three_step_chain,ii -> VI -> bii,1,0.005040
+three_step_chain,ii -> bVI -> bVI,1,0.005040
+three_step_chain,bii -> ii -> bii,1,0.005040
+three_step_chain,bii -> vii -> V,1,0.005040
+three_step_chain,vii -> V -> bvii,1,0.005040
+three_step_chain,i -> V -> IV,1,0.005040
+three_step_chain,IV -> ii -> i,1,0.005040
+three_step_chain,bvii -> vi -> bvii,1,0.005040
+three_step_chain,IV -> iii -> III,1,0.005040
+three_step_chain,II -> i -> III,1,0.005040
+three_step_chain,III -> III -> iii,1,0.005040
+three_step_chain,vii -> i -> VI,1,0.005040
+three_step_chain,VI -> i -> bVII,1,0.005040
+three_step_chain,bVII -> i -> IV,1,0.005040
+three_step_chain,V -> bii -> bii,1,0.005040
+three_step_chain,IV -> bvi -> IV,1,0.005040
+three_step_chain,bVII -> bvii -> IV,1,0.005040
+three_step_chain,V -> IV -> iv,1,0.005040
+three_step_chain,iv -> V -> III,1,0.005040
+three_step_chain,VI -> iv -> vi,1,0.005040
+three_step_chain,iv -> vi -> V,1,0.005040
+three_step_chain,vi -> bvii -> iii,1,0.005040
+three_step_chain,bvii -> iii -> I,1,0.005040
+three_step_chain,iii -> i -> i,1,0.005040
+three_step_chain,bIII -> II -> I,1,0.005040
