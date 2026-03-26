@@ -486,6 +486,70 @@ def list_job_artifacts(job_id: str) -> dict[str, Any]:
     return {"job_id": job.id, "artifacts": job.artifacts}
 
 
+def _strip_cmd_wrappers(s: str) -> str:
+    """Remove \\cmd{...} formatting wrappers using brace-depth counting, keep inner content."""
+    cmds = ('textbf', 'mathbf', 'boldsymbol', 'text', 'scriptsize', 'normalsize', 'mbox')
+    pattern = re.compile(r'\\(' + '|'.join(cmds) + r')\s*\{')
+    result = []
+    i = 0
+    while i < len(s):
+        m = pattern.search(s, i)
+        if not m:
+            result.append(s[i:])
+            break
+        result.append(s[i:m.start()])
+        brace_pos = m.end() - 1  # position of opening {
+        depth, j = 1, brace_pos + 1
+        while j < len(s) and depth > 0:
+            if s[j] == '{':
+                depth += 1
+            elif s[j] == '}':
+                depth -= 1
+            j += 1
+        result.append(s[brace_pos + 1: j - 1])  # inner content without wrapper
+        i = j
+    return ''.join(result)
+
+
+def _clean_label_arg(raw: str) -> str:
+    """Convert LeftLabel/RightLabel content to MathJax-compatible text."""
+    s = raw.replace('$', '')          # remove inline-math delimiters
+    s = _strip_cmd_wrappers(s)        # strip \textbf{}, \boldsymbol{}, etc.
+    s = re.sub(r'\s+', ' ', s).strip()
+    return s
+
+
+def _fix_labels(block: str) -> str:
+    """Walk block char-by-char to extract and clean each LeftLabel/RightLabel arg."""
+    result = []
+    i = 0
+    while i < len(block):
+        # Look for \LeftLabel{ or \RightLabel{
+        m = re.search(r'\\(LeftLabel|RightLabel)\{', block[i:])
+        if not m:
+            result.append(block[i:])
+            break
+        start = i + m.start()
+        brace_start = i + m.end() - 1  # position of '{'
+        result.append(block[i:start])
+        result.append(f'\\{m.group(1)}{{')
+        # Find matching closing brace
+        depth = 1
+        j = brace_start + 1
+        while j < len(block) and depth > 0:
+            if block[j] == '{':
+                depth += 1
+            elif block[j] == '}':
+                depth -= 1
+            j += 1
+        # block[brace_start+1 : j-1] is the label content
+        raw_content = block[brace_start + 1: j - 1]
+        result.append(_clean_label_arg(raw_content))
+        result.append('}')
+        i = j
+    return ''.join(result)
+
+
 def _extract_prooftrees(tex_path: Path) -> list[str]:
     """Extract and preprocess bussproofs environments from a .tex file for MathJax."""
     text = tex_path.read_text(encoding="utf-8", errors="ignore")
@@ -498,11 +562,14 @@ def _extract_prooftrees(tex_path: Path) -> list[str]:
     for b1, b2 in blocks:
         block = b1 if b1.strip() else b2
         block = re.sub(r'\\def\\defaultHypSeparation\{[^}]*\}', '', block)
+        # \sststile{d}{} → \vdash_{d}
         block = re.sub(r'\\sststile\{([^}]*)\}\{[^}]*\}', r'\\vdash_{\1}', block)
-        block = block.replace(r'\MA', r'^{\scriptsize\mathrm{MA}^7}')
+        # \MA macro
+        block = block.replace(r'\MA', r'^{\mathrm{MA}^7}')
+        # Remove \doubleLine
         block = re.sub(r'\\doubleLine\s*', '', block)
-        # \textbf not valid in MathJax math mode — use \mathbf
-        block = block.replace(r'\textbf{', r'\mathbf{')
+        # Clean label content so MathJax renders it correctly
+        block = _fix_labels(block)
         block = f'\\begin{{prooftree}}{block}\\end{{prooftree}}'
         result.append(block.strip())
     return result
@@ -518,9 +585,12 @@ def get_prooftrees(job_id: str, section: str = "") -> dict[str, Any]:
     for art in job.artifacts:
         if not art.lower().endswith(".tex"):
             continue
-        # Filter by section if provided (e.g. "A_1" matches "standard_A_1.tex")
-        if section and section.lower() not in Path(art).stem.lower():
-            continue
+        if section:
+            # Exact suffix match: "A_1" matches "Cute_A_1.tex" but NOT "Cute_A_1_Ending2.tex"
+            stem = Path(art).stem.lower()
+            sec = section.lower()
+            if not re.search(r'(?:^|_)' + re.escape(sec) + r'$', stem):
+                continue
         p = Path(art)
         if p.exists():
             trees.extend(_extract_prooftrees(p))
