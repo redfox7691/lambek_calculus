@@ -486,6 +486,37 @@ def list_job_artifacts(job_id: str) -> dict[str, Any]:
     return {"job_id": job.id, "artifacts": job.artifacts}
 
 
+def _extract_prooftrees(tex_path: Path) -> list[str]:
+    """Extract and preprocess bussproofs environments from a .tex file for MathJax."""
+    text = tex_path.read_text(encoding="utf-8", errors="ignore")
+    blocks = re.findall(r'\\begin\{prooftree\}.*?\\end\{prooftree\}', text, re.DOTALL)
+    result = []
+    for block in blocks:
+        block = re.sub(r'\\def\\defaultHypSeparation\{[^}]*\}', '', block)
+        block = re.sub(r'\\sststile\{([^}]*)\}\{[^}]*\}', r'\\vdash_{\1}', block)
+        block = block.replace(r'\MA', r'^{\scriptsize\mathrm{MA}^7}')
+        block = re.sub(r'\\doubleLine\s*', '', block)
+        block = re.sub(r'\\begin\{scprooftree\}\{[^}]*\}', r'\\begin{prooftree}', block)
+        block = block.replace(r'\end{scprooftree}', r'\end{prooftree}')
+        result.append(block.strip())
+    return result
+
+
+@app.get("/api/jobs/{job_id}/prooftrees")
+def get_prooftrees(job_id: str) -> dict[str, Any]:
+    try:
+        job = registry.get(job_id)
+    except KeyError as exc:
+        raise HTTPException(status_code=404, detail="Job not found") from exc
+    trees: list[str] = []
+    for art in job.artifacts:
+        if art.lower().endswith(".tex"):
+            p = Path(art)
+            if p.exists():
+                trees.extend(_extract_prooftrees(p))
+    return {"job_id": job.id, "prooftrees": trees}
+
+
 @app.get("/api/jobs/{job_id}/download")
 def download_artifact(job_id: str, path: str) -> FileResponse:
     try:

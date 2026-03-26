@@ -61,7 +61,16 @@
     .latex-area{background:#f8f6f0;border:1px solid var(--border);border-radius:7px;padding:7px;margin-top:7px;}
     hr.sep{border:none;border-top:1px solid var(--border);margin:14px 0;}
     .offline-warn{display:none;background:#fef3c7;border:1px solid #f59e0b;border-radius:7px;padding:10px;margin-bottom:12px;font-size:.88rem;}
+    .mathjax-out{overflow-x:auto;padding:10px 4px;}
   </style>
+  <script>
+    window.MathJax={
+      loader:{load:['[tex]/bussproofs']},
+      tex:{packages:{'[+]':['bussproofs']}},
+      options:{skipHtmlTags:['script','noscript','style','textarea','pre']}
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
 </head>
 <body>
 <div class="wrap">
@@ -864,6 +873,28 @@ function _bestImage(artifacts,secFilter){
   return svgs[svgs.length-1]||pngs[pngs.length-1]||null;
 }
 
+async function buildProoftreePreview(id, jobId){
+  const el = document.getElementById(id);
+  el.innerHTML = '<div class="loading"><span class="spinner"></span><span>Rendering…</span></div>';
+  try {
+    const r = await fetch(`/api/jobs/${jobId}/prooftrees`);
+    const data = await r.json();
+    if (!data.prooftrees || data.prooftrees.length === 0) {
+      buildPreview(id, _bestImage((await fetch(`/api/jobs/${jobId}/artifacts`).then(x=>x.json())).artifacts, null), jobId);
+      return;
+    }
+    const html = data.prooftrees.map((t,i) =>
+      `<div class="mathjax-out" style="margin-bottom:18px">\\[${t}\\]</div>`
+    ).join('<hr class="sep">');
+    el.innerHTML = html;
+    if (window.MathJax && MathJax.typesetPromise) {
+      await MathJax.typesetPromise([el]);
+    }
+  } catch(e) {
+    el.innerHTML = '<span class="muted" style="color:#c00">MathJax render failed.</span>';
+  }
+}
+
 function buildPreview(id,imgPath,jobId){
   const el=document.getElementById(id);
   if(!imgPath||!jobId){el.innerHTML='<span class="muted">No image available</span>';return;}
@@ -887,7 +918,12 @@ function _setPngPreview(id,job,secFilter){
   if(job.status==='queued'||job.status==='running'){
     el.innerHTML='<div class="loading"><span class="spinner"></span><span>Working…</span></div>';return;}
   if(job.status==='error'){el.innerHTML='<span class="muted" style="color:#c00">Job failed — see Jobs tab.</span>';return;}
-  buildPreview(id,_bestImage(job.artifacts,secFilter),job.id);
+  // Use MathJax for analysis and history previews; SVG/PNG for generation
+  if(id==='analysis_preview'||id==='h_ana_prev'){
+    buildProoftreePreview(id,job.id);
+  } else {
+    buildPreview(id,_bestImage(job.artifacts,secFilter),job.id);
+  }
 }
 
 function statusBadge(s){
