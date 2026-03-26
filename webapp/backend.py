@@ -525,10 +525,6 @@ def _clean_label_arg(raw: str) -> str:
     s = s.replace('\\Box', '□')
     # Strip braces from subscripts: R_{SR_D}C  →  R_SR_DC
     s = re.sub(r'_\{([^}]+)\}', r'_\1', s)
-    # Convert single-letter subscripts to Unicode: K_P → Kₚ, K_D → Kᴅ etc.
-    _SUB = {'D': 'ᴅ', 'S': 'ₛ', 'R': 'ᵣ', 'P': 'ₚ', 'L': 'ₗ',
-            '0': '₀', '1': '₁', '2': '₂', '3': '₃', '4': '₄'}
-    s = re.sub(r'_([DSRPL0-4])', lambda m: _SUB.get(m.group(1), m.group(0)), s)
     s = re.sub(r'\s+', ' ', s).strip()
     return s
 
