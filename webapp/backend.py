@@ -489,7 +489,6 @@ def list_job_artifacts(job_id: str) -> dict[str, Any]:
 def _extract_prooftrees(tex_path: Path) -> list[str]:
     """Extract and preprocess bussproofs environments from a .tex file for MathJax."""
     text = tex_path.read_text(encoding="utf-8", errors="ignore")
-    # Match both \begin{prooftree} and \begin{scprooftree}{...}
     blocks = re.findall(
         r'\\begin\{scprooftree\}\{[^}]*\}(.*?)\\end\{scprooftree\}|'
         r'\\begin\{prooftree\}(.*?)\\end\{prooftree\}',
@@ -502,23 +501,29 @@ def _extract_prooftrees(tex_path: Path) -> list[str]:
         block = re.sub(r'\\sststile\{([^}]*)\}\{[^}]*\}', r'\\vdash_{\1}', block)
         block = block.replace(r'\MA', r'^{\scriptsize\mathrm{MA}^7}')
         block = re.sub(r'\\doubleLine\s*', '', block)
+        # \textbf not valid in MathJax math mode — use \mathbf
+        block = block.replace(r'\textbf{', r'\mathbf{')
         block = f'\\begin{{prooftree}}{block}\\end{{prooftree}}'
         result.append(block.strip())
     return result
 
 
 @app.get("/api/jobs/{job_id}/prooftrees")
-def get_prooftrees(job_id: str) -> dict[str, Any]:
+def get_prooftrees(job_id: str, section: str = "") -> dict[str, Any]:
     try:
         job = registry.get(job_id)
     except KeyError as exc:
         raise HTTPException(status_code=404, detail="Job not found") from exc
     trees: list[str] = []
     for art in job.artifacts:
-        if art.lower().endswith(".tex"):
-            p = Path(art)
-            if p.exists():
-                trees.extend(_extract_prooftrees(p))
+        if not art.lower().endswith(".tex"):
+            continue
+        # Filter by section if provided (e.g. "A_1" matches "standard_A_1.tex")
+        if section and section.lower() not in Path(art).stem.lower():
+            continue
+        p = Path(art)
+        if p.exists():
+            trees.extend(_extract_prooftrees(p))
     return {"job_id": job.id, "prooftrees": trees}
 
 

@@ -873,14 +873,22 @@ function _bestImage(artifacts,secFilter){
   return svgs[svgs.length-1]||pngs[pngs.length-1]||null;
 }
 
-async function buildProoftreePreview(id, jobId){
+// Cache: track last rendered "jobId|section" per container to avoid re-render on every poll
+const _prooftreeCache = {};
+
+async function buildProoftreePreview(id, jobId, section){
+  const cacheKey = `${jobId}|${section||''}`;
+  if (_prooftreeCache[id] === cacheKey) return; // already rendered, skip
+  _prooftreeCache[id] = cacheKey;
+
   const el = document.getElementById(id);
   el.innerHTML = '<div class="loading"><span class="spinner"></span><span>Rendering…</span></div>';
   try {
-    const r = await fetch(`/api/jobs/${jobId}/prooftrees`);
+    const secParam = section ? `?section=${encodeURIComponent(section)}` : '';
+    const r = await fetch(`/api/jobs/${jobId}/prooftrees${secParam}`);
     const data = await r.json();
     if (!data.prooftrees || data.prooftrees.length === 0) {
-      buildPreview(id, _bestImage((await fetch(`/api/jobs/${jobId}/artifacts`).then(x=>x.json())).artifacts, null), jobId);
+      buildPreview(id, _bestImage((await fetch(`/api/jobs/${jobId}/artifacts`).then(x=>x.json())).artifacts, section), jobId);
       return;
     }
     const html = data.prooftrees.map((t,i) =>
@@ -920,7 +928,7 @@ function _setPngPreview(id,job,secFilter){
   if(job.status==='error'){el.innerHTML='<span class="muted" style="color:#c00">Job failed — see Jobs tab.</span>';return;}
   // Use MathJax for analysis and history previews; SVG/PNG for generation
   if(id==='analysis_preview'||id==='h_ana_prev'){
-    buildProoftreePreview(id,job.id);
+    buildProoftreePreview(id, job.id, secFilter);
   } else {
     buildPreview(id,_bestImage(job.artifacts,secFilter),job.id);
   }
