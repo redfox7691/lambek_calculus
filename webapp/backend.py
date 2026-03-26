@@ -489,15 +489,20 @@ def list_job_artifacts(job_id: str) -> dict[str, Any]:
 def _extract_prooftrees(tex_path: Path) -> list[str]:
     """Extract and preprocess bussproofs environments from a .tex file for MathJax."""
     text = tex_path.read_text(encoding="utf-8", errors="ignore")
-    blocks = re.findall(r'\\begin\{prooftree\}.*?\\end\{prooftree\}', text, re.DOTALL)
+    # Match both \begin{prooftree} and \begin{scprooftree}{...}
+    blocks = re.findall(
+        r'\\begin\{scprooftree\}\{[^}]*\}(.*?)\\end\{scprooftree\}|'
+        r'\\begin\{prooftree\}(.*?)\\end\{prooftree\}',
+        text, re.DOTALL
+    )
     result = []
-    for block in blocks:
+    for b1, b2 in blocks:
+        block = b1 if b1.strip() else b2
         block = re.sub(r'\\def\\defaultHypSeparation\{[^}]*\}', '', block)
         block = re.sub(r'\\sststile\{([^}]*)\}\{[^}]*\}', r'\\vdash_{\1}', block)
         block = block.replace(r'\MA', r'^{\scriptsize\mathrm{MA}^7}')
         block = re.sub(r'\\doubleLine\s*', '', block)
-        block = re.sub(r'\\begin\{scprooftree\}\{[^}]*\}', r'\\begin{prooftree}', block)
-        block = block.replace(r'\end{scprooftree}', r'\end{prooftree}')
+        block = f'\\begin{{prooftree}}{block}\\end{{prooftree}}'
         result.append(block.strip())
     return result
 
