@@ -522,9 +522,21 @@ def _clean_label_arg(raw: str) -> str:
     s = s.replace('\\slash', '/')
     s = s.replace('\\flat', '♭')
     s = s.replace('\\sharp', '♯')
+    s = s.replace('\\#', '♯')              # \# (escaped hash) used for sharp notes
     s = s.replace('\\Box', '□')
     # Strip braces from subscripts: R_{SR_D}C  →  R_SR_DC
     s = re.sub(r'_\{([^}]+)\}', r'_\1', s)
+    # Convert subscripts to Unicode — only use Superscripts/Subscripts block (safe for MathJax)
+    # D and R lack safe Unicode subscripts so use bracket notation: _D→(D), _R→(R)
+    _SUB = {'P': 'ₚ', 'S': 'ₛ', 'L': 'ₗ',
+            '0': '₀', '1': '₁', '2': '₂', '3': '₃', '4': '₄'}
+    _BRACKET = {'D', 'R'}
+    def _sub_replace(m):
+        c = m.group(1)
+        if c in _SUB:    return _SUB[c]
+        if c in _BRACKET: return f'({c})'
+        return m.group(0)
+    s = re.sub(r'_([DSRPL0-4])', _sub_replace, s)
     s = re.sub(r'\s+', ' ', s).strip()
     return s
 
