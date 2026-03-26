@@ -516,11 +516,15 @@ def _clean_label_arg(raw: str) -> str:
     s = raw.replace('$', '')          # remove inline-math delimiters
     s = _strip_cmd_wrappers(s)        # strip \textbf{}, \boldsymbol{}, etc.
     # Replace LaTeX symbols with readable plain-text equivalents
-    s = s.replace('\\backslash', '\\')   # \backslash_L  →  \_L
-    s = s.replace('\\slash', '/')        # \slash_L      →  /L
+    s = re.sub(r'\\backslash_', '\\\\', s)  # \backslash_L  →  \L  (consume underscore)
+    s = s.replace('\\backslash', '\\')      # remaining \backslash  →  \
+    s = re.sub(r'\\slash_', '/', s)         # \slash_L  →  /L  (consume underscore)
+    s = s.replace('\\slash', '/')
     s = s.replace('\\flat', '♭')
     s = s.replace('\\sharp', '♯')
     s = s.replace('\\Box', '□')
+    # Strip braces from subscripts: R_{SR_D}C  →  R_SR_DC
+    s = re.sub(r'_\{([^}]+)\}', r'_\1', s)
     s = re.sub(r'\s+', ' ', s).strip()
     return s
 
