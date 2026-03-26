@@ -512,9 +512,15 @@ def _strip_cmd_wrappers(s: str) -> str:
 
 
 def _clean_label_arg(raw: str) -> str:
-    """Convert LeftLabel/RightLabel content to MathJax-compatible text."""
+    """Convert LeftLabel/RightLabel content to plain text for MathJax bussproofs."""
     s = raw.replace('$', '')          # remove inline-math delimiters
     s = _strip_cmd_wrappers(s)        # strip \textbf{}, \boldsymbol{}, etc.
+    # Replace LaTeX symbols with readable plain-text equivalents
+    s = s.replace('\\backslash', '\\')   # \backslash_L  →  \_L
+    s = s.replace('\\slash', '/')        # \slash_L      →  /L
+    s = s.replace('\\flat', '♭')
+    s = s.replace('\\sharp', '♯')
+    s = s.replace('\\Box', '□')
     s = re.sub(r'\s+', ' ', s).strip()
     return s
 
