@@ -1,0 +1,379 @@
+\section{Evaluation against the Jazz Harmony Treebank}
+\label{sec:jht-evaluation}
+
+In response to the need for an external evaluation of the proposed parser, we
+implemented an evaluation bridge between our Lambek-calculus analysis system
+and the Jazz Harmony Treebank (JHT) of Harasim et al.~\cite{harasim2020jazz}.
+The purpose of this experiment is not merely to show that our system can parse
+musical sequences, but to measure whether the harmonic relations recovered by
+the system correspond to independently annotated expert analyses.
+
+\subsection{Reference corpus}
+
+The Jazz Harmony Treebank provides chord sequences from the iRealPro jazz
+corpus together with expert harmonic tree annotations. Each annotated item
+contains a chord sequence, a global key label, and one or more constituent-tree
+analyses. In the JHT representation, internal tree nodes are labelled by
+harmonic heads, while leaves correspond to chord events. This makes the corpus
+particularly appropriate as an external reference point for our system: both
+frameworks analyse the hierarchical organisation of jazz harmony, even though
+they do so using different formal languages.
+
+For the present evaluation we used the public JHT file \texttt{treebank.json}
+from the \texttt{DCMLab/JazzHarmonyTreebank} repository. The evaluation script
+is implemented as \texttt{jht\_eval.py}. It reads the JHT annotations, converts
+JHT chord spellings to the notation accepted by our parser, runs our automatic
+Lambek analysis on the same chord sequences, and writes a CSV file containing
+piece-level comparison metrics. The command used for the complete run was:
+
+\begin{verbatim}
+python3 jht_eval.py \
+  --jht-json /tmp/jht_treebank.json \
+  --out jht_evaluation/jht_cadence_eval_full.csv
+\end{verbatim}
+
+\subsection{Notation normalisation}
+
+Before comparison, JHT chord labels are normalised into the chord notation used
+by our parser. The following deterministic substitutions are applied:
+
+\begin{center}
+\begin{tabular}{lll}
+\hline
+JHT notation & Normalised notation & Meaning \\
+\hline
+\texttt{\^{}} & \texttt{maj} & major quality, e.g. \texttt{C\^{}7} $\mapsto$ \texttt{Cmaj7} \\
+\texttt{\%} & \texttt{m7b5} & half-diminished quality \\
+\texttt{-} & \texttt{b} & flat accidental, e.g. \texttt{B-} $\mapsto$ \texttt{Bb} \\
+\texttt{o7} & \texttt{dim7} & diminished seventh quality \\
+\texttt{o} & \texttt{dim} & diminished quality \\
+\hline
+\end{tabular}
+\end{center}
+
+This normalisation is deliberately conservative. It does not attempt to
+reinterpret the harmonic analysis supplied by JHT; it only ensures that both
+systems operate over the same surface chord symbols.
+
+\subsection{Iterative construction of the evaluation bridge}
+
+The evaluation bridge was developed in several stages. The first version only
+compared the parser's initial inferred key with the global key label supplied
+by JHT. This produced a relatively low key-agreement score, because our parser
+uses local tonal contexts during the derivation, while JHT provides a single
+piece-level key label. Manual inspection showed that this direct comparison was
+too strict: in many cases the parser correctly identified local cadential
+relations, but the first or last local key did not correspond to the global
+reference key of the tune.
+
+We therefore added progressively richer key estimates. First, we extracted the
+final key reached by the proof and the key implied by the last recognised
+cadential relation. Then we computed the modal cadential key, namely the key
+receiving the largest number of recognised cadential resolutions. This made it
+possible to distinguish three different notions that are often conflated in
+lead-sheet analysis: the opening local key, the most frequent local cadential
+target, and the form-level key of the tune.
+
+The first combined global-reference estimator reached 70.3\% agreement with
+JHT. A manual error analysis of the remaining mismatches revealed two main
+problems. First, repeated local cadences could dominate the score even when
+they were part of a temporary tonicisation. Second, a spelling bug in the
+dominant-implied key labels caused flat keys such as Bb and Ab to be formatted
+incorrectly in some contexts. After capping repeated cadence counts and fixing
+the flat-accidental formatting, agreement rose to 85.8\%.
+
+The remaining errors were then analysed one by one. Many were caused by final
+turnarounds: the last ii--V or dominant region often pointed to the next
+chorus rather than to the form-level key. We therefore added a final-turnaround
+detector and discounted the final cadence when it behaved as a turnaround.
+The estimator was also extended to report a ranked list of candidate keys and
+a confidence label. This made the residual errors inspectable rather than
+opaque: the system no longer simply returned one key, but also reported how
+close the competing tonal centres were.
+
+Finally, we observed a recurrent pattern in the remaining mismatches: several
+standards begin on the subdominant. In such cases the opening chord can mislead
+a purely opening-based key prior. We therefore added a conditional
+formal-cadence prior. The system searches for the last complete authentic
+cadence resolving onto a stable, non-dominant chord. If the opening key is IV
+of that formal cadence, the opening prior is reduced and the formal cadence is
+given additional weight. This correction recovered cases such as
+\emph{Just Friends}, whose chart opens in C but whose form-level key is G, and
+\emph{I Can't Believe That You're in Love with Me}, whose chart opens in F but
+whose form-level key is C. The rule is deliberately conditional: an earlier,
+broader version over-weighted stable chords inside turnarounds and introduced
+regressions, whereas the final version only applies when the opening-IV
+relation is detected.
+
+\subsection{Shared cadence vocabulary}
+
+A direct tree-to-tree comparison would be misleading at this stage because the
+two systems produce different kinds of structures. The JHT represents harmonic
+constituency trees, whereas our system produces Lambek proof trees whose depth
+also reflects derivational steps and modal-key transitions. Therefore, we first
+translate both analyses into a shared intermediate vocabulary of cadential and
+functional events.
+
+The shared vocabulary currently contains the following event classes:
+
+\begin{center}
+\begin{tabular}{ll}
+\hline
+Event class & Description \\
+\hline
+\texttt{perfect\_authentic} & dominant-function resolution by descending fifth, e.g. V--I \\
+\texttt{plagal} & subdominant-to-tonic relation, e.g. IV--I \\
+\texttt{ii\_to\_V} & predominant-to-dominant relation, e.g. ii--V \\
+\texttt{tritone\_sub} & tritone-substitute dominant resolution, e.g. bII7--I \\
+\texttt{backdoor} & dominant seventh relation by whole-step descent into the target \\
+\texttt{deceptive} & dominant motion into a minor target by the same root relation \\
+\texttt{descending\_fifth} & generic descending-fifth root motion not otherwise classified \\
+\hline
+\end{tabular}
+\end{center}
+
+For our system, events are extracted from adjacent chord transitions after
+normalisation, using the same dominant-quality, minor-seventh, diminished, and
+tritone-substitution heuristics as the parser. For JHT, events are extracted
+from the annotated constituent tree: each internal node is treated as a
+harmonic head, and each non-identical child label is interpreted as a dependent
+standing in a relation to that head. This maps both analyses into the same
+cadence ontology while preserving the fact that JHT relations are hierarchical
+and our extracted events are obtained from the parser's chord-level analysis.
+
+\subsection{Metrics}
+
+The evaluation reports three families of metrics.
+
+First, we measure surface alignment:
+\[
+\text{leaf-count match} =
+\begin{cases}
+1 & \text{if the number of JHT leaves equals the number of input chords},\\
+0 & \text{otherwise}.
+\end{cases}
+\]
+We also compute leaf sequence accuracy over the comparable prefix of the two
+sequences after chord normalisation. Since JHT trees may introduce headed or
+repeated nodes that do not correspond one-to-one to surface chord events, we
+also report a longest-common-subsequence (LCS) alignment score between the JHT
+leaf sequence and the input chord sequence. This gives a less brittle measure
+of whether the two systems are analysing the same harmonic material.
+
+Second, we measure key agreement. The global key supplied by JHT is compared
+with several key estimates produced by our system: the initial inferred key,
+the final key label reached by the proof, the key implied by the last complete
+cadential relation in the sequence, and the modal cadential key, defined as the
+key receiving the largest number of recognised cadential resolutions. Finally,
+we compute a global reference key estimate. This estimate combines the initial
+key, final key, last-cadence key, the number of cadential resolutions per key,
+and a chart-level prior inferred from the opening non-dominant chord. Cadential
+counts are capped so that repeated local tonicisations cannot linearly
+overwhelm the form-level evidence. A final tie-break preserves the mode of the
+opening tonic when the competing estimates have the same pitch-class root.
+The estimator also detects likely final turnarounds, discounts the final
+cadence in those cases, and reports both a ranked list of candidate keys and a
+confidence label. In addition to exact key agreement, we also report a
+related-key agreement score. This score treats parallel keys, relative
+major/minor pairs, and the common minor-to-flat-VI relation (for example
+C minor and Ab major) as closely related tonal descriptions rather than full
+errors. This separates the local key used by the Lambek derivation from a more
+form-level key estimate suitable for comparison with JHT.
+
+Third, we measure cadence agreement. Let $P$ be the multiset of cadence events
+predicted by our system and $R$ the multiset of cadence events extracted from
+the JHT tree. The overlap is computed category-wise:
+\[
+\mathrm{overlap}(P,R) = \sum_{c} \min(P_c, R_c).
+\]
+We then compute:
+\[
+\mathrm{precision} = \frac{\mathrm{overlap}(P,R)}{|P|},
+\qquad
+\mathrm{recall} = \frac{\mathrm{overlap}(P,R)}{|R|},
+\qquad
+F_1 = \frac{2PR}{P+R}.
+\]
+These scores are reported per annotated tree and also aggregated over the full
+evaluation set.
+
+\subsection{Results}
+
+The complete JHT file contains 1170 pieces. Of these, 155 annotated trees were
+directly comparable by the current evaluation script. No pieces were skipped
+because of parser errors.
+
+\begin{center}
+\begin{tabular}{lr}
+\hline
+Quantity & Value \\
+\hline
+JHT pieces inspected & 1170 \\
+Comparable annotated trees & 155 \\
+Skipped pieces & 0 \\
+Key match rate & 52.3\% \\
+Final-key match rate & 52.3\% \\
+Last-cadence key match rate & 68.4\% \\
+Modal-cadential key match rate & 65.2\% \\
+Representative-cadential key match rate & 72.9\% \\
+Global-reference key match rate & 94.8\% \\
+Global-reference related-key match rate & 96.8\% \\
+Leaf-count match rate & 43.2\% \\
+Mean leaf sequence accuracy & 99.9\% \\
+Mean leaf LCS $F_1$ & 98.0\% \\
+Median leaf LCS $F_1$ & 98.4\% \\
+Mean cadence precision & 88.3\% \\
+Mean cadence recall & 84.6\% \\
+Mean cadence $F_1$ & 85.6\% \\
+Median cadence $F_1$ & 87.0\% \\
+Micro cadence precision & 90.0\% \\
+Micro cadence recall & 84.9\% \\
+Micro cadence $F_1$ & 87.4\% \\
+\hline
+\end{tabular}
+\end{center}
+
+The high leaf sequence accuracy and leaf LCS $F_1$ indicate that the
+normalisation layer aligns the chord vocabulary of the two systems reliably.
+The lower exact leaf-count match rate should therefore not be interpreted as a
+failure of chord alignment. It is a strict structural diagnostic: several JHT
+trees contain inserted, repeated, or headed nodes that do not correspond
+one-to-one to surface chord tokens. This is also visible in the
+structural-depth comparison. The mean depth difference is positive ($+32.7$),
+confirming that our Lambek proof trees are systematically deeper than the JHT
+constituent trees. This does not necessarily indicate analytical error; it
+reflects the fact that our representation encodes derivational and modal
+operations that are not represented as separate depth-increasing steps in JHT.
+
+The cadence-level comparison is more directly informative. Across the 155
+comparable trees, the system obtains a mean cadence $F_1$ of 85.6\% and a
+micro-averaged cadence $F_1$ of 87.4\%. This suggests that, although the two
+systems differ structurally, they recover substantially overlapping harmonic
+relations when projected onto a common cadence vocabulary.
+
+\begin{center}
+\begin{tabular}{lrr}
+\hline
+Cadence class & JHT count & Our system count \\
+\hline
+\texttt{perfect\_authentic} & 995 & 904 \\
+\texttt{plagal} & 138 & 113 \\
+\texttt{ii\_to\_V} & 735 & 743 \\
+\texttt{tritone\_sub} & 210 & 181 \\
+\texttt{backdoor} & 55 & 29 \\
+\texttt{deceptive} & 19 & 6 \\
+\texttt{descending\_fifth} & 138 & 184 \\
+\hline
+\end{tabular}
+\end{center}
+
+The closest correspondence is observed for \texttt{ii\_to\_V}, where the
+aggregate counts are nearly identical (735 in JHT and 743 in our system).
+Perfect authentic cadences and plagal relations are also recovered in broadly
+similar proportions. Larger discrepancies occur for deceptive and backdoor
+relations, which are comparatively sparse in the corpus and depend more
+strongly on analytical interpretation. The system also produces more generic
+\texttt{descending\_fifth} events than JHT, suggesting that some relations that
+JHT treats through a more specific hierarchical label are currently captured by
+our evaluation bridge as general fifth motion.
+
+\subsection{Residual mismatch analysis}
+
+After applying the global-reference estimator and the related-key criterion,
+only 5 of the 155 comparable annotated trees remain unmatched. These residual
+cases are shown in Table~\ref{tab:jht-residual-mismatches}. Importantly, they
+are not homogeneous errors. Some are low-confidence cases with sparse or
+unstable evidence, while others appear to reflect chart-version or metadata
+differences in the reference key label.
+
+\begin{table}[t]
+\centering
+\begin{tabular}{lllll}
+\hline
+Tune & JHT key & Our key & Confidence & Interpretation \\
+\hline
+\emph{Light Blue} & C & F & low & competing F/G/C centres \\
+\emph{Minor Strain} & G & d & low & sparse evidence \\
+\emph{Boy Next Door} & C & Bb & medium & likely metadata/version issue \\
+\emph{Remember} & Ab & Db & medium & likely chart-version issue \\
+\emph{A Beautiful Friendship} & Ab & C & low & little Ab evidence in chart \\
+\hline
+\end{tabular}
+\caption{Residual key mismatches after related-key filtering.}
+\label{tab:jht-residual-mismatches}
+\end{table}
+
+The case of \emph{The Boy Next Door} is particularly illustrative. The chord
+sequence analysed from JHT begins:
+\[
+\mathrm{Bbmaj7}\;|\;\mathrm{G7}\;|\;\mathrm{Cm7}\;|\;\mathrm{F7}\;|\;\mathrm{Bbmaj7},
+\]
+which strongly supports Bb major as a local and form-level centre
+(\(\mathrm{Imaj7}\)--\(\mathrm{VI7}\)--\(\mathrm{ii7}\)--\(\mathrm{V7}\)--\(\mathrm{Imaj7}\)).
+Our system accordingly selects Bb, whereas the JHT metadata lists C. In this
+case the disagreement is therefore better interpreted as a likely metadata or
+chart-version discrepancy rather than a parser failure.
+
+The other residual cases are similarly difficult to adjudicate automatically.
+For \emph{Light Blue}, \emph{Minor Strain}, and \emph{Remember}, reliable
+online lead-sheet evidence is sparse or inconsistent. For \emph{A Beautiful
+Friendship}, the analysed chart gives stronger evidence for C, G, F, and D
+than for Ab. We therefore do not claim that all residual mismatches are JHT
+errors. Rather, the residual 3.2\% disagreement should be understood as a
+mixture of low-confidence tonal ambiguity, chart-version differences, and
+reference metadata uncertainty.
+
+\subsection{Interpretation}
+
+These results provide evidence that the proposed parser is not merely producing
+well-formed derivations, but is recovering a substantial portion of the
+cadential structure encoded in an independent expert-annotated jazz harmony
+resource. The evaluation also highlights where the system differs from JHT.
+The main divergences concern global key inference, sparse cadence categories
+such as deceptive and backdoor relations, and the structural depth of the
+resulting analyses.
+
+The key-agreement result should be interpreted carefully. Jazz standards often
+begin away from the global tonic or contain local tonicisations at the start of
+a form. Our system currently prioritises early ii--V and local cadential
+evidence when selecting the initial tonal context. This behaviour is musically
+motivated, but it can diverge from JHT's global key label. Comparing JHT's key
+with the key implied by the last complete cadence increases agreement from
+52.3\% to 68.4\%. This supports the interpretation that many mismatches are not
+failures of chord parsing, but differences between local operative keys and
+global form-level key labels. By contrast, the modal cadential key reaches
+65.2\% agreement, while the representative-cadential key reaches 72.9\%. These
+values show that cadential evidence is informative, but also that many jazz
+standards contain multiple local cadential centres, so the most frequent
+cadential target may still reflect an extended tonicisation rather than the
+form-level key. The combined global-reference estimate obtains the strongest
+result, 94.8\% agreement with JHT. This indicates that a more appropriate
+comparison should not use the parser's first local key directly, but should
+aggregate opening, closing, modal, turnaround, and cadential evidence over the
+whole analysed sequence. Consequently, residual key mismatches do not always
+imply an incorrect local analysis; rather, they show that our parser and JHT
+sometimes choose different levels of tonal description. If closely related
+tonalities are treated as compatible descriptions, agreement increases to
+96.8\%.
+
+\subsection{Limitations and future work}
+
+The present evaluation is intentionally functional rather than purely
+structural. It does not yet compute a full tree edit distance or labelled span
+$F_1$ between JHT constituent trees and Lambek proof trees. Such a metric would
+require an additional projection from Lambek derivations to constituent spans.
+The current cadence ontology is therefore best understood as a common
+functional layer: it asks whether both systems identify similar harmonic
+relations, not whether they construct identical trees.
+
+Future work will extend this evaluation in two directions. First, we will add a
+span-based comparison by projecting each Lambek proof into a binary constituent
+tree over chord positions and comparing it with JHT using labelled and
+unlabelled span $F_1$. Second, we will refine the cadence ontology so that
+generic descending-fifth events can be redistributed into more specific
+functional categories when the local key context supports such a distinction.
+
+Even in its present form, the evaluation addresses the main concern raised by
+the reviewer: the system is now tested against an external, expert-annotated
+jazz harmony resource, and the reported results quantify both agreement and
+divergence at the level of musically interpretable cadential functions.

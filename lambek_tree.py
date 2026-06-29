@@ -278,7 +278,7 @@ def _tonic_grade(chord_symbol: str) -> str:
 
 def _format_note_label(note: str, minor: bool = False) -> str:
     # Internal notes use B for flat (e.g. EB); display as Eb.
-    if len(note) >= 2 and note[1] == "B":
+    if len(note) >= 2 and note[1].lower() == "b":
         shown = note[0].upper() + "b"
     elif len(note) >= 2 and note[1] == "#":
         shown = note[0].upper() + "#"
